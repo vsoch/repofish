@@ -4,7 +4,7 @@ import re
 # Need function to parse a python module for available functions and options
 def get_functions(module_folder):
     '''get_functions: parses a python module folder, and returns a data structure with arguments and defaults
-    ''''
+    '''
     module_folder = os.path.abspath(module_folder)
 
     functions = dict()

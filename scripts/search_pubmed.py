@@ -1,10 +1,3 @@
-import sklearn
-from repofish import get_functions
-
-# Get functions data structure for sklearn
-module_folder = os.path.dirname(sklearn.__file__)
-functions = get_functions(module_folder)
-
 #TODO: retrieve Github repos from database / pubmed
 
 #TODO: search for words in repos in database

@@ -1,0 +1,9152 @@
+{
+    "": {
+        "args": [
+            {
+                "default": "3",
+                "name": "ault"
+            }
+        ]
+    },
+    "# Copyright ": {
+        "args": [
+            {
+                "name": "c) 2011 David Warde-Farley <warar at iro dot umontreal dot ca>"
+            }
+        ]
+    },
+    "# Residuals ": {
+        "args": [
+            {
+                "name": "lated) matrices"
+            }
+        ]
+    },
+    "# __reduce__": {
+        "args": []
+    },
+    "# been ined as a scalar ": {
+        "args": [
+            {
+                "name": "it should be a tuple). Somehow"
+            }
+        ]
+    },
+    "# copy since this will contains the residuals ": {
+        "args": [
+            {
+                "name": "lated) matrices"
+            }
+        ]
+    },
+    "'is ill ined.' % str": {
+        "args": [
+            {
+                "name": "self.classes_[ind]"
+            }
+        ]
+    },
+    "* If A is real and OPpart == 'r' ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "- 'all' ": {
+        "args": [
+            {
+                "name": "ault): All features are treated as categorical."
+            }
+        ]
+    },
+    "- 'svd': Singular value decomposition ": {
+        "args": [
+            {
+                "name": "ault). Does not compute the"
+            }
+        ]
+    },
+    "- None or 'empirical': no shrinkage ": {
+        "args": [
+            {
+                "name": "ault)."
+            }
+        ]
+    },
+    "- None: no shrinkage ": {
+        "args": [
+            {
+                "name": "ault)."
+            }
+        ]
+    },
+    "- ``w[i]`` are optional strictly positive weights ": {
+        "args": [
+            {
+                "name": "ault to 1.0"
+            }
+        ]
+    },
+    "- w[i] are optional strictly positive weights ": {
+        "args": [
+            {
+                "name": "ault to 1.0"
+            }
+        ]
+    },
+    "...      __init__": {
+        "args": [
+            {
+                "name": "sub_est"
+            }
+        ]
+    },
+    "...      predict": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    ">>>  nasty_warn": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    ">>>  producer": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    ">>> ps = PreinedSplit": {
+        "args": [
+            {
+                "default": "[0",
+                "name": "test_fold"
+            },
+            {
+                "name": "1"
+            },
+            {
+                "name": "-1"
+            },
+            {
+                "name": "1]"
+            }
+        ]
+    },
+    "Additionally compute class covariance matrix ": {
+        "args": [
+            {
+                "name": "ault False)."
+            }
+        ]
+    },
+    "By ault the threshold is chosen as the MAD ": {
+        "args": [
+            {
+                "name": "median absolute"
+            }
+        ]
+    },
+    "By ault, delegates to _iter_test_indices": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "C : float, optional ": {
+        "args": [
+            {
+                "default": "1.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "Either \"dict\" ": {
+        "args": [
+            {
+                "name": "the ault) to accept dictionaries over"
+            }
+        ]
+    },
+    "For buckling mode ": {
+        "args": [
+            {
+                "name": "see below) A must additionally be positive-inite"
+            }
+        ]
+    },
+    "For the grid of Cs values ": {
+        "args": [
+            {
+                "name": "that are set by ault to be ten values in"
+            }
+        ]
+    },
+    "Hs": {
+        "args": [
+            {
+                "name": "s"
+            }
+        ]
+    },
+    "If \"auto\" ": {
+        "args": [
+            {
+                "name": "by ault)"
+            },
+            {
+                "name": "prewarm is set to True"
+            },
+            {
+                "name": "unless the Linux shared"
+            }
+        ]
+    },
+    "If False ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": "data are centered before computation."
+            }
+        ]
+    },
+    "If None ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": "load all the categories."
+            }
+        ]
+    },
+    "If None, it aults to np.ones": {
+        "args": [
+            {
+                "name": "n_features"
+            }
+        ]
+    },
+    "If True ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": "then include a bias column"
+            },
+            {
+                "name": "the feature in which"
+            }
+        ]
+    },
+    "If Y is given ": {
+        "args": [
+            {
+                "name": "ault is None)"
+            },
+            {
+                "name": "then the returned matrix is the pairwise"
+            }
+        ]
+    },
+    "If an integer is passed, it is the number of fold ": {
+        "args": [
+            {
+                "name": "ault 3)."
+            }
+        ]
+    },
+    "If an integer is passed, it is the number of folds ": {
+        "args": [
+            {
+                "name": "aults to 3)."
+            }
+        ]
+    },
+    "If true ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": "use a breadth-first approach to the problem."
+            }
+        ]
+    },
+    "It returns -Inf if det": {
+        "args": [
+            {
+                "name": "A) is non positive or is not ined."
+            }
+        ]
+    },
+    "MovedAttribute": {
+        "args": [
+            {
+                "name": "\"urlrag\""
+            },
+            {
+                "name": "\"urlparse\""
+            },
+            {
+                "name": "\"urllib.parse\")"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "MovedModule": {
+        "args": [
+            {
+                "name": "\"html_entities\""
+            },
+            {
+                "name": "\"htmlentitys\""
+            },
+            {
+                "name": "\"html.entities\")"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "None ": {
+        "args": [
+            {
+                "name": "ault) does nothing."
+            }
+        ]
+    },
+    "Number of jobs to run in parallel ": {
+        "args": [
+            {
+                "name": "ault 1)."
+            }
+        ]
+    },
+    "Number of neighbors to get ": {
+        "args": [
+            {
+                "name": "ault is the value"
+            }
+        ]
+    },
+    "Number of predispatched jobs for parallel execution ": {
+        "args": [
+            {
+                "name": "ault is"
+            }
+        ]
+    },
+    "Optional ": {
+        "args": [
+            {
+                "default": "None). Class distribution of each column. If None the",
+                "name": "ault"
+            }
+        ]
+    },
+    "The ault distance is 'euclidean' ": {
+        "args": [
+            {
+                "name": "'minkowski' metric with the p"
+            }
+        ]
+    },
+    "The ault error message is, \"This %": {
+        "args": [
+            {
+                "name": "name)s instance is not fitted"
+            }
+        ]
+    },
+    "The coefficient R^2 is ined as ": {
+        "args": [
+            {
+                "name": "1 - u/v)"
+            },
+            {
+                "name": "where u is the regression"
+            }
+        ]
+    },
+    "The input set can either be well conditioned ": {
+        "args": [
+            {
+                "name": "by ault) or have a low"
+            }
+        ]
+    },
+    "The number of columns in the grid plot ": {
+        "args": [
+            {
+                "name": "ault: 3)."
+            }
+        ]
+    },
+    "The original database was available from ": {
+        "args": [
+            {
+                "name": "now unct"
+            }
+        ]
+    },
+    "The residual matrix of X ": {
+        "args": [
+            {
+                "name": "Xk+1) block is obtained by the lation on the"
+            }
+        ]
+    },
+    "The residual matrix of Y ": {
+        "args": [
+            {
+                "name": "Yk+1) block is obtained by lation on the"
+            }
+        ]
+    },
+    "Tolerance for singular values. Zero ": {
+        "args": [
+            {
+                "name": "ault) means machine precision."
+            }
+        ]
+    },
+    "Under Windows 64 bit ": {
+        "args": [
+            {
+                "name": "and Python 2)"
+            },
+            {
+                "name": "the `long` type is used by ault"
+            }
+        ]
+    },
+    "W, n_iter = _ica_": {
+        "args": [
+            {
+                "name": "X1"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "When True ": {
+        "args": [
+            {
+                "name": "False by ault) the `components_` vectors are divided"
+            }
+        ]
+    },
+    "Whether score_func is a score function ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": "meaning high is good"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "absolute_exponential": {
+        "args": [
+            {
+                "name": "theta"
+            },
+            {
+                "name": "d"
+            }
+        ]
+    },
+    "accept_sparse : string, list of string or None ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "accuracy_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "True",
+                "name": "normalize"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "add_dummy_feature": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "1.0",
+                "name": "value"
+            }
+        ]
+    },
+    "add_metaclass": {
+        "args": [
+            {
+                "name": "metaclass"
+            }
+        ]
+    },
+    "add_move": {
+        "args": [
+            {
+                "name": "move"
+            }
+        ]
+    },
+    "additive_chi2_kernel": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            }
+        ]
+    },
+    "adjusted_mutual_info_score": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            }
+        ]
+    },
+    "adjusted_rand_score": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            }
+        ]
+    },
+    "advance_iterator": {
+        "args": [
+            {
+                "name": "it"
+            }
+        ]
+    },
+    "affinity_propagation": {
+        "args": [
+            {
+                "name": "S"
+            },
+            {
+                "default": "None",
+                "name": "preference"
+            },
+            {
+                "default": "15",
+                "name": "convergence_iter"
+            },
+            {
+                "default": "200",
+                "name": "max_iter"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "aic": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "algorithm : {'SAMME', 'SAMME.R'}, optional ": {
+        "args": [
+            {
+                "default": "'SAMME.R'",
+                "name": "ault"
+            }
+        ]
+    },
+    "all_estimators": {
+        "args": [
+            {
+                "default": "False",
+                "name": "include_meta_estimators"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "allow_nd : boolean ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "allow_unlabeled : bool, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "alpha": {
+        "args": []
+    },
+    "alpha : float ": {
+        "args": [
+            {
+                "default": "0.9",
+                "name": "ault"
+            }
+        ]
+    },
+    "alpha : float, optional ": {
+        "args": [
+            {
+                "default": "1.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "alpha: float between 0 and 1, optional ": {
+        "args": [
+            {
+                "default": "0.95",
+                "name": "ault"
+            }
+        ]
+    },
+    "alpha_max": {
+        "args": [
+            {
+                "name": "emp_cov"
+            }
+        ]
+    },
+    "alpha_min : float, optional ": {
+        "args": [
+            {
+                "default": "0",
+                "name": "ault"
+            }
+        ]
+    },
+    "append_subcluster": {
+        "args": [
+            {
+                "name": "subcluster"
+            }
+        ]
+    },
+    "apply": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "argpartition": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "name": "kth"
+            },
+            {
+                "default": "-1",
+                "name": "axis"
+            },
+            {
+                "default": "'introselect'",
+                "name": "kind"
+            },
+            {
+                "default": "None",
+                "name": "order"
+            }
+        ]
+    },
+    "args, varargs, kw, ault = inspect.getargspec": {
+        "args": [
+            {
+                "name": "init"
+            }
+        ]
+    },
+    "args, varargs, kws, aults = inspect.getargspec": {
+        "args": [
+            {
+                "name": "init"
+            }
+        ]
+    },
+    "as 0.99 ": {
+        "args": [
+            {
+                "name": "the ault) and e is the current fraction of inliers w.r.t."
+            }
+        ]
+    },
+    "as_float_array": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "True",
+                "name": "copy"
+            },
+            {
+                "default": "True",
+                "name": "force_all_finite"
+            }
+        ]
+    },
+    "asbytes": {
+        "args": [
+            {
+                "name": "s"
+            }
+        ]
+    },
+    "assert_all_finite": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "assert_array_equal": {
+        "args": [
+            {
+                "name": "params[arg]"
+            },
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "assert_equal": {
+        "args": [
+            {
+                "name": "params[arg]"
+            },
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "assert_greater_equal": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "name": "b"
+            },
+            {
+                "default": "None",
+                "name": "msg"
+            }
+        ]
+    },
+    "assert_in": {
+        "args": [
+            {
+                "name": "x"
+            },
+            {
+                "name": "container"
+            }
+        ]
+    },
+    "assert_less_equal": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "name": "b"
+            },
+            {
+                "default": "None",
+                "name": "msg"
+            }
+        ]
+    },
+    "assert_no_warnings": {
+        "args": [
+            {
+                "name": "func"
+            },
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kw"
+            }
+        ]
+    },
+    "assert_not_in": {
+        "args": [
+            {
+                "name": "x"
+            },
+            {
+                "name": "container"
+            }
+        ]
+    },
+    "assert_raise_message": {
+        "args": [
+            {
+                "name": "exception"
+            },
+            {
+                "name": "message"
+            },
+            {
+                "name": "function"
+            },
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "assert_raises_regex": {
+        "args": [
+            {
+                "name": "expected_exception"
+            },
+            {
+                "name": "expected_regexp"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "assert_true": {
+        "args": [
+            {
+                "name": "ault is None"
+            }
+        ]
+    },
+    "assert_warns": {
+        "args": [
+            {
+                "name": "warning_class"
+            },
+            {
+                "name": "func"
+            },
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kw"
+            }
+        ]
+    },
+    "assert_warns_message": {
+        "args": [
+            {
+                "name": "warning_class"
+            },
+            {
+                "name": "message"
+            },
+            {
+                "name": "func"
+            },
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kw"
+            }
+        ]
+    },
+    "astype": {
+        "args": [
+            {
+                "name": "array"
+            },
+            {
+                "name": "dtype"
+            },
+            {
+                "default": "True",
+                "name": "copy"
+            }
+        ]
+    },
+    "auc": {
+        "args": [
+            {
+                "name": "x"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "False",
+                "name": "reorder"
+            }
+        ]
+    },
+    "ault %r format for tuples of integers ": {
+        "args": [
+            {
+                "name": "typically used to store the shape"
+            }
+        ]
+    },
+    "ault=DecisionTreeClassifier": {
+        "args": [
+            {
+                "default": "1",
+                "name": "max_depth"
+            }
+        ]
+    },
+    "ault=DecisionTreeRegressor": {
+        "args": [
+            {
+                "default": "3",
+                "name": "max_depth"
+            }
+        ]
+    },
+    "average : string, [None ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": "'binary'"
+            },
+            {
+                "name": "'micro'"
+            },
+            {
+                "name": "'macro'"
+            },
+            {
+                "name": "'samples'"
+            },
+            {
+                "name": "\\"
+            }
+        ]
+    },
+    "average : string, [None, 'binary' ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": "'micro'"
+            },
+            {
+                "name": "'macro'"
+            },
+            {
+                "name": "'samples'"
+            },
+            {
+                "name": "\\"
+            }
+        ]
+    },
+    "average : string, [None, 'micro', 'macro' ": {
+        "args": [
+            {
+                "name": "ault)"
+            },
+            {
+                "name": "'samples'"
+            },
+            {
+                "name": "'weighted']"
+            }
+        ]
+    },
+    "average_precision_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_score"
+            },
+            {
+                "default": "\"macro\"",
+                "name": "average"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "axis : 0 or 1, optional ": {
+        "args": [
+            {
+                "name": "1 by ault"
+            }
+        ]
+    },
+    "axis : int ": {
+        "args": [
+            {
+                "name": "0 by ault"
+            }
+        ]
+    },
+    "axis : integer, optional ": {
+        "args": [
+            {
+                "default": "0",
+                "name": "ault"
+            }
+        ]
+    },
+    "b": {
+        "args": [
+            {
+                "name": "s"
+            }
+        ]
+    },
+    "barycenter_kneighbors_graph": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "n_neighbors"
+            },
+            {
+                "default": "1e-3",
+                "name": "reg"
+            }
+        ]
+    },
+    "barycenter_weights": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Z"
+            },
+            {
+                "default": "1e-3",
+                "name": "reg"
+            }
+        ]
+    },
+    "base_estimator : object or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "base_estimator : object, optional ": {
+        "args": [
+            {
+                "default": "DecisionTreeRegressor",
+                "name": "ault"
+            }
+        ]
+    },
+    "batch_size : int or None, ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "bias : float, optional ": {
+        "args": [
+            {
+                "default": "0.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "bic": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "biclusters_": {
+        "args": []
+    },
+    "bin_sizes = aultdict": {
+        "args": [
+            {
+                "name": "int"
+            }
+        ]
+    },
+    "binarize": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "0.0",
+                "name": "threshold"
+            },
+            {
+                "default": "True",
+                "name": "copy"
+            }
+        ]
+    },
+    "bincount": {
+        "args": [
+            {
+                "name": "x"
+            },
+            {
+                "default": "None",
+                "name": "weights"
+            },
+            {
+                "default": "None",
+                "name": "minlength"
+            }
+        ]
+    },
+    "bootstrap : boolean, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "bootstrap_features : boolean, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "brier_score_loss": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_prob"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            },
+            {
+                "default": "None",
+                "name": "pos_label"
+            }
+        ]
+    },
+    "build_analyzer": {
+        "args": []
+    },
+    "build_preprocessor": {
+        "args": []
+    },
+    "build_tokenizer": {
+        "args": []
+    },
+    "byte2int": {
+        "args": [
+            {
+                "name": "bs"
+            }
+        ]
+    },
+    "c_step": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "n_support"
+            },
+            {
+                "default": "30",
+                "name": "remaining_iterations"
+            },
+            {
+                "default": "None",
+                "name": "initial_estimates"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "cache": {
+        "args": [
+            {
+                "default": "None",
+                "name": "func"
+            },
+            {
+                "default": "None",
+                "name": "ignore"
+            },
+            {
+                "default": "None",
+                "name": "verbose"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "calibration_curve": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_prob"
+            },
+            {
+                "default": "False",
+                "name": "normalize"
+            },
+            {
+                "default": "5",
+                "name": "n_bins"
+            }
+        ]
+    },
+    "call": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "call_and_shelve": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "callable": {
+        "args": [
+            {
+                "name": "obj"
+            }
+        ]
+    },
+    "cartesian": {
+        "args": [
+            {
+                "name": "arrays"
+            },
+            {
+                "default": "None",
+                "name": "out"
+            }
+        ]
+    },
+    "categories : A collection of strings or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "center_data": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "fit_intercept"
+            },
+            {
+                "default": "False",
+                "name": "normalize"
+            },
+            {
+                "default": "True",
+                "name": "copy"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "change, set tol to 0.0 ": {
+        "args": [
+            {
+                "name": "ault)."
+            }
+        ]
+    },
+    "check_X_y": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "accept_sparse"
+            },
+            {
+                "default": "\"numeric\"",
+                "name": "dtype"
+            },
+            {
+                "default": "None",
+                "name": "order"
+            },
+            {
+                "default": "False",
+                "name": "copy"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "check_array": {
+        "args": [
+            {
+                "name": "array"
+            },
+            {
+                "default": "None",
+                "name": "accept_sparse"
+            },
+            {
+                "default": "\"numeric\"",
+                "name": "dtype"
+            },
+            {
+                "default": "None",
+                "name": "order"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "check_class_weight_auto_classifiers": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Classifier"
+            },
+            {
+                "name": "X_train"
+            },
+            {
+                "name": "y_train"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "check_class_weight_auto_linear_classifier": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Classifier"
+            }
+        ]
+    },
+    "check_class_weight_classifiers": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Classifier"
+            }
+        ]
+    },
+    "check_classifier_data_not_an_array": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_classifiers_classes": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Classifier"
+            }
+        ]
+    },
+    "check_classifiers_input_shapes": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Classifier"
+            }
+        ]
+    },
+    "check_classifiers_one_label": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Classifier"
+            }
+        ]
+    },
+    "check_classifiers_pickle": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Classifier"
+            }
+        ]
+    },
+    "check_classifiers_train": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Classifier"
+            }
+        ]
+    },
+    "check_clusterer_compute_labels_predict": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Clusterer"
+            }
+        ]
+    },
+    "check_clustering": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Alg"
+            }
+        ]
+    },
+    "check_clusterings": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            }
+        ]
+    },
+    "check_consistent_length": {
+        "args": [
+            {
+                "name": "*arrays"
+            }
+        ]
+    },
+    "check_cv": {
+        "args": [
+            {
+                "name": "cv"
+            },
+            {
+                "default": "None",
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            },
+            {
+                "default": "False",
+                "name": "classifier"
+            }
+        ]
+    },
+    "check_dtype_object": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_estimator_sparse_data": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_estimators_data_not_an_array": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "check_estimators_dtypes": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_estimators_empty_data_messages": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_estimators_nan_inf": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_estimators_overwrite_params": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_estimators_partial_fit_n_features": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Alg"
+            }
+        ]
+    },
+    "check_estimators_unfitted": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_fetch_lfw": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            },
+            {
+                "default": "True",
+                "name": "funneled"
+            },
+            {
+                "default": "True",
+                "name": "download_if_missing"
+            }
+        ]
+    },
+    "check_fit_score_takes_y": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_increasing": {
+        "args": [
+            {
+                "name": "x"
+            },
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "check_input : boolean, ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "check_is_fitted": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "attributes"
+            },
+            {
+                "default": "None",
+                "name": "msg"
+            },
+            {
+                "default": "all",
+                "name": "all_or_any"
+            }
+        ]
+    },
+    "check_non_negative": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "whom"
+            }
+        ]
+    },
+    "check_non_transformer_estimators_n_iter": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "estimator"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "check_paired_arrays": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            }
+        ]
+    },
+    "check_pairwise_arrays": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            }
+        ]
+    },
+    "check_parameters_ault_constructible": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_pipeline_consistency": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_random_state": {
+        "args": [
+            {
+                "name": "seed"
+            }
+        ]
+    },
+    "check_regressor_data_not_an_array": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_regressors_int": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Regressor"
+            }
+        ]
+    },
+    "check_regressors_pickle": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Regressor"
+            }
+        ]
+    },
+    "check_regressors_train": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Regressor"
+            }
+        ]
+    },
+    "check_scoring": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "default": "None",
+                "name": "scoring"
+            },
+            {
+                "default": "False",
+                "name": "allow_none"
+            }
+        ]
+    },
+    "check_skip_network": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "check_skip_travis": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "check_sparsify_coefficients": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Estimator"
+            }
+        ]
+    },
+    "check_symmetric": {
+        "args": [
+            {
+                "name": "array"
+            },
+            {
+                "default": "1E-10",
+                "name": "tol"
+            },
+            {
+                "default": "True",
+                "name": "raise_warning"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "check_transformer": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Transformer"
+            }
+        ]
+    },
+    "check_transformer_data_not_an_array": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Transformer"
+            }
+        ]
+    },
+    "check_transformer_n_iter": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "estimator"
+            }
+        ]
+    },
+    "check_transformer_pickle": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Transformer"
+            }
+        ]
+    },
+    "check_transformers_unfitted": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "Transformer"
+            }
+        ]
+    },
+    "chi2": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "chi2_kernel": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            },
+            {
+                "default": "1.",
+                "name": "gamma"
+            }
+        ]
+    },
+    "choice": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "default": "None",
+                "name": "size"
+            },
+            {
+                "default": "True",
+                "name": "replace"
+            },
+            {
+                "default": "None",
+                "name": "p"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "class PreinedSplit": {
+        "args": [
+            {
+                "name": "_PartitionIterator"
+            }
+        ]
+    },
+    "class UninedMetricWarning": {
+        "args": [
+            {
+                "name": "UserWarning"
+            }
+        ]
+    },
+    "class_distribution": {
+        "args": [
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "class_mapping = aultdict": {
+        "args": [
+            {
+                "name": "int"
+            }
+        ]
+    },
+    "class_sep : float, optional ": {
+        "args": [
+            {
+                "default": "1.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "class_weight : dict, list of dicts, \"auto\" or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "classes_": {
+        "args": []
+    },
+    "classification_report": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "labels"
+            },
+            {
+                "default": "None",
+                "name": "target_names"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "clean_warning_registry": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "clear": {
+        "args": [
+            {
+                "default": "True",
+                "name": "warn"
+            }
+        ]
+    },
+    "clear_data_home": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            }
+        ]
+    },
+    "clone": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "default": "True",
+                "name": "safe"
+            }
+        ]
+    },
+    "close": {
+        "args": []
+    },
+    "cluster_std: float or sequence of floats, optional ": {
+        "args": [
+            {
+                "default": "1.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "coef : array-like, shape ": {
+        "args": [
+            {
+                "name": "n_features"
+            },
+            {
+                "name": ")"
+            },
+            {
+                "name": "ault None"
+            }
+        ]
+    },
+    "coef : boolean, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "coef0 : float, optional ": {
+        "args": [
+            {
+                "default": "0.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "coef_": {
+        "args": []
+    },
+    "coefs": {
+        "args": []
+    },
+    "column_or_1d": {
+        "args": [
+            {
+                "name": "y"
+            },
+            {
+                "default": "False",
+                "name": "warn"
+            }
+        ]
+    },
+    "comb2": {
+        "args": [
+            {
+                "name": "n"
+            }
+        ]
+    },
+    "combinations_with_replacement": {
+        "args": [
+            {
+                "name": "iterable"
+            },
+            {
+                "name": "r"
+            }
+        ]
+    },
+    "completeness_score": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            }
+        ]
+    },
+    "compute_class_weight": {
+        "args": [
+            {
+                "name": "class_weight"
+            },
+            {
+                "name": "classes"
+            },
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "compute_sample_weight": {
+        "args": [
+            {
+                "name": "class_weight"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "indices"
+            }
+        ]
+    },
+    "computed ": {
+        "args": [
+            {
+                "name": "see the reference). The ault values should be reasonable."
+            }
+        ]
+    },
+    "config.add_extension": {
+        "args": [
+            {
+                "name": "'types'"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "configuration": {
+        "args": [
+            {
+                "default": "''",
+                "name": "parent_package"
+            },
+            {
+                "default": "None",
+                "name": "top_path"
+            }
+        ]
+    },
+    "confusion_matrix": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "labels"
+            }
+        ]
+    },
+    "consensus_score": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "name": "b"
+            },
+            {
+                "default": "\"jaccard\"",
+                "name": "similarity"
+            }
+        ]
+    },
+    "constant": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "construct_grids": {
+        "args": [
+            {
+                "name": "batch"
+            }
+        ]
+    },
+    "contain the mean squared errors ": {
+        "args": [
+            {
+                "name": "by ault) or the values of the \\"
+            }
+        ]
+    },
+    "contingency_matrix": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            },
+            {
+                "default": "None",
+                "name": "eps"
+            }
+        ]
+    },
+    "convert_feature": {
+        "args": [
+            {
+                "name": "fx"
+            }
+        ]
+    },
+    "copy : bool, ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "copy : boolean ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "copy : boolean, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "copy_Gram : bool, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "copy_X : bool, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "corr_cut": {
+        "args": [
+            {
+                "name": "t"
+            },
+            {
+                "name": "d"
+            }
+        ]
+    },
+    "correct_covariance": {
+        "args": [
+            {
+                "name": "data"
+            }
+        ]
+    },
+    "cosine_distances": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            }
+        ]
+    },
+    "cosine_similarity": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            }
+        ]
+    },
+    "count_nonzero": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "axis"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "cov : float, optional ": {
+        "args": [
+            {
+                "default": "1.",
+                "name": "ault"
+            }
+        ]
+    },
+    "covariance_type": {
+        "args": []
+    },
+    "coverage_error": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_score"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "cpu_count": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "create_bound_method": {
+        "args": [
+            {
+                "name": "func"
+            },
+            {
+                "name": "obj"
+            }
+        ]
+    },
+    "create_mv": {
+        "args": [
+            {
+                "name": "curr_alpha"
+            }
+        ]
+    },
+    "criterion : string, optional ": {
+        "args": [
+            {
+                "default": "\"mse\"",
+                "name": "ault"
+            }
+        ]
+    },
+    "cross_val_predict": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "cv"
+            },
+            {
+                "default": "1",
+                "name": "n_jobs"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "cross_val_score": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "scoring"
+            },
+            {
+                "default": "None",
+                "name": "cv"
+            },
+            {
+                "default": "1",
+                "name": "n_jobs"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "csc_median_axis_0": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "cubic": {
+        "args": [
+            {
+                "name": "theta"
+            },
+            {
+                "name": "d"
+            }
+        ]
+    },
+    "cv : int or cross-validation generator, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "database was available from ": {
+        "args": [
+            {
+                "name": "now unct"
+            }
+        ]
+    },
+    "dbscan": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "0.5",
+                "name": "eps"
+            },
+            {
+                "default": "5",
+                "name": "min_samples"
+            },
+            {
+                "default": "'minkowski'",
+                "name": "metric"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "debug": {
+        "args": [
+            {
+                "name": "msg"
+            }
+        ]
+    },
+    "decision function. Must be False ": {
+        "args": [
+            {
+                "name": "ault) for compatibility"
+            }
+        ]
+    },
+    "decision_function": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "decode": {
+        "args": [
+            {
+                "name": "doc"
+            }
+        ]
+    },
+    "decorator": {
+        "args": [
+            {
+                "name": "func"
+            }
+        ]
+    },
+    "degree : int, optional ": {
+        "args": [
+            {
+                "default": "3",
+                "name": "ault"
+            }
+        ]
+    },
+    "delayed": {
+        "args": [
+            {
+                "name": "function"
+            },
+            {
+                "default": "True",
+                "name": "check_pickle"
+            }
+        ]
+    },
+    "delayed_function": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "delete_folder": {
+        "args": [
+            {
+                "name": "folder_path"
+            }
+        ]
+    },
+    "dense_output : boolean, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "densify": {
+        "args": []
+    },
+    "density": {
+        "args": [
+            {
+                "name": "w"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "density : float in range ]0, 1] or 'auto', optional ": {
+        "args": [
+            {
+                "default": "'auto'",
+                "name": "ault"
+            }
+        ]
+    },
+    "density : float in range ]0, 1], optional ": {
+        "args": [
+            {
+                "default": "'auto'",
+                "name": "ault"
+            }
+        ]
+    },
+    "description: string or unicode, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "dict_learning": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "n_components"
+            },
+            {
+                "name": "alpha"
+            },
+            {
+                "default": "100",
+                "name": "max_iter"
+            },
+            {
+                "default": "1e-8",
+                "name": "tol"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "dict_learning_online": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "2",
+                "name": "n_components"
+            },
+            {
+                "default": "1",
+                "name": "alpha"
+            },
+            {
+                "default": "100",
+                "name": "n_iter"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "digamma": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "dim: integer, optional ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "discretize": {
+        "args": [
+            {
+                "name": "vectors"
+            },
+            {
+                "default": "True",
+                "name": "copy"
+            },
+            {
+                "default": "30",
+                "name": "max_svd_restarts"
+            },
+            {
+                "default": "20",
+                "name": "n_iter_max"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "disk_used": {
+        "args": [
+            {
+                "name": "path"
+            }
+        ]
+    },
+    "dispatch": {
+        "args": [
+            {
+                "name": "func"
+            },
+            {
+                "name": "args"
+            },
+            {
+                "name": "kwargs"
+            }
+        ]
+    },
+    "dispatch_next": {
+        "args": []
+    },
+    "dispatcher": {
+        "args": [
+            {
+                "name": "obj"
+            }
+        ]
+    },
+    "distance_metrics": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "distribute_covar_matrix_to_match_covariance_type": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "divide": {
+        "args": [
+            {
+                "name": "x1"
+            },
+            {
+                "name": "x2"
+            },
+            {
+                "default": "None",
+                "name": "out"
+            },
+            {
+                "default": "None",
+                "name": "dtype"
+            }
+        ]
+    },
+    "download_20newsgroups": {
+        "args": [
+            {
+                "name": "target_dir"
+            },
+            {
+                "name": "cache_path"
+            }
+        ]
+    },
+    "dtype : string, type or None ": {
+        "args": [
+            {
+                "default": "\"numeric\"",
+                "name": "ault"
+            }
+        ]
+    },
+    "dual : bool, ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "dump": {
+        "args": [
+            {
+                "name": "value"
+            },
+            {
+                "name": "filename"
+            },
+            {
+                "default": "0",
+                "name": "compress"
+            },
+            {
+                "default": "100",
+                "name": "cache_size"
+            }
+        ]
+    },
+    "dump_svmlight_file": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "f"
+            },
+            {
+                "default": "True",
+                "name": "zero_based"
+            },
+            {
+                "default": "None",
+                "name": "comment"
+            },
+            {
+                "default": "None",
+                "name": "query_id"
+            }
+        ]
+    },
+    "early_exaggeration : float, optional ": {
+        "args": [
+            {
+                "name": "ault: 4.0"
+            }
+        ]
+    },
+    "effective_rank : int or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "effective_rank : int, optional ": {
+        "args": [
+            {
+                "default": "10",
+                "name": "ault"
+            }
+        ]
+    },
+    "empirical_covariance": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "False",
+                "name": "assume_centered"
+            }
+        ]
+    },
+    "empty": {
+        "args": []
+    },
+    "encoding : string or None ": {
+        "args": [
+            {
+                "name": "ault is None"
+            }
+        ]
+    },
+    "enet_path": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "0.5",
+                "name": "l1_ratio"
+            },
+            {
+                "default": "1e-3",
+                "name": "eps"
+            },
+            {
+                "default": "100",
+                "name": "n_alphas"
+            },
+            {
+                "default": "None",
+                "name": "alphas"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "ensure_2d : boolean ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "ensure_min_features : int ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "ensure_min_samples : int ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "entropy": {
+        "args": [
+            {
+                "name": "labels"
+            }
+        ]
+    },
+    "eps : float or numpy array of float in ]0,1[, optional ": {
+        "args": [
+            {
+                "default": "0.1",
+                "name": "ault"
+            }
+        ]
+    },
+    "eps : strictly positive float, optional ": {
+        "args": [
+            {
+                "default": "0.1",
+                "name": "ault"
+            }
+        ]
+    },
+    "eps : strictly positive float, optional, ": {
+        "args": [
+            {
+                "default": "0.1",
+                "name": "ault"
+            }
+        ]
+    },
+    "epsilon : float, optional ": {
+        "args": [
+            {
+                "default": "0.1",
+                "name": "ault"
+            }
+        ]
+    },
+    "eq_repr": {
+        "args": [
+            {
+                "name": "value"
+            },
+            {
+                "default": "safe_repr",
+                "name": "repr"
+            }
+        ]
+    },
+    "error_norm": {
+        "args": [
+            {
+                "name": "comp_cov"
+            },
+            {
+                "default": "'frobenius'",
+                "name": "norm"
+            },
+            {
+                "default": "True",
+                "name": "scaling"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "error_score : 'raise' ": {
+        "args": [
+            {
+                "name": "ault) or numeric"
+            }
+        ]
+    },
+    "estimate_bandwidth": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "0.3",
+                "name": "quantile"
+            },
+            {
+                "default": "None",
+                "name": "n_samples"
+            },
+            {
+                "default": "0",
+                "name": "random_state"
+            }
+        ]
+    },
+    "euclidean_distances": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            },
+            {
+                "default": "None",
+                "name": "Y_norm_squared"
+            },
+            {
+                "default": "False",
+                "name": "squared"
+            }
+        ]
+    },
+    "eval": {
+        "args": [
+            {
+                "name": "func"
+            },
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "exec_": {
+        "args": [
+            {
+                "name": "_code_"
+            },
+            {
+                "default": "None",
+                "name": "_globs_"
+            },
+            {
+                "default": "None",
+                "name": "_locs_"
+            }
+        ]
+    },
+    "expit": {
+        "args": [
+            {
+                "name": "x"
+            },
+            {
+                "default": "None",
+                "name": "out"
+            }
+        ]
+    },
+    "explained_variance_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "export_graphviz": {
+        "args": [
+            {
+                "name": "decision_tree"
+            },
+            {
+                "default": "\"tree.dot\"",
+                "name": "out_file"
+            },
+            {
+                "default": "None",
+                "name": "feature_names"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "extract": {
+        "args": [
+            {
+                "name": "return_eigenvectors"
+            }
+        ]
+    },
+    "extract_first_line": {
+        "args": [
+            {
+                "name": "func_code"
+            }
+        ]
+    },
+    "extract_patches": {
+        "args": [
+            {
+                "name": "arr"
+            },
+            {
+                "default": "8",
+                "name": "patch_shape"
+            },
+            {
+                "default": "1",
+                "name": "extraction_step"
+            }
+        ]
+    },
+    "extract_patches_2d": {
+        "args": [
+            {
+                "name": "image"
+            },
+            {
+                "name": "patch_size"
+            },
+            {
+                "default": "None",
+                "name": "max_patches"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "f1_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "labels"
+            },
+            {
+                "default": "1",
+                "name": "pos_label"
+            },
+            {
+                "default": "'binary'",
+                "name": "average"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "f_classif": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "f_oneway": {
+        "args": [
+            {
+                "name": "*args"
+            }
+        ]
+    },
+    "f_regression": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "True",
+                "name": "center"
+            }
+        ]
+    },
+    "factor : double < 1 ": {
+        "args": [
+            {
+                "default": ".8",
+                "name": "ault"
+            }
+        ]
+    },
+    "fake_mldata": {
+        "args": [
+            {
+                "name": "columns_dict"
+            },
+            {
+                "name": "dataname"
+            },
+            {
+                "name": "matfile"
+            },
+            {
+                "default": "None",
+                "name": "ordering"
+            }
+        ]
+    },
+    "fast_dot": {
+        "args": [
+            {
+                "name": "A"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "fast_logdet": {
+        "args": [
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "fast_mcd": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "support_fraction"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fastica": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "n_components"
+            },
+            {
+                "default": "\"parallel\"",
+                "name": "algorithm"
+            },
+            {
+                "default": "True",
+                "name": "whiten"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fbeta_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "name": "beta"
+            },
+            {
+                "default": "None",
+                "name": "labels"
+            },
+            {
+                "default": "1",
+                "name": "pos_label"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "feature_importances_": {
+        "args": []
+    },
+    "feature_names : list of strings, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "fetch_20newsgroups": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            },
+            {
+                "default": "'train'",
+                "name": "subset"
+            },
+            {
+                "default": "None",
+                "name": "categories"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fetch_california_housing": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            },
+            {
+                "default": "True",
+                "name": "download_if_missing"
+            }
+        ]
+    },
+    "fetch_covtype": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            },
+            {
+                "default": "True",
+                "name": "download_if_missing"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fetch_lfw_pairs": {
+        "args": [
+            {
+                "default": "'train'",
+                "name": "subset"
+            },
+            {
+                "default": "None",
+                "name": "data_home"
+            },
+            {
+                "default": "True",
+                "name": "funneled"
+            },
+            {
+                "default": "0.5",
+                "name": "resize"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fetch_lfw_people": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            },
+            {
+                "default": "True",
+                "name": "funneled"
+            },
+            {
+                "default": "0.5",
+                "name": "resize"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fetch_mldata": {
+        "args": [
+            {
+                "name": "dataname"
+            },
+            {
+                "default": "'label'",
+                "name": "target_name"
+            },
+            {
+                "default": "'data'",
+                "name": "data_name"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fetch_olivetti_faces": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            },
+            {
+                "default": "False",
+                "name": "shuffle"
+            },
+            {
+                "default": "0",
+                "name": "random_state"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fetch_species_distributions": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fit": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            }
+        ]
+    },
+    "fit_binary": {
+        "args": [
+            {
+                "name": "est"
+            },
+            {
+                "name": "i"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "alpha"
+            },
+            {
+                "name": "C"
+            },
+            {
+                "name": "learning_rate"
+            },
+            {
+                "name": "n_iter"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fit_ecoc": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "1.5",
+                "name": "code_size"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            },
+            {
+                "default": "1",
+                "name": "n_jobs"
+            }
+        ]
+    },
+    "fit_grid_point": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "parameters"
+            },
+            {
+                "name": "train"
+            },
+            {
+                "name": "test"
+            },
+            {
+                "name": "scorer"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "fit_intercept : boolean, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "fit_ovo": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "1",
+                "name": "n_jobs"
+            }
+        ]
+    },
+    "fit_ovr": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "1",
+                "name": "n_jobs"
+            }
+        ]
+    },
+    "fit_predict": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            }
+        ]
+    },
+    "fit_transform": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            }
+        ]
+    },
+    "fix_frame_records_filenames": {
+        "args": [
+            {
+                "name": "records"
+            }
+        ]
+    },
+    "fixed_vocabulary": {
+        "args": []
+    },
+    "flip_sign: boolean, ": {
+        "args": [
+            {
+                "name": "True by ault"
+            }
+        ]
+    },
+    "flip_y : float, optional ": {
+        "args": [
+            {
+                "default": "0.01",
+                "name": "ault"
+            }
+        ]
+    },
+    "for arg, ault in zip": {
+        "args": [
+            {
+                "name": "args"
+            },
+            {
+                "name": "aults"
+            }
+        ]
+    },
+    "force_all_finite : boolean ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "format": {
+        "args": [
+            {
+                "name": "obj"
+            },
+            {
+                "default": "0",
+                "name": "indent"
+            }
+        ]
+    },
+    "format_call": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "format_exc": {
+        "args": [
+            {
+                "name": "etype"
+            },
+            {
+                "name": "evalue"
+            },
+            {
+                "name": "etb"
+            },
+            {
+                "default": "5",
+                "name": "context"
+            },
+            {
+                "default": "0",
+                "name": "tb_offset"
+            }
+        ]
+    },
+    "format_outer_frames": {
+        "args": [
+            {
+                "default": "5",
+                "name": "context"
+            },
+            {
+                "default": "None",
+                "name": "stack_start"
+            },
+            {
+                "default": "None",
+                "name": "stack_end"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "format_records": {
+        "args": [
+            {
+                "name": "records):   #"
+            },
+            {
+                "default": "False",
+                "name": "print_globals"
+            }
+        ]
+    },
+    "format_signature": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "format_time": {
+        "args": [
+            {
+                "name": "t"
+            }
+        ]
+    },
+    "frombuffer_empty": {
+        "args": [
+            {
+                "name": "buf"
+            },
+            {
+                "name": "dtype"
+            }
+        ]
+    },
+    "func": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "func_grad_hess": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "g": {
+        "args": [
+            {
+                "name": "x"
+            },
+            {
+                "name": "fun_args"
+            }
+        ]
+    },
+    "gamma : float, optional ": {
+        "args": [
+            {
+                "default": "0.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "gammaln": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "gaussian_random_matrix": {
+        "args": [
+            {
+                "name": "n_components"
+            },
+            {
+                "name": "n_features"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "generalized_exponential": {
+        "args": [
+            {
+                "name": "theta"
+            },
+            {
+                "name": "d"
+            }
+        ]
+    },
+    "get": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "get_OPinv_matvec": {
+        "args": [
+            {
+                "name": "A"
+            },
+            {
+                "name": "M"
+            },
+            {
+                "name": "sigma"
+            },
+            {
+                "default": "False",
+                "name": "symmetric"
+            },
+            {
+                "default": "0",
+                "name": "tol"
+            }
+        ]
+    },
+    "get_bin_seeds": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "bin_size"
+            },
+            {
+                "default": "1",
+                "name": "min_bin_freq"
+            }
+        ]
+    },
+    "get_covariance": {
+        "args": []
+    },
+    "get_data": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "get_data_home": {
+        "args": [
+            {
+                "default": "None",
+                "name": "data_home"
+            }
+        ]
+    },
+    "get_feature_names": {
+        "args": []
+    },
+    "get_func_code": {
+        "args": [
+            {
+                "name": "func"
+            }
+        ]
+    },
+    "get_func_name": {
+        "args": [
+            {
+                "name": "func"
+            },
+            {
+                "default": "True",
+                "name": "resolv_alias"
+            },
+            {
+                "default": "True",
+                "name": "win_characters"
+            }
+        ]
+    },
+    "get_function_aults = operator.attrgetter": {
+        "args": [
+            {
+                "name": "_func_aults"
+            }
+        ]
+    },
+    "get_indices": {
+        "args": [
+            {
+                "name": "i"
+            }
+        ]
+    },
+    "get_inv_matvec": {
+        "args": [
+            {
+                "name": "M"
+            },
+            {
+                "default": "False",
+                "name": "symmetric"
+            },
+            {
+                "default": "0",
+                "name": "tol"
+            }
+        ]
+    },
+    "get_params": {
+        "args": [
+            {
+                "default": "True",
+                "name": "deep"
+            }
+        ]
+    },
+    "get_precision": {
+        "args": []
+    },
+    "get_scorer": {
+        "args": [
+            {
+                "name": "scoring"
+            }
+        ]
+    },
+    "get_shape": {
+        "args": [
+            {
+                "name": "i"
+            }
+        ]
+    },
+    "get_stop_words": {
+        "args": []
+    },
+    "get_submatrix": {
+        "args": [
+            {
+                "name": "i"
+            },
+            {
+                "name": "data"
+            }
+        ]
+    },
+    "get_support": {
+        "args": [
+            {
+                "default": "False",
+                "name": "indices"
+            }
+        ]
+    },
+    "get_unbound_function": {
+        "args": [
+            {
+                "name": "unbound"
+            }
+        ]
+    },
+    "gibbs": {
+        "args": [
+            {
+                "name": "v"
+            }
+        ]
+    },
+    "grad": {
+        "args": [
+            {
+                "name": "AB"
+            }
+        ]
+    },
+    "graph_laplacian": {
+        "args": [
+            {
+                "name": "csgraph"
+            },
+            {
+                "default": "False",
+                "name": "normed"
+            },
+            {
+                "default": "False",
+                "name": "return_diag"
+            }
+        ]
+    },
+    "graph_lasso": {
+        "args": [
+            {
+                "name": "emp_cov"
+            },
+            {
+                "name": "alpha"
+            },
+            {
+                "default": "None",
+                "name": "cov_init"
+            },
+            {
+                "default": "'cd'",
+                "name": "mode"
+            },
+            {
+                "default": "1e-4",
+                "name": "tol"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "graph_lasso_path": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "alphas"
+            },
+            {
+                "default": "None",
+                "name": "cov_init"
+            },
+            {
+                "default": "None",
+                "name": "X_test"
+            },
+            {
+                "default": "'cd'",
+                "name": "mode"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "grid_to_graph": {
+        "args": [
+            {
+                "name": "n_x"
+            },
+            {
+                "name": "n_y"
+            },
+            {
+                "default": "1",
+                "name": "n_z"
+            },
+            {
+                "default": "None",
+                "name": "mask"
+            },
+            {
+                "default": "sparse.coo_matrix",
+                "name": "return_as"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "hamming_loss": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "classes"
+            }
+        ]
+    },
+    "has_fit_parameter": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "parameter"
+            }
+        ]
+    },
+    "has_shareable_memory": {
+        "args": [
+            {
+                "name": "a"
+            }
+        ]
+    },
+    "hash": {
+        "args": [
+            {
+                "name": "obj"
+            },
+            {
+                "default": "'md5'",
+                "name": "hash_name"
+            },
+            {
+                "default": "False",
+                "name": "coerce_mmap"
+            }
+        ]
+    },
+    "hessp": {
+        "args": [
+            {
+                "name": "v"
+            }
+        ]
+    },
+    "hinge_loss": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "pred_decision"
+            },
+            {
+                "default": "None",
+                "name": "labels"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "homogeneity_completeness_v_measure": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            }
+        ]
+    },
+    "homogeneity_score": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            }
+        ]
+    },
+    "hypercube : boolean, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "identity_estimator": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "idf_": {
+        "args": []
+    },
+    "if vocab.setault": {
+        "args": [
+            {
+                "name": "t"
+            },
+            {
+                "default": " i",
+                "name": "i) !"
+            }
+        ]
+    },
+    "if_delegate_has_method": {
+        "args": [
+            {
+                "name": "delegate"
+            }
+        ]
+    },
+    "if_matplotlib": {
+        "args": [
+            {
+                "name": "func"
+            }
+        ]
+    },
+    "ignore_warnings": {
+        "args": [
+            {
+                "default": "None",
+                "name": "obj"
+            }
+        ]
+    },
+    "img_to_graph": {
+        "args": [
+            {
+                "name": "img"
+            },
+            {
+                "default": "None",
+                "name": "mask"
+            },
+            {
+                "default": "sparse.coo_matrix",
+                "name": "return_as"
+            },
+            {
+                "default": "None",
+                "name": "dtype"
+            }
+        ]
+    },
+    "in1d": {
+        "args": [
+            {
+                "name": "ar1"
+            },
+            {
+                "name": "ar2"
+            },
+            {
+                "default": "False",
+                "name": "assume_unique"
+            },
+            {
+                "default": "False",
+                "name": "invert"
+            }
+        ]
+    },
+    "indexable": {
+        "args": [
+            {
+                "name": "*iterables"
+            }
+        ]
+    },
+    "indexbytes": {
+        "args": [
+            {
+                "name": "buf"
+            },
+            {
+                "name": "i"
+            }
+        ]
+    },
+    "indicator_matrix_": {
+        "args": []
+    },
+    "indices": {
+        "args": []
+    },
+    "indices : boolean ": {
+        "args": [
+            {
+                "name": "ault False"
+            }
+        ]
+    },
+    "init": {
+        "args": [
+            {
+                "name": "est"
+            },
+            {
+                "default": "0",
+                "name": "begin_at_stage"
+            }
+        ]
+    },
+    "init : BaseEstimator, None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "init : string, optional ": {
+        "args": [
+            {
+                "name": "ault: \"random\""
+            }
+        ]
+    },
+    "init_estimator": {
+        "args": []
+    },
+    "inplace_column_scale": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "scale"
+            }
+        ]
+    },
+    "inplace_csr_column_scale": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "scale"
+            }
+        ]
+    },
+    "inplace_csr_row_scale": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "scale"
+            }
+        ]
+    },
+    "inplace_row_scale": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "scale"
+            }
+        ]
+    },
+    "inplace_swap_column": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "m"
+            },
+            {
+                "name": "n"
+            }
+        ]
+    },
+    "inplace_swap_row": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "m"
+            },
+            {
+                "name": "n"
+            }
+        ]
+    },
+    "inplace_swap_row_csc": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "m"
+            },
+            {
+                "name": "n"
+            }
+        ]
+    },
+    "inplace_swap_row_csr": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "m"
+            },
+            {
+                "name": "n"
+            }
+        ]
+    },
+    "insert_cf_subcluster": {
+        "args": [
+            {
+                "name": "subcluster"
+            }
+        ]
+    },
+    "install_mldata_mock": {
+        "args": [
+            {
+                "name": "mock_datasets"
+            }
+        ]
+    },
+    "int2byte": {
+        "args": [
+            {
+                "name": "i"
+            }
+        ]
+    },
+    "intercept_": {
+        "args": []
+    },
+    "intercept_scaling : float, optional ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "inverse_transform": {
+        "args": [
+            {
+                "name": "yt"
+            }
+        ]
+    },
+    "invscaling: eta = eta0 / pow": {
+        "args": [
+            {
+                "name": "t"
+            },
+            {
+                "name": "power_t) [ault]"
+            }
+        ]
+    },
+    "is True. By ault ": {
+        "args": [
+            {
+                "default": "True``)",
+                "name": "``raw_values"
+            },
+            {
+                "name": "it is equal"
+            }
+        ]
+    },
+    "is_abstract": {
+        "args": [
+            {
+                "name": "c"
+            }
+        ]
+    },
+    "is_classifier": {
+        "args": [
+            {
+                "name": "estimator"
+            }
+        ]
+    },
+    "is_label_indicator_matrix": {
+        "args": [
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "is_multilabel": {
+        "args": [
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "is_sequence_of_sequences": {
+        "args": [
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "isclose": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "name": "b"
+            },
+            {
+                "default": "1.e-5",
+                "name": "rtol"
+            },
+            {
+                "default": "1.e-8",
+                "name": "atol"
+            },
+            {
+                "default": "False",
+                "name": "equal_nan"
+            }
+        ]
+    },
+    "isotonic_regression": {
+        "args": [
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            },
+            {
+                "default": "None",
+                "name": "y_min"
+            },
+            {
+                "default": "None",
+                "name": "y_max"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "iterate": {
+        "args": []
+    },
+    "iterbytes": {
+        "args": [
+            {
+                "name": "buf"
+            }
+        ]
+    },
+    "iteritems": {
+        "args": [
+            {
+                "name": "d"
+            },
+            {
+                "name": "**kw"
+            }
+        ]
+    },
+    "iterkeys": {
+        "args": [
+            {
+                "name": "d"
+            },
+            {
+                "name": "**kw"
+            }
+        ]
+    },
+    "iterlists": {
+        "args": [
+            {
+                "name": "d"
+            },
+            {
+                "name": "**kw"
+            }
+        ]
+    },
+    "itervalues": {
+        "args": [
+            {
+                "name": "d"
+            },
+            {
+                "name": "**kw"
+            }
+        ]
+    },
+    "jaccard_similarity_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "True",
+                "name": "normalize"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "johnson_lindenstrauss_min_dim": {
+        "args": [
+            {
+                "name": "n_samples"
+            },
+            {
+                "default": "0.1",
+                "name": "eps"
+            }
+        ]
+    },
+    "k_means": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "n_clusters"
+            },
+            {
+                "default": "'k-means++'",
+                "name": "init"
+            },
+            {
+                "default": "'auto'",
+                "name": "precompute_distances"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "kernel : string, optional ": {
+        "args": [
+            {
+                "default": "'rbf'",
+                "name": "ault"
+            }
+        ]
+    },
+    "kernel_metrics": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "kneighbors": {
+        "args": [
+            {
+                "default": "None",
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "n_neighbors"
+            },
+            {
+                "default": "True",
+                "name": "return_distance"
+            }
+        ]
+    },
+    "kneighbors_graph": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "n_neighbors"
+            },
+            {
+                "default": "'connectivity'",
+                "name": "mode"
+            },
+            {
+                "default": "'minkowski'",
+                "name": "metric"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "l1_cross_distances": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "l1_min_c": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "'squared_hinge'",
+                "name": "loss"
+            },
+            {
+                "default": "True",
+                "name": "fit_intercept"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "label_binarize": {
+        "args": [
+            {
+                "name": "y"
+            },
+            {
+                "name": "classes"
+            },
+            {
+                "default": "0",
+                "name": "neg_label"
+            },
+            {
+                "default": "1",
+                "name": "pos_label"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "label_ranking_average_precision_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_score"
+            }
+        ]
+    },
+    "largest_coef : float between 0 and 1, optional ": {
+        "args": [
+            {
+                "default": "0.9",
+                "name": "ault"
+            }
+        ]
+    },
+    "lars_path": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "Xy"
+            },
+            {
+                "default": "None",
+                "name": "Gram"
+            },
+            {
+                "default": "500",
+                "name": "max_iter"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "lasso_path": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "1e-3",
+                "name": "eps"
+            },
+            {
+                "default": "100",
+                "name": "n_alphas"
+            },
+            {
+                "default": "None",
+                "name": "alphas"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "lasso_stability_path": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "0.5",
+                "name": "scaling"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "leaf_size : int, optional ": {
+        "args": [
+            {
+                "default": " 30",
+                "name": "ault "
+            }
+        ]
+    },
+    "learning_rate : float, optional ": {
+        "args": [
+            {
+                "name": "ault: 1000"
+            }
+        ]
+    },
+    "ledoit_wolf": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "False",
+                "name": "assume_centered"
+            },
+            {
+                "default": "1000",
+                "name": "block_size"
+            }
+        ]
+    },
+    "ledoit_wolf_shrinkage": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "False",
+                "name": "assume_centered"
+            },
+            {
+                "default": "1000",
+                "name": "block_size"
+            }
+        ]
+    },
+    "length : int, optional ": {
+        "args": [
+            {
+                "default": "50",
+                "name": "ault"
+            }
+        ]
+    },
+    "linear": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "linear_assignment": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "linear_kernel": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            }
+        ]
+    },
+    "linereader": {
+        "args": [
+            {
+                "default": "file",
+                "name": "file"
+            },
+            {
+                "default": "[lnum]",
+                "name": "lnum"
+            },
+            {
+                "default": "linecache.getline",
+                "name": "getline"
+            }
+        ]
+    },
+    "linkage_tree": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "connectivity"
+            },
+            {
+                "default": "None",
+                "name": "n_components"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "load": {
+        "args": [
+            {
+                "name": "filename"
+            },
+            {
+                "default": "None",
+                "name": "mmap_mode"
+            }
+        ]
+    },
+    "load_boston": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "load_build": {
+        "args": []
+    },
+    "load_content : boolean, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "load_diabetes": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "load_digits": {
+        "args": [
+            {
+                "default": "10",
+                "name": "n_class"
+            }
+        ]
+    },
+    "load_files": {
+        "args": [
+            {
+                "name": "container_path"
+            },
+            {
+                "default": "None",
+                "name": "description"
+            },
+            {
+                "default": "None",
+                "name": "categories"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "load_iris": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "load_lfw_pairs": {
+        "args": [
+            {
+                "default": "False",
+                "name": "download_if_missing"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "load_lfw_people": {
+        "args": [
+            {
+                "default": "False",
+                "name": "download_if_missing"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "load_linnerud": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "load_mlcomp": {
+        "args": [
+            {
+                "name": "name_or_id"
+            },
+            {
+                "default": "\"raw\"",
+                "name": "set_"
+            },
+            {
+                "default": "None",
+                "name": "mlcomp_root"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "load_output": {
+        "args": [
+            {
+                "name": "output_dir"
+            }
+        ]
+    },
+    "load_sample_image": {
+        "args": [
+            {
+                "name": "image_name"
+            }
+        ]
+    },
+    "load_sample_images": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "load_svmlight_file": {
+        "args": [
+            {
+                "name": "f"
+            },
+            {
+                "default": "None",
+                "name": "n_features"
+            },
+            {
+                "default": "np.float64",
+                "name": "dtype"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "load_svmlight_files": {
+        "args": [
+            {
+                "name": "files"
+            },
+            {
+                "default": "None",
+                "name": "n_features"
+            },
+            {
+                "default": "np.float64",
+                "name": "dtype"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "locally_linear_embedding": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "log_likelihood": {
+        "args": [
+            {
+                "name": "emp_cov"
+            },
+            {
+                "name": "precision"
+            }
+        ]
+    },
+    "log_logistic": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "out"
+            }
+        ]
+    },
+    "log_loss": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "1e-15",
+                "name": "eps"
+            },
+            {
+                "default": "True",
+                "name": "normalize"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "log_multivariate_normal_density": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "means"
+            },
+            {
+                "name": "covars"
+            },
+            {
+                "default": "'diag'",
+                "name": "covariance_type"
+            }
+        ]
+    },
+    "log_normalize": {
+        "args": [
+            {
+                "name": "v"
+            },
+            {
+                "default": "0",
+                "name": "axis"
+            }
+        ]
+    },
+    "logistic_regression_path": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "pos_class"
+            },
+            {
+                "default": "10",
+                "name": "Cs"
+            },
+            {
+                "default": "True",
+                "name": "fit_intercept"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "logistic_sigmoid": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "False",
+                "name": "log"
+            },
+            {
+                "default": "None",
+                "name": "out"
+            }
+        ]
+    },
+    "logsumexp": {
+        "args": [
+            {
+                "name": "arr"
+            },
+            {
+                "default": "0",
+                "name": "axis"
+            }
+        ]
+    },
+    "loss : string, 'hinge' or 'squared_hinge' ": {
+        "args": [
+            {
+                "default": "'squared_hinge'",
+                "name": "ault"
+            }
+        ]
+    },
+    "loss : {'deviance', 'exponential'}, optional ": {
+        "args": [
+            {
+                "default": "'deviance'",
+                "name": "ault"
+            }
+        ]
+    },
+    "loss : {'linear', 'square', 'exponential'}, optional ": {
+        "args": [
+            {
+                "default": "'linear'",
+                "name": "ault"
+            }
+        ]
+    },
+    "loss : {'ls', 'lad', 'huber', 'quantile'}, optional ": {
+        "args": [
+            {
+                "default": "'ls'",
+                "name": "ault"
+            }
+        ]
+    },
+    "lower_bound": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "z"
+            }
+        ]
+    },
+    "mahalanobis": {
+        "args": [
+            {
+                "name": "observations"
+            }
+        ]
+    },
+    "make_biclusters": {
+        "args": [
+            {
+                "name": "shape"
+            },
+            {
+                "name": "n_clusters"
+            },
+            {
+                "default": "0.0",
+                "name": "noise"
+            },
+            {
+                "default": "10",
+                "name": "minval"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_blobs": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "2",
+                "name": "n_features"
+            },
+            {
+                "default": "3",
+                "name": "centers"
+            },
+            {
+                "default": "1.0",
+                "name": "cluster_std"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_checkerboard": {
+        "args": [
+            {
+                "name": "shape"
+            },
+            {
+                "name": "n_clusters"
+            },
+            {
+                "default": "0.0",
+                "name": "noise"
+            },
+            {
+                "default": "10",
+                "name": "minval"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_circles": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "True",
+                "name": "shuffle"
+            },
+            {
+                "default": "None",
+                "name": "noise"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_classification": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "20",
+                "name": "n_features"
+            },
+            {
+                "default": "2",
+                "name": "n_informative"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_friedman1": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "10",
+                "name": "n_features"
+            },
+            {
+                "default": "0.0",
+                "name": "noise"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_friedman2": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "0.0",
+                "name": "noise"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_friedman3": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "0.0",
+                "name": "noise"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_gaussian_quantiles": {
+        "args": [
+            {
+                "default": "None",
+                "name": "mean"
+            },
+            {
+                "default": "1.",
+                "name": "cov"
+            },
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_hastie_10_2": {
+        "args": [
+            {
+                "default": "12000",
+                "name": "n_samples"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_low_rank_matrix": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "100",
+                "name": "n_features"
+            },
+            {
+                "default": "10",
+                "name": "effective_rank"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_moons": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "True",
+                "name": "shuffle"
+            },
+            {
+                "default": "None",
+                "name": "noise"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_multilabel_classification": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "20",
+                "name": "n_features"
+            },
+            {
+                "default": "5",
+                "name": "n_classes"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_nonnegative": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "0",
+                "name": "min_value"
+            }
+        ]
+    },
+    "make_piecewise": {
+        "args": [
+            {
+                "name": "v"
+            }
+        ]
+    },
+    "make_pipeline": {
+        "args": [
+            {
+                "name": "*steps"
+            }
+        ]
+    },
+    "make_regression": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "100",
+                "name": "n_features"
+            },
+            {
+                "default": "10",
+                "name": "n_informative"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_s_curve": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "0.0",
+                "name": "noise"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_scorer": {
+        "args": [
+            {
+                "name": "score_func"
+            },
+            {
+                "default": "True",
+                "name": "greater_is_better"
+            },
+            {
+                "default": "False",
+                "name": "needs_proba"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_sparse_coded_signal": {
+        "args": [
+            {
+                "name": "n_samples"
+            },
+            {
+                "name": "n_components"
+            },
+            {
+                "name": "n_features"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_sparse_spd_matrix": {
+        "args": [
+            {
+                "default": "1",
+                "name": "dim"
+            },
+            {
+                "default": "0.95",
+                "name": "alpha"
+            },
+            {
+                "default": "False",
+                "name": "norm_diag"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "make_sparse_uncorrelated": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "10",
+                "name": "n_features"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_spd_matrix": {
+        "args": [
+            {
+                "name": "n_dim"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_swiss_roll": {
+        "args": [
+            {
+                "default": "100",
+                "name": "n_samples"
+            },
+            {
+                "default": "0.0",
+                "name": "noise"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "make_union": {
+        "args": [
+            {
+                "name": "*transformers"
+            }
+        ]
+    },
+    "manhattan_distances": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            },
+            {
+                "default": "True",
+                "name": "sum_over_features"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "matthews_corrcoef": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            }
+        ]
+    },
+    "matvec_XH_X": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "max_depth : int or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_depth : int, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_depth : integer or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_depth : integer, optional ": {
+        "args": [
+            {
+                "default": "3",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_features : int or float, optional ": {
+        "args": [
+            {
+                "default": "1.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_features : int, float, string or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_iter : an integer, ": {
+        "args": [
+            {
+                "name": "ault 500"
+            }
+        ]
+    },
+    "max_iter : an integer, the maximum number of iterations ": {
+        "args": [
+            {
+                "name": "ault 500"
+            }
+        ]
+    },
+    "max_iter : int, ": {
+        "args": [
+            {
+                "default": "1000",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_iter : int, optional ": {
+        "args": [
+            {
+                "default": "-1",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_iter : integer, optional ": {
+        "args": [
+            {
+                "default": "500",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_leaf_nodes : int or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "max_nbytes : int, str, or None, optional, 100e6 ": {
+        "args": [
+            {
+                "name": "100MB) by ault"
+            }
+        ]
+    },
+    "max_samples : int or float, optional ": {
+        "args": [
+            {
+                "default": "1.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "maxval : int, optional ": {
+        "args": [
+            {
+                "default": "100",
+                "name": "ault"
+            }
+        ]
+    },
+    "mean : array of shape [n_features], optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "mean_absolute_error": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "mean_shift": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "bandwidth"
+            },
+            {
+                "default": "None",
+                "name": "seeds"
+            },
+            {
+                "default": "False",
+                "name": "bin_seeding"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "mean_squared_error": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "mean_variance_axis": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "axis"
+            }
+        ]
+    },
+    "median_absolute_error": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            }
+        ]
+    },
+    "memstr_to_kbytes": {
+        "args": [
+            {
+                "name": "text"
+            }
+        ]
+    },
+    "merge_subcluster": {
+        "args": [
+            {
+                "name": "nominee_cluster"
+            },
+            {
+                "name": "threshold"
+            }
+        ]
+    },
+    "method : {'lar', 'lasso'}, optional ": {
+        "args": [
+            {
+                "default": "'lar'",
+                "name": "ault"
+            }
+        ]
+    },
+    "metric : string or DistanceMetric object ": {
+        "args": [
+            {
+                "default": "'minkowski'",
+                "name": "ault"
+            }
+        ]
+    },
+    "metric_params: dict, optional ": {
+        "args": [
+            {
+                "default": " None",
+                "name": "ault "
+            }
+        ]
+    },
+    "min_error_diff : float, optional ": {
+        "args": [
+            {
+                "name": "ault: 1e-7"
+            }
+        ]
+    },
+    "min_gain : float, optional ": {
+        "args": [
+            {
+                "name": "ault: 0.01"
+            }
+        ]
+    },
+    "min_grad_norm : float, optional ": {
+        "args": [
+            {
+                "name": "ault: 1e-7"
+            }
+        ]
+    },
+    "min_hash_match : int ": {
+        "args": [
+            {
+                "default": " 4",
+                "name": "ault "
+            }
+        ]
+    },
+    "min_max_axis": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "axis"
+            }
+        ]
+    },
+    "min_samples_leaf : int, optional ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "min_samples_leaf : integer, optional ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "min_samples_split : int, optional ": {
+        "args": [
+            {
+                "default": "2",
+                "name": "ault"
+            }
+        ]
+    },
+    "min_samples_split : integer, optional ": {
+        "args": [
+            {
+                "default": "2",
+                "name": "ault"
+            }
+        ]
+    },
+    "min_weight_fraction_leaf : float, optional ": {
+        "args": [
+            {
+                "default": "0.",
+                "name": "ault"
+            }
+        ]
+    },
+    "minus_reduced_likelihood_function": {
+        "args": [
+            {
+                "name": "log10t"
+            }
+        ]
+    },
+    "minval : int, optional ": {
+        "args": [
+            {
+                "default": "10",
+                "name": "ault"
+            }
+        ]
+    },
+    "missing_values : integer or \"NaN\", optional ": {
+        "args": [
+            {
+                "default": "\"NaN\"",
+                "name": "ault"
+            }
+        ]
+    },
+    "mkdirp": {
+        "args": [
+            {
+                "name": "d"
+            }
+        ]
+    },
+    "mldata_filename": {
+        "args": [
+            {
+                "name": "dataname"
+            }
+        ]
+    },
+    "msg = ": {
+        "args": [
+            {
+                "name": "'{0} ill-ined and being set to 0.0 {{0}} '"
+            }
+        ]
+    },
+    "mult_func": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "mult_func_M_None": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "multi_class: string, 'ovr' or 'crammer_singer' ": {
+        "args": [
+            {
+                "default": "'ovr'",
+                "name": "ault"
+            }
+        ]
+    },
+    "multi_output : boolean ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "multilabel_": {
+        "args": []
+    },
+    "multioutput_estimator_convert_y_2d": {
+        "args": [
+            {
+                "name": "name"
+            },
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "mutual_info_score": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            },
+            {
+                "default": "None",
+                "name": "contingency"
+            }
+        ]
+    },
+    "my_g": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "my_svd": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "n_candidates : int ": {
+        "args": [
+            {
+                "default": " 10",
+                "name": "ault "
+            }
+        ]
+    },
+    "n_class : integer, between 0 and 10, optional ": {
+        "args": [
+            {
+                "default": "10",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_classes : int, optional ": {
+        "args": [
+            {
+                "default": "3",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_clusters_per_class : int, optional ": {
+        "args": [
+            {
+                "default": "2",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_components : int or 'auto', optional ": {
+        "args": [
+            {
+                "default": " 'auto'",
+                "name": "ault "
+            }
+        ]
+    },
+    "n_components : int or None, ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_components : int, ": {
+        "args": [
+            {
+                "name": "ault 2"
+            }
+        ]
+    },
+    "n_components : int, number of components to keep. ": {
+        "args": [
+            {
+                "name": "ault 2)."
+            }
+        ]
+    },
+    "n_components : int, optional ": {
+        "args": [
+            {
+                "name": "ault: 2"
+            }
+        ]
+    },
+    "n_estimators : int ": {
+        "args": [
+            {
+                "default": "100",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_estimators : int, optional ": {
+        "args": [
+            {
+                "default": "10",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_estimators : integer, optional ": {
+        "args": [
+            {
+                "default": "50",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_features : int, optional ": {
+        "args": [
+            {
+                "default": "2",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_features : integer, ault=": {
+        "args": [
+            {
+                "name": "2 ** 20"
+            }
+        ]
+    },
+    "n_features_to_select : int or None ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_informative : int, optional ": {
+        "args": [
+            {
+                "default": "10",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_iter : int ": {
+        "args": [
+            {
+                "name": "ault 10"
+            }
+        ]
+    },
+    "n_iter : int, optional ": {
+        "args": [
+            {
+                "name": "ault: 1000"
+            }
+        ]
+    },
+    "n_iter: int ": {
+        "args": [
+            {
+                "name": "ault is 0"
+            }
+        ]
+    },
+    "n_iter_without_progress : int, optional ": {
+        "args": [
+            {
+                "name": "ault: 30"
+            }
+        ]
+    },
+    "n_jobs : int, optional ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_jobs : integer, optional ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_labels : int, optional ": {
+        "args": [
+            {
+                "default": "2",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_neighbors : int ": {
+        "args": [
+            {
+                "default": " 5",
+                "name": "ault "
+            }
+        ]
+    },
+    "n_neighbors : int, ault : max": {
+        "args": [
+            {
+                "name": "n_samples/10"
+            },
+            {
+                "name": "1"
+            }
+        ]
+    },
+    "n_neighbors : int, opitonal ": {
+        "args": [
+            {
+                "default": " None",
+                "name": "ault "
+            }
+        ]
+    },
+    "n_neighbors : int, optional ": {
+        "args": [
+            {
+                "name": "ault: 5"
+            }
+        ]
+    },
+    "n_oversamples: int ": {
+        "args": [
+            {
+                "name": "ault is 10"
+            }
+        ]
+    },
+    "n_redundant : int, optional ": {
+        "args": [
+            {
+                "default": "2",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_repeated : int, optional ": {
+        "args": [
+            {
+                "default": "0",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_samples : int, optional ": {
+        "args": [
+            {
+                "default": "100",
+                "name": "ault"
+            }
+        ]
+    },
+    "n_targets : int, optional ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "namecount = aultdict": {
+        "args": [
+            {
+                "name": "int"
+            }
+        ]
+    },
+    "neg_label : int ": {
+        "args": [
+            {
+                "name": "ault: 0"
+            }
+        ]
+    },
+    "negative_gradient": {
+        "args": [
+            {
+                "name": "y"
+            },
+            {
+                "name": "pred"
+            },
+            {
+                "name": "**kargs"
+            }
+        ]
+    },
+    "next": {
+        "args": []
+    },
+    "node_to_str": {
+        "args": [
+            {
+                "name": "tree"
+            },
+            {
+                "name": "node_id"
+            },
+            {
+                "name": "criterion"
+            }
+        ]
+    },
+    "noise : double or None ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "noise : float, optional ": {
+        "args": [
+            {
+                "default": "0.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "norm": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "norm : 'l1' or 'l2', optional ": {
+        "args": [
+            {
+                "name": "'l2' by ault"
+            }
+        ]
+    },
+    "norm_diag : boolean, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "norm_y_weights: boolean, normalize Y weights to one? ": {
+        "args": [
+            {
+                "name": "ault False"
+            }
+        ]
+    },
+    "normalize": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "'l2'",
+                "name": "norm"
+            },
+            {
+                "default": "1",
+                "name": "axis"
+            },
+            {
+                "default": "True",
+                "name": "copy"
+            }
+        ]
+    },
+    "normalize : bool, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "normalized y weights such as ined by [Tenenhaus 1998] ": {
+        "args": [
+            {
+                "name": "p. 132) and"
+            }
+        ]
+    },
+    "normalized_mutual_info_score": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            }
+        ]
+    },
+    "nu : float, optional ": {
+        "args": [
+            {
+                "default": "0.5",
+                "name": "ault"
+            }
+        ]
+    },
+    "null_space": {
+        "args": [
+            {
+                "name": "M"
+            },
+            {
+                "name": "k"
+            },
+            {
+                "default": "1",
+                "name": "k_skip"
+            },
+            {
+                "default": "'arpack'",
+                "name": "eigen_solver"
+            },
+            {
+                "default": "1E-6",
+                "name": "tol"
+            },
+            {
+                "default": "100",
+                "name": "max_iter"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "number of jobs to run in parallel ": {
+        "args": [
+            {
+                "name": "ault 1)."
+            }
+        ]
+    },
+    "oas": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "False",
+                "name": "assume_centered"
+            }
+        ]
+    },
+    "objective": {
+        "args": [
+            {
+                "name": "AB"
+            }
+        ]
+    },
+    "optimal: eta = 1.0 / ": {
+        "args": [
+            {
+                "name": "t + t0) [ault]"
+            }
+        ]
+    },
+    "order : 'F', 'C' or None ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "orthogonal_mp": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "n_nonzero_coefs"
+            },
+            {
+                "default": "None",
+                "name": "tol"
+            },
+            {
+                "default": "False",
+                "name": "precompute"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "orthogonal_mp_gram": {
+        "args": [
+            {
+                "name": "Gram"
+            },
+            {
+                "name": "Xy"
+            },
+            {
+                "default": "None",
+                "name": "n_nonzero_coefs"
+            },
+            {
+                "default": "None",
+                "name": "tol"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "out_file : file object or string, optional ": {
+        "args": [
+            {
+                "default": "\"tree.dot\"",
+                "name": "ault"
+            }
+        ]
+    },
+    "outlier_label : int, optional ": {
+        "args": [
+            {
+                "default": " None",
+                "name": "ault "
+            }
+        ]
+    },
+    "p : integer, optional ": {
+        "args": [
+            {
+                "default": " 2",
+                "name": "ault "
+            }
+        ]
+    },
+    "p: integer, optional ": {
+        "args": [
+            {
+                "default": " 2",
+                "name": "ault "
+            }
+        ]
+    },
+    "paired_cosine_distances": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            }
+        ]
+    },
+    "paired_distances": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            },
+            {
+                "default": "\"euclidean\"",
+                "name": "metric"
+            },
+            {
+                "name": "**kwds"
+            }
+        ]
+    },
+    "paired_euclidean_distances": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            }
+        ]
+    },
+    "paired_manhattan_distances": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            }
+        ]
+    },
+    "pairwise_distances": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            },
+            {
+                "default": "\"euclidean\"",
+                "name": "metric"
+            },
+            {
+                "default": "1",
+                "name": "n_jobs"
+            },
+            {
+                "name": "**kwds"
+            }
+        ]
+    },
+    "pairwise_distances_argmin": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            },
+            {
+                "default": "1",
+                "name": "axis"
+            },
+            {
+                "default": "\"euclidean\"",
+                "name": "metric"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "pairwise_distances_argmin_min": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            },
+            {
+                "default": "1",
+                "name": "axis"
+            },
+            {
+                "default": "\"euclidean\"",
+                "name": "metric"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "pairwise_kernels": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            },
+            {
+                "default": "\"linear\"",
+                "name": "metric"
+            },
+            {
+                "default": "False",
+                "name": "filter_params"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "partial_dependence": {
+        "args": [
+            {
+                "name": "gbrt"
+            },
+            {
+                "name": "target_variables"
+            },
+            {
+                "default": "None",
+                "name": "grid"
+            },
+            {
+                "default": "None",
+                "name": "X"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "partial_fit": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            }
+        ]
+    },
+    "penalty : string, 'l1' or 'l2' ": {
+        "args": [
+            {
+                "default": "'l2'",
+                "name": "ault"
+            }
+        ]
+    },
+    "permutation_test_score": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "cv"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "perplexity : float, optional ": {
+        "args": [
+            {
+                "name": "ault: 30"
+            }
+        ]
+    },
+    "pformat": {
+        "args": [
+            {
+                "name": "obj"
+            },
+            {
+                "default": "0",
+                "name": "indent"
+            },
+            {
+                "default": "3",
+                "name": "depth"
+            }
+        ]
+    },
+    "pinvh": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "default": "None",
+                "name": "cond"
+            },
+            {
+                "default": "None",
+                "name": "rcond"
+            },
+            {
+                "default": "True",
+                "name": "lower"
+            }
+        ]
+    },
+    "plot_partial_dependence": {
+        "args": [
+            {
+                "name": "gbrt"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "features"
+            },
+            {
+                "default": "None",
+                "name": "feature_names"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "polynomial_kernel": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            },
+            {
+                "default": "3",
+                "name": "degree"
+            },
+            {
+                "default": "None",
+                "name": "gamma"
+            },
+            {
+                "default": "1",
+                "name": "coef0"
+            }
+        ]
+    },
+    "pos_label : int ": {
+        "args": [
+            {
+                "name": "ault: 1"
+            }
+        ]
+    },
+    "pos_label : int, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "powers_": {
+        "args": []
+    },
+    "precision_recall_curve": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "probas_pred"
+            },
+            {
+                "default": "None",
+                "name": "pos_label"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "precision_recall_fscore_support": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "1.0",
+                "name": "beta"
+            },
+            {
+                "default": "None",
+                "name": "labels"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "precision_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "labels"
+            },
+            {
+                "default": "1",
+                "name": "pos_label"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "precomputed : bool, optional ": {
+        "args": [
+            {
+                "name": "ault: False"
+            }
+        ]
+    },
+    "predict": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "predict_ecoc": {
+        "args": [
+            {
+                "name": "estimators"
+            },
+            {
+                "name": "classes"
+            },
+            {
+                "name": "code_book"
+            },
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "predict_log_proba": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "predict_ovo": {
+        "args": [
+            {
+                "name": "estimators"
+            },
+            {
+                "name": "classes"
+            },
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "predict_ovr": {
+        "args": [
+            {
+                "name": "estimators"
+            },
+            {
+                "name": "label_binarizer"
+            },
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "predict_proba": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "predict_proba_ovr": {
+        "args": [
+            {
+                "name": "estimators"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "is_multilabel"
+            }
+        ]
+    },
+    "preprocessor : callable or None ": {
+        "args": [
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "print_": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "print_progress": {
+        "args": [
+            {
+                "name": "index"
+            }
+        ]
+    },
+    "probability: boolean, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "pure_nugget": {
+        "args": [
+            {
+                "name": "theta"
+            },
+            {
+                "name": "d"
+            }
+        ]
+    },
+    "put": {
+        "args": [
+            {
+                "name": "obj"
+            }
+        ]
+    },
+    "quadratic": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "r2_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "radius": {
+        "args": []
+    },
+    "radius : float, optinal ": {
+        "args": [
+            {
+                "default": " 1.0",
+                "name": "ault "
+            }
+        ]
+    },
+    "radius : float, optional ": {
+        "args": [
+            {
+                "default": " 1.0",
+                "name": "ault "
+            }
+        ]
+    },
+    "radius_cutoff_ratio : float, optional ": {
+        "args": [
+            {
+                "default": " 0.9",
+                "name": "ault "
+            }
+        ]
+    },
+    "radius_neighbors": {
+        "args": [
+            {
+                "default": "None",
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "radius"
+            },
+            {
+                "default": "True",
+                "name": "return_distance"
+            }
+        ]
+    },
+    "radius_neighbors_graph": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "radius"
+            },
+            {
+                "default": "'connectivity'",
+                "name": "mode"
+            },
+            {
+                "default": "'minkowski'",
+                "name": "metric"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "raise ValueError": {
+        "args": [
+            {
+                "name": "\"Ignore list: argument '%s' is not ined for \""
+            }
+        ]
+    },
+    "raise_exception : boolean ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "raise_warning : boolean ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "random_choice_csc": {
+        "args": [
+            {
+                "name": "n_samples"
+            },
+            {
+                "name": "classes"
+            },
+            {
+                "default": "None",
+                "name": "class_probability"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "random_state : RandomState or an int seed ": {
+        "args": [
+            {
+                "name": "0 by ault"
+            }
+        ]
+    },
+    "random_state : int or RandomState instance or None ": {
+        "args": [
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "random_state : int seed, RandomState instance, or None ": {
+        "args": [
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "random_state : int, RandomState instance or None ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "random_state : int, RandomState instance or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "random_state : int, RandomState instance, or None ": {
+        "args": [
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "random_state : integer, RandomState instance or None ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "random_state: RandomState or an int seed ": {
+        "args": [
+            {
+                "name": "0 by ault"
+            }
+        ]
+    },
+    "random_state: int or RandomState instance, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "random_state: int seed, RandomState instance, or None ": {
+        "args": [
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "randomized_range_finder": {
+        "args": [
+            {
+                "name": "A"
+            },
+            {
+                "name": "size"
+            },
+            {
+                "name": "n_iter"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "randomized_svd": {
+        "args": [
+            {
+                "name": "M"
+            },
+            {
+                "name": "n_components"
+            },
+            {
+                "default": "10",
+                "name": "n_oversamples"
+            },
+            {
+                "default": "0",
+                "name": "n_iter"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "rbf_kernel": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            },
+            {
+                "default": "None",
+                "name": "gamma"
+            }
+        ]
+    },
+    "rcond : float or None, ault None ": {
+        "args": [
+            {
+                "name": "deprecated"
+            }
+        ]
+    },
+    "read": {
+        "args": [
+            {
+                "name": "unpickler"
+            }
+        ]
+    },
+    "read_zfile": {
+        "args": [
+            {
+                "name": "file_handle"
+            }
+        ]
+    },
+    "recall_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "None",
+                "name": "labels"
+            },
+            {
+                "default": "1",
+                "name": "pos_label"
+            },
+            {
+                "default": "'binary'",
+                "name": "average"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "reconstruct_from_patches_2d": {
+        "args": [
+            {
+                "name": "patches"
+            },
+            {
+                "name": "image_size"
+            }
+        ]
+    },
+    "reconstruction_error": {
+        "args": []
+    },
+    "recurse": {
+        "args": [
+            {
+                "name": "tree"
+            },
+            {
+                "name": "node_id"
+            },
+            {
+                "name": "criterion"
+            },
+            {
+                "default": "None",
+                "name": "parent"
+            },
+            {
+                "default": "0",
+                "name": "depth"
+            }
+        ]
+    },
+    "reduce_memmap": {
+        "args": [
+            {
+                "name": "a"
+            }
+        ]
+    },
+    "reduced_likelihood_function": {
+        "args": [
+            {
+                "default": "None",
+                "name": "theta"
+            }
+        ]
+    },
+    "register": {
+        "args": [
+            {
+                "name": "type"
+            },
+            {
+                "name": "reduce_func"
+            }
+        ]
+    },
+    "remove_move": {
+        "args": [
+            {
+                "name": "name"
+            }
+        ]
+    },
+    "reorder : boolean, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "reraise": {
+        "args": [
+            {
+                "name": "tp"
+            },
+            {
+                "name": "value"
+            },
+            {
+                "default": "None",
+                "name": "tb"
+            }
+        ]
+    },
+    "restrict": {
+        "args": [
+            {
+                "name": "support"
+            },
+            {
+                "default": "False",
+                "name": "indices"
+            }
+        ]
+    },
+    "retrieve": {
+        "args": []
+    },
+    "return_distance : boolean, optional ": {
+        "args": [
+            {
+                "default": " False",
+                "name": "ault "
+            }
+        ]
+    },
+    "return_distributions : bool, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "return_indicator : bool, optional ": {
+        "args": [
+            {
+                "default": "False)",
+                "name": "ault"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "return_n_iter : bool, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "return_path : bool, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "reweight_covariance": {
+        "args": [
+            {
+                "name": "data"
+            }
+        ]
+    },
+    "ridge_regression": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "alpha"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            },
+            {
+                "default": "'auto'",
+                "name": "solver"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "rm_subdirs": {
+        "args": [
+            {
+                "name": "path"
+            },
+            {
+                "default": "None",
+                "name": "onerror"
+            }
+        ]
+    },
+    "roc_auc_score": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_score"
+            },
+            {
+                "default": "\"macro\"",
+                "name": "average"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "roc_curve": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_score"
+            },
+            {
+                "default": "None",
+                "name": "pos_label"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "row_norms": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "False",
+                "name": "squared"
+            }
+        ]
+    },
+    "run_test": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "safe_copy": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "safe_min": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "safe_repr": {
+        "args": [
+            {
+                "name": "value"
+            }
+        ]
+    },
+    "safe_sparse_dot": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "name": "b"
+            },
+            {
+                "default": "False",
+                "name": "dense_output"
+            }
+        ]
+    },
+    "safe_vstack": {
+        "args": [
+            {
+                "name": "Xs"
+            }
+        ]
+    },
+    "sample": {
+        "args": [
+            {
+                "default": "1",
+                "name": "n_samples"
+            },
+            {
+                "default": "None",
+                "name": "random_state"
+            }
+        ]
+    },
+    "sample_example": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "sample_gaussian": {
+        "args": [
+            {
+                "name": "mean"
+            },
+            {
+                "name": "covar"
+            },
+            {
+                "default": "'diag'",
+                "name": "covariance_type"
+            },
+            {
+                "default": "1",
+                "name": "n_samples"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "sample_weight : array-like, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "sample_weight : array-like, shape=": {
+        "args": [
+            {
+                "name": "n_samples"
+            },
+            {
+                "name": ")"
+            },
+            {
+                "name": "optional"
+            },
+            {
+                "name": "ault: None"
+            }
+        ]
+    },
+    "save": {
+        "args": [
+            {
+                "name": "obj"
+            }
+        ]
+    },
+    "save_global": {
+        "args": [
+            {
+                "name": "obj"
+            },
+            {
+                "default": "None",
+                "name": "name"
+            },
+            {
+                "default": "struct.pack",
+                "name": "pack"
+            }
+        ]
+    },
+    "save_set": {
+        "args": [
+            {
+                "name": "set_items"
+            }
+        ]
+    },
+    "scale": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "0",
+                "name": "axis"
+            },
+            {
+                "default": "True",
+                "name": "with_mean"
+            },
+            {
+                "default": "True",
+                "name": "with_std"
+            },
+            {
+                "default": "True",
+                "name": "copy"
+            }
+        ]
+    },
+    "scale : boolean, ": {
+        "args": [
+            {
+                "name": "ault True"
+            }
+        ]
+    },
+    "scale : boolean, scale data? ": {
+        "args": [
+            {
+                "name": "ault True"
+            }
+        ]
+    },
+    "scale : float, array of shape [n_features] or None, optional ": {
+        "args": [
+            {
+                "default": "1.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "scale_face": {
+        "args": [
+            {
+                "name": "face"
+            }
+        ]
+    },
+    "score": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            }
+        ]
+    },
+    "score_samples": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "select_candidates": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "n_support"
+            },
+            {
+                "name": "n_trials"
+            },
+            {
+                "default": "1",
+                "name": "select"
+            },
+            {
+                "default": "30",
+                "name": "n_iter"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "send": {
+        "args": [
+            {
+                "name": "obj"
+            }
+        ]
+    },
+    "set_fast_parameters": {
+        "args": [
+            {
+                "name": "estimator"
+            }
+        ]
+    },
+    "set_params": {
+        "args": [
+            {
+                "name": "*args"
+            },
+            {
+                "name": "**kwargs"
+            }
+        ]
+    },
+    "set_random_state": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "default": "0",
+                "name": "random_state"
+            }
+        ]
+    },
+    "setup_module": {
+        "args": [
+            {
+                "name": "module"
+            }
+        ]
+    },
+    "shift : float, array of shape [n_features] or None, optional ": {
+        "args": [
+            {
+                "default": "0.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "short_format_time": {
+        "args": [
+            {
+                "name": "t"
+            }
+        ]
+    },
+    "showwarning": {
+        "args": [
+            {
+                "name": "msg"
+            },
+            {
+                "name": "cat"
+            },
+            {
+                "name": "fname"
+            },
+            {
+                "name": "lno"
+            },
+            {
+                "default": "None",
+                "name": "file"
+            },
+            {
+                "default": "0",
+                "name": "line"
+            }
+        ]
+    },
+    "shrink_threshold : float, optional ": {
+        "args": [
+            {
+                "default": " None",
+                "name": "ault "
+            }
+        ]
+    },
+    "shrinking: boolean, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "shrunk_covariance": {
+        "args": [
+            {
+                "name": "emp_cov"
+            },
+            {
+                "default": "0.1",
+                "name": "shrinkage"
+            }
+        ]
+    },
+    "shuffle : bool, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "shuffle : boolean, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "shuffle: bool, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "sigmoid_kernel": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "Y"
+            },
+            {
+                "default": "None",
+                "name": "gamma"
+            },
+            {
+                "default": "1",
+                "name": "coef0"
+            }
+        ]
+    },
+    "silhouette_samples": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "labels"
+            },
+            {
+                "default": "'euclidean'",
+                "name": "metric"
+            },
+            {
+                "name": "**kwds"
+            }
+        ]
+    },
+    "silhouette_score": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "labels"
+            },
+            {
+                "default": "'euclidean'",
+                "name": "metric"
+            },
+            {
+                "default": "None",
+                "name": "sample_size"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "single_source_shortest_path_length": {
+        "args": [
+            {
+                "name": "graph"
+            },
+            {
+                "name": "source"
+            },
+            {
+                "default": "None",
+                "name": "cutoff"
+            }
+        ]
+    },
+    "sklearn.cross_validation.PreinedSplit": {
+        "args": [
+            {
+                "default": "[ 0  1 -1  1]",
+                "name": "test_fold"
+            }
+        ]
+    },
+    "smacof": {
+        "args": [
+            {
+                "name": "similarities"
+            },
+            {
+                "default": "True",
+                "name": "metric"
+            },
+            {
+                "default": "2",
+                "name": "n_components"
+            },
+            {
+                "default": "None",
+                "name": "init"
+            },
+            {
+                "default": "8",
+                "name": "n_init"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "smallest_coef : float between 0 and 1, optional ": {
+        "args": [
+            {
+                "default": "0.1",
+                "name": "ault"
+            }
+        ]
+    },
+    "smooth_idf": {
+        "args": [
+            {
+                "name": "value"
+            }
+        ]
+    },
+    "sparse : bool, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "sparse_center_data": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "fit_intercept"
+            },
+            {
+                "default": "False",
+                "name": "normalize"
+            }
+        ]
+    },
+    "sparse_coef_": {
+        "args": []
+    },
+    "sparse_encode": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "dictionary"
+            },
+            {
+                "default": "None",
+                "name": "gram"
+            },
+            {
+                "default": "None",
+                "name": "cov"
+            },
+            {
+                "default": "'lasso_lars'",
+                "name": "algorithm"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "sparse_min_max": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "axis"
+            }
+        ]
+    },
+    "sparse_output : bool, optional ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "sparse_output : boolean ": {
+        "args": [
+            {
+                "name": "ault: False)"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "sparse_random_matrix": {
+        "args": [
+            {
+                "name": "n_components"
+            },
+            {
+                "name": "n_features"
+            },
+            {
+                "default": "'auto'",
+                "name": "density"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "sparsify": {
+        "args": []
+    },
+    "spectral_clustering": {
+        "args": [
+            {
+                "name": "affinity"
+            },
+            {
+                "default": "8",
+                "name": "n_clusters"
+            },
+            {
+                "default": "None",
+                "name": "n_components"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "spectral_embedding": {
+        "args": [
+            {
+                "name": "adjacency"
+            },
+            {
+                "default": "8",
+                "name": "n_components"
+            },
+            {
+                "default": "None",
+                "name": "eigen_solver"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "splitter : string, optional ": {
+        "args": [
+            {
+                "default": "\"best\"",
+                "name": "ault"
+            }
+        ]
+    },
+    "squared_exponential": {
+        "args": [
+            {
+                "name": "theta"
+            },
+            {
+                "name": "d"
+            }
+        ]
+    },
+    "squared_norm": {
+        "args": [
+            {
+                "name": "x"
+            }
+        ]
+    },
+    "staged_decision_function": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "staged_predict": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "staged_predict_proba": {
+        "args": [
+            {
+                "name": "X"
+            }
+        ]
+    },
+    "staged_score": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    },
+    "step : int or float, optional ": {
+        "args": [
+            {
+                "default": "1",
+                "name": "ault"
+            }
+        ]
+    },
+    "stop_words : string {'english'}, list, or None ": {
+        "args": [
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "strategy : string, optional ": {
+        "args": [
+            {
+                "default": "\"mean\"",
+                "name": "ault"
+            }
+        ]
+    },
+    "strip_accents_ascii": {
+        "args": [
+            {
+                "name": "s"
+            }
+        ]
+    },
+    "strip_accents_unicode": {
+        "args": [
+            {
+                "name": "s"
+            }
+        ]
+    },
+    "strip_newsgroup_footer": {
+        "args": [
+            {
+                "name": "text"
+            }
+        ]
+    },
+    "strip_newsgroup_header": {
+        "args": [
+            {
+                "name": "text"
+            }
+        ]
+    },
+    "strip_newsgroup_quoting": {
+        "args": [
+            {
+                "name": "text"
+            }
+        ]
+    },
+    "strip_tags": {
+        "args": [
+            {
+                "name": "s"
+            }
+        ]
+    },
+    "sublinear_tf": {
+        "args": [
+            {
+                "name": "value"
+            }
+        ]
+    },
+    "subsample : float, optional ": {
+        "args": [
+            {
+                "default": "1.0",
+                "name": "ault"
+            }
+        ]
+    },
+    "svd_flip": {
+        "args": [
+            {
+                "name": "u"
+            },
+            {
+                "name": "v"
+            },
+            {
+                "default": "True",
+                "name": "u_based_decision"
+            }
+        ]
+    },
+    "tail_strength : float between 0.0 and 1.0, optional ": {
+        "args": [
+            {
+                "default": "0.5",
+                "name": "ault"
+            }
+        ]
+    },
+    "teardown_module": {
+        "args": [
+            {
+                "name": "module"
+            }
+        ]
+    },
+    "terminate": {
+        "args": []
+    },
+    "test_size : float ": {
+        "args": [
+            {
+                "name": "ault 0.1)"
+            },
+            {
+                "name": "int"
+            },
+            {
+                "name": "or None"
+            }
+        ]
+    },
+    "test_size : float, int, or None ": {
+        "args": [
+            {
+                "name": "ault is None"
+            }
+        ]
+    },
+    "test_size : int or float or None ": {
+        "args": [
+            {
+                "name": "ault is None"
+            }
+        ]
+    },
+    "the mean squared errors ": {
+        "args": [
+            {
+                "name": "by ault) or the values of the \\"
+            }
+        ]
+    },
+    "threshold": {
+        "args": []
+    },
+    "threshold : float, optional ": {
+        "args": [
+            {
+                "name": "0.0 by ault"
+            }
+        ]
+    },
+    "threshold : string, float or None, optional ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "tokeneater": {
+        "args": [
+            {
+                "name": "token_type"
+            },
+            {
+                "name": "token"
+            },
+            {
+                "name": "start"
+            },
+            {
+                "name": "end"
+            },
+            {
+                "name": "line"
+            }
+        ]
+    },
+    "tokenizer : callable or None ": {
+        "args": [
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "tol : float, optional ": {
+        "args": [
+            {
+                "default": "1e-3",
+                "name": "ault"
+            }
+        ]
+    },
+    "total_seconds": {
+        "args": [
+            {
+                "name": "delta"
+            }
+        ]
+    },
+    "trace_dot": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "Y"
+            }
+        ]
+    },
+    "train_size : float, int, or None ": {
+        "args": [
+            {
+                "name": "ault is None"
+            }
+        ]
+    },
+    "train_size : int or float ": {
+        "args": [
+            {
+                "name": "ault is 0.5"
+            }
+        ]
+    },
+    "train_test_split": {
+        "args": [
+            {
+                "name": "*arrays"
+            },
+            {
+                "name": "**options"
+            }
+        ]
+    },
+    "transform": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "y"
+            }
+        ]
+    },
+    "transpose: True, False or 'auto' ": {
+        "args": [
+            {
+                "name": "ault"
+            }
+        ]
+    },
+    "trustworthiness": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "name": "X_embedded"
+            },
+            {
+                "default": "5",
+                "name": "n_neighbors"
+            },
+            {
+                "default": "False",
+                "name": "precomputed"
+            }
+        ]
+    },
+    "type_of_target": {
+        "args": [
+            {
+                "name": "y"
+            }
+        ]
+    },
+    "u": {
+        "args": [
+            {
+                "name": "s"
+            }
+        ]
+    },
+    "u_based_decision : boolean, ": {
+        "args": [
+            {
+                "default": "True",
+                "name": "ault"
+            }
+        ]
+    },
+    "uninstall_mldata_mock": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "uniq_stable": {
+        "args": [
+            {
+                "name": "elems"
+            }
+        ]
+    },
+    "unique_labels": {
+        "args": [
+            {
+                "name": "*ys"
+            }
+        ]
+    },
+    "update": {
+        "args": [
+            {
+                "name": "subcluster"
+            }
+        ]
+    },
+    "update_split_subclusters": {
+        "args": [
+            {
+                "name": "subcluster"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "update_terminal_regions": {
+        "args": [
+            {
+                "name": "tree"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "residual"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "use_idf": {
+        "args": [
+            {
+                "name": "value"
+            }
+        ]
+    },
+    "v_measure_score": {
+        "args": [
+            {
+                "name": "labels_true"
+            },
+            {
+                "name": "labels_pred"
+            }
+        ]
+    },
+    "validation_curve": {
+        "args": [
+            {
+                "name": "estimator"
+            },
+            {
+                "name": "X"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "param_name"
+            },
+            {
+                "name": "param_range"
+            },
+            {
+                "default": "None",
+                "name": "cv"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "vectors. Should be in the interval ": {
+        "args": [
+            {
+                "name": "0"
+            },
+            {
+                "name": "1]. By ault 0.5"
+            }
+        ]
+    },
+    "verbose : int ": {
+        "args": [
+            {
+                "default": "0",
+                "name": "ault"
+            }
+        ]
+    },
+    "verbose : int, ": {
+        "args": [
+            {
+                "default": "0",
+                "name": "ault"
+            }
+        ]
+    },
+    "verbose : int, optional ": {
+        "args": [
+            {
+                "name": "ault: 0"
+            }
+        ]
+    },
+    "verbose : integer, optional ": {
+        "args": [
+            {
+                "default": "0",
+                "name": "ault"
+            }
+        ]
+    },
+    "vocabulary = aultdict": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "ward_tree": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "None",
+                "name": "connectivity"
+            },
+            {
+                "default": "None",
+                "name": "n_components"
+            },
+            {
+                "default": "None",
+                "name": "n_clusters"
+            },
+            {
+                "name": ""
+            }
+        ]
+    },
+    "warm_start : bool, optional ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "warn": {
+        "args": [
+            {
+                "name": "msg"
+            }
+        ]
+    },
+    "warn_if_not_float": {
+        "args": [
+            {
+                "name": "X"
+            },
+            {
+                "default": "'This algorithm'",
+                "name": "estimator"
+            }
+        ]
+    },
+    "warnings.warn": {
+        "args": [
+            {
+                "name": "'The ault `weighted` averaging is deprecated"
+            },
+            {
+                "name": "'"
+            }
+        ]
+    },
+    "warnings_to_stdout": {
+        "args": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "weighted_mode": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "name": "w"
+            },
+            {
+                "default": "0",
+                "name": "axis"
+            }
+        ]
+    },
+    "weights : list of floats or None ": {
+        "args": [
+            {
+                "default": "None",
+                "name": "ault"
+            }
+        ]
+    },
+    "wishart_log_det": {
+        "args": [
+            {
+                "name": "a"
+            },
+            {
+                "name": "b"
+            },
+            {
+                "name": "detB"
+            },
+            {
+                "name": "n_features"
+            }
+        ]
+    },
+    "wishart_logz": {
+        "args": [
+            {
+                "name": "v"
+            },
+            {
+                "name": "s"
+            },
+            {
+                "name": "dets"
+            },
+            {
+                "name": "n_features"
+            }
+        ]
+    },
+    "with_metaclass": {
+        "args": [
+            {
+                "name": "meta"
+            },
+            {
+                "name": "*bases"
+            }
+        ]
+    },
+    "within_tol": {
+        "args": [
+            {
+                "name": "x"
+            },
+            {
+                "name": "y"
+            },
+            {
+                "name": "atol"
+            },
+            {
+                "name": "rtol"
+            }
+        ]
+    },
+    "wrapper": {
+        "args": [
+            {
+                "name": "cls"
+            }
+        ]
+    },
+    "write": {
+        "args": [
+            {
+                "name": "data"
+            }
+        ]
+    },
+    "write_zfile": {
+        "args": [
+            {
+                "name": "file_handle"
+            },
+            {
+                "name": "data"
+            },
+            {
+                "default": "1",
+                "name": "compress"
+            }
+        ]
+    },
+    "y_mean_": {
+        "args": []
+    },
+    "y_numeric : boolean ": {
+        "args": [
+            {
+                "default": "False",
+                "name": "ault"
+            }
+        ]
+    },
+    "zero_one_loss": {
+        "args": [
+            {
+                "name": "y_true"
+            },
+            {
+                "name": "y_pred"
+            },
+            {
+                "default": "True",
+                "name": "normalize"
+            },
+            {
+                "default": "None",
+                "name": "sample_weight"
+            }
+        ]
+    }
+}
