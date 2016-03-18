@@ -20,24 +20,26 @@ def get_functions(module_folder):
                 module = os.path.splitext(py_file)[0]
                 filey = open("%s/%s" %(root,py_file),"rb")
                 lines = filey.read().splitlines()
-                # First split code up by (likely) classes
-                class_idx = [x for x in range(len(lines)) if re.search("^class ",lines[x].strip())]
-                if len(class_idx) == 0:
-                    class_idx = [len(lines)-1]  
-                class_idx.insert(0,0)
-                for c in range(len(class_idx)-1):
-                    start_idx = class_idx[c]
-                    end_idx = class_idx[c+1]     
-                    new_functions = get_functions_lines(lines[start_idx:end_idx])
-                    # If it's a class, append to classes
-                    if re.search("^class ",lines[start_idx].strip()):
-                        class_name = get_class_name(lines[start_idx])
-                        classes[class_name] = new_functions
-                    else:
-                        module_functions.update(new_functions)
-                # Add functions based on module
-                classes["*"] = module_functions
-                functions[module] = classes
+                filey.close()
+                if len(lines) > 0:
+                    # First split code up by (likely) classes
+                    class_idx = [x for x in range(len(lines)) if re.search("^class ",lines[x].strip())]
+                    if len(class_idx) == 0:
+                        class_idx = [len(lines)-1]  
+                    class_idx.insert(0,0)
+                    for c in range(len(class_idx)-1):
+                        start_idx = class_idx[c]
+                        end_idx = class_idx[c+1]     
+                        new_functions = get_functions_lines(lines[start_idx:end_idx])
+                        # If it's a class, append to classes
+                        if re.search("^class ",lines[start_idx].strip()):
+                            class_name = get_class_name(lines[start_idx])
+                            classes[class_name] = new_functions
+                        else:
+                            module_functions.update(new_functions)
+                    # Add functions based on module
+                    classes["*"] = module_functions
+                    functions[module] = classes
     return functions
 
 def get_class_name(classline):
