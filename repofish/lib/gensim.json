@@ -1,3258 +1,3950 @@
 {
-    "": {
-        "args": [
-            {
-                "name": "aults at 20% of the number of documents of the corpus)."
-            }
-        ]
-    },
-    "#  strip_punctuation2": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "# assume utf8 for byte strings, use ault ": {
-        "args": [
-            {
-                "name": "strict) error handling"
-            }
-        ]
-    },
-    "# initely avoid materializing it as a dense ": {
-        "args": [
-            {
-                "name": "num_terms x chunksize) matrix!"
-            }
-        ]
-    },
-    "For each topic, show `num_words` most significant words ": {
-        "args": [
-            {
-                "name": "10 words by ault)."
-            }
-        ]
-    },
-    "If `scaled` is set, scale topics by the inverse of singular values ": {
-        "args": [
-            {
-                "name": "ault: no scaling)."
-            }
-        ]
-    },
-    "Only considers nouns, verbs, adjectives and adverbs by ault ": {
-        "args": [
-            {
-                "default": "all other lemmas are discarded).",
-                "name": ""
-            }
-        ]
-    },
-    "Return `num_topics` most significant topics ": {
-        "args": [
-            {
-                "name": "return all by ault)."
-            }
-        ]
-    },
-    "This functionality is achieved by storing an extra file ": {
-        "args": [
-            {
-                "name": "by ault named the same"
-            }
-        ]
-    },
-    "`cbow_mean` = if 0 ": {
-        "args": [
-            {
-                "name": "ault)"
-            },
-            {
-                "name": "use the sum of the context word vectors. If 1"
-            },
-            {
-                "name": "use the mean."
-            }
-        ]
-    },
-    "`dm_mean` = if 0 ": {
-        "args": [
-            {
-                "name": "ault)"
-            },
-            {
-                "name": "use the sum of the context word vectors. If 1"
-            },
-            {
-                "name": "use the mean."
-            }
-        ]
-    },
-    "`limit` lines ": {
-        "args": [
-            {
-                "name": "or no clipped if limit is None"
-            },
-            {
-                "name": "the ault)."
-            }
-        ]
-    },
-    "`normalize=True` means set to unit length ": {
-        "args": [
-            {
-                "name": "ault); `False` means don't"
-            }
-        ]
-    },
-    "`sg` ines the training algorithm. By ault ": {
-        "args": [
-            {
-                "default": "1`)",
-                "name": "`sg"
-            },
-            {
-                "name": "skip-gram is used."
-            }
-        ]
-    },
-    "`sorted_vocab` = if 1 ": {
-        "args": [
-            {
-                "name": "ault)"
-            },
-            {
-                "name": "sort the vocabulary by descending frequency before"
-            }
-        ]
-    },
-    "accuracy": {
-        "args": [
-            {
-                "name": "questions"
-            },
-            {
-                "default": "30000",
-                "name": "restrict_vocab"
-            },
-            {
-                "default": "most_similar",
-                "name": "most_similar"
-            }
-        ]
-    },
-    "acquire": {
-        "args": []
-    },
-    "add_documents": {
-        "args": [
-            {
-                "name": "documents"
-            }
-        ]
-    },
-    "add_edge": {
-        "args": [
-            {
-                "name": "edge"
-            },
-            {
-                "default": "1",
-                "name": "wt"
-            },
-            {
-                "default": "''",
-                "name": "label"
-            },
-            {
-                "default": "[]",
-                "name": "attrs"
-            }
-        ]
-    },
-    "add_edge_attribute": {
-        "args": [
-            {
-                "name": "edge"
-            },
-            {
-                "name": "attr"
-            }
-        ]
-    },
-    "add_edge_attributes": {
-        "args": [
-            {
-                "name": "edge"
-            },
-            {
-                "name": "attrs"
-            }
-        ]
-    },
-    "add_node": {
-        "args": [
-            {
-                "name": "node"
-            },
-            {
-                "default": "None",
-                "name": "attrs"
-            }
-        ]
-    },
-    "add_vocab": {
-        "args": [
-            {
-                "name": "sentences"
-            }
-        ]
-    },
-    "add_word": {
-        "args": [
-            {
-                "name": "word"
-            },
-            {
-                "name": "weights"
-            }
-        ]
-    },
-    "all available cores by ault: `workers=cpu_count": {
-        "args": [
-            {
-                "name": "-1`. **Note**: for"
-            }
-        ]
-    },
-    "and ault for `wglobal` is `log_2": {
-        "args": [
-            {
-                "name": "total_docs / doc_freq)`"
-            },
-            {
-                "name": "giving the"
-            }
-        ]
-    },
-    "any2sparse": {
-        "args": [
-            {
-                "name": "vec"
-            },
-            {
-                "default": "1e-9",
-                "name": "eps"
-            }
-        ]
-    },
-    "any2unicode": {
-        "args": [
-            {
-                "name": "text"
-            },
-            {
-                "default": "'utf8'",
-                "name": "encoding"
-            },
-            {
-                "default": "'strict'",
-                "name": "errors"
-            }
-        ]
-    },
-    "any2utf8": {
-        "args": [
-            {
-                "name": "text"
-            },
-            {
-                "default": "'strict'",
-                "name": "errors"
-            },
-            {
-                "default": "'utf8'",
-                "name": "encoding"
-            }
-        ]
-    },
-    "argsort": {
-        "args": [
-            {
-                "name": "x"
-            },
-            {
-                "default": "None",
-                "name": "topn"
-            },
-            {
-                "default": "False",
-                "name": "reverse"
-            }
-        ]
-    },
-    "ascarray": {
-        "args": [
-            {
-                "name": "a"
-            },
-            {
-                "default": "''",
-                "name": "name"
-            }
-        ]
-    },
-    "asfarray": {
-        "args": [
-            {
-                "name": "a"
-            },
-            {
-                "default": "''",
-                "name": "name"
-            }
-        ]
-    },
-    "ault is 0 ": {
-        "args": [
-            {
-                "name": "off)"
-            },
-            {
-                "name": "useful value is 1e-5."
-            }
-        ]
-    },
-    "because ": {
-        "args": [
-            {
-                "name": "a) the points of DEPARTURE are initely improvements"
-            },
-            {
-                "name": "and"
-            }
-        ]
-    },
-    "blend": {
-        "args": [
-            {
-                "name": "rhot"
-            },
-            {
-                "name": "other"
-            },
-            {
-                "default": "None",
-                "name": "targetsize"
-            }
-        ]
-    },
-    "blend2": {
-        "args": [
-            {
-                "name": "rhot"
-            },
-            {
-                "name": "other"
-            },
-            {
-                "default": "None",
-                "name": "targetsize"
-            }
-        ]
-    },
-    "borrow_from": {
-        "args": [
-            {
-                "name": "other_docvecs"
-            }
-        ]
-    },
-    "bound": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "None",
-                "name": "gamma"
-            },
-            {
-                "default": "1.0",
-                "name": "subsample_ratio"
-            }
-        ]
-    },
-    "build_adjacency_matrix": {
-        "args": [
-            {
-                "name": "graph"
-            }
-        ]
-    },
-    "build_graph": {
-        "args": [
-            {
-                "name": "sequence"
-            }
-        ]
-    },
-    "build_probability_matrix": {
-        "args": [
-            {
-                "name": "graph"
-            }
-        ]
-    },
-    "build_vocab": {
-        "args": [
-            {
-                "name": "sentences"
-            },
-            {
-                "default": "False",
-                "name": "keep_raw_vocab"
-            },
-            {
-                "default": "None",
-                "name": "trim_rule"
-            }
-        ]
-    },
-    "checkSum": {
-        "args": [
-            {
-                "name": ""
-            }
-        ]
-    },
-    "check_moved": {
-        "args": []
-    },
-    "check_output": {
-        "args": [
-            {
-                "name": "*popenargs"
-            },
-            {
-                "name": "**kwargs"
-            }
-        ]
-    },
-    "chosen for the summary ": {
-        "args": [
-            {
-                "name": "aults at 0.2)."
-            }
-        ]
-    },
-    "chunkize": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "name": "chunksize"
-            },
-            {
-                "default": "0",
-                "name": "maxsize"
-            },
-            {
-                "default": "False",
-                "name": "as_numpy"
-            }
-        ]
-    },
-    "chunkize_serial": {
-        "args": [
-            {
-                "name": "iterable"
-            },
-            {
-                "name": "chunksize"
-            },
-            {
-                "default": "False",
-                "name": "as_numpy"
-            }
-        ]
-    },
-    "clean_text_by_sentences": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "clean_text_by_word": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "clear": {
-        "args": []
-    },
-    "clear_sims": {
-        "args": []
-    },
-    "clip_spectrum": {
-        "args": [
-            {
-                "name": "s"
-            },
-            {
-                "name": "k"
-            },
-            {
-                "default": "0.001",
-                "name": "discard"
-            }
-        ]
-    },
-    "close": {
-        "args": []
-    },
-    "close_shard": {
-        "args": []
-    },
-    "compactify": {
-        "args": []
-    },
-    "convert_input": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "False",
-                "name": "infer"
-            }
-        ]
-    },
-    "copytree_hardlink": {
-        "args": [
-            {
-                "name": "source"
-            },
-            {
-                "name": "dest"
-            }
-        ]
-    },
-    "corpus2csc": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "None",
-                "name": "num_terms"
-            },
-            {
-                "default": "numpy.float64",
-                "name": "dtype"
-            },
-            {
-                "default": "None",
-                "name": "num_docs"
-            },
-            {
-                "default": "None",
-                "name": "num_nnz"
-            },
-            {
-                "default": "0",
-                "name": "printprogress"
-            }
-        ]
-    },
-    "corpus2dense": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "name": "num_terms"
-            },
-            {
-                "default": "None",
-                "name": "num_docs"
-            },
-            {
-                "default": "numpy.float32",
-                "name": "dtype"
-            }
-        ]
-    },
-    "corpus_to_vw": {
-        "args": [
-            {
-                "name": "corpus"
-            }
-        ]
-    },
-    "cossim": {
-        "args": [
-            {
-                "name": "vec1"
-            },
-            {
-                "name": "vec2"
-            }
-        ]
-    },
-    "counter = aultdict": {
-        "args": [
-            {
-                "name": "int"
-            }
-        ]
-    },
-    "create_binary_tree": {
-        "args": []
-    },
-    "create_dictionary": {
-        "args": []
-    },
-    "dbow": {
-        "args": []
-    },
-    "deaccent": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "decode_htmlentities": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "del_edge": {
-        "args": [
-            {
-                "name": "edge"
-            }
-        ]
-    },
-    "del_edge_labeling": {
-        "args": [
-            {
-                "name": "edge"
-            }
-        ]
-    },
-    "del_node": {
-        "args": [
-            {
-                "name": "node"
-            }
-        ]
-    },
-    "destroy": {
-        "args": []
-    },
-    "df2idf": {
-        "args": [
-            {
-                "name": "docfreq"
-            },
-            {
-                "name": "totaldocs"
-            },
-            {
-                "default": "2.0",
-                "name": "log_base"
-            },
-            {
-                "default": "0.0",
-                "name": "add"
-            }
-        ]
-    },
-    "dict_from_corpus": {
-        "args": [
-            {
-                "name": "corpus"
-            }
-        ]
-    },
-    "dictionary.dfs = aultdict": {
-        "args": [
-            {
-                "name": "int"
-            }
-        ]
-    },
-    "dirichlet_expectation": {
-        "args": [
-            {
-                "name": "alpha"
-            }
-        ]
-    },
-    "dm": {
-        "args": []
-    },
-    "do_estep": {
-        "args": [
-            {
-                "name": "chunk"
-            },
-            {
-                "default": "None",
-                "name": "state"
-            }
-        ]
-    },
-    "do_mstep": {
-        "args": [
-            {
-                "name": "rho"
-            },
-            {
-                "name": "other"
-            },
-            {
-                "default": "False",
-                "name": "extra_pass"
-            }
-        ]
-    },
-    "doc-vector training; ault is 0 ": {
-        "args": [
-            {
-                "name": "faster training of doc-vectors only)."
-            }
-        ]
-    },
-    "doc2bow": {
-        "args": [
-            {
-                "name": "document"
-            },
-            {
-                "default": "False",
-                "name": "allow_update"
-            },
-            {
-                "default": "False",
-                "name": "return_missing"
-            }
-        ]
-    },
-    "doc2line": {
-        "args": [
-            {
-                "name": "doc"
-            },
-            {
-                "default": "0",
-                "name": "label"
-            }
-        ]
-    },
-    "doc_e_step": {
-        "args": [
-            {
-                "name": "doc"
-            },
-            {
-                "name": "ss"
-            },
-            {
-                "name": "Elogsticks_1st"
-            },
-            {
-                "name": "word_list"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "docbyoffset": {
-        "args": [
-            {
-                "name": "offset"
-            }
-        ]
-    },
-    "doesnt_match": {
-        "args": [
-            {
-                "name": "words"
-            }
-        ]
-    },
-    "during the ault pickle": {
-        "args": [
-            {
-                "name": "."
-            }
-        ]
-    },
-    "edge_attributes": {
-        "args": [
-            {
-                "name": "edge"
-            }
-        ]
-    },
-    "edge_weight": {
-        "args": [
-            {
-                "name": "edge"
-            }
-        ]
-    },
-    "edges": {
-        "args": []
-    },
-    "elapsed = ault_timer": {
-        "args": [
-            {
-                "name": "- start"
-            }
-        ]
-    },
-    "empty_like": {
-        "args": []
-    },
-    "estimate_memory": {
-        "args": [
-            {
-                "default": "None",
-                "name": "vocab_size"
-            },
-            {
-                "default": "None",
-                "name": "report"
-            }
-        ]
-    },
-    "estimated_lookup_memory": {
-        "args": []
-    },
-    "evaluate_test_corpus": {
-        "args": [
-            {
-                "name": "corpus"
-            }
-        ]
-    },
-    "exit": {
-        "args": []
-    },
-    "expect_log_sticks": {
-        "args": [
-            {
-                "name": "sticks"
-            }
-        ]
-    },
-    "extract_pages": {
-        "args": [
-            {
-                "name": "f"
-            },
-            {
-                "default": "False",
-                "name": "filter_namespaces"
-            }
-        ]
-    },
-    "fake_headers": {
-        "args": [
-            {
-                "name": "num_docs"
-            },
-            {
-                "name": "num_terms"
-            },
-            {
-                "name": "num_nnz"
-            }
-        ]
-    },
-    "fcorpus": {
-        "args": []
-    },
-    "fcorpusmallet": {
-        "args": []
-    },
-    "fcorpustxt": {
-        "args": []
-    },
-    "fdoctopics": {
-        "args": []
-    },
-    "fem_steps": {
-        "args": []
-    },
-    "file_or_filename": {
-        "args": [
-            {
-                "name": "input"
-            }
-        ]
-    },
-    "filter_extremes": {
-        "args": [
-            {
-                "default": "5",
-                "name": "no_below"
-            },
-            {
-                "default": "0.5",
-                "name": "no_above"
-            },
-            {
-                "default": "100000",
-                "name": "keep_n"
-            }
-        ]
-    },
-    "filter_tokens": {
-        "args": [
-            {
-                "default": "None",
-                "name": "bad_ids"
-            },
-            {
-                "default": "None",
-                "name": "good_ids"
-            }
-        ]
-    },
-    "filter_wiki": {
-        "args": [
-            {
-                "name": "raw"
-            }
-        ]
-    },
-    "finalize_vocab": {
-        "args": []
-    },
-    "finferencer": {
-        "args": []
-    },
-    "finit_alpha": {
-        "args": []
-    },
-    "finit_beta": {
-        "args": []
-    },
-    "flda_ss": {
-        "args": []
-    },
-    "format_topic": {
-        "args": [
-            {
-                "name": "topic_id"
-            },
-            {
-                "name": "topic_terms"
-            }
-        ]
-    },
-    "fout_gamma": {
-        "args": []
-    },
-    "fout_influence": {
-        "args": []
-    },
-    "fout_liklihoods": {
-        "args": []
-    },
-    "fout_observations": {
-        "args": []
-    },
-    "fout_prob": {
-        "args": []
-    },
-    "foutname": {
-        "args": []
-    },
-    "from_corpus": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "None",
-                "name": "id2word"
-            }
-        ]
-    },
-    "from_documents": {
-        "args": [
-            {
-                "name": "*args"
-            },
-            {
-                "name": "**kwargs"
-            }
-        ]
-    },
-    "fstate": {
-        "args": []
-    },
-    "ftimeslices": {
-        "args": []
-    },
-    "ftopickeys": {
-        "args": []
-    },
-    "full2sparse": {
-        "args": [
-            {
-                "name": "vec"
-            },
-            {
-                "default": "1e-9",
-                "name": "eps"
-            }
-        ]
-    },
-    "full2sparse_clipped": {
-        "args": [
-            {
-                "name": "vec"
-            },
-            {
-                "name": "topn"
-            },
-            {
-                "default": "1e-9",
-                "name": "eps"
-            }
-        ]
-    },
-    "fullname": {
-        "args": []
-    },
-    "function ": {
-        "args": [
-            {
-                "name": "adler32 by ault). Using HashDictionary"
-            },
-            {
-                "name": "new words can be represented immediately"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "fwordweights": {
-        "args": []
-    },
-    "get": {
-        "args": [
-            {
-                "name": "val"
-            },
-            {
-                "default": "None",
-                "name": "ault"
-            }
-        ]
-    },
-    "getNS": {
-        "args": [
-            {
-                "name": ""
-            }
-        ]
-    },
-    "get_Elogbeta": {
-        "args": []
-    },
-    "get_bm25_weights": {
-        "args": [
-            {
-                "name": "corpus"
-            }
-        ]
-    },
-    "get_by_offset": {
-        "args": [
-            {
-                "name": "offset"
-            }
-        ]
-    },
-    "get_document_id": {
-        "args": [
-            {
-                "name": "pos"
-            }
-        ]
-    },
-    "get_document_topics": {
-        "args": [
-            {
-                "name": "bow"
-            },
-            {
-                "default": "None",
-                "name": "minimum_probability"
-            }
-        ]
-    },
-    "get_edge_properties": {
-        "args": [
-            {
-                "name": "edge"
-            }
-        ]
-    },
-    "get_graph": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "get_index": {
-        "args": []
-    },
-    "get_lambda": {
-        "args": []
-    },
-    "get_max_id": {
-        "args": [
-            {
-                "name": "corpus"
-            }
-        ]
-    },
-    "get_my_ip": {
-        "args": [
-            {
-                "name": ""
-            }
-        ]
-    },
-    "get_namespace": {
-        "args": [
-            {
-                "name": "tag"
-            }
-        ]
-    },
-    "get_score": {
-        "args": [
-            {
-                "name": "document"
-            },
-            {
-                "name": "index"
-            },
-            {
-                "name": "average_idf"
-            }
-        ]
-    },
-    "get_scores": {
-        "args": [
-            {
-                "name": "document"
-            },
-            {
-                "name": "average_idf"
-            }
-        ]
-    },
-    "get_sentences": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "get_similarities": {
-        "args": [
-            {
-                "name": "query"
-            }
-        ]
-    },
-    "get_texts": {
-        "args": []
-    },
-    "get_topic_terms": {
-        "args": [
-            {
-                "name": "topicid"
-            },
-            {
-                "default": "10",
-                "name": "topn"
-            }
-        ]
-    },
-    "getjob": {
-        "args": [
-            {
-                "name": "worker_id"
-            }
-        ]
-    },
-    "getstate": {
-        "args": []
-    },
-    "getstream": {
-        "args": []
-    },
-    "getworkers": {
-        "args": []
-    },
-    "has_edge": {
-        "args": [
-            {
-                "name": "edge"
-            }
-        ]
-    },
-    "has_node": {
-        "args": [
-            {
-                "name": "node"
-            }
-        ]
-    },
-    "hdp_to_lda": {
-        "args": []
-    },
-    "id2word": {
-        "args": [
-            {
-                "name": "val"
-            }
-        ]
-    },
-    "identity": {
-        "args": [
-            {
-                "name": "p"
-            }
-        ]
-    },
-    "in the vocabulary, be trimmed away, or handled using the ault ": {
-        "args": [
-            {
-                "name": "discard if word count < min_count)."
-            }
-        ]
-    },
-    "in_current": {
-        "args": [
-            {
-                "name": "offset"
-            }
-        ]
-    },
-    "in_next": {
-        "args": [
-            {
-                "name": "offset"
-            }
-        ]
-    },
-    "index_to_doctag": {
-        "args": [
-            {
-                "name": "i_index"
-            }
-        ]
-    },
-    "indexed_doctags": {
-        "args": [
-            {
-                "name": "doctag_tokens"
-            }
-        ]
-    },
-    "infer_vector": {
-        "args": [
-            {
-                "name": "doc_words"
-            },
-            {
-                "default": "0.1",
-                "name": "alpha"
-            },
-            {
-                "default": "0.0001",
-                "name": "min_alpha"
-            },
-            {
-                "default": "5",
-                "name": "steps"
-            }
-        ]
-    },
-    "inference": {
-        "args": [
-            {
-                "name": "chunk"
-            },
-            {
-                "default": "False",
-                "name": "collect_sstats"
-            }
-        ]
-    },
-    "init_by_clone": {
-        "args": []
-    },
-    "init_dir_prior": {
-        "args": [
-            {
-                "name": "prior"
-            },
-            {
-                "name": "name"
-            }
-        ]
-    },
-    "init_shards": {
-        "args": [
-            {
-                "name": "output_prefix"
-            },
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "4096",
-                "name": "shardsize"
-            },
-            {
-                "default": "_ault_dtype",
-                "name": "dtype"
-            }
-        ]
-    },
-    "init_sims": {
-        "args": [
-            {
-                "default": "False",
-                "name": "replace"
-            }
-        ]
-    },
-    "initialize": {
-        "args": []
-    },
-    "intersect_word2vec_format": {
-        "args": [
-            {
-                "name": "fname"
-            },
-            {
-                "default": "False",
-                "name": "binary"
-            },
-            {
-                "default": "'utf8'",
-                "name": "encoding"
-            },
-            {
-                "default": "'strict'",
-                "name": "unicode_errors"
-            }
-        ]
-    },
-    "interval_start = ault_timer": {
-        "args": [
-            {
-                "name": ""
-            }
-        ]
-    },
-    "is not in the top-N most frequent words ": {
-        "args": [
-            {
-                "name": "ault top 30"
-            },
-            {
-                "name": "000)."
-            }
-        ]
-    },
-    "is_corpus": {
-        "args": [
-            {
-                "name": "obj"
-            }
-        ]
-    },
-    "ismatrix": {
-        "args": [
-            {
-                "name": "m"
-            }
-        ]
-    },
-    "iter_chunks": {
-        "args": [
-            {
-                "default": "None",
-                "name": "chunksize"
-            }
-        ]
-    },
-    "iteritems": {
-        "args": []
-    },
-    "itervalues": {
-        "args": []
-    },
-    "jobdone": {
-        "args": [
-            {
-                "name": "workerid"
-            }
-        ]
-    },
-    "jobsdone": {
-        "args": []
-    },
-    "join_words": {
-        "args": [
-            {
-                "name": "words"
-            },
-            {
-                "default": "\" \"",
-                "name": "separator"
-            }
-        ]
-    },
-    "keep_vocab_item": {
-        "args": [
-            {
-                "name": "word"
-            },
-            {
-                "name": "count"
-            },
-            {
-                "name": "min_count"
-            },
-            {
-                "default": "None",
-                "name": "trim_rule"
-            }
-        ]
-    },
-    "keys": {
-        "args": []
+    "bleicorpus": {
+        "*": {}
+    },
+    "bm25": {
+        "*": {}
+    },
+    "commons": {
+        "*": {
+            "build_graph": {
+                "args": [
+                    {
+                        "name": "sequence"
+                    }
+                ]
+            },
+            "remove_unreachable_nodes": {
+                "args": [
+                    {
+                        "name": "graph"
+                    }
+                ]
+            }
+        }
+    },
+    "csvcorpus": {
+        "*": {}
+    },
+    "dictionary": {
+        "*": {}
+    },
+    "doc2vec": {
+        "*": {
+            "train_document_dbow": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "doc_words"
+                    },
+                    {
+                        "name": "doctag_indexes"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "None",
+                        "name": "work"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "False",
+                        "name": "train_words"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_doctags"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_words"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_hidden"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "word_vectors"
+                    },
+                    {
+                        "default": "None",
+                        "name": "word_locks"
+                    },
+                    {
+                        "default": "None",
+                        "name": "doctag_vectors"
+                    },
+                    {
+                        "default": "None",
+                        "name": "doctag_locks"
+                    }
+                ]
+            },
+            "train_document_dm": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "doc_words"
+                    },
+                    {
+                        "name": "doctag_indexes"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "None",
+                        "name": "work"
+                    },
+                    {
+                        "default": "None",
+                        "name": "neu1"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_doctags"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_words"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_hidden"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "word_vectors"
+                    },
+                    {
+                        "default": "None",
+                        "name": "word_locks"
+                    },
+                    {
+                        "default": "None",
+                        "name": "doctag_vectors"
+                    },
+                    {
+                        "default": "None",
+                        "name": "doctag_locks"
+                    }
+                ]
+            },
+            "train_document_dm_concat": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "doc_words"
+                    },
+                    {
+                        "name": "doctag_indexes"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "None",
+                        "name": "work"
+                    },
+                    {
+                        "default": "None",
+                        "name": "neu1"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_doctags"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_words"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_hidden"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "word_vectors"
+                    },
+                    {
+                        "default": "None",
+                        "name": "word_locks"
+                    },
+                    {
+                        "default": "None",
+                        "name": "doctag_vectors"
+                    },
+                    {
+                        "default": "None",
+                        "name": "doctag_locks"
+                    }
+                ]
+            }
+        },
+        "Doc2Vec": {
+            "__init__": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "documents"
+                    },
+                    {
+                        "default": "300",
+                        "name": "size"
+                    },
+                    {
+                        "default": "0.025",
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "8",
+                        "name": "window"
+                    },
+                    {
+                        "default": "5",
+                        "name": "min_count"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "max_vocab_size"
+                    },
+                    {
+                        "default": "0",
+                        "name": "sample"
+                    },
+                    {
+                        "default": "1",
+                        "name": "seed"
+                    },
+                    {
+                        "default": "1",
+                        "name": "workers"
+                    },
+                    {
+                        "default": "0.0001",
+                        "name": "min_alpha"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "1",
+                        "name": "dm"
+                    },
+                    {
+                        "default": "1",
+                        "name": "hs"
+                    },
+                    {
+                        "default": "0",
+                        "name": "negative"
+                    },
+                    {
+                        "default": "0",
+                        "name": "dbow_words"
+                    },
+                    {
+                        "default": "0",
+                        "name": "dm_mean"
+                    },
+                    {
+                        "default": "0",
+                        "name": "dm_concat"
+                    },
+                    {
+                        "default": "1",
+                        "name": "dm_tag_count"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "docvecs"
+                    },
+                    {
+                        "default": "None",
+                        "name": "docvecs_mapfile"
+                    },
+                    {
+                        "default": "None",
+                        "name": "comment"
+                    },
+                    {
+                        "default": "None",
+                        "name": "trim_rule"
+                    },
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            },
+            "_do_train_job": {
+                "args": [
+                    {
+                        "name": "job"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "name": "inits"
+                    }
+                ]
+            },
+            "_raw_word_count": {
+                "args": [
+                    {
+                        "name": "items"
+                    }
+                ]
+            },
+            "clear_sims": {
+                "args": []
+            },
+            "dbow": {
+                "args": []
+            },
+            "dm": {
+                "args": []
+            },
+            "estimate_memory": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "vocab_size"
+                    },
+                    {
+                        "default": "None",
+                        "name": "report"
+                    }
+                ]
+            },
+            "infer_vector": {
+                "args": [
+                    {
+                        "name": "doc_words"
+                    },
+                    {
+                        "default": "0.1",
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "0.0001",
+                        "name": "min_alpha"
+                    },
+                    {
+                        "default": "5",
+                        "name": "steps"
+                    }
+                ]
+            },
+            "reset_from": {
+                "args": [
+                    {
+                        "name": "other_model"
+                    }
+                ]
+            },
+            "reset_weights": {
+                "args": []
+            },
+            "scan_vocab": {
+                "args": [
+                    {
+                        "name": "documents"
+                    },
+                    {
+                        "default": "10000",
+                        "name": "progress_per"
+                    },
+                    {
+                        "default": "None",
+                        "name": "trim_rule"
+                    }
+                ]
+            }
+        },
+        "Doctag": {
+            "repeat": {
+                "args": [
+                    {
+                        "name": "word_count"
+                    }
+                ]
+            }
+        },
+        "DocvecsArray": {
+            "__contains__": {
+                "args": [
+                    {
+                        "name": "index"
+                    }
+                ]
+            },
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "index"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "mapfile_path"
+                    }
+                ]
+            },
+            "__len__": {
+                "args": []
+            },
+            "_int_index": {
+                "args": [
+                    {
+                        "name": "index"
+                    },
+                    {
+                        "default": "None",
+                        "name": "missing"
+                    }
+                ]
+            },
+            "_key_index": {
+                "args": [
+                    {
+                        "name": "i_index"
+                    },
+                    {
+                        "default": "None",
+                        "name": "missing"
+                    }
+                ]
+            },
+            "borrow_from": {
+                "args": [
+                    {
+                        "name": "other_docvecs"
+                    }
+                ]
+            },
+            "clear_sims": {
+                "args": []
+            },
+            "doesnt_match": {
+                "args": [
+                    {
+                        "name": "docs"
+                    }
+                ]
+            },
+            "estimated_lookup_memory": {
+                "args": []
+            },
+            "index_to_doctag": {
+                "args": [
+                    {
+                        "name": "i_index"
+                    }
+                ]
+            },
+            "indexed_doctags": {
+                "args": [
+                    {
+                        "name": "doctag_tokens"
+                    }
+                ]
+            },
+            "init_sims": {
+                "args": [
+                    {
+                        "default": "False",
+                        "name": "replace"
+                    }
+                ]
+            },
+            "most_similar": {
+                "args": [
+                    {
+                        "default": "[]",
+                        "name": "positive"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "negative"
+                    },
+                    {
+                        "default": "10",
+                        "name": "topn"
+                    },
+                    {
+                        "default": "0",
+                        "name": "clip_start"
+                    },
+                    {
+                        "default": "None",
+                        "name": "clip_end"
+                    }
+                ]
+            },
+            "n_similarity": {
+                "args": [
+                    {
+                        "name": "ds1"
+                    },
+                    {
+                        "name": "ds2"
+                    }
+                ]
+            },
+            "note_doctag": {
+                "args": [
+                    {
+                        "name": "key"
+                    },
+                    {
+                        "name": "document_no"
+                    },
+                    {
+                        "name": "document_length"
+                    }
+                ]
+            },
+            "reset_weights": {
+                "args": [
+                    {
+                        "name": "model"
+                    }
+                ]
+            },
+            "similarity": {
+                "args": [
+                    {
+                        "name": "d1"
+                    },
+                    {
+                        "name": "d2"
+                    }
+                ]
+            },
+            "trained_item": {
+                "args": [
+                    {
+                        "name": "indexed_tuple"
+                    }
+                ]
+            }
+        },
+        "LabeledSentence": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "*args"
+                    },
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            }
+        },
+        "TaggedBrownCorpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "dirname"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            }
+        },
+        "TaggedDocument": {
+            "__str__": {
+                "args": []
+            }
+        }
+    },
+    "docsim": {
+        "*": {},
+        "MatrixSimilarity": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "None",
+                        "name": "num_best"
+                    },
+                    {
+                        "default": "numpy.float32",
+                        "name": "dtype"
+                    },
+                    {
+                        "default": "None",
+                        "name": "num_features"
+                    },
+                    {
+                        "default": "256",
+                        "name": "chunksize"
+                    },
+                    {
+                        "default": "None",
+                        "name": "corpus_len"
+                    }
+                ]
+            }
+        },
+        "Shard": {
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "query"
+                    }
+                ]
+            },
+            "__getstate__": {
+                "args": []
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "name": "index"
+                    }
+                ]
+            },
+            "__len__": {
+                "args": []
+            },
+            "__str__": {
+                "args": []
+            },
+            "fullname": {
+                "args": []
+            },
+            "get_document_id": {
+                "args": [
+                    {
+                        "name": "pos"
+                    }
+                ]
+            },
+            "get_index": {
+                "args": []
+            },
+            "query_shard": {
+                "args": [
+                    {
+                        "name": "args"
+                    }
+                ]
+            }
+        },
+        "Similarity": {
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "query"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "output_prefix"
+                    },
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "name": "num_features"
+                    },
+                    {
+                        "default": "None",
+                        "name": "num_best"
+                    },
+                    {
+                        "default": "256",
+                        "name": "chunksize"
+                    },
+                    {
+                        "default": "32768",
+                        "name": "shardsize"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            },
+            "__len__": {
+                "args": []
+            },
+            "__str__": {
+                "args": []
+            },
+            "add_documents": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    }
+                ]
+            },
+            "check_moved": {
+                "args": []
+            },
+            "close_shard": {
+                "args": []
+            },
+            "destroy": {
+                "args": []
+            },
+            "iter_chunks": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "chunksize"
+                    }
+                ]
+            },
+            "query_shards": {
+                "args": [
+                    {
+                        "name": "query"
+                    }
+                ]
+            },
+            "reopen_shard": {
+                "args": []
+            },
+            "save": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "fname"
+                    },
+                    {
+                        "name": "*args"
+                    },
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            },
+            "shardid2filename": {
+                "args": [
+                    {
+                        "name": "shardid"
+                    }
+                ]
+            },
+            "similarity_by_id": {
+                "args": [
+                    {
+                        "name": "docpos"
+                    }
+                ]
+            },
+            "vector_by_id": {
+                "args": [
+                    {
+                        "name": "docpos"
+                    }
+                ]
+            }
+        },
+        "for description of the other parameters.": {
+            "__len__": {
+                "args": []
+            },
+            "__str__": {
+                "args": []
+            },
+            "get_similarities": {
+                "args": [
+                    {
+                        "name": "query"
+                    }
+                ]
+            }
+        }
+    },
+    "dtmmodel": {
+        "*": {}
+    },
+    "graph": {
+        "*": {},
+        "IGraph": {
+            "add_edge": {
+                "args": [
+                    {
+                        "name": "edge"
+                    },
+                    {
+                        "default": "1",
+                        "name": "wt"
+                    },
+                    {
+                        "default": "''",
+                        "name": "label"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "attrs"
+                    }
+                ]
+            },
+            "add_node": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "default": "None",
+                        "name": "attrs"
+                    }
+                ]
+            },
+            "del_node": {
+                "args": [
+                    {
+                        "name": "node"
+                    }
+                ]
+            },
+            "edge_weight": {
+                "args": [
+                    {
+                        "name": "edge"
+                    }
+                ]
+            },
+            "edges": {
+                "args": []
+            },
+            "has_edge": {
+                "args": [
+                    {
+                        "name": "edge"
+                    }
+                ]
+            },
+            "has_node": {
+                "args": [
+                    {
+                        "name": "node"
+                    }
+                ]
+            },
+            "neighbors": {
+                "args": [
+                    {
+                        "name": "node"
+                    }
+                ]
+            },
+            "nodes": {
+                "args": []
+            }
+        }
+    },
+    "hashdictionary": {
+        "*": {}
+    },
+    "hdpmodel": {
+        "*": {
+            "dirichlet_expectation": {
+                "args": [
+                    {
+                        "name": "alpha"
+                    }
+                ]
+            },
+            "expect_log_sticks": {
+                "args": [
+                    {
+                        "name": "sticks"
+                    }
+                ]
+            },
+            "lda_e_step": {
+                "args": [
+                    {
+                        "name": "doc_word_ids"
+                    },
+                    {
+                        "name": "doc_word_counts"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "name": "beta"
+                    },
+                    {
+                        "default": "100",
+                        "name": "max_iter"
+                    }
+                ]
+            },
+            "log_normalize": {
+                "args": [
+                    {
+                        "name": "v"
+                    }
+                ]
+            }
+        },
+        "HdpModel": {
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "bow"
+                    },
+                    {
+                        "default": "0.01",
+                        "name": "eps"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "name": "id2word"
+                    },
+                    {
+                        "default": "None",
+                        "name": "max_chunks"
+                    },
+                    {
+                        "default": "None",
+                        "name": "max_time"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "256",
+                        "name": "chunksize"
+                    },
+                    {
+                        "default": "1.0",
+                        "name": "kappa"
+                    },
+                    {
+                        "default": "64.0",
+                        "name": "tau"
+                    },
+                    {
+                        "default": "15",
+                        "name": "K"
+                    },
+                    {
+                        "default": "150",
+                        "name": "T"
+                    },
+                    {
+                        "default": "1",
+                        "name": "alpha"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "1",
+                        "name": "gamma"
+                    },
+                    {
+                        "default": "0.01",
+                        "name": "eta"
+                    },
+                    {
+                        "default": "1.0",
+                        "name": "scale"
+                    },
+                    {
+                        "default": "0.0001",
+                        "name": "var_converge"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "outputdir"
+                    }
+                ]
+            },
+            "doc_e_step": {
+                "args": [
+                    {
+                        "name": "doc"
+                    },
+                    {
+                        "name": "ss"
+                    },
+                    {
+                        "name": "Elogsticks_1st"
+                    },
+                    {
+                        "name": "word_list"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "name": "unique_words"
+                    },
+                    {
+                        "name": "doc_word_ids"
+                    },
+                    {
+                        "name": "doc_word_counts"
+                    },
+                    {
+                        "name": "var_converge) :"
+                    },
+                    {
+                        "name": "\"\"\""
+                    },
+                    {
+                        "name": "e step for a single doc"
+                    },
+                    {
+                        "name": "\"\"\""
+                    },
+                    {
+                        "default": " [unique_words[id] for id in doc_word_ids]",
+                        "name": "chunkids "
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": " self.m_Elogbeta[:",
+                        "name": "Elogbeta_doc "
+                    },
+                    {
+                        "name": "doc_word_ids]"
+                    },
+                    {
+                        "name": "## very similar to the hdp equations"
+                    },
+                    {
+                        "default": " np.zeros((2",
+                        "name": "v "
+                    },
+                    {
+                        "name": "self.m_K - 1))"
+                    },
+                    {
+                        "default": " 1.0",
+                        "name": "v[0] "
+                    },
+                    {
+                        "default": " self.m_alpha",
+                        "name": "v[1] "
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "name": "# back to the uniform"
+                    },
+                    {
+                        "default": " np.ones((len(doc_word_ids)",
+                        "name": "phi "
+                    },
+                    {
+                        "name": "self.m_K)) * 1.0 / self.m_K"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": " 0.0",
+                        "name": "likelihood "
+                    },
+                    {
+                        "default": " -1e200",
+                        "name": "old_likelihood "
+                    },
+                    {
+                        "default": " 1.0",
+                        "name": "converge "
+                    },
+                    {
+                        "default": " 1e-100",
+                        "name": "eps "
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": " 0",
+                        "name": "iter "
+                    },
+                    {
+                        "default": " 100",
+                        "name": "max_iter "
+                    },
+                    {
+                        "name": "# not yet support second level optimization yet"
+                    },
+                    {
+                        "name": "to be done in the future"
+                    },
+                    {
+                        "name": "while iter < max_iter and (converge < 0.0 or converge > var_converge"
+                    }
+                ]
+            },
+            "evaluate_test_corpus": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    }
+                ]
+            },
+            "hdp_to_lda": {
+                "args": []
+            },
+            "inference": {
+                "args": [
+                    {
+                        "name": "chunk"
+                    }
+                ]
+            },
+            "optimal_ordering": {
+                "args": []
+            },
+            "print_topics": {
+                "args": [
+                    {
+                        "default": "20",
+                        "name": "topics"
+                    },
+                    {
+                        "default": "20",
+                        "name": "topn"
+                    }
+                ]
+            },
+            "save_options": {
+                "args": []
+            },
+            "save_topics": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "doc_count"
+                    }
+                ]
+            },
+            "show_topics": {
+                "args": [
+                    {
+                        "default": "20",
+                        "name": "topics"
+                    },
+                    {
+                        "default": "20",
+                        "name": "topn"
+                    },
+                    {
+                        "default": "False",
+                        "name": "log"
+                    },
+                    {
+                        "default": "True",
+                        "name": "formatted"
+                    }
+                ]
+            },
+            "update": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    }
+                ]
+            },
+            "update_chunk": {
+                "args": [
+                    {
+                        "name": "chunk"
+                    },
+                    {
+                        "default": "True",
+                        "name": "update"
+                    },
+                    {
+                        "default": "True",
+                        "name": "opt_o"
+                    }
+                ]
+            },
+            "update_expectations": {
+                "args": []
+            },
+            "update_finished": {
+                "args": [
+                    {
+                        "name": "start_time"
+                    },
+                    {
+                        "name": "chunks_processed"
+                    },
+                    {
+                        "name": "docs_processed"
+                    }
+                ]
+            },
+            "update_lambda": {
+                "args": [
+                    {
+                        "name": "sstats"
+                    },
+                    {
+                        "name": "word_list"
+                    },
+                    {
+                        "name": "opt_o"
+                    }
+                ]
+            }
+        },
+        "SuffStats": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "T"
+                    },
+                    {
+                        "name": "Wt"
+                    },
+                    {
+                        "name": "Dt"
+                    }
+                ]
+            },
+            "set_zero": {
+                "args": []
+            }
+        }
+    },
+    "indexedcorpus": {
+        "*": {}
+    },
+    "interfaces": {
+        "*": {},
+        "CorpusABC": {
+            "__iter__": {
+                "args": []
+            },
+            "__len__": {
+                "args": []
+            },
+            "save": {
+                "args": [
+                    {
+                        "name": "*args"
+                    },
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            },
+            "save_corpus": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "None",
+                        "name": "id2word"
+                    },
+                    {
+                        "default": "False",
+                        "name": "metadata"
+                    }
+                ]
+            }
+        },
+        "TransformationABC": {
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "vec"
+                    }
+                ]
+            },
+            "_apply": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "None",
+                        "name": "chunksize"
+                    }
+                ]
+            }
+        },
+        "TransformedCorpus": {
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "docno"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "obj"
+                    },
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "None",
+                        "name": "chunksize"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            },
+            "__len__": {
+                "args": []
+            }
+        }
     },
     "keywords": {
-        "args": [
-            {
-                "name": "text"
+        "*": {
+            "_extract_tokens": {
+                "args": [
+                    {
+                        "name": "lemmas"
+                    },
+                    {
+                        "name": "scores"
+                    },
+                    {
+                        "name": "ratio"
+                    },
+                    {
+                        "name": "words"
+                    }
+                ]
             },
-            {
-                "default": "0.2",
-                "name": "ratio"
+            "_format_results": {
+                "args": [
+                    {
+                        "name": "_keywords"
+                    },
+                    {
+                        "name": "combined_keywords"
+                    },
+                    {
+                        "name": "split"
+                    },
+                    {
+                        "name": "scores"
+                    }
+                ]
             },
-            {
-                "default": "None",
-                "name": "words"
+            "_get_average_score": {
+                "args": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "_keywords"
+                    }
+                ]
             },
-            {
-                "default": "False",
-                "name": "split"
+            "_get_combined_keywords": {
+                "args": [
+                    {
+                        "name": "_keywords"
+                    },
+                    {
+                        "name": "split_text"
+                    }
+                ]
             },
-            {
-                "default": "False",
-                "name": "scores"
+            "_get_first_window": {
+                "args": [
+                    {
+                        "name": "split_text"
+                    }
+                ]
             },
-            {
-                "default": "['NN'",
-                "name": "pos_filter"
+            "_get_keywords_with_score": {
+                "args": [
+                    {
+                        "name": "extracted_lemmas"
+                    },
+                    {
+                        "name": "lemma_to_word"
+                    }
+                ]
             },
-            {
-                "name": "'JJ']"
+            "_get_pos_filters": {
+                "args": [
+                    {
+                        "name": ""
+                    }
+                ]
             },
-            {
-                "default": "False",
-                "name": "lemmatize"
+            "_get_words_for_graph": {
+                "args": [
+                    {
+                        "name": "tokens"
+                    },
+                    {
+                        "name": "pos_filter"
+                    }
+                ]
+            },
+            "_init_queue": {
+                "args": [
+                    {
+                        "name": "split_text"
+                    }
+                ]
+            },
+            "_lemmas_to_words": {
+                "args": [
+                    {
+                        "name": "tokens"
+                    }
+                ]
+            },
+            "_process_first_window": {
+                "args": [
+                    {
+                        "name": "graph"
+                    },
+                    {
+                        "name": "tokens"
+                    },
+                    {
+                        "name": "split_text"
+                    }
+                ]
+            },
+            "_process_text": {
+                "args": [
+                    {
+                        "name": "graph"
+                    },
+                    {
+                        "name": "tokens"
+                    },
+                    {
+                        "name": "split_text"
+                    }
+                ]
+            },
+            "_process_word": {
+                "args": [
+                    {
+                        "name": "graph"
+                    },
+                    {
+                        "name": "tokens"
+                    },
+                    {
+                        "name": "queue"
+                    },
+                    {
+                        "name": "word"
+                    }
+                ]
+            },
+            "_queue_iterator": {
+                "args": [
+                    {
+                        "name": "queue"
+                    }
+                ]
+            },
+            "_set_graph_edge": {
+                "args": [
+                    {
+                        "name": "graph"
+                    },
+                    {
+                        "name": "tokens"
+                    },
+                    {
+                        "name": "word_a"
+                    },
+                    {
+                        "name": "word_b"
+                    }
+                ]
+            },
+            "_set_graph_edges": {
+                "args": [
+                    {
+                        "name": "graph"
+                    },
+                    {
+                        "name": "tokens"
+                    },
+                    {
+                        "name": "split_text"
+                    }
+                ]
+            },
+            "_strip_word": {
+                "args": [
+                    {
+                        "name": "word"
+                    }
+                ]
+            },
+            "_update_queue": {
+                "args": [
+                    {
+                        "name": "queue"
+                    },
+                    {
+                        "name": "word"
+                    }
+                ]
+            },
+            "get_graph": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "keywords": {
+                "args": [
+                    {
+                        "name": "text"
+                    },
+                    {
+                        "default": "0.2",
+                        "name": "ratio"
+                    },
+                    {
+                        "default": "None",
+                        "name": "words"
+                    },
+                    {
+                        "default": "False",
+                        "name": "split"
+                    },
+                    {
+                        "default": "False",
+                        "name": "scores"
+                    },
+                    {
+                        "default": "['NN'",
+                        "name": "pos_filter"
+                    },
+                    {
+                        "name": "'JJ']"
+                    },
+                    {
+                        "default": "False",
+                        "name": "lemmatize"
+                    }
+                ]
             }
-        ]
+        }
     },
-    "lda_e_step": {
-        "args": [
-            {
-                "name": "doc_word_ids"
-            },
-            {
-                "name": "doc_word_counts"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "name": "beta"
-            },
-            {
-                "default": "100",
-                "name": "max_iter"
+    "lda_dispatcher": {
+        "*": {}
+    },
+    "lda_worker": {
+        "*": {}
+    },
+    "ldamallet": {
+        "*": {
+            "read_doctopics": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "default": "1e-6",
+                        "name": "eps"
+                    }
+                ]
             }
-        ]
+        }
     },
-    "learn_vocab": {
-        "args": [
-            {
-                "name": "sentences"
+    "ldamodel": {
+        "*": {
+            "dirichlet_expectation": {
+                "args": [
+                    {
+                        "name": "alpha"
+                    }
+                ]
             },
-            {
-                "name": "max_vocab_size"
-            },
-            {
-                "default": "b'_'",
-                "name": "delimiter"
+            "update_dir_prior": {
+                "args": [
+                    {
+                        "name": "prior"
+                    },
+                    {
+                        "name": "N"
+                    },
+                    {
+                        "name": "logphat"
+                    },
+                    {
+                        "name": "rho"
+                    }
+                ]
             }
-        ]
-    },
-    "line2doc": {
-        "args": [
-            {
-                "name": "line"
+        },
+        "LdaState": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "eta"
+                    },
+                    {
+                        "name": "shape"
+                    }
+                ]
+            },
+            "blend": {
+                "args": [
+                    {
+                        "name": "rhot"
+                    },
+                    {
+                        "name": "other"
+                    },
+                    {
+                        "default": "None",
+                        "name": "targetsize"
+                    }
+                ]
+            },
+            "blend2": {
+                "args": [
+                    {
+                        "name": "rhot"
+                    },
+                    {
+                        "name": "other"
+                    },
+                    {
+                        "default": "None",
+                        "name": "targetsize"
+                    }
+                ]
+            },
+            "get_Elogbeta": {
+                "args": []
+            },
+            "get_lambda": {
+                "args": []
+            },
+            "merge": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "reset": {
+                "args": []
             }
-        ]
+        }
     },
-    "load": {
-        "args": [
-            {
-                "name": "cls"
-            },
-            {
-                "name": "fname"
-            },
-            {
-                "default": "None",
-                "name": "mmap"
+    "ldamulticore": {
+        "*": {}
+    },
+    "ldavowpalwabbit": {
+        "*": {}
+    },
+    "logentropy_model": {
+        "*": {}
+    },
+    "lowcorpus": {
+        "*": {
+            "split_on_space": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
             }
-        ]
+        }
     },
-    "load_document_topics": {
-        "args": []
+    "lsi_dispatcher": {
+        "*": {}
     },
-    "load_from_text": {
-        "args": [
-            {
-                "name": "fname"
+    "lsi_worker": {
+        "*": {}
+    },
+    "lsimodel": {
+        "*": {
+            "ascarray": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "default": "''",
+                        "name": "name"
+                    }
+                ]
+            },
+            "asfarray": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "default": "''",
+                        "name": "name"
+                    }
+                ]
+            },
+            "clip_spectrum": {
+                "args": [
+                    {
+                        "name": "s"
+                    },
+                    {
+                        "name": "k"
+                    },
+                    {
+                        "default": "0.001",
+                        "name": "discard"
+                    }
+                ]
             }
-        ]
-    },
-    "load_shard": {
-        "args": [
-            {
-                "name": "n"
+        },
+        "Projection": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "m"
+                    },
+                    {
+                        "name": "k"
+                    },
+                    {
+                        "default": "None",
+                        "name": "docs"
+                    },
+                    {
+                        "default": "False",
+                        "name": "use_svdlibc"
+                    },
+                    {
+                        "default": "P2_EXTRA_ITERS",
+                        "name": "power_iters"
+                    },
+                    {
+                        "default": "P2_EXTRA_DIMS",
+                        "name": "extra_dims"
+                    }
+                ]
+            },
+            "empty_like": {
+                "args": []
+            },
+            "merge": {
+                "args": [
+                    {
+                        "name": "other"
+                    },
+                    {
+                        "default": "1.0",
+                        "name": "decay"
+                    }
+                ]
             }
-        ]
+        }
     },
-    "load_word2vec_format": {
-        "args": [
-            {
-                "name": "cls"
+    "make_wiki": {
+        "*": {}
+    },
+    "make_wiki_lemma": {
+        "*": {}
+    },
+    "make_wiki_online": {
+        "*": {}
+    },
+    "make_wiki_online_lemma": {
+        "*": {}
+    },
+    "make_wiki_online_nodebug": {
+        "*": {}
+    },
+    "make_wikicorpus": {
+        "*": {}
+    },
+    "malletcorpus": {
+        "*": {}
+    },
+    "matutils": {
+        "*": {
+            "any2sparse": {
+                "args": [
+                    {
+                        "name": "vec"
+                    },
+                    {
+                        "default": "1e-9",
+                        "name": "eps"
+                    }
+                ]
             },
-            {
-                "name": "fname"
+            "argsort": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "None",
+                        "name": "topn"
+                    },
+                    {
+                        "default": "False",
+                        "name": "reverse"
+                    }
+                ]
             },
-            {
-                "default": "None",
-                "name": "fvocab"
+            "corpus2csc": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "None",
+                        "name": "num_terms"
+                    },
+                    {
+                        "default": "numpy.float64",
+                        "name": "dtype"
+                    },
+                    {
+                        "default": "None",
+                        "name": "num_docs"
+                    },
+                    {
+                        "default": "None",
+                        "name": "num_nnz"
+                    },
+                    {
+                        "default": "0",
+                        "name": "printprogress"
+                    }
+                ]
             },
-            {
-                "default": "False",
-                "name": "binary"
+            "ismatrix": {
+                "args": [
+                    {
+                        "name": "m"
+                    }
+                ]
             },
-            {
-                "default": "True",
-                "name": "norm_only"
+            "pad": {
+                "args": [
+                    {
+                        "name": "mat"
+                    },
+                    {
+                        "name": "padrow"
+                    },
+                    {
+                        "name": "padcol"
+                    }
+                ]
             },
-            {
-                "default": "'utf8'",
-                "name": "encoding"
+            "scipy2sparse": {
+                "args": [
+                    {
+                        "name": "vec"
+                    },
+                    {
+                        "default": "1e-9",
+                        "name": "eps"
+                    }
+                ]
             },
-            {
-                "default": "'strict'",
-                "name": "unicode_errors"
+            "triu_indices": {
+                "args": [
+                    {
+                        "name": "n"
+                    },
+                    {
+                        "default": "0",
+                        "name": "k"
+                    }
+                ]
+            },
+            "zeros_aligned": {
+                "args": [
+                    {
+                        "name": "shape"
+                    },
+                    {
+                        "name": "dtype"
+                    },
+                    {
+                        "default": "'C'",
+                        "name": "order"
+                    },
+                    {
+                        "default": "128",
+                        "name": "align"
+                    }
+                ]
             }
-        ]
-    },
-    "load_word_topics": {
-        "args": []
-    },
-    "log_accuracy": {
-        "args": [
-            {
-                "name": "section"
+        },
+        "Dense2Corpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "dense"
+                    },
+                    {
+                        "default": "True",
+                        "name": "documents_columns"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            },
+            "__len__": {
+                "args": []
             }
-        ]
-    },
-    "log_normalize": {
-        "args": [
-            {
-                "name": "v"
+        },
+        "MmWriter": {
+            "__del__": {
+                "args": []
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "fname"
+                    }
+                ]
+            },
+            "close": {
+                "args": []
+            },
+            "fake_headers": {
+                "args": [
+                    {
+                        "name": "num_docs"
+                    },
+                    {
+                        "name": "num_terms"
+                    },
+                    {
+                        "name": "num_nnz"
+                    }
+                ]
+            },
+            "write_corpus": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "1000",
+                        "name": "progress_cnt"
+                    },
+                    {
+                        "default": "False",
+                        "name": "index"
+                    },
+                    {
+                        "default": "None",
+                        "name": "num_terms"
+                    },
+                    {
+                        "default": "False",
+                        "name": "metadata"
+                    }
+                ]
+            },
+            "write_headers": {
+                "args": [
+                    {
+                        "name": "num_docs"
+                    },
+                    {
+                        "name": "num_terms"
+                    },
+                    {
+                        "name": "num_nnz"
+                    }
+                ]
+            },
+            "write_vector": {
+                "args": [
+                    {
+                        "name": "docno"
+                    },
+                    {
+                        "name": "vector"
+                    }
+                ]
             }
-        ]
-    },
-    "log_perplexity": {
-        "args": [
-            {
-                "name": "chunk"
+        },
+        "Scipy2Corpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "vecs"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            },
+            "__len__": {
+                "args": []
+            },
+            "corpus2dense": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "name": "num_terms"
+                    },
+                    {
+                        "default": "None",
+                        "name": "num_docs"
+                    },
+                    {
+                        "default": "numpy.float32",
+                        "name": "dtype"
+                    }
+                ]
+            },
+            "full2sparse": {
+                "args": [
+                    {
+                        "name": "vec"
+                    },
+                    {
+                        "default": "1e-9",
+                        "name": "eps"
+                    }
+                ]
+            },
+            "full2sparse_clipped": {
+                "args": [
+                    {
+                        "name": "vec"
+                    },
+                    {
+                        "name": "topn"
+                    },
+                    {
+                        "default": "1e-9",
+                        "name": "eps"
+                    }
+                ]
+            },
+            "sparse2full": {
+                "args": [
+                    {
+                        "name": "doc"
+                    },
+                    {
+                        "name": "length"
+                    }
+                ]
             }
-        ]
-    },
-    "logger.info": {
-        "args": [
-            {
-                "name": "'Could not import Theano"
+        },
+        "Sparse2Corpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "sparse"
+                    },
+                    {
+                        "default": "True",
+                        "name": "documents_columns"
+                    }
+                ]
             },
-            {
-                "name": "will use standard float for ault ShardedCorpus dtype.'"
+            "__iter__": {
+                "args": []
+            },
+            "__len__": {
+                "args": []
+            },
+            "cossim": {
+                "args": [
+                    {
+                        "name": "vec1"
+                    },
+                    {
+                        "name": "vec2"
+                    }
+                ]
+            },
+            "qr_destroy": {
+                "args": [
+                    {
+                        "name": "la"
+                    }
+                ]
+            },
+            "unitvec": {
+                "args": [
+                    {
+                        "name": "vec"
+                    }
+                ]
+            },
+            "veclen": {
+                "args": [
+                    {
+                        "name": "vec"
+                    }
+                ]
             }
-        ]
+        }
     },
-    "main": {
-        "args": [
-            {
-                "name": ""
+    "mmcorpus": {
+        "*": {}
+    },
+    "nosy": {
+        "*": {
+            "checkSum": {
+                "args": [
+                    {
+                        "name": ""
+                    }
+                ]
             }
-        ]
-    },
-    "make_closing": {
-        "args": [
-            {
-                "name": "base"
-            },
-            {
-                "name": "**attrs"
-            }
-        ]
-    },
-    "make_cum_table": {
-        "args": [
-            {
-                "default": "0.75",
-                "name": "power"
-            },
-            {
-                "default": "2**31 - 1",
-                "name": "domain"
-            }
-        ]
-    },
-    "merge": {
-        "args": [
-            {
-                "name": "other"
-            },
-            {
-                "default": "1.0",
-                "name": "decay"
-            }
-        ]
-    },
-    "merge_syntactic_units": {
-        "args": [
-            {
-                "name": "original_units"
-            },
-            {
-                "name": "filtered_units"
-            },
-            {
-                "default": "None",
-                "name": "tags"
-            }
-        ]
-    },
-    "merge_with": {
-        "args": [
-            {
-                "name": "other"
-            }
-        ]
-    },
-    "mock_data": {
-        "args": [
-            {
-                "default": "1000",
-                "name": "n_items"
-            },
-            {
-                "default": "1000",
-                "name": "dim"
-            },
-            {
-                "default": "0.5",
-                "name": "prob_nnz"
-            },
-            {
-                "default": "1.0",
-                "name": "lam"
-            }
-        ]
-    },
-    "mock_data_row": {
-        "args": [
-            {
-                "default": "1000",
-                "name": "dim"
-            },
-            {
-                "default": "0.5",
-                "name": "prob_nnz"
-            },
-            {
-                "default": "1.0",
-                "name": "lam"
-            }
-        ]
-    },
-    "most_similar": {
-        "args": [
-            {
-                "default": "[]",
-                "name": "positive"
-            },
-            {
-                "default": "[]",
-                "name": "negative"
-            },
-            {
-                "default": "10",
-                "name": "topn"
-            },
-            {
-                "default": "None",
-                "name": "restrict_vocab"
-            }
-        ]
-    },
-    "most_similar_cosmul": {
-        "args": [
-            {
-                "default": "[]",
-                "name": "positive"
-            },
-            {
-                "default": "[]",
-                "name": "negative"
-            },
-            {
-                "default": "10",
-                "name": "topn"
-            }
-        ]
-    },
-    "n_similarity": {
-        "args": [
-            {
-                "name": "ws1"
-            },
-            {
-                "name": "ws2"
-            }
-        ]
-    },
-    "need about 1GB of RAM. Set to `None` for no limit ": {
-        "args": [
-            {
-                "name": "ault)."
-            }
-        ]
-    },
-    "neighbors": {
-        "args": [
-            {
-                "name": "node"
-            }
-        ]
-    },
-    "nodes": {
-        "args": []
-    },
-    "note_doctag": {
-        "args": [
-            {
-                "name": "key"
-            },
-            {
-                "name": "document_no"
-            },
-            {
-                "name": "document_length"
-            }
-        ]
-    },
-    "optimal_ordering": {
-        "args": []
-    },
-    "pad": {
-        "args": [
-            {
-                "name": "mat"
-            },
-            {
-                "name": "padrow"
-            },
-            {
-                "name": "padcol"
-            }
-        ]
+        }
     },
     "pagerank_weighted": {
-        "args": [
-            {
-                "name": "graph"
-            },
-            {
-                "default": "0.85",
-                "name": "damping"
-            }
-        ]
-    },
-    "pickle": {
-        "args": [
-            {
-                "name": "obj"
-            },
-            {
-                "name": "fname"
-            },
-            {
-                "default": "2",
-                "name": "protocol"
-            }
-        ]
-    },
-    "precompute_idfs": {
-        "args": [
-            {
-                "name": "wglobal"
-            },
-            {
-                "name": "dfs"
-            },
-            {
-                "name": "total_docs"
-            }
-        ]
-    },
-    "preprocess_documents": {
-        "args": [
-            {
-                "name": "docs"
-            }
-        ]
-    },
-    "preprocess_string": {
-        "args": [
-            {
-                "name": "s"
-            },
-            {
-                "default": "DEFAULT_FILTERS",
-                "name": "filters"
-            }
-        ]
-    },
-    "print_debug": {
-        "args": [
-            {
-                "name": "id2token"
-            },
-            {
-                "name": "u"
-            },
-            {
-                "name": "s"
-            },
-            {
-                "name": "topics"
-            },
-            {
-                "default": "10",
-                "name": "num_words"
-            },
-            {
-                "default": "None",
-                "name": "num_neg"
-            }
-        ]
-    },
-    "print_topic": {
-        "args": [
-            {
-                "name": "topicid"
-            },
-            {
-                "default": "10",
-                "name": "topn"
-            }
-        ]
-    },
-    "print_topics": {
-        "args": [
-            {
-                "default": "10",
-                "name": "num_topics"
-            },
-            {
-                "default": "10",
-                "name": "num_words"
-            }
-        ]
-    },
-    "process_article": {
-        "args": [
-            {
-                "name": "args"
-            }
-        ]
-    },
-    "process_result_queue": {
-        "args": [
-            {
-                "default": "False",
-                "name": "force"
-            }
-        ]
-    },
-    "process_results": {
-        "args": [
-            {
-                "name": "graph"
-            },
-            {
-                "name": "vecs"
-            }
-        ]
-    },
-    "processjob": {
-        "args": [
-            {
-                "name": "job"
-            }
-        ]
-    },
-    "prune_vocab": {
-        "args": [
-            {
-                "name": "vocab"
-            },
-            {
-                "name": "min_reduce"
-            },
-            {
-                "default": "None",
-                "name": "trim_rule"
-            }
-        ]
-    },
-    "put": {
-        "args": [
-            {
-                "name": "job"
-            }
-        ]
-    },
-    "putjob": {
-        "args": [
-            {
-                "name": "job"
-            }
-        ]
-    },
-    "pyro_daemon": {
-        "args": [
-            {
-                "name": "name"
-            },
-            {
-                "name": "obj"
-            },
-            {
-                "default": "False",
-                "name": "random_suffix"
-            },
-            {
-                "default": "None",
-                "name": "ip"
-            },
-            {
-                "default": "None",
-                "name": "port"
-            }
-        ]
-    },
-    "qr_destroy": {
-        "args": [
-            {
-                "name": "la"
-            }
-        ]
-    },
-    "query_shard": {
-        "args": [
-            {
-                "name": "args"
-            }
-        ]
-    },
-    "query_shards": {
-        "args": [
-            {
-                "name": "query"
-            }
-        ]
-    },
-    "randfname": {
-        "args": [
-            {
-                "default": "'gensim'",
-                "name": "prefix"
-            }
-        ]
-    },
-    "read_doctopics": {
-        "args": [
-            {
-                "name": "fname"
-            },
-            {
-                "default": "1e-6",
-                "name": "eps"
-            }
-        ]
-    },
-    "read_file": {
-        "args": [
-            {
-                "name": "path"
-            }
-        ]
-    },
-    "read_files": {
-        "args": [
-            {
-                "name": "pattern"
-            }
-        ]
-    },
-    "release": {
-        "args": []
-    },
-    "remove_file": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "remove_markup": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "remove_stopwords": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "remove_template": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "remove_unreachable_nodes": {
-        "args": [
-            {
-                "name": "graph"
-            }
-        ]
-    },
-    "reopen_shard": {
-        "args": []
-    },
-    "repeat": {
-        "args": [
-            {
-                "name": "word_count"
-            }
-        ]
-    },
-    "replace_abbreviations": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "replace_with_separator": {
-        "args": [
-            {
-                "name": "text"
-            },
-            {
-                "name": "separator"
-            },
-            {
-                "name": "regexs"
-            }
-        ]
-    },
-    "requestjob": {
-        "args": []
-    },
-    "reset": {
-        "args": []
-    },
-    "reset_from": {
-        "args": [
-            {
-                "name": "other_model"
-            }
-        ]
-    },
-    "reset_weights": {
-        "args": []
-    },
-    "resize_shards": {
-        "args": [
-            {
-                "name": "shardsize"
-            }
-        ]
-    },
-    "restricted_hash": {
-        "args": [
-            {
-                "name": "token"
-            }
-        ]
-    },
-    "return self.edge_properties.setault": {
-        "args": [
-            {
-                "name": "edge"
-            },
-            {
-                "name": "{}"
-            }
-        ]
-    },
-    "revdict": {
-        "args": [
-            {
-                "name": "d"
-            }
-        ]
-    },
-    "rho": {
-        "args": [
-            {
-                "name": ""
-            }
-        ]
-    },
-    "row_sparse2gensim": {
-        "args": [
-            {
-                "name": "row_idx"
-            },
-            {
-                "name": "csr_matrix"
-            }
-        ]
-    },
-    "run": {
-        "args": []
-    },
-    "safe_unichr": {
-        "args": [
-            {
-                "name": "intval"
-            }
-        ]
-    },
-    "save": {
-        "args": [
-            {
-                "name": "*args"
-            },
-            {
-                "name": "**kwargs"
-            }
-        ]
-    },
-    "save_as_text": {
-        "args": [
-            {
-                "name": "fname"
-            }
-        ]
-    },
-    "save_corpus": {
-        "args": [
-            {
-                "name": "fname"
-            },
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "None",
-                "name": "id2word"
-            },
-            {
-                "default": "10000",
-                "name": "progress_cnt"
-            },
-            {
-                "default": "False",
-                "name": "metadata"
-            }
-        ]
-    },
-    "save_options": {
-        "args": []
-    },
-    "save_shard": {
-        "args": [
-            {
-                "name": "shard"
-            },
-            {
-                "default": "None",
-                "name": "n"
-            },
-            {
-                "default": "None",
-                "name": "filename"
-            }
-        ]
-    },
-    "save_topics": {
-        "args": [
-            {
-                "default": "None",
-                "name": "doc_count"
-            }
-        ]
-    },
-    "save_word2vec_format": {
-        "args": [
-            {
-                "name": "fname"
-            },
-            {
-                "default": "None",
-                "name": "fvocab"
-            },
-            {
-                "default": "False",
-                "name": "binary"
-            }
-        ]
-    },
-    "scale_vocab": {
-        "args": [
-            {
-                "default": "None",
-                "name": "min_count"
-            },
-            {
-                "default": "None",
-                "name": "sample"
-            },
-            {
-                "default": "False",
-                "name": "dry_run"
-            },
-            {
-                "default": "False",
-                "name": "keep_raw_vocab"
-            },
-            {
-                "default": "None",
-                "name": "trim_rule"
-            }
-        ]
-    },
-    "scan_vocab": {
-        "args": [
-            {
-                "name": "sentences"
-            },
-            {
-                "default": "10000",
-                "name": "progress_per"
-            },
-            {
-                "default": "None",
-                "name": "trim_rule"
-            }
-        ]
-    },
-    "scipy2sparse": {
-        "args": [
-            {
-                "name": "vec"
-            },
-            {
-                "default": "1e-9",
-                "name": "eps"
-            }
-        ]
-    },
-    "score_cbow_pair": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "word"
-            },
-            {
-                "name": "word2_indices"
-            },
-            {
-                "name": "l1"
-            }
-        ]
-    },
-    "score_sentence_cbow": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "sentence"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "default": "None",
-                "name": "work"
-            },
-            {
-                "default": "None",
-                "name": "neu1"
-            }
-        ]
-    },
-    "score_sentence_sg": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "sentence"
-            },
-            {
-                "default": "None",
-                "name": "work"
-            }
-        ]
-    },
-    "score_sg_pair": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "word"
-            },
-            {
-                "name": "word2"
-            }
-        ]
-    },
-    "seeded_vector": {
-        "args": [
-            {
-                "name": "seed_string"
-            }
-        ]
-    },
-    "self.line2words = line2words # how to translate lines into words ": {
-        "args": [
-            {
-                "name": "simply split on space by ault"
-            }
-        ]
-    },
-    "self.raw_vocab = aultdict": {
-        "args": [
-            {
-                "name": "int"
-            }
-        ]
-    },
-    "self.vocab = aultdict": {
-        "args": [
-            {
-                "default": "> its count",
-                "name": "int)  # mapping between utf8 token "
-            }
-        ]
-    },
-    "serialize": {
-        "args": [
-            {
-                "name": "serializer"
-            },
-            {
-                "name": "fname"
-            },
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "None",
-                "name": "id2word"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "set_edge_properties": {
-        "args": [
-            {
-                "name": "edge"
-            },
-            {
-                "name": "**properties"
-            }
-        ]
-    },
-    "set_zero": {
-        "args": []
-    },
-    "shard_by_offset": {
-        "args": [
-            {
-                "name": "offset"
-            }
-        ]
-    },
-    "shardid2filename": {
-        "args": [
-            {
-                "name": "shardid"
-            }
-        ]
-    },
-    "show_topic": {
-        "args": [
-            {
-                "name": "topicid"
-            },
-            {
-                "default": "10",
-                "name": "topn"
-            }
-        ]
-    },
-    "show_topic_terms": {
-        "args": [
-            {
-                "name": "topic_data"
-            },
-            {
-                "name": "topn"
-            }
-        ]
-    },
-    "show_topics": {
-        "args": [
-            {
-                "default": "10",
-                "name": "num_topics"
-            },
-            {
-                "default": "10",
-                "name": "num_words"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "similarity": {
-        "args": [
-            {
-                "name": "w1"
-            },
-            {
-                "name": "w2"
-            }
-        ]
-    },
-    "similarity_by_id": {
-        "args": [
-            {
-                "name": "docpos"
-            }
-        ]
-    },
-    "simple_preprocess": {
-        "args": [
-            {
-                "name": "doc"
-            },
-            {
-                "default": "False",
-                "name": "deacc"
-            },
-            {
-                "default": "2",
-                "name": "min_len"
-            },
-            {
-                "default": "15",
-                "name": "max_len"
-            }
-        ]
-    },
-    "skip_headers": {
-        "args": [
-            {
-                "name": "input_file"
-            }
-        ]
-    },
-    "smart_extension": {
-        "args": [
-            {
-                "name": "fname"
-            },
-            {
-                "name": "ext"
-            }
-        ]
-    },
-    "smart_open": {
-        "args": [
-            {
-                "name": "fname"
-            },
-            {
-                "default": "'rb'",
-                "name": "mode"
-            }
-        ]
-    },
-    "sort_vocab": {
-        "args": []
-    },
-    "sparse2full": {
-        "args": [
-            {
-                "name": "doc"
-            },
-            {
-                "name": "length"
-            }
-        ]
-    },
-    "split_alphanum": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "split_on_space": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "split_sentences": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "start, next_report = ault_timer": {
-        "args": [
-            {
-                "name": ""
-            },
-            {
-                "name": "1.0"
-            }
-        ]
-    },
-    "stem": {
-        "args": [
-            {
-                "name": "w"
-            }
-        ]
-    },
-    "stem_documents": {
-        "args": [
-            {
-                "name": "docs"
-            }
-        ]
-    },
-    "stem_sentence": {
-        "args": [
-            {
-                "name": "txt"
-            }
-        ]
-    },
-    "stem_text": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "stochastic_svd": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "name": "rank"
-            },
-            {
-                "name": "num_terms"
-            },
-            {
-                "default": "20000",
-                "name": "chunksize"
-            },
-            {
-                "default": "None",
-                "name": "extra_dims"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "strip_multiple_whitespaces": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "strip_non_alphanum": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "strip_numeric": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "strip_punctuation": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "strip_short": {
-        "args": [
-            {
-                "name": "s"
-            },
-            {
-                "default": "3",
-                "name": "minsize"
-            }
-        ]
-    },
-    "strip_tags": {
-        "args": [
-            {
-                "name": "s"
-            }
-        ]
-    },
-    "substitute_entity": {
-        "args": [
-            {
-                "name": "match"
-            }
-        ]
-    },
-    "summarize": {
-        "args": [
-            {
-                "name": "text"
-            },
-            {
-                "default": "0.2",
-                "name": "ratio"
-            },
-            {
-                "default": "None",
-                "name": "word_count"
-            },
-            {
-                "default": "False",
-                "name": "split"
-            }
-        ]
-    },
-    "summarize_corpus": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "0.2",
-                "name": "ratio"
-            }
-        ]
-    },
-    "sync_state": {
-        "args": []
-    },
-    "synchronous": {
-        "args": [
-            {
-                "name": "tlockname"
-            }
-        ]
-    },
-    "tokenize": {
-        "args": [
-            {
-                "name": "content"
-            }
-        ]
-    },
-    "tokenize_by_word": {
-        "args": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    "top_topics": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "20",
-                "name": "num_words"
-            }
-        ]
-    },
-    "toptexts": {
-        "args": [
-            {
-                "name": "query"
-            },
-            {
-                "name": "texts"
-            },
-            {
-                "name": "index"
-            },
-            {
-                "default": "10",
-                "name": "n"
-            }
-        ]
-    },
-    "train": {
-        "args": [
-            {
-                "name": "corpus"
-            }
-        ]
-    },
-    "train_cbow_pair": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "word"
-            },
-            {
-                "name": "input_word_indices"
-            },
-            {
-                "name": "l1"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "default": "True",
-                "name": "learn_vectors"
-            },
-            {
-                "default": "True",
-                "name": "learn_hidden"
-            }
-        ]
-    },
-    "train_document_dbow": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "doc_words"
-            },
-            {
-                "name": "doctag_indexes"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "default": "None",
-                "name": "work"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "train_document_dm": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "doc_words"
-            },
-            {
-                "name": "doctag_indexes"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "default": "None",
-                "name": "work"
-            },
-            {
-                "default": "None",
-                "name": "neu1"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "train_document_dm_concat": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "doc_words"
-            },
-            {
-                "name": "doctag_indexes"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "default": "None",
-                "name": "work"
-            },
-            {
-                "default": "None",
-                "name": "neu1"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "train_sentence_cbow": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "sentence"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "default": "None",
-                "name": "work"
-            },
-            {
-                "default": "None",
-                "name": "neu1"
-            }
-        ]
-    },
-    "train_sentence_sg": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "sentence"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "default": "None",
-                "name": "work"
-            }
-        ]
-    },
-    "train_sg_pair": {
-        "args": [
-            {
-                "name": "model"
-            },
-            {
-                "name": "word"
-            },
-            {
-                "name": "context_index"
-            },
-            {
-                "name": "alpha"
-            },
-            {
-                "default": "True",
-                "name": "learn_vectors"
-            },
-            {
-                "default": "True",
-                "name": "learn_hidden"
-            },
-            {
-                "name": ""
-            }
-        ]
-    },
-    "trained_item": {
-        "args": [
-            {
-                "name": "indexed_tuple"
-            }
-        ]
-    },
-    "triu_indices": {
-        "args": [
-            {
-                "name": "n"
-            },
-            {
-                "default": "0",
-                "name": "k"
-            }
-        ]
-    },
-    "undo_replacement": {
-        "args": [
-            {
-                "name": "sentence"
-            }
-        ]
-    },
-    "unitvec": {
-        "args": [
-            {
-                "name": "vec"
-            }
-        ]
-    },
-    "unpickle": {
-        "args": [
-            {
-                "name": "fname"
-            }
-        ]
-    },
-    "update": {
-        "args": [
-            {
-                "name": "corpus"
-            }
-        ]
-    },
-    "update_alpha": {
-        "args": [
-            {
-                "name": "gammat"
-            },
-            {
-                "name": "rho"
-            }
-        ]
-    },
-    "update_chunk": {
-        "args": [
-            {
-                "name": "chunk"
-            },
-            {
-                "default": "True",
-                "name": "update"
-            },
-            {
-                "default": "True",
-                "name": "opt_o"
-            }
-        ]
-    },
-    "update_dir_prior": {
-        "args": [
-            {
-                "name": "prior"
-            },
-            {
-                "name": "N"
-            },
-            {
-                "name": "logphat"
-            },
-            {
-                "name": "rho"
-            }
-        ]
-    },
-    "update_eta": {
-        "args": [
-            {
-                "name": "lambdat"
-            },
-            {
-                "name": "rho"
-            }
-        ]
-    },
-    "update_expectations": {
-        "args": []
-    },
-    "update_finished": {
-        "args": [
-            {
-                "name": "start_time"
-            },
-            {
-                "name": "chunks_processed"
-            },
-            {
-                "name": "docs_processed"
-            }
-        ]
-    },
-    "update_headers": {
-        "args": [
-            {
-                "name": "num_docs"
-            },
-            {
-                "name": "num_terms"
-            },
-            {
-                "name": "num_nnz"
-            }
-        ]
-    },
-    "update_lambda": {
-        "args": [
-            {
-                "name": "sstats"
-            },
-            {
-                "name": "word_list"
-            },
-            {
-                "name": "opt_o"
-            }
-        ]
-    },
-    "upload_chunked": {
-        "args": [
-            {
-                "name": "server"
-            },
-            {
-                "name": "docs"
-            },
-            {
-                "default": "1000",
-                "name": "chunksize"
-            },
-            {
-                "default": "None",
-                "name": "preprocess"
-            }
-        ]
-    },
-    "veclen": {
-        "args": [
-            {
-                "name": "vec"
-            }
-        ]
-    },
-    "vector_by_id": {
-        "args": [
-            {
-                "name": "docpos"
-            }
-        ]
-    },
-    "vocab = aultdict": {
-        "args": [
-            {
-                "name": "int"
-            }
-        ]
-    },
-    "word_vec": {
-        "args": [
-            {
-                "name": "word"
-            }
-        ]
-    },
-    "worker_e_step": {
-        "args": [
-            {
-                "name": "input_queue"
-            },
-            {
-                "name": "result_queue"
-            }
-        ]
-    },
-    "worker_init": {
-        "args": [
-            {
-                "name": ""
-            }
-        ]
-    },
-    "worker_loop": {
-        "args": [
-            {
-                "name": ""
-            }
-        ]
-    },
-    "worker_one_job": {
-        "args": [
-            {
-                "name": "job"
-            },
-            {
-                "name": "inits"
-            }
-        ]
-    },
-    "write_corpus": {
-        "args": [
-            {
-                "name": "fname"
-            },
-            {
-                "name": "corpus"
-            },
-            {
-                "default": "1000",
-                "name": "progress_cnt"
-            },
-            {
-                "default": "False",
-                "name": "index"
-            }
-        ]
-    },
-    "write_corpus_as_vw": {
-        "args": [
-            {
-                "name": "corpus"
-            },
-            {
-                "name": "filename"
-            }
-        ]
-    },
-    "write_headers": {
-        "args": []
-    },
-    "write_vector": {
-        "args": [
-            {
-                "name": "docno"
-            },
-            {
-                "name": "vector"
-            }
-        ]
-    },
-    "zeros_aligned": {
-        "args": [
-            {
-                "name": "shape"
-            },
-            {
-                "name": "dtype"
-            },
-            {
-                "default": "'C'",
-                "name": "order"
-            },
-            {
-                "default": "128",
-                "name": "align"
-            }
-        ]
+        "*": {
+            "build_adjacency_matrix": {
+                "args": [
+                    {
+                        "name": "graph"
+                    }
+                ]
+            },
+            "build_probability_matrix": {
+                "args": [
+                    {
+                        "name": "graph"
+                    }
+                ]
+            },
+            "pagerank_weighted": {
+                "args": [
+                    {
+                        "name": "graph"
+                    },
+                    {
+                        "default": "0.85",
+                        "name": "damping"
+                    }
+                ]
+            },
+            "process_results": {
+                "args": [
+                    {
+                        "name": "graph"
+                    },
+                    {
+                        "name": "vecs"
+                    }
+                ]
+            }
+        }
+    },
+    "phrases": {
+        "*": {}
+    },
+    "porter": {
+        "*": {}
+    },
+    "preprocessing": {
+        "*": {
+            "preprocess_documents": {
+                "args": [
+                    {
+                        "name": "docs"
+                    }
+                ]
+            },
+            "preprocess_string": {
+                "args": [
+                    {
+                        "name": "s"
+                    },
+                    {
+                        "default": "DEFAULT_FILTERS",
+                        "name": "filters"
+                    }
+                ]
+            },
+            "read_file": {
+                "args": [
+                    {
+                        "name": "path"
+                    }
+                ]
+            },
+            "read_files": {
+                "args": [
+                    {
+                        "name": "pattern"
+                    }
+                ]
+            },
+            "remove_stopwords": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            },
+            "split_alphanum": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            },
+            "stem_text": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "strip_multiple_whitespaces": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            },
+            "strip_non_alphanum": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            },
+            "strip_numeric": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            },
+            "strip_punctuation": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            },
+            "strip_short": {
+                "args": [
+                    {
+                        "name": "s"
+                    },
+                    {
+                        "default": "3",
+                        "name": "minsize"
+                    }
+                ]
+            },
+            "strip_tags": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            }
+        }
+    },
+    "rpmodel": {
+        "*": {}
+    },
+    "sharded_corpus": {
+        "*": {}
+    },
+    "summarizer": {
+        "*": {
+            "_build_corpus": {
+                "args": [
+                    {
+                        "name": "sentences"
+                    }
+                ]
+            },
+            "_build_hasheable_corpus": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    }
+                ]
+            },
+            "_create_valid_graph": {
+                "args": [
+                    {
+                        "name": "graph"
+                    }
+                ]
+            },
+            "_extract_important_sentences": {
+                "args": [
+                    {
+                        "name": "sentences"
+                    },
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "name": "important_docs"
+                    },
+                    {
+                        "name": "word_count"
+                    }
+                ]
+            },
+            "_format_results": {
+                "args": [
+                    {
+                        "name": "extracted_sentences"
+                    },
+                    {
+                        "name": "split"
+                    }
+                ]
+            },
+            "_get_doc_length": {
+                "args": [
+                    {
+                        "name": "doc"
+                    }
+                ]
+            },
+            "_get_important_sentences": {
+                "args": [
+                    {
+                        "name": "sentences"
+                    },
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "name": "important_docs"
+                    }
+                ]
+            },
+            "_get_sentences_with_word_count": {
+                "args": [
+                    {
+                        "name": "sentences"
+                    },
+                    {
+                        "name": "word_count"
+                    }
+                ]
+            },
+            "_get_similarity": {
+                "args": [
+                    {
+                        "name": "doc1"
+                    },
+                    {
+                        "name": "doc2"
+                    },
+                    {
+                        "name": "vec1"
+                    },
+                    {
+                        "name": "vec2"
+                    }
+                ]
+            },
+            "_set_graph_edge_weights": {
+                "args": [
+                    {
+                        "name": "graph"
+                    }
+                ]
+            },
+            "summarize": {
+                "args": [
+                    {
+                        "name": "text"
+                    },
+                    {
+                        "default": "0.2",
+                        "name": "ratio"
+                    },
+                    {
+                        "default": "None",
+                        "name": "word_count"
+                    },
+                    {
+                        "default": "False",
+                        "name": "split"
+                    }
+                ]
+            },
+            "summarize_corpus": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "0.2",
+                        "name": "ratio"
+                    }
+                ]
+            }
+        }
+    },
+    "svmlightcorpus": {
+        "*": {}
+    },
+    "syntactic_unit": {
+        "*": {}
+    },
+    "textcleaner": {
+        "*": {
+            "clean_text_by_sentences": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "clean_text_by_word": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "get_sentences": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "join_words": {
+                "args": [
+                    {
+                        "name": "words"
+                    },
+                    {
+                        "default": "\" \"",
+                        "name": "separator"
+                    }
+                ]
+            },
+            "merge_syntactic_units": {
+                "args": [
+                    {
+                        "name": "original_units"
+                    },
+                    {
+                        "name": "filtered_units"
+                    },
+                    {
+                        "default": "None",
+                        "name": "tags"
+                    }
+                ]
+            },
+            "replace_abbreviations": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "replace_with_separator": {
+                "args": [
+                    {
+                        "name": "text"
+                    },
+                    {
+                        "name": "separator"
+                    },
+                    {
+                        "name": "regexs"
+                    }
+                ]
+            },
+            "split_sentences": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "tokenize_by_word": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "undo_replacement": {
+                "args": [
+                    {
+                        "name": "sentence"
+                    }
+                ]
+            }
+        }
+    },
+    "textcorpus": {
+        "*": {}
+    },
+    "tfidfmodel": {
+        "*": {
+            "df2idf": {
+                "args": [
+                    {
+                        "name": "docfreq"
+                    },
+                    {
+                        "name": "totaldocs"
+                    },
+                    {
+                        "default": "2.0",
+                        "name": "log_base"
+                    },
+                    {
+                        "default": "0.0",
+                        "name": "add"
+                    }
+                ]
+            },
+            "precompute_idfs": {
+                "args": [
+                    {
+                        "name": "wglobal"
+                    },
+                    {
+                        "name": "dfs"
+                    },
+                    {
+                        "name": "total_docs"
+                    }
+                ]
+            }
+        }
+    },
+    "ucicorpus": {
+        "*": {},
+        "UciReader": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "input"
+                    }
+                ]
+            },
+            "skip_headers": {
+                "args": [
+                    {
+                        "name": "input_file"
+                    }
+                ]
+            }
+        },
+        "UciWriter": {
+            "update_headers": {
+                "args": [
+                    {
+                        "name": "num_docs"
+                    },
+                    {
+                        "name": "num_terms"
+                    },
+                    {
+                        "name": "num_nnz"
+                    }
+                ]
+            },
+            "write_corpus": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "1000",
+                        "name": "progress_cnt"
+                    },
+                    {
+                        "default": "False",
+                        "name": "index"
+                    }
+                ]
+            },
+            "write_headers": {
+                "args": []
+            }
+        }
+    },
+    "utils": {
+        "*": {
+            "_synched": {
+                "args": [
+                    {
+                        "name": "func"
+                    }
+                ]
+            },
+            "_synchronizer": {
+                "args": [
+                    {
+                        "name": "*args"
+                    },
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            },
+            "make_closing": {
+                "args": [
+                    {
+                        "name": "base"
+                    },
+                    {
+                        "name": "**attrs"
+                    }
+                ]
+            },
+            "smart_open": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "default": "'rb'",
+                        "name": "mode"
+                    }
+                ]
+            },
+            "synchronous": {
+                "args": [
+                    {
+                        "name": "tlockname"
+                    }
+                ]
+            }
+        },
+        "ClippedCorpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "default": "None",
+                        "name": "max_docs"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            },
+            "__len__": {
+                "args": []
+            }
+        },
+        "FakeDict": {
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "val"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "num_terms"
+                    }
+                ]
+            },
+            "__len__": {
+                "args": []
+            },
+            "__str__": {
+                "args": []
+            },
+            "dict_from_corpus": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    }
+                ]
+            },
+            "get": {
+                "args": [
+                    {
+                        "name": "val"
+                    },
+                    {
+                        "default": "None",
+                        "name": "default"
+                    }
+                ]
+            },
+            "get_my_ip": {
+                "args": [
+                    {
+                        "name": ""
+                    }
+                ]
+            },
+            "is_corpus": {
+                "args": [
+                    {
+                        "name": "obj"
+                    }
+                ]
+            },
+            "iteritems": {
+                "args": []
+            },
+            "keys": {
+                "args": []
+            }
+        },
+        "NoCM": {
+            "__enter__": {
+                "args": []
+            },
+            "__exit__": {
+                "args": [
+                    {
+                        "name": "type"
+                    },
+                    {
+                        "name": "value"
+                    },
+                    {
+                        "name": "traceback"
+                    }
+                ]
+            },
+            "acquire": {
+                "args": []
+            },
+            "any2unicode": {
+                "args": [
+                    {
+                        "name": "text"
+                    },
+                    {
+                        "default": "'utf8'",
+                        "name": "encoding"
+                    },
+                    {
+                        "default": "'strict'",
+                        "name": "errors"
+                    }
+                ]
+            },
+            "any2utf8": {
+                "args": [
+                    {
+                        "name": "text"
+                    },
+                    {
+                        "default": "'strict'",
+                        "name": "errors"
+                    },
+                    {
+                        "default": "'utf8'",
+                        "name": "encoding"
+                    }
+                ]
+            },
+            "copytree_hardlink": {
+                "args": [
+                    {
+                        "name": "source"
+                    },
+                    {
+                        "name": "dest"
+                    }
+                ]
+            },
+            "deaccent": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "file_or_filename": {
+                "args": [
+                    {
+                        "name": "input"
+                    }
+                ]
+            },
+            "release": {
+                "args": []
+            },
+            "simple_preprocess": {
+                "args": [
+                    {
+                        "name": "doc"
+                    },
+                    {
+                        "default": "False",
+                        "name": "deacc"
+                    },
+                    {
+                        "default": "2",
+                        "name": "min_len"
+                    },
+                    {
+                        "default": "15",
+                        "name": "max_len"
+                    }
+                ]
+            },
+            "tokenize": {
+                "args": [
+                    {
+                        "name": "text"
+                    },
+                    {
+                        "default": "False",
+                        "name": "lowercase"
+                    },
+                    {
+                        "default": "False",
+                        "name": "deacc"
+                    },
+                    {
+                        "default": "\"strict\"",
+                        "name": "errors"
+                    },
+                    {
+                        "default": "False",
+                        "name": "to_lower"
+                    },
+                    {
+                        "default": "False",
+                        "name": "lower"
+                    }
+                ]
+            }
+        },
+        "RepeatCorpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "name": "reps"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            }
+        },
+        "RepeatCorpusNTimes": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "name": "n"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            }
+        },
+        "SaveLoad": {
+            "_adapt_by_suffix": {
+                "args": [
+                    {
+                        "name": "fname"
+                    }
+                ]
+            },
+            "_load_specials": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "name": "mmap"
+                    },
+                    {
+                        "name": "compress"
+                    },
+                    {
+                        "name": "subname"
+                    }
+                ]
+            },
+            "_save_specials": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "name": "separately"
+                    },
+                    {
+                        "name": "sep_limit"
+                    },
+                    {
+                        "name": "ignore"
+                    },
+                    {
+                        "name": "pickle_protocol"
+                    },
+                    {
+                        "name": "compress"
+                    },
+                    {
+                        "name": "subname"
+                    }
+                ]
+            },
+            "_smart_save": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "default": "None",
+                        "name": "separately"
+                    },
+                    {
+                        "default": "10 * 1024**2",
+                        "name": "sep_limit"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "frozenset()",
+                        "name": "ignore"
+                    },
+                    {
+                        "default": "2",
+                        "name": "pickle_protocol"
+                    }
+                ]
+            },
+            "get_max_id": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    }
+                ]
+            },
+            "identity": {
+                "args": [
+                    {
+                        "name": "p"
+                    }
+                ]
+            },
+            "load": {
+                "args": [
+                    {
+                        "name": "cls"
+                    },
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "default": "None",
+                        "name": "mmap"
+                    }
+                ]
+            },
+            "save": {
+                "args": [
+                    {
+                        "name": "fname_or_handle"
+                    },
+                    {
+                        "default": "None",
+                        "name": "separately"
+                    },
+                    {
+                        "default": "10 * 1024**2",
+                        "name": "sep_limit"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "frozenset()",
+                        "name": "ignore"
+                    },
+                    {
+                        "default": "2",
+                        "name": "pickle_protocol"
+                    }
+                ]
+            }
+        },
+        "SlicedCorpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "corpus"
+                    },
+                    {
+                        "name": "slice_"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            },
+            "__len__": {
+                "args": []
+            },
+            "chunkize_serial": {
+                "args": [
+                    {
+                        "name": "iterable"
+                    },
+                    {
+                        "name": "chunksize"
+                    },
+                    {
+                        "default": "False",
+                        "name": "as_numpy"
+                    }
+                ]
+            },
+            "decode_htmlentities": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "safe_unichr": {
+                "args": [
+                    {
+                        "name": "intval"
+                    }
+                ]
+            },
+            "substitute_entity": {
+                "args": [
+                    {
+                        "name": "match"
+                    }
+                ]
+            }
+        }
+    },
+    "wikicorpus": {
+        "*": {
+            "extract_pages": {
+                "args": [
+                    {
+                        "name": "f"
+                    },
+                    {
+                        "default": "False",
+                        "name": "filter_namespaces"
+                    }
+                ]
+            },
+            "filter_wiki": {
+                "args": [
+                    {
+                        "name": "raw"
+                    }
+                ]
+            },
+            "get_namespace": {
+                "args": [
+                    {
+                        "name": "tag"
+                    }
+                ]
+            },
+            "process_article": {
+                "args": [
+                    {
+                        "name": "args"
+                    }
+                ]
+            },
+            "remove_file": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            },
+            "remove_markup": {
+                "args": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            "remove_template": {
+                "args": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            },
+            "tokenize": {
+                "args": [
+                    {
+                        "name": "content"
+                    }
+                ]
+            }
+        }
+    },
+    "word2vec": {
+        "*": {
+            "score_cbow_pair": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "word"
+                    },
+                    {
+                        "name": "word2_indices"
+                    },
+                    {
+                        "name": "l1"
+                    }
+                ]
+            },
+            "score_sentence_cbow": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "sentence"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "None",
+                        "name": "work"
+                    },
+                    {
+                        "default": "None",
+                        "name": "neu1"
+                    }
+                ]
+            },
+            "score_sentence_sg": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "sentence"
+                    },
+                    {
+                        "default": "None",
+                        "name": "work"
+                    }
+                ]
+            },
+            "score_sg_pair": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "word"
+                    },
+                    {
+                        "name": "word2"
+                    }
+                ]
+            },
+            "train_cbow_pair": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "word"
+                    },
+                    {
+                        "name": "input_word_indices"
+                    },
+                    {
+                        "name": "l1"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_vectors"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_hidden"
+                    }
+                ]
+            },
+            "train_sentence_cbow": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "sentence"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "None",
+                        "name": "work"
+                    },
+                    {
+                        "default": "None",
+                        "name": "neu1"
+                    }
+                ]
+            },
+            "train_sentence_sg": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "sentence"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "None",
+                        "name": "work"
+                    }
+                ]
+            },
+            "train_sg_pair": {
+                "args": [
+                    {
+                        "name": "model"
+                    },
+                    {
+                        "name": "word"
+                    },
+                    {
+                        "name": "context_index"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_vectors"
+                    },
+                    {
+                        "default": "True",
+                        "name": "learn_hidden"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "context_vectors"
+                    },
+                    {
+                        "default": "None",
+                        "name": "context_locks"
+                    }
+                ]
+            }
+        },
+        "BrownCorpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "dirname"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            }
+        },
+        "FakeJobQueue": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "init_fn"
+                    },
+                    {
+                        "name": "job_fn"
+                    }
+                ]
+            },
+            "put": {
+                "args": [
+                    {
+                        "name": "job"
+                    }
+                ]
+            }
+        },
+        "Text8Corpus": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "default": "1000",
+                        "name": "max_sentence_length"
+                    }
+                ]
+            },
+            "__iter__": {
+                "args": []
+            }
+        },
+        "Vocab": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            },
+            "__lt__": {
+                "args": [
+                    {
+                        "name": "other):  # used for sorting in a priority queue"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            }
+        },
+        "Word2Vec": {
+            "__contains__": {
+                "args": [
+                    {
+                        "name": "word"
+                    }
+                ]
+            },
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "words"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": ""
+                    },
+                    {
+                        "name": "self"
+                    },
+                    {
+                        "default": "None",
+                        "name": "sentences"
+                    },
+                    {
+                        "default": "100",
+                        "name": "size"
+                    },
+                    {
+                        "default": "0.025",
+                        "name": "alpha"
+                    },
+                    {
+                        "default": "5",
+                        "name": "window"
+                    },
+                    {
+                        "default": "5",
+                        "name": "min_count"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "max_vocab_size"
+                    },
+                    {
+                        "default": "0",
+                        "name": "sample"
+                    },
+                    {
+                        "default": "1",
+                        "name": "seed"
+                    },
+                    {
+                        "default": "1",
+                        "name": "workers"
+                    },
+                    {
+                        "default": "0.0001",
+                        "name": "min_alpha"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "1",
+                        "name": "sg"
+                    },
+                    {
+                        "default": "1",
+                        "name": "hs"
+                    },
+                    {
+                        "default": "0",
+                        "name": "negative"
+                    },
+                    {
+                        "default": "0",
+                        "name": "cbow_mean"
+                    },
+                    {
+                        "default": "hash",
+                        "name": "hashfxn"
+                    },
+                    {
+                        "default": "1",
+                        "name": "iter"
+                    },
+                    {
+                        "default": "0",
+                        "name": "null_word"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "trim_rule"
+                    },
+                    {
+                        "default": "1",
+                        "name": "sorted_vocab"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            },
+            "_do_train_job": {
+                "args": [
+                    {
+                        "name": "job"
+                    },
+                    {
+                        "name": "alpha"
+                    },
+                    {
+                        "name": "inits"
+                    }
+                ]
+            },
+            "_raw_word_count": {
+                "args": [
+                    {
+                        "name": "items"
+                    }
+                ]
+            },
+            "_score_job_words": {
+                "args": [
+                    {
+                        "name": "sentence"
+                    },
+                    {
+                        "name": "inits"
+                    }
+                ]
+            },
+            "accuracy": {
+                "args": [
+                    {
+                        "name": "questions"
+                    },
+                    {
+                        "default": "30000",
+                        "name": "restrict_vocab"
+                    },
+                    {
+                        "default": "most_similar",
+                        "name": "most_similar"
+                    }
+                ]
+            },
+            "add_word": {
+                "args": [
+                    {
+                        "name": "word"
+                    },
+                    {
+                        "name": "weights"
+                    }
+                ]
+            },
+            "build_vocab": {
+                "args": [
+                    {
+                        "name": "sentences"
+                    },
+                    {
+                        "default": "False",
+                        "name": "keep_raw_vocab"
+                    },
+                    {
+                        "default": "None",
+                        "name": "trim_rule"
+                    }
+                ]
+            },
+            "clear_sims": {
+                "args": []
+            },
+            "create_binary_tree": {
+                "args": []
+            },
+            "doesnt_match": {
+                "args": [
+                    {
+                        "name": "words"
+                    }
+                ]
+            },
+            "estimate_memory": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "vocab_size"
+                    },
+                    {
+                        "default": "None",
+                        "name": "report"
+                    }
+                ]
+            },
+            "finalize_vocab": {
+                "args": []
+            },
+            "init_sims": {
+                "args": [
+                    {
+                        "default": "False",
+                        "name": "replace"
+                    }
+                ]
+            },
+            "intersect_word2vec_format": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "default": "False",
+                        "name": "binary"
+                    },
+                    {
+                        "default": "'utf8'",
+                        "name": "encoding"
+                    },
+                    {
+                        "default": "'strict'",
+                        "name": "unicode_errors"
+                    }
+                ]
+            },
+            "load": {
+                "args": [
+                    {
+                        "name": "cls"
+                    },
+                    {
+                        "name": "*args"
+                    },
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            },
+            "load_word2vec_format": {
+                "args": [
+                    {
+                        "name": "cls"
+                    },
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "default": "None",
+                        "name": "fvocab"
+                    },
+                    {
+                        "default": "False",
+                        "name": "binary"
+                    },
+                    {
+                        "default": "True",
+                        "name": "norm_only"
+                    },
+                    {
+                        "default": "'utf8'",
+                        "name": "encoding"
+                    },
+                    {
+                        "default": "'strict'",
+                        "name": "unicode_errors"
+                    }
+                ]
+            },
+            "log_accuracy": {
+                "args": [
+                    {
+                        "name": "section"
+                    }
+                ]
+            },
+            "make_cum_table": {
+                "args": [
+                    {
+                        "default": "0.75",
+                        "name": "power"
+                    },
+                    {
+                        "default": "2**31 - 1",
+                        "name": "domain"
+                    }
+                ]
+            },
+            "most_similar": {
+                "args": [
+                    {
+                        "default": "[]",
+                        "name": "positive"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "negative"
+                    },
+                    {
+                        "default": "10",
+                        "name": "topn"
+                    },
+                    {
+                        "default": "None",
+                        "name": "restrict_vocab"
+                    }
+                ]
+            },
+            "most_similar_cosmul": {
+                "args": [
+                    {
+                        "default": "[]",
+                        "name": "positive"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "negative"
+                    },
+                    {
+                        "default": "10",
+                        "name": "topn"
+                    }
+                ]
+            },
+            "n_similarity": {
+                "args": [
+                    {
+                        "name": "ws1"
+                    },
+                    {
+                        "name": "ws2"
+                    }
+                ]
+            },
+            "reset_from": {
+                "args": [
+                    {
+                        "name": "other_model"
+                    }
+                ]
+            },
+            "reset_weights": {
+                "args": []
+            },
+            "save": {
+                "args": [
+                    {
+                        "name": "*args"
+                    },
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            },
+            "save_word2vec_format": {
+                "args": [
+                    {
+                        "name": "fname"
+                    },
+                    {
+                        "default": "None",
+                        "name": "fvocab"
+                    },
+                    {
+                        "default": "False",
+                        "name": "binary"
+                    }
+                ]
+            },
+            "scale_vocab": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "min_count"
+                    },
+                    {
+                        "default": "None",
+                        "name": "sample"
+                    },
+                    {
+                        "default": "False",
+                        "name": "dry_run"
+                    },
+                    {
+                        "default": "False",
+                        "name": "keep_raw_vocab"
+                    },
+                    {
+                        "default": "None",
+                        "name": "trim_rule"
+                    }
+                ]
+            },
+            "scan_vocab": {
+                "args": [
+                    {
+                        "name": "sentences"
+                    },
+                    {
+                        "default": "10000",
+                        "name": "progress_per"
+                    },
+                    {
+                        "default": "None",
+                        "name": "trim_rule"
+                    }
+                ]
+            },
+            "score": {
+                "args": [
+                    {
+                        "name": "sentences"
+                    },
+                    {
+                        "default": "int(1e6)",
+                        "name": "total_sentences"
+                    },
+                    {
+                        "default": "100",
+                        "name": "chunksize"
+                    },
+                    {
+                        "default": "2",
+                        "name": "queue_factor"
+                    },
+                    {
+                        "default": "1",
+                        "name": "report_delay"
+                    }
+                ]
+            },
+            "seeded_vector": {
+                "args": [
+                    {
+                        "name": "seed_string"
+                    }
+                ]
+            },
+            "similarity": {
+                "args": [
+                    {
+                        "name": "w1"
+                    },
+                    {
+                        "name": "w2"
+                    }
+                ]
+            },
+            "sort_vocab": {
+                "args": []
+            },
+            "train": {
+                "args": [
+                    {
+                        "name": "sentences"
+                    },
+                    {
+                        "default": "None",
+                        "name": "total_words"
+                    },
+                    {
+                        "default": "0",
+                        "name": "word_count"
+                    },
+                    {
+                        "default": "100",
+                        "name": "chunksize"
+                    },
+                    {
+                        "default": "None",
+                        "name": "total_examples"
+                    },
+                    {
+                        "default": "2",
+                        "name": "queue_factor"
+                    },
+                    {
+                        "default": "1",
+                        "name": "report_delay"
+                    }
+                ]
+            },
+            "word_vec": {
+                "args": [
+                    {
+                        "name": "word"
+                    }
+                ]
+            },
+            "worker_init": {
+                "args": [
+                    {
+                        "name": ""
+                    }
+                ]
+            },
+            "worker_loop": {
+                "args": [
+                    {
+                        "name": ""
+                    }
+                ]
+            },
+            "worker_one_job": {
+                "args": [
+                    {
+                        "name": "job"
+                    },
+                    {
+                        "name": "inits"
+                    }
+                ]
+            }
+        }
     }
 }
