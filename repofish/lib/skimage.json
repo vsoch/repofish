@@ -972,12 +972,6 @@
             }
         }
     },
-    "brief": {
-        "*": {}
-    },
-    "canny": {
-        "*": {}
-    },
     "censure": {
         "*": {
             "_filter_image": {
@@ -1154,11 +1148,7 @@
                     }
                 ]
             }
-        },
-        "ImageCollection": {}
-    },
-    "color_histogram": {
-        "*": {}
+        }
     },
     "colorconv": {
         "*": {
@@ -1929,9 +1919,6 @@
                 ]
             }
         }
-    },
-    "crop": {
-        "*": {}
     },
     "deconvolution": {
         "*": {
@@ -3859,7 +3846,6 @@
         }
     },
     "history": {
-        "*": {},
         "OKCancelButtons": {
             "__init__": {
                 "args": [
@@ -3961,14 +3947,7 @@
             }
         }
     },
-    "labelplugin": {
-        "*": {}
-    },
-    "lineprofile": {
-        "*": {}
-    },
     "linetool": {
-        "*": {},
         "LineTool": {
             "__init__": {
                 "args": [
@@ -4274,9 +4253,6 @@
             }
         }
     },
-    "measure": {
-        "*": {}
-    },
     "misc": {
         "*": {
             "default_selem": {
@@ -4407,14 +4383,7 @@
             }
         }
     },
-    "orb": {
-        "*": {}
-    },
-    "overlayplugin": {
-        "*": {}
-    },
     "painttool": {
-        "*": {},
         "PaintTool": {
             "__init__": {
                 "args": [
@@ -4585,9 +4554,6 @@
                 ]
             }
         }
-    },
-    "plotplugin": {
-        "*": {}
     },
     "profile": {
         "*": {
@@ -4794,11 +4760,6 @@
             }
         }
     },
-    "qt": {
-        "*": {},
-        "QtCore_cls": {},
-        "QtGui_cls": {}
-    },
     "radon_transform": {
         "*": {
             "_sinogram_circle_to_square": {
@@ -4910,7 +4871,6 @@
         }
     },
     "rag": {
-        "*": {},
         "Graph:": {
             "__init__": {
                 "args": [
@@ -4938,8 +4898,7 @@
                     }
                 ]
             }
-        },
-        "nx:": {}
+        }
     },
     "random_walker_segmentation": {
         "*": {
@@ -5157,9 +5116,6 @@
             }
         }
     },
-    "recttool": {
-        "*": {}
-    },
     "register_translation": {
         "*": {
             "_compute_error": {
@@ -5225,9 +5181,6 @@
                 ]
             }
         }
-    },
-    "rgb_colors": {
-        "*": {}
     },
     "selem": {
         "*": {
@@ -6887,8 +6840,6 @@
                 ]
             }
         },
-        "TiffSequence": {},
-        "TiffTag": {},
         "TiffTags": {
             "__str__": {
                 "args": []
@@ -7223,9 +7174,6 @@
                 ]
             }
         }
-    },
-    "version": {
-        "*": {}
     },
     "watershed": {
         "*": {

@@ -1,7 +1,4 @@
 {
-    "absoft": {
-        "*": {}
-    },
     "add_newdocs": {
         "*": {
             "iter_add": {
@@ -283,9 +280,6 @@
                 ]
             }
         }
-    },
-    "arrayfns": {
-        "*": {}
     },
     "arraypad": {
         "*": {
@@ -1110,9 +1104,6 @@
             }
         }
     },
-    "arrayterator": {
-        "*": {}
-    },
     "autodist": {
         "*": {
             "check_compiler_gcc4": {
@@ -1700,11 +1691,7 @@
                     }
                 ]
             }
-        },
-        "F2PYError": {}
-    },
-    "bdist_rpm": {
-        "*": {}
+        }
     },
     "bench": {
         "*": {
@@ -1858,21 +1845,6 @@
                 ]
             }
         }
-    },
-    "build": {
-        "*": {}
-    },
-    "build_clib": {
-        "*": {}
-    },
-    "build_ext": {
-        "*": {}
-    },
-    "build_py": {
-        "*": {}
-    },
-    "build_scripts": {
-        "*": {}
     },
     "build_src": {
         "*": {
@@ -5873,7 +5845,6 @@
         }
     },
     "compaq": {
-        "*": {},
         "CompaqFCompiler": {
             "get_flags": {
                 "args": []
@@ -5893,10 +5864,77 @@
         }
     },
     "compat": {
-        "*": {}
+        "*": {
+            "DumpArray": {
+                "args": [
+                    {
+                        "name": "m"
+                    },
+                    {
+                        "name": "fp"
+                    }
+                ]
+            },
+            "LoadArray": {
+                "args": [
+                    {
+                        "name": "fp"
+                    }
+                ]
+            },
+            "_LoadArray": {
+                "args": [
+                    {
+                        "name": "fp"
+                    }
+                ]
+            },
+            "array_constructor": {
+                "args": [
+                    {
+                        "name": "shape"
+                    },
+                    {
+                        "name": "typecode"
+                    },
+                    {
+                        "name": "thestr"
+                    },
+                    {
+                        "default": "LittleEndian",
+                        "name": "Endian"
+                    }
+                ]
+            },
+            "load": {
+                "args": [
+                    {
+                        "name": "fp"
+                    }
+                ]
+            },
+            "loads": {
+                "args": [
+                    {
+                        "name": "astr"
+                    }
+                ]
+            },
+            "pickle_array": {
+                "args": [
+                    {
+                        "name": "a"
+                    }
+                ]
+            }
+        },
+        "Unpickler": {
+            "load_array": {
+                "args": []
+            }
+        }
     },
     "config": {
-        "*": {},
         "config": {
             "": {
                 "args": []
@@ -6476,9 +6514,6 @@
                 ]
             }
         }
-    },
-    "convolve": {
-        "*": {}
     },
     "core": {
         "*": {
@@ -8546,11 +8581,9 @@
                     }
                 ]
             }
-        },
-        "chararray": {}
+        }
     },
     "defmatrix": {
-        "*": {},
         "_NumCharTable:": {
             "__getitem__": {
                 "args": [
@@ -8595,9 +8628,6 @@
                 ]
             }
         }
-    },
-    "develop": {
-        "*": {}
     },
     "diagnose": {
         "*": {
@@ -8644,12 +8674,6 @@
                 ]
             }
         }
-    },
-    "egg_info": {
-        "*": {}
-    },
-    "environment": {
-        "*": {}
     },
     "exec_command": {
         "*": {
@@ -8850,9 +8874,6 @@
                 ]
             }
         }
-    },
-    "extension": {
-        "*": {}
     },
     "extras": {
         "*": {
@@ -9443,9 +9464,6 @@
                 ]
             }
         }
-    },
-    "fft": {
-        "*": {}
     },
     "fftpack": {
         "*": {
@@ -11391,13 +11409,7 @@
                     }
                 ]
             }
-        },
-        "EarlyEOFError": {},
-        "SizeMismatchError": {},
-        "SizeMismatchWarning": {}
-    },
-    "g95": {
-        "*": {}
+        }
     },
     "generate_numpy_api": {
         "*": {
@@ -17035,15 +17047,6 @@
             }
         }
     },
-    "hpux": {
-        "*": {}
-    },
-    "ibm": {
-        "*": {}
-    },
-    "image": {
-        "*": {}
-    },
     "index_tricks": {
         "*": {
             "ix_": {
@@ -17177,21 +17180,6 @@
             }
         }
     },
-    "info": {
-        "*": {}
-    },
-    "install": {
-        "*": {}
-    },
-    "install_clib": {
-        "*": {}
-    },
-    "install_data": {
-        "*": {}
-    },
-    "install_headers": {
-        "*": {}
-    },
     "intel": {
         "*": {
             "intel_version_match": {
@@ -17235,8 +17223,6 @@
                 "args": []
             }
         },
-        "IntelItaniumFCompiler": {},
-        "IntelItaniumVisualFCompiler": {},
         "IntelVisualFCompiler": {
             "get_flags": {
                 "args": []
@@ -17259,7 +17245,6 @@
         }
     },
     "intelccompiler": {
-        "*": {},
         "IntelCCompiler": {
             "": {
                 "args": [
@@ -17277,8 +17262,7 @@
                     }
                 ]
             }
-        },
-        "IntelItaniumCCompiler": {}
+        }
     },
     "laguerre": {
         "*": {
@@ -19912,9 +19896,6 @@
                 ]
             }
         }
-    },
-    "lahey": {
-        "*": {}
     },
     "legendre": {
         "*": {
@@ -22663,9 +22644,6 @@
             }
         }
     },
-    "linalg": {
-        "*": {}
-    },
     "line_endings": {
         "*": {
             "dos2unix": {
@@ -22755,10 +22733,767 @@
         }
     },
     "ma": {
-        "*": {}
-    },
-    "machar": {
-        "*": {}
+        "MAError ": {
+            "": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "args"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            }
+        },
+        "MaskedArray ": {
+            "": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "indices"
+                    },
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    },
+                    {
+                        "default": "None",
+                        "name": "out"
+                    },
+                    {
+                        "default": "'raise'",
+                        "name": "mode"
+                    }
+                ]
+            },
+            "__abs__": {
+                "args": []
+            },
+            "__add__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__and__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__bool__": {
+                "args": []
+            },
+            "__div__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__float__": {
+                "args": []
+            },
+            "__floordiv__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__ge__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__getitem__": {
+                "args": [
+                    {
+                        "name": "i"
+                    }
+                ]
+            },
+            "__gt__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__iadd__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__idiv__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__imul__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "data"
+                    },
+                    {
+                        "default": "None",
+                        "name": "dtype"
+                    },
+                    {
+                        "default": "True",
+                        "name": "copy"
+                    },
+                    {
+                        "default": "False",
+                        "name": "order"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "nomask",
+                        "name": "mask"
+                    },
+                    {
+                        "default": "None",
+                        "name": "fill_value"
+                    }
+                ]
+            },
+            "__int__": {
+                "args": []
+            },
+            "__isub__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__le__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__lt__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__mul__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__ne__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__neg__": {
+                "args": []
+            },
+            "__nonzero__": {
+                "args": []
+            },
+            "__or__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__pos__": {
+                "args": []
+            },
+            "__pow__": {
+                "args": [
+                    {
+                        "name": "other"
+                    },
+                    {
+                        "default": "None",
+                        "name": "third"
+                    }
+                ]
+            },
+            "__rdiv__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__repr__": {
+                "args": []
+            },
+            "__rfloordiv__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__rsub__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__rtruediv__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__setitem__": {
+                "args": [
+                    {
+                        "name": "index"
+                    },
+                    {
+                        "name": "value"
+                    }
+                ]
+            },
+            "__sqrt__": {
+                "args": []
+            },
+            "__str__": {
+                "args": []
+            },
+            "__sub__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__truediv__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__xor__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "_get_T": {
+                "args": []
+            },
+            "_get_ctypes": {
+                "args": []
+            },
+            "_get_dtype": {
+                "args": []
+            },
+            "_get_flat": {
+                "args": []
+            },
+            "_get_imaginary": {
+                "args": []
+            },
+            "_get_ndim": {
+                "args": []
+            },
+            "_get_real": {
+                "args": []
+            },
+            "_get_shape": {
+                "args": []
+            },
+            "arange": {
+                "args": [
+                    {
+                        "name": "start"
+                    },
+                    {
+                        "default": "None",
+                        "name": "stop"
+                    },
+                    {
+                        "default": "1",
+                        "name": "step"
+                    },
+                    {
+                        "default": "None",
+                        "name": "dtype"
+                    }
+                ]
+            },
+            "byte_swapped": {
+                "args": []
+            },
+            "compress": {
+                "args": [
+                    {
+                        "name": "condition"
+                    },
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "-1",
+                        "name": "dimension"
+                    },
+                    {
+                        "default": "None",
+                        "name": "out"
+                    }
+                ]
+            },
+            "dot": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    }
+                ]
+            },
+            "fill_value": {
+                "args": []
+            },
+            "identity": {
+                "args": [
+                    {
+                        "name": "n"
+                    }
+                ]
+            },
+            "inner": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    }
+                ]
+            },
+            "item": {
+                "args": [
+                    {
+                        "name": "*args"
+                    }
+                ]
+            },
+            "itemset": {
+                "args": [
+                    {
+                        "name": "*args"
+                    }
+                ]
+            },
+            "itemsize": {
+                "args": []
+            },
+            "masked_equal": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "value"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "masked_greater": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "value"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "masked_greater_equal": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "value"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "masked_inside": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "v1"
+                    },
+                    {
+                        "name": "v2"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "masked_less": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "value"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "masked_less_equal": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "value"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "masked_not_equal": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "value"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "masked_outside": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "v1"
+                    },
+                    {
+                        "name": "v2"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "masked_where": {
+                "args": [
+                    {
+                        "name": "condition"
+                    },
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "1",
+                        "name": "copy"
+                    }
+                ]
+            },
+            "new_repeat": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "repeats"
+                    },
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "outer": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    }
+                ]
+            },
+            "put": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "indices"
+                    },
+                    {
+                        "name": "values"
+                    },
+                    {
+                        "default": "'raise'",
+                        "name": "mode"
+                    }
+                ]
+            },
+            "putmask": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "mask"
+                    },
+                    {
+                        "name": "values"
+                    }
+                ]
+            },
+            "tolist": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "fill_value"
+                    }
+                ]
+            },
+            "tostring": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "fill_value"
+                    }
+                ]
+            },
+            "transpose": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "default": "None",
+                        "name": "axes"
+                    }
+                ]
+            }
+        },
+        "_MaskedPrintOption:": {
+            "": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    }
+                ]
+            },
+            "enable": {
+                "args": [
+                    {
+                        "default": "1",
+                        "name": "flag"
+                    }
+                ]
+            }
+        },
+        "_minimum_operation:": {
+            "": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    }
+                ]
+            }
+        },
+        "domain_check_interval:": {
+            "": {
+                "args": [
+                    {
+                        "name": "x"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "y1"
+                    },
+                    {
+                        "name": "y2"
+                    }
+                ]
+            }
+        },
+        "domain_greater:": {
+            "": {
+                "args": [
+                    {
+                        "name": "x"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "critical_value"
+                    }
+                ]
+            }
+        },
+        "domain_greater_equal:": {
+            "": {
+                "args": [
+                    {
+                        "name": "x"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "critical_value"
+                    }
+                ]
+            }
+        },
+        "domain_safe_divide:": {
+            "": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    }
+                ]
+            }
+        },
+        "domain_tan:": {
+            "": {
+                "args": [
+                    {
+                        "name": "x"
+                    }
+                ]
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "eps"
+                    }
+                ]
+            }
+        },
+        "domained_binary_operation:": {
+            "": {
+                "args": []
+            },
+            "__call__": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    }
+                ]
+            }
+        },
+        "masked_binary_operation:": {
+            "": {
+                "args": [
+                    {
+                        "name": "object"
+                    },
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "nonzero": {
+                "args": [
+                    {
+                        "name": "a"
+                    }
+                ]
+            }
+        },
+        "masked_unary_operation:": {
+            "": {
+                "args": []
+            }
+        }
     },
     "matlib": {
         "*": {
@@ -22889,20 +23624,7 @@
             }
         }
     },
-    "memmap": {
-        "*": {}
-    },
-    "mingw32ccompiler": {
-        "*": {}
-    },
-    "mips": {
-        "*": {}
-    },
-    "misc": {
-        "*": {}
-    },
     "misc_util": {
-        "*": {},
         "InstallableLib": {
             "__init__": {
                 "args": [
@@ -23276,7 +23998,176 @@
         }
     },
     "mlab": {
-        "*": {}
+        "*": {
+            "corrcoef": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "None",
+                        "name": "y"
+                    }
+                ]
+            },
+            "cov": {
+                "args": [
+                    {
+                        "name": "m"
+                    },
+                    {
+                        "default": "None",
+                        "name": "y"
+                    },
+                    {
+                        "default": "0",
+                        "name": "rowvar"
+                    },
+                    {
+                        "default": "0",
+                        "name": "bias"
+                    }
+                ]
+            },
+            "cumprod": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "0",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "eye": {
+                "args": [
+                    {
+                        "name": "N"
+                    },
+                    {
+                        "default": "None",
+                        "name": "M"
+                    },
+                    {
+                        "default": "0",
+                        "name": "k"
+                    },
+                    {
+                        "default": "None",
+                        "name": "typecode"
+                    },
+                    {
+                        "default": "None",
+                        "name": "dtype"
+                    }
+                ]
+            },
+            "max": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "0",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "mean": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "0",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "min": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "0",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "prod": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "0",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "ptp": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "0",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "std": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "0",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "trapz": {
+                "args": [
+                    {
+                        "name": "y"
+                    },
+                    {
+                        "default": "None",
+                        "name": "x"
+                    },
+                    {
+                        "default": "-1",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "tri": {
+                "args": [
+                    {
+                        "name": "N"
+                    },
+                    {
+                        "default": "None",
+                        "name": "M"
+                    },
+                    {
+                        "default": "0",
+                        "name": "k"
+                    },
+                    {
+                        "default": "None",
+                        "name": "typecode"
+                    },
+                    {
+                        "default": "None",
+                        "name": "dtype"
+                    }
+                ]
+            }
+        }
     },
     "mrecords": {
         "*": {
@@ -23302,9 +24193,6 @@
                 ]
             }
         }
-    },
-    "nag": {
-        "*": {}
     },
     "nanfunctions": {
         "*": {
@@ -23507,14 +24395,7 @@
             }
         }
     },
-    "nd_image": {
-        "*": {}
-    },
-    "none": {
-        "*": {}
-    },
     "npy_pkg_config": {
-        "*": {},
         "FormatError": {
             "__init__": {
                 "args": [
@@ -23662,7 +24543,6 @@
         }
     },
     "numeric": {
-        "*": {},
         "ComplexWarning": {
             "asarray": {
                 "args": [
@@ -23780,7 +24660,6 @@
                 ]
             }
         },
-        "_unspecified": {},
         "ndarray is returned.": {
             "_maketup": {
                 "args": [
@@ -24430,20 +25309,7 @@
             }
         }
     },
-    "numpy_distribution": {
-        "*": {}
-    },
-    "pathccompiler": {
-        "*": {}
-    },
-    "pathf95": {
-        "*": {}
-    },
-    "pg": {
-        "*": {}
-    },
     "polynomial": {
-        "*": {},
         "RankWarning": {
             "_raise_power": {
                 "args": [
@@ -24577,15 +25443,6 @@
             }
         }
     },
-    "polytemplate": {
-        "*": {}
-    },
-    "polyutils": {
-        "*": {},
-        "PolyDomainError": {},
-        "PolyError": {},
-        "RankWarning": {}
-    },
     "precision": {
         "*": {
             "_fill_table": {
@@ -24680,7 +25537,297 @@
         }
     },
     "random_array": {
-        "*": {}
+        "*": {
+            "F": {
+                "args": [
+                    {
+                        "name": "dfn"
+                    },
+                    {
+                        "name": "dfd"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "beta": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "binomial": {
+                "args": [
+                    {
+                        "name": "trials"
+                    },
+                    {
+                        "name": "p"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "chi_square": {
+                "args": [
+                    {
+                        "name": "df"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "exponential": {
+                "args": [
+                    {
+                        "name": "mean"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "gamma": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "r"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "get_seed": {
+                "args": [
+                    {
+                        "name": ""
+                    }
+                ]
+            },
+            "mean_var_test": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "type"
+                    },
+                    {
+                        "name": "mean"
+                    },
+                    {
+                        "name": "var"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "skew"
+                    }
+                ]
+            },
+            "multinomial": {
+                "args": [
+                    {
+                        "name": "trials"
+                    },
+                    {
+                        "name": "probs"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "multivariate_normal": {
+                "args": [
+                    {
+                        "name": "mean"
+                    },
+                    {
+                        "name": "cov"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "negative_binomial": {
+                "args": [
+                    {
+                        "name": "trials"
+                    },
+                    {
+                        "name": "p"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "noncentral_F": {
+                "args": [
+                    {
+                        "name": "dfn"
+                    },
+                    {
+                        "name": "dfd"
+                    },
+                    {
+                        "name": "nconc"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "noncentral_chi_square": {
+                "args": [
+                    {
+                        "name": "df"
+                    },
+                    {
+                        "name": "nconc"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "normal": {
+                "args": [
+                    {
+                        "name": "mean"
+                    },
+                    {
+                        "name": "std"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "permutation": {
+                "args": [
+                    {
+                        "name": "n"
+                    }
+                ]
+            },
+            "poisson": {
+                "args": [
+                    {
+                        "name": "mean"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "randint": {
+                "args": [
+                    {
+                        "name": "minimum"
+                    },
+                    {
+                        "default": "None",
+                        "name": "maximum"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "random": {
+                "args": [
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "random_integers": {
+                "args": [
+                    {
+                        "name": "maximum"
+                    },
+                    {
+                        "default": "1",
+                        "name": "minimum"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "seed": {
+                "args": [
+                    {
+                        "default": "0",
+                        "name": "x"
+                    },
+                    {
+                        "default": "0",
+                        "name": "y"
+                    }
+                ]
+            },
+            "standard_normal": {
+                "args": [
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            },
+            "test": {
+                "args": [
+                    {
+                        "name": ""
+                    }
+                ]
+            },
+            "uniform": {
+                "args": [
+                    {
+                        "name": "minimum"
+                    },
+                    {
+                        "name": "maximum"
+                    },
+                    {
+                        "default": "[]",
+                        "name": "shape"
+                    }
+                ]
+            }
+        }
     },
     "recfunctions": {
         "*": {
@@ -25150,7 +26297,6 @@
         }
     },
     "rng": {
-        "*": {},
         "Distribution": {
             "__call__": {
                 "args": [
@@ -25266,8 +26412,7 @@
                     }
                 ]
             }
-        },
-        "error": {}
+        }
     },
     "rng_stats": {
         "*": {
@@ -25429,9 +26574,6 @@
                 ]
             }
         }
-    },
-    "sdist": {
-        "*": {}
     },
     "session": {
         "*": {
@@ -25614,9 +26756,6 @@
             }
         }
     },
-    "setup_common": {
-        "*": {}
-    },
     "shape_base": {
         "*": {
             "atleast_1d": {
@@ -25656,12 +26795,6 @@
             }
         }
     },
-    "stride_tricks": {
-        "*": {}
-    },
-    "sun": {
-        "*": {}
-    },
     "system_info": {
         "*": {
             "get_info": {
@@ -25693,18 +26826,6 @@
                 ]
             }
         },
-        "AtlasNotFoundError": {},
-        "BlasNotFoundError": {},
-        "BlasSrcNotFoundError": {},
-        "DJBFFTNotFoundError": {},
-        "FFTWNotFoundError": {},
-        "LapackNotFoundError": {},
-        "LapackSrcNotFoundError": {},
-        "NotFoundError": {},
-        "NumericNotFoundError": {},
-        "Numeric_info": {},
-        "UmfpackNotFoundError": {},
-        "X11NotFoundError": {},
         "_numpy_info": {
             "__init__": {
                 "args": []
@@ -25756,7 +26877,6 @@
                 "args": []
             }
         },
-        "atlas_blas_threads_info": {},
         "atlas_info": {
             "calc_info": {
                 "args": []
@@ -25772,13 +26892,11 @@
                 ]
             }
         },
-        "atlas_threads_info": {},
         "blas_info": {
             "calc_info": {
                 "args": []
             }
         },
-        "blas_mkl_info": {},
         "blas_opt_info": {
             "calc_info": {
                 "args": []
@@ -25814,8 +26932,6 @@
                 ]
             }
         },
-        "dfftw_info": {},
-        "dfftw_threads_info": {},
         "djbfft_info": {
             "calc_info": {
                 "args": []
@@ -25841,8 +26957,6 @@
                 "args": []
             }
         },
-        "fftw2_info": {},
-        "fftw3_info": {},
         "fftw_info": {
             "calc_info": {
                 "args": []
@@ -25855,17 +26969,6 @@
                 ]
             }
         },
-        "fftw_threads_info": {},
-        "freetype2_info": {},
-        "gdk_2_info": {},
-        "gdk_info": {},
-        "gdk_pixbuf_2_info": {},
-        "gdk_pixbuf_xlib_2_info": {},
-        "gdk_x11_2_info": {},
-        "gtkp_2_info": {},
-        "gtkp_x11_2_info": {},
-        "lapack_atlas_info": {},
-        "lapack_atlas_threads_info": {},
         "lapack_info": {
             "calc_info": {
                 "args": []
@@ -25914,20 +27017,16 @@
                 "args": []
             }
         },
-        "numarray_info": {},
         "numerix_info": {
             "calc_info": {
                 "args": []
             }
         },
-        "numpy_info": {},
         "openblas_info": {
             "calc_info": {
                 "args": []
             }
         },
-        "sfftw_info": {},
-        "sfftw_threads_info": {},
         "system_info:": {
             "__init__": {
                 "args": [
@@ -26104,7 +27203,6 @@
                 ]
             }
         },
-        "wx_info": {},
         "x11_info": {
             "__init__": {
                 "args": []
@@ -26112,8 +27210,7 @@
             "calc_info": {
                 "args": []
             }
-        },
-        "xft_info": {}
+        }
     },
     "testutils": {
         "*": {
@@ -26389,9 +27486,6 @@
                 ]
             }
         }
-    },
-    "timer_comparison": {
-        "*": {}
     },
     "twodim_base": {
         "*": {
@@ -26780,9 +27874,6 @@
             }
         }
     },
-    "ufuncs": {
-        "*": {}
-    },
     "unixccompiler": {
         "*": {
             "UnixCCompiler__compile": {
@@ -26863,14 +27954,6 @@
                 ]
             }
         }
-    },
-    "user_array": {
-        "*": {}
-    },
-    "util": {
-        "*": {},
-        "MathDomainError": {},
-        "UnderflowError": {}
     },
     "utils": {
         "*": {
@@ -27108,11 +28191,5 @@
                 ]
             }
         }
-    },
-    "vast": {
-        "*": {}
-    },
-    "version": {
-        "*": {}
     }
 }

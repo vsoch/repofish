@@ -1,10 +1,4 @@
 {
-    "adagrad": {
-        "*": {}
-    },
-    "adam": {
-        "*": {}
-    },
     "all_util": {
         "*": {
             "make_all": {
@@ -15,12 +9,6 @@
                 ]
             }
         }
-    },
-    "allocation_description_pb2": {
-        "*": {}
-    },
-    "app": {
-        "*": {}
     },
     "array_grad": {
         "*": {
@@ -723,9 +711,6 @@
             }
         }
     },
-    "attr_value_pb2": {
-        "*": {}
-    },
     "candidate_sampling_ops": {
         "*": {
             "_CandidateSamplerShape": {
@@ -972,9 +957,6 @@
             }
         }
     },
-    "checkpoint_state_pb2": {
-        "*": {}
-    },
     "cifar10": {
         "*": {
             "_activation_summary": {
@@ -1129,9 +1111,6 @@
             }
         }
     },
-    "cifar10_input_test": {
-        "*": {}
-    },
     "cifar10_multi_gpu_train": {
         "*": {
             "average_gradients": {
@@ -1183,9 +1162,6 @@
                 ]
             }
         }
-    },
-    "client_lib": {
-        "*": {}
     },
     "clip_ops": {
         "*": {
@@ -1399,7 +1375,6 @@
         }
     },
     "compare": {
-        "*": {},
         "MyTest": {
             "Format": {
                 "args": [
@@ -1467,8 +1442,7 @@
             "testXXX": {
                 "args": []
             }
-        },
-        "ProtoAssertions": {}
+        }
     },
     "compare_test": {
         "*": {
@@ -1646,9 +1620,6 @@
                 ]
             }
         }
-    },
-    "config_pb2": {
-        "*": {}
     },
     "constant_op": {
         "*": {
@@ -2099,7 +2070,6 @@
                 "args": []
             }
         },
-        "ControlFlowOpWrapper": {},
         "ControlFlowState": {
             "AddWhileContext": {
                 "args": [
@@ -2367,9 +2337,6 @@
             }
         }
     },
-    "control_imports": {
-        "*": {}
-    },
     "convolutional": {
         "*": {
             "error_rate": {
@@ -2448,7 +2415,6 @@
         }
     },
     "coordinator": {
-        "*": {},
         "Coordinator": {
             "__init__": {
                 "args": []
@@ -2854,18 +2820,6 @@
             }
         }
     },
-    "device": {
-        "*": {}
-    },
-    "device_attributes_pb2": {
-        "*": {}
-    },
-    "directory_watcher": {
-        "*": {}
-    },
-    "dtypes": {
-        "*": {}
-    },
     "embedding_ops": {
         "*": {
             "embedding_lookup": {
@@ -2929,11 +2883,7 @@
             }
         }
     },
-    "error_codes_pb2": {
-        "*": {}
-    },
     "errors": {
-        "*": {},
         "AbortedError": {
             "__init__": {
                 "args": [
@@ -3208,27 +3158,6 @@
             }
         }
     },
-    "event_file_loader": {
-        "*": {}
-    },
-    "event_multiplexer": {
-        "*": {}
-    },
-    "event_pb2": {
-        "*": {}
-    },
-    "example_pb2": {
-        "*": {}
-    },
-    "feature_pb2": {
-        "*": {}
-    },
-    "flags": {
-        "*": {}
-    },
-    "flags_test": {
-        "*": {}
-    },
     "float_wrapper": {
         "*": {
             "WrapSpecialFloats": {
@@ -3239,9 +3168,6 @@
                 ]
             }
         }
-    },
-    "framework_lib": {
-        "*": {}
     },
     "ftrl": {
         "*": {
@@ -3484,9 +3410,6 @@
                 ]
             }
         }
-    },
-    "function_pb2": {
-        "*": {}
     },
     "functional_ops": {
         "*": {
@@ -8899,11 +8822,7 @@
             }
         }
     },
-    "gfile": {
-        "*": {}
-    },
     "gfile_test": {
-        "*": {},
         "FastGFileTest": {
             "gfile": {
                 "args": []
@@ -8948,9 +8867,6 @@
                 "args": []
             }
         }
-    },
-    "googletest": {
-        "*": {}
     },
     "gradient_checker": {
         "*": {
@@ -9209,9 +9125,6 @@
             }
         }
     },
-    "gradient_descent": {
-        "*": {}
-    },
     "gradients": {
         "*": {
             "_AccumulatorShape": {
@@ -9419,9 +9332,6 @@
                 ]
             }
         }
-    },
-    "graph_pb2": {
-        "*": {}
     },
     "graph_util": {
         "*": {
@@ -10758,9 +10668,6 @@
             }
         }
     },
-    "kernel_def_pb2": {
-        "*": {}
-    },
     "layers": {
         "*": {
             "_apply_activation": {
@@ -11207,9 +11114,6 @@
             }
         }
     },
-    "linear": {
-        "*": {}
-    },
     "load_library": {
         "*": {
             "load_op_library": {
@@ -11220,9 +11124,6 @@
                 ]
             }
         }
-    },
-    "logging": {
-        "*": {}
     },
     "logging_ops": {
         "*": {
@@ -11284,9 +11185,6 @@
                 ]
             }
         }
-    },
-    "logging_test": {
-        "*": {}
     },
     "math_grad": {
         "*": {
@@ -12460,9 +12358,6 @@
             }
         }
     },
-    "meta_graph_pb2": {
-        "*": {}
-    },
     "mnist": {
         "*": {
             "evaluation": {
@@ -12509,9 +12404,6 @@
                 ]
             }
         }
-    },
-    "momentum": {
-        "*": {}
     },
     "moving_averages": {
         "*": {
@@ -13265,9 +13157,6 @@
                 ]
             }
         }
-    },
-    "op_def_pb2": {
-        "*": {}
     },
     "op_def_registry": {
         "*": {
@@ -14483,24 +14372,6 @@
             }
         }
     },
-    "optimizer": {
-        "*": {},
-        "Optimizer": {}
-    },
-    "parameterized": {
-        "*": {}
-    },
-    "parsing_ops": {
-        "*": {},
-        "FixedLenFeature": {},
-        "VarLenFeature": {}
-    },
-    "python_io": {
-        "*": {}
-    },
-    "pywrap_status_test": {
-        "*": {}
-    },
     "pywrap_tensorflow": {
         "*": {
             "_swig_getattr": {
@@ -14706,12 +14577,6 @@
                 ]
             }
         }
-    },
-    "queue_runner": {
-        "*": {}
-    },
-    "queue_runner_pb2": {
-        "*": {}
     },
     "random_ops": {
         "*": {
@@ -14924,12 +14789,6 @@
             }
         }
     },
-    "reader_base_pb2": {
-        "*": {}
-    },
-    "registry": {
-        "*": {}
-    },
     "regularizers": {
         "*": {
             "l1": {
@@ -14971,7 +14830,6 @@
         }
     },
     "reservoir": {
-        "*": {},
         "Reservoir": {
             "AddItem": {
                 "args": [
@@ -15027,9 +14885,6 @@
                 ]
             }
         }
-    },
-    "rmsprop": {
-        "*": {}
     },
     "rnn": {
         "*": {
@@ -15260,7 +15115,6 @@
         }
     },
     "rnn_cell": {
-        "*": {},
         "BasicLSTMCell": {
             "__call__": {
                 "args": [
@@ -15669,9 +15523,6 @@
             }
         }
     },
-    "saved_tensor_slice_pb2": {
-        "*": {}
-    },
     "saver": {
         "*": {
             "_stripped_op_list_for_graph": {
@@ -15682,7 +15533,6 @@
                 ]
             }
         },
-        "BaseSaverBuilder": {},
         "VarToSave": {
             "_AddRestoreOps": {
                 "args": [
@@ -15976,11 +15826,7 @@
             }
         }
     },
-    "saver_pb2": {
-        "*": {}
-    },
     "script_ops": {
-        "*": {},
         "FuncRegistry": {
             "__call__": {
                 "args": [
@@ -16553,11 +16399,7 @@
             }
         }
     },
-    "seq2seq_model": {
-        "*": {}
-    },
     "session": {
-        "*": {},
         "BaseSession": {
             "__del__": {
                 "args": []
@@ -16841,7 +16683,6 @@
         }
     },
     "setup": {
-        "*": {},
         "BinaryDistribution": {
             "is_pure": {
                 "args": []
@@ -16915,9 +16756,6 @@
                 ]
             }
         }
-    },
-    "sparse_grad": {
-        "*": {}
     },
     "sparse_ops": {
         "*": {
@@ -17159,12 +16997,6 @@
             }
         }
     },
-    "standard_ops": {
-        "*": {}
-    },
-    "state_grad": {
-        "*": {}
-    },
     "state_ops": {
         "*": {
             "_AssignShape": {
@@ -17253,15 +17085,6 @@
                 ]
             }
         }
-    },
-    "status_bar": {
-        "*": {}
-    },
-    "step_stats_pb2": {
-        "*": {}
-    },
-    "string_ops": {
-        "*": {}
     },
     "summaries": {
         "*": {
@@ -17352,7 +17175,6 @@
         }
     },
     "summary_io": {
-        "*": {},
         "SummaryWriter": {
             "__init__": {
                 "args": [
@@ -17526,9 +17348,6 @@
             }
         }
     },
-    "summary_pb2": {
-        "*": {}
-    },
     "sysconfig": {
         "*": {
             "get_include": {
@@ -17635,17 +17454,7 @@
             }
         }
     },
-    "tensor_array_ops": {
-        "*": {}
-    },
-    "tensor_description_pb2": {
-        "*": {}
-    },
-    "tensor_pb2": {
-        "*": {}
-    },
     "tensor_shape": {
-        "*": {},
         "Dimension": {
             "__add__": {
                 "args": [
@@ -17780,12 +17589,6 @@
             }
         }
     },
-    "tensor_shape_pb2": {
-        "*": {}
-    },
-    "tensor_slice_pb2": {
-        "*": {}
-    },
     "tensor_util": {
         "*": {
             "GetFromNumpyDTypeDict": {
@@ -17919,8 +17722,7 @@
                     }
                 ]
             }
-        },
-        "_OutputFormat": {}
+        }
     },
     "tensorboard_logging": {
         "*": {
@@ -18068,9 +17870,6 @@
                 ]
             }
         }
-    },
-    "test": {
-        "*": {}
     },
     "test_util": {
         "*": {
@@ -18241,9 +18040,6 @@
             }
         }
     },
-    "training": {
-        "*": {}
-    },
     "training_ops": {
         "*": {
             "_ApplyAdagradShape": {
@@ -18338,9 +18134,6 @@
             }
         }
     },
-    "types_pb2": {
-        "*": {}
-    },
     "user_ops": {
         "*": {
             "my_fact": {
@@ -18352,11 +18145,7 @@
             }
         }
     },
-    "variable_pb2": {
-        "*": {}
-    },
     "variable_scope": {
-        "*": {},
         "_VariableStore": {
             "__init__": {
                 "args": []
@@ -18401,7 +18190,6 @@
         }
     },
     "variables": {
-        "*": {},
         "Variable": {
             "_AsTensor": {
                 "args": []
@@ -18621,14 +18409,7 @@
             }
         }
     },
-    "versions": {
-        "*": {}
-    },
-    "versions_pb2": {
-        "*": {}
-    },
     "word2vec": {
-        "*": {},
         "Options": {
             "__init__": {
                 "args": []
@@ -18636,7 +18417,6 @@
         }
     },
     "word2vec_optimized": {
-        "*": {},
         "Options": {
             "__init__": {
                 "args": []

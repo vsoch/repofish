@@ -2,6 +2,7 @@ from repofish.database import get_functions
 from repofish.utils import save_json
 import sklearn
 import nilearn
+import tensorflow
 import nipype
 import theano
 import gensim

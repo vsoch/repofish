@@ -343,9 +343,6 @@
             }
         }
     },
-    "canica": {
-        "*": {}
-    },
     "cm": {
         "*": {
             "_concat_cmap": {
@@ -540,7 +537,6 @@
         }
     },
     "displays": {
-        "*": {},
         "BaseAxes": {
             "__init__": {
                 "args": [
@@ -1168,18 +1164,7 @@
                     }
                 ]
             }
-        },
-        "XProjector": {},
-        "XSlicer": {},
-        "XZProjector": {},
-        "XZSlicer": {},
-        "YProjector": {},
-        "YSlicer": {},
-        "YXProjector": {},
-        "YXSlicer": {},
-        "YZSlicer": {},
-        "ZProjector": {},
-        "ZSlicer": {}
+        }
     },
     "edge_detect": {
         "*": {
@@ -2504,9 +2489,6 @@
             }
         }
     },
-    "masking": {
-        "*": {}
-    },
     "matplotlib_backports": {
         "*": {
             "cbar_outline_get_xy": {
@@ -2528,14 +2510,7 @@
             }
         }
     },
-    "multi_nifti_masker": {
-        "*": {}
-    },
-    "multi_pca": {
-        "*": {}
-    },
     "nifti_labels_masker": {
-        "*": {},
         "_ExtractionFunctor": {
             "__call__": {
                 "args": [
@@ -2557,7 +2532,6 @@
         }
     },
     "nifti_maps_masker": {
-        "*": {},
         "_ExtractionFunctor": {
             "__call__": {
                 "args": [
@@ -2579,7 +2553,6 @@
         }
     },
     "nifti_masker": {
-        "*": {},
         "_ExtractionFunctor": {
             "__call__": {
                 "args": [
@@ -4585,9 +4558,6 @@
                 ]
             }
         }
-    },
-    "svg_to_json_converter": {
-        "*": {}
     },
     "utils": {
         "*": {

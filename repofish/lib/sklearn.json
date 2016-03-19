@@ -145,7 +145,6 @@
         }
     },
     "arpack": {
-        "*": {},
         "ArpackError": {
             "__init__": {
                 "args": [
@@ -749,10 +748,158 @@
         }
     },
     "base": {
-        "*": {}
+        "KNeighborsMixin": {
+            "kneighbors": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "X"
+                    },
+                    {
+                        "default": "None",
+                        "name": "n_neighbors"
+                    },
+                    {
+                        "default": "True",
+                        "name": "return_distance"
+                    }
+                ]
+            }
+        },
+        "NeighborsBase": {
+            "__init__": {
+                "args": []
+            },
+            "_fit": {
+                "args": [
+                    {
+                        "name": "X"
+                    }
+                ]
+            },
+            "_init_params": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "n_neighbors"
+                    },
+                    {
+                        "default": "None",
+                        "name": "radius"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "'auto'",
+                        "name": "algorithm"
+                    },
+                    {
+                        "default": "30",
+                        "name": "leaf_size"
+                    },
+                    {
+                        "default": "'minkowski'",
+                        "name": "metric"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "2",
+                        "name": "p"
+                    },
+                    {
+                        "default": "None",
+                        "name": "metric_params"
+                    },
+                    {
+                        "name": "**kwargs"
+                    }
+                ]
+            }
+        },
+        "NeighborsWarning": {
+            "_check_weights": {
+                "args": [
+                    {
+                        "name": "weights"
+                    }
+                ]
+            },
+            "_get_weights": {
+                "args": [
+                    {
+                        "name": "dist"
+                    },
+                    {
+                        "name": "weights"
+                    }
+                ]
+            }
+        },
+        "RadiusNeighborsMixin": {
+            "radius_neighbors": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "X"
+                    },
+                    {
+                        "default": "None",
+                        "name": "radius"
+                    },
+                    {
+                        "default": "True",
+                        "name": "return_distance"
+                    }
+                ]
+            }
+        },
+        "SupervisedFloatMixin": {
+            "fit": {
+                "args": [
+                    {
+                        "name": "X"
+                    },
+                    {
+                        "name": "y"
+                    }
+                ]
+            }
+        },
+        "SupervisedIntegerMixin": {
+            "fit": {
+                "args": [
+                    {
+                        "name": "X"
+                    },
+                    {
+                        "name": "y"
+                    }
+                ]
+            }
+        },
+        "from an array representing our data set and ask who's": {
+            "radius_neighbors_graph": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "X"
+                    },
+                    {
+                        "default": "None",
+                        "name": "radius"
+                    },
+                    {
+                        "default": "'connectivity'",
+                        "name": "mode"
+                    }
+                ]
+            }
+        }
     },
     "bayes": {
-        "*": {},
         "BayesianRidge": {
             "__init__": {
                 "args": [
@@ -1127,7 +1274,6 @@
         }
     },
     "calibration": {
-        "*": {},
         "CalibratedClassifierCV": {
             "__init__": {
                 "args": [
@@ -1260,9 +1406,6 @@
             }
         }
     },
-    "cca_": {
-        "*": {}
-    },
     "class_weight": {
         "*": {
             "compute_class_weight": {
@@ -1295,8 +1438,6 @@
         }
     },
     "classes": {
-        "*": {},
-        "LinearSVC": {},
         "LinearSVR": {
             "__init__": {
                 "args": [
@@ -1481,7 +1622,6 @@
                 ]
             }
         },
-        "SVC": {},
         "SVR": {
             "__init__": {
                 "args": [
@@ -1935,9 +2075,7 @@
                     }
                 ]
             }
-        },
-        "0       0.50      1.00      0.67         1": {},
-        "1       0.00      0.00      0.00         1": {}
+        }
     },
     "coordinate_descent": {
         "*": {
@@ -2811,7 +2949,6 @@
         }
     },
     "cross_validation": {
-        "*": {},
         "BaseShuffleSplit": {
             "__init__": {
                 "args": [
@@ -4535,7 +4672,6 @@
         }
     },
     "dummy": {
-        "*": {},
         "DummyClassifier": {
             "__init__": {
                 "args": [
@@ -4977,9 +5113,6 @@
             }
         }
     },
-    "factor_analysis": {
-        "*": {}
-    },
     "fastica_": {
         "*": {
             "_cube": {
@@ -5366,7 +5499,6 @@
         }
     },
     "forest": {
-        "*": {},
         "BaseForest": {
             "__init__": {
                 "args": [
@@ -5483,7 +5615,6 @@
                 ]
             }
         },
-        "ExtraTreesClassifier": {},
         "ExtraTreesRegressor": {
             "__init__": {
                 "args": [
@@ -5779,7 +5910,6 @@
                 ]
             }
         },
-        "RandomForestClassifier": {},
         "RandomForestRegressor": {
             "__init__": {
                 "args": [
@@ -6057,8 +6187,7 @@
                     }
                 ]
             }
-        },
-        "probability of a single tree is the fraction of samples of the same": {}
+        }
     },
     "format_stack": {
         "*": {
@@ -6218,9 +6347,6 @@
             }
         }
     },
-    "from_model": {
-        "*": {}
-    },
     "func_inspect": {
         "*": {
             "_clean_win_chars": {
@@ -6360,7 +6486,6 @@
         }
     },
     "gradient_boosting": {
-        "*": {},
         "BaseGradientBoosting": {
             "__init__": {
                 "args": [
@@ -7360,7 +7485,6 @@
                 ]
             }
         },
-        "PriorProbabilityEstimator": {},
         "QuantileEstimator": {
             "__init__": {
                 "args": [
@@ -7475,7 +7599,6 @@
                 ]
             }
         },
-        "ScaledLogOddsEstimator": {},
         "VerboseReporter": {
             "__init__": {
                 "args": [
@@ -7819,7 +7942,6 @@
         }
     },
     "grid_search": {
-        "*": {},
         "BaseSearchCV": {
             "__init__": {
                 "args": [
@@ -7940,7 +8062,6 @@
                 ]
             }
         },
-        "ChangedBehaviorWarning": {},
         "GridSearchCV": {
             "__init__": {
                 "args": [
@@ -8106,7 +8227,6 @@
         }
     },
     "hashing": {
-        "*": {},
         "Hasher": {
             "__init__": {
                 "args": [
@@ -9276,12 +9396,6 @@
             }
         }
     },
-    "incremental_pca": {
-        "*": {}
-    },
-    "isomap": {
-        "*": {}
-    },
     "isotonic": {
         "*": {
             "check_increasing": {
@@ -9752,11 +9866,7 @@
             }
         }
     },
-    "kde": {
-        "*": {}
-    },
     "kernel_approximation": {
-        "*": {},
         "AdditiveChi2Sampler": {
             "__init__": {
                 "args": [
@@ -9887,12 +9997,6 @@
                 ]
             }
         }
-    },
-    "kernel_pca": {
-        "*": {}
-    },
-    "kernel_ridge": {
-        "*": {}
     },
     "label": {
         "*": {
@@ -10128,7 +10232,6 @@
                 "args": []
             }
         },
-        "distributions will exceed 1 ": {},
         "labels": {
             "fit": {
                 "args": [
@@ -10689,8 +10792,7 @@
                     }
                 ]
             }
-        },
-        "LassoLarsCV": {}
+        }
     },
     "lfw": {
         "*": {
@@ -12065,12 +12167,6 @@
             }
         }
     },
-    "metaestimators": {
-        "*": {}
-    },
-    "metrics": {
-        "*": {}
-    },
     "mlcomp": {
         "*": {
             "_load_document_classification": {
@@ -12162,7 +12258,6 @@
         }
     },
     "mocking": {
-        "*": {},
         "ArraySlicingWrapper": {
             "__getitem__": {
                 "args": [
@@ -12285,7 +12380,6 @@
         }
     },
     "my_exceptions": {
-        "*": {},
         "JoblibException": {
             "__init__": {
                 "args": [
@@ -12303,7 +12397,6 @@
         }
     },
     "naive_bayes": {
-        "*": {},
         "BaseDiscreteNB": {
             "_get_coef": {
                 "args": []
@@ -12487,9 +12580,6 @@
                 "args": []
             }
         }
-    },
-    "nearest_centroid": {
-        "*": {}
     },
     "nmf": {
         "*": {
@@ -13106,11 +13196,7 @@
             }
         }
     },
-    "optimize": {
-        "*": {}
-    },
     "outlier_detection": {
-        "*": {},
         "OutlierDetectionMixin": {
             "__init__": {
                 "args": [
@@ -13650,8 +13736,7 @@
                     }
                 ]
             }
-        },
-        "WorkerInterrupt": {}
+        }
     },
     "partial_dependence": {
         "*": {
@@ -13786,7 +13871,6 @@
         }
     },
     "passive_aggressive": {
-        "*": {},
         "PassiveAggressiveClassifier": {
             "__init__": {
                 "args": [
@@ -13986,11 +14070,7 @@
             }
         }
     },
-    "perceptron": {
-        "*": {}
-    },
     "pipeline": {
-        "*": {},
         "Pipeline": {
             "__init__": {
                 "args": [
@@ -14621,9 +14701,6 @@
                 ]
             }
         }
-    },
-    "qda": {
-        "*": {}
     },
     "random": {
         "*": {
@@ -15269,9 +15346,6 @@
             }
         }
     },
-    "rbm": {
-        "*": {}
-    },
     "regression": {
         "*": {
             "_average_and_variance": {
@@ -15389,7 +15463,6 @@
         }
     },
     "rfe": {
-        "*": {},
         "RFE": {
             "__init__": {
                 "args": [
@@ -15687,7 +15760,6 @@
                 ]
             }
         },
-        "RidgeCV": {},
         "RidgeClassifier": {
             "__init__": {
                 "args": [
@@ -16809,7 +16881,6 @@
         }
     },
     "scorer": {
-        "*": {},
         "_BaseScorer": {
             "__call__": {
                 "args": [
@@ -17027,7 +17098,6 @@
         }
     },
     "six": {
-        "*": {},
         "Module_six_moves_urllib": {
             "add_move": {
                 "args": [
@@ -17075,11 +17145,6 @@
                 ]
             }
         },
-        "Module_six_moves_urllib_error": {},
-        "Module_six_moves_urllib_parse": {},
-        "Module_six_moves_urllib_request": {},
-        "Module_six_moves_urllib_response": {},
-        "Module_six_moves_urllib_robotparser": {},
         "MovedAttribute": {
             "__init__": {
                 "args": [
@@ -17165,11 +17230,9 @@
                     }
                 ]
             }
-        },
-        "_MovedItems": {}
+        }
     },
     "sparse_pca": {
-        "*": {},
         "SparsePCA": {
             "__init__": {
                 "args": [
@@ -17637,7 +17700,6 @@
         }
     },
     "stochastic_gradient": {
-        "*": {},
         "BaseSGD": {
             "__init__": {
                 "args": [
@@ -18481,9 +18543,6 @@
             }
         }
     },
-    "stop_words": {
-        "*": {}
-    },
     "supervised": {
         "*": {
             "adjusted_mutual_info_score": {
@@ -18864,9 +18923,6 @@
                 ]
             }
         }
-    },
-    "test_externals_setup": {
-        "*": {}
     },
     "testing": {
         "*": {
@@ -19416,7 +19472,6 @@
         }
     },
     "tree": {
-        "*": {},
         "BaseDecisionTree": {
             "__init__": {
                 "args": [
@@ -19757,10 +19812,6 @@
                 ]
             }
         }
-    },
-    "truncated_svd": {
-        "*": {},
-        "TruncatedSVD": {}
     },
     "twenty_newsgroups": {
         "*": {
@@ -20125,16 +20176,7 @@
             }
         }
     },
-    "validation": {
-        "*": {},
-        "DataConversionWarning": {},
-        "NonBLASDotWarning": {}
-    },
-    "variance_threshold": {
-        "*": {}
-    },
     "weight_boosting": {
-        "*": {},
         "AdaBoostClassifier": {
             "__init__": {
                 "args": [

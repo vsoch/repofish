@@ -34,12 +34,19 @@ def get_functions(module_folder):
                         # If it's a class, append to classes
                         if re.search("^class ",lines[start_idx].strip()):
                             class_name = get_class_name(lines[start_idx])
-                            classes[class_name] = new_functions
+                            if len(new_functions) > 0:
+                                classes[class_name] = new_functions
                         else:
                             module_functions.update(new_functions)
-                    # Add functions based on module
-                    classes["*"] = module_functions
-                    functions[module] = classes
+                    # Only add to list if we found functions
+                    add = False
+                    if len(module_functions) > 0:
+                        add = True
+                        classes["*"] = module_functions
+                    if len(classes.keys()) > 0:
+                        add = True                    
+                    if add == True:
+                        functions[module] = classes
     return functions
 
 def get_class_name(classline):

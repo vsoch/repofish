@@ -1,10 +1,4 @@
 {
-    "bleicorpus": {
-        "*": {}
-    },
-    "bm25": {
-        "*": {}
-    },
     "commons": {
         "*": {
             "build_graph": {
@@ -22,12 +16,6 @@
                 ]
             }
         }
-    },
-    "csvcorpus": {
-        "*": {}
-    },
-    "dictionary": {
-        "*": {}
     },
     "doc2vec": {
         "*": {
@@ -598,7 +586,6 @@
         }
     },
     "docsim": {
-        "*": {},
         "MatrixSimilarity": {
             "__init__": {
                 "args": [
@@ -804,11 +791,7 @@
             }
         }
     },
-    "dtmmodel": {
-        "*": {}
-    },
     "graph": {
-        "*": {},
         "IGraph": {
             "add_edge": {
                 "args": [
@@ -882,9 +865,6 @@
                 "args": []
             }
         }
-    },
-    "hashdictionary": {
-        "*": {}
     },
     "hdpmodel": {
         "*": {
@@ -1271,11 +1251,7 @@
             }
         }
     },
-    "indexedcorpus": {
-        "*": {}
-    },
     "interfaces": {
-        "*": {},
         "CorpusABC": {
             "__iter__": {
                 "args": []
@@ -1602,12 +1578,6 @@
             }
         }
     },
-    "lda_dispatcher": {
-        "*": {}
-    },
-    "lda_worker": {
-        "*": {}
-    },
     "ldamallet": {
         "*": {
             "read_doctopics": {
@@ -1706,15 +1676,6 @@
             }
         }
     },
-    "ldamulticore": {
-        "*": {}
-    },
-    "ldavowpalwabbit": {
-        "*": {}
-    },
-    "logentropy_model": {
-        "*": {}
-    },
     "lowcorpus": {
         "*": {
             "split_on_space": {
@@ -1725,12 +1686,6 @@
                 ]
             }
         }
-    },
-    "lsi_dispatcher": {
-        "*": {}
-    },
-    "lsi_worker": {
-        "*": {}
     },
     "lsimodel": {
         "*": {
@@ -1813,27 +1768,6 @@
                 ]
             }
         }
-    },
-    "make_wiki": {
-        "*": {}
-    },
-    "make_wiki_lemma": {
-        "*": {}
-    },
-    "make_wiki_online": {
-        "*": {}
-    },
-    "make_wiki_online_lemma": {
-        "*": {}
-    },
-    "make_wiki_online_nodebug": {
-        "*": {}
-    },
-    "make_wikicorpus": {
-        "*": {}
-    },
-    "malletcorpus": {
-        "*": {}
     },
     "matutils": {
         "*": {
@@ -2166,9 +2100,6 @@
             }
         }
     },
-    "mmcorpus": {
-        "*": {}
-    },
     "nosy": {
         "*": {
             "checkSum": {
@@ -2218,12 +2149,6 @@
                 ]
             }
         }
-    },
-    "phrases": {
-        "*": {}
-    },
-    "porter": {
-        "*": {}
     },
     "preprocessing": {
         "*": {
@@ -2327,12 +2252,6 @@
                 ]
             }
         }
-    },
-    "rpmodel": {
-        "*": {}
-    },
-    "sharded_corpus": {
-        "*": {}
     },
     "summarizer": {
         "*": {
@@ -2468,12 +2387,6 @@
             }
         }
     },
-    "svmlightcorpus": {
-        "*": {}
-    },
-    "syntactic_unit": {
-        "*": {}
-    },
     "textcleaner": {
         "*": {
             "clean_text_by_sentences": {
@@ -2565,9 +2478,6 @@
             }
         }
     },
-    "textcorpus": {
-        "*": {}
-    },
     "tfidfmodel": {
         "*": {
             "df2idf": {
@@ -2604,7 +2514,6 @@
         }
     },
     "ucicorpus": {
-        "*": {},
         "UciReader": {
             "__init__": {
                 "args": [

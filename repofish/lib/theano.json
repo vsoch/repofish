@@ -1,24 +1,5 @@
 {
-    "Conv3D": {
-        "*": {}
-    },
-    "ConvGrad3D": {
-        "*": {}
-    },
-    "ConvTransp3D": {
-        "*": {}
-    },
-    "GpuConv3D": {
-        "*": {}
-    },
-    "GpuConvGrad3D": {
-        "*": {}
-    },
-    "GpuConvTransp3D": {
-        "*": {}
-    },
     "basic": {
-        "*": {},
         "Append": {
             "__eq__": {
                 "args": [
@@ -581,7 +562,6 @@
                 ]
             }
         },
-        "TypedListVariable": {},
         "_typed_list_py_operators:": {
             "__getitem__": {
                 "args": [
@@ -2307,7 +2287,6 @@
         }
     },
     "basic_scipy": {
-        "*": {},
         "Erf": {
             "c_code": {
                 "args": [
@@ -2629,7 +2608,6 @@
         }
     },
     "blas": {
-        "*": {},
         "BaseGpuCorr3dMM": {
             "__init__": {
                 "args": [
@@ -3954,7 +3932,6 @@
         }
     },
     "blas_c": {
-        "*": {},
         "BaseBLAS": {
             "c_compile_args": {
                 "args": []
@@ -4116,11 +4093,7 @@
             }
         }
     },
-    "blas_scipy": {
-        "*": {}
-    },
     "blocksparse": {
-        "*": {},
         "SparseBlockGemvSS": {
             "__eq__": {
                 "args": [
@@ -4229,12 +4202,6 @@
                 ]
             }
         }
-    },
-    "builders": {
-        "*": {}
-    },
-    "callcache": {
-        "*": {}
     },
     "cc": {
         "*": {
@@ -4829,11 +4796,7 @@
             }
         }
     },
-    "check_duplicate_key": {
-        "*": {}
-    },
     "cmodule": {
-        "*": {},
         "Compiler": {
             "_try_compile_tmp": {
                 "args": [
@@ -5403,9 +5366,6 @@
             }
         }
     },
-    "comp": {
-        "*": {}
-    },
     "compiledir": {
         "*": {
             "basecompiledir_ls": {
@@ -5599,7 +5559,6 @@
         }
     },
     "configparser": {
-        "*": {},
         "ConfigParam": {
             "__get__": {
                 "args": [
@@ -5659,7 +5618,6 @@
                 ]
             }
         },
-        "SubObj": {},
         "TheanoConfigParser": {
             "AddConfigVar": {
                 "args": [
@@ -5746,7 +5704,43 @@
         }
     },
     "conv": {
-        "*": {}
+        "*": {
+            "conv2d": {
+                "args": [
+                    {
+                        "name": "input"
+                    },
+                    {
+                        "name": "filters"
+                    },
+                    {
+                        "default": "None",
+                        "name": "image_shape"
+                    },
+                    {
+                        "default": "None",
+                        "name": "filter_shape"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "'valid'",
+                        "name": "border_mode"
+                    },
+                    {
+                        "default": "(1",
+                        "name": "subsample"
+                    },
+                    {
+                        "name": "1)"
+                    },
+                    {
+                        "name": "**kargs"
+                    }
+                ]
+            }
+        }
     },
     "conv3d2d": {
         "*": {
@@ -5881,10 +5875,6 @@
                 ]
             }
         }
-    },
-    "debug": {
-        "*": {},
-        "DebugException": {}
     },
     "debugmode": {
         "*": {
@@ -6237,7 +6227,6 @@
                 ]
             }
         },
-        "DebugModeError": {},
         "InvalidValueError": {
             "__init__": {
                 "args": [
@@ -6376,7 +6365,6 @@
                 ]
             }
         },
-        "StochasticOrder": {},
         "_DummyLinker": {
             "clone": {
                 "args": [
@@ -6633,7 +6621,6 @@
         }
     },
     "destroyhandler": {
-        "*": {},
         "DestroyHandler": {
             "__init__": {
                 "args": [
@@ -7789,9 +7776,6 @@
             }
         }
     },
-    "doubleop": {
-        "*": {}
-    },
     "downsample": {
         "*": {
             "max_pool2D": {
@@ -8290,8 +8274,7 @@
                     }
                 ]
             }
-        },
-        "SupportCodeError": {}
+        }
     },
     "elemwise_cgen": {
         "*": {
@@ -8474,10 +8457,600 @@
         }
     },
     "extra_ops": {
-        "*": {}
+        "Bartlett": {
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__hash__": {
+                "args": []
+            },
+            "__str__": {
+                "args": []
+            },
+            "bartlett": {
+                "args": [
+                    {
+                        "name": "M"
+                    }
+                ]
+            },
+            "grad": {
+                "args": [
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_grads"
+                    }
+                ]
+            },
+            "infer_shape": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "in_shapes"
+                    }
+                ]
+            },
+            "make_node": {
+                "args": [
+                    {
+                        "name": "M"
+                    }
+                ]
+            },
+            "perform": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "out_"
+                    }
+                ]
+            }
+        },
+        "BinCountOp": {
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__hash__": {
+                "args": []
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "minlength"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            },
+            "bincount": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "None",
+                        "name": "weights"
+                    },
+                    {
+                        "default": "None",
+                        "name": "minlength"
+                    }
+                ]
+            },
+            "grad": {
+                "args": [
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "outputs_gradients"
+                    }
+                ]
+            },
+            "infer_shape": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "ins_shapes"
+                    }
+                ]
+            },
+            "make_node": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "weights"
+                    }
+                ]
+            },
+            "perform": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_storage"
+                    }
+                ]
+            },
+            "squeeze": {
+                "args": [
+                    {
+                        "name": "x"
+                    }
+                ]
+            }
+        },
+        "CumprodOp": {
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__hash__": {
+                "args": []
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            },
+            "c_code": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "inames"
+                    },
+                    {
+                        "name": "onames"
+                    },
+                    {
+                        "name": "sub"
+                    }
+                ]
+            },
+            "c_code_cache_version": {
+                "args": []
+            },
+            "cumprod": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "grad": {
+                "args": [
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_gradients"
+                    }
+                ]
+            },
+            "infer_shape": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "shapes"
+                    }
+                ]
+            },
+            "make_node": {
+                "args": [
+                    {
+                        "name": "x"
+                    }
+                ]
+            },
+            "perform": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_storage"
+                    }
+                ]
+            }
+        },
+        "CumsumOp": {
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__hash__": {
+                "args": []
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            },
+            "c_code": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "inames"
+                    },
+                    {
+                        "name": "onames"
+                    },
+                    {
+                        "name": "sub"
+                    }
+                ]
+            },
+            "c_code_cache_version": {
+                "args": []
+            },
+            "cumsum": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "grad": {
+                "args": [
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_gradients"
+                    }
+                ]
+            },
+            "infer_shape": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "shapes"
+                    }
+                ]
+            },
+            "make_node": {
+                "args": [
+                    {
+                        "name": "x"
+                    }
+                ]
+            },
+            "perform": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_storage"
+                    }
+                ]
+            }
+        },
+        "DiffOp": {
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__hash__": {
+                "args": []
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "default": "1",
+                        "name": "n"
+                    },
+                    {
+                        "default": "-1",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            },
+            "_grad_helper": {
+                "args": [
+                    {
+                        "name": "z"
+                    }
+                ]
+            },
+            "diff": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "default": "1",
+                        "name": "n"
+                    },
+                    {
+                        "default": "-1",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "grad": {
+                "args": [
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "outputs_gradients"
+                    }
+                ]
+            },
+            "infer_shape": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "ins_shapes"
+                    }
+                ]
+            },
+            "make_node": {
+                "args": [
+                    {
+                        "name": "x"
+                    }
+                ]
+            },
+            "perform": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_storage"
+                    }
+                ]
+            }
+        },
+        "FillDiagonal": {
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__hash__": {
+                "args": []
+            },
+            "__str__": {
+                "args": []
+            },
+            "fill_diagonal": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "val"
+                    }
+                ]
+            },
+            "grad": {
+                "args": [
+                    {
+                        "name": "inp"
+                    },
+                    {
+                        "name": "cost_grad"
+                    }
+                ]
+            },
+            "infer_shape": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "in_shapes"
+                    }
+                ]
+            },
+            "make_node": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "val"
+                    }
+                ]
+            },
+            "perform": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_storage"
+                    }
+                ]
+            }
+        },
+        "RepeatOp": {
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__hash__": {
+                "args": []
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            },
+            "connection_pattern": {
+                "args": [
+                    {
+                        "name": "node"
+                    }
+                ]
+            },
+            "grad": {
+                "args": [
+                    {
+                        "name": "(x"
+                    },
+                    {
+                        "name": "repeats)"
+                    },
+                    {
+                        "name": "(gz"
+                    },
+                    {
+                        "name": ""
+                    }
+                ]
+            },
+            "infer_shape": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "ins_shapes"
+                    }
+                ]
+            },
+            "make_node": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "repeats"
+                    }
+                ]
+            },
+            "perform": {
+                "args": [
+                    {
+                        "name": "node"
+                    },
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": "output_storage"
+                    }
+                ]
+            },
+            "repeat": {
+                "args": [
+                    {
+                        "name": "x"
+                    },
+                    {
+                        "name": "repeats"
+                    },
+                    {
+                        "default": "None",
+                        "name": "axis"
+                    }
+                ]
+            }
+        }
     },
     "fftconv": {
-        "*": {},
         "CuFFTOp": {
             "make_thunk": {
                 "args": [
@@ -8634,14 +9207,7 @@
             }
         }
     },
-    "fg": {
-        "*": {},
-        "CachedConstantError": {},
-        "InconsistencyError": {},
-        "MissingInputError": {}
-    },
     "fourier": {
-        "*": {},
         "GradTodo": {
             "make_node": {
                 "args": [
@@ -8803,8 +9369,6 @@
         }
     },
     "function_module": {
-        "*": {},
-        "AliasedMemoryError": {},
         "ContainerAttribute": {
             "__call__": {
                 "args": [
@@ -9024,9 +9588,6 @@
                 ]
             }
         }
-    },
-    "generated_version": {
-        "*": {}
     },
     "gh_api": {
         "*": {
@@ -9554,7 +10115,6 @@
                 ]
             }
         },
-        "NullTypeGradError": {},
         "ZeroGrad": {
             "grad": {
                 "args": [
@@ -9698,7 +10258,6 @@
         }
     },
     "graph": {
-        "*": {},
         "Apply": {
             "__asapply__": {
                 "args": []
@@ -9825,7 +10384,6 @@
         }
     },
     "ifelse": {
-        "*": {},
         "IfElse": {
             "R_op": {
                 "args": [
@@ -10481,7 +11039,6 @@
         }
     },
     "io": {
-        "*": {},
         "In": {
             "__init__": {
                 "args": [
@@ -10883,9 +11440,6 @@
             }
         }
     },
-    "latence_gpu_transfert": {
-        "*": {}
-    },
     "lazylinker_c": {
         "*": {
             "try_import": {
@@ -11253,7 +11807,6 @@
         }
     },
     "minimal": {
-        "*": {},
         "Minimal": {
             "__eq__": {
                 "args": [
@@ -11365,11 +11918,7 @@
             }
         }
     },
-    "monitormode": {
-        "*": {}
-    },
     "multinomial": {
-        "*": {},
         "MultinomialFromUniform": {
             "__eq__": {
                 "args": [
@@ -11456,7 +12005,6 @@
         }
     },
     "neighbourhoods": {
-        "*": {},
         "NeighbourhoodsFromImages": {
             "__eq__": {
                 "args": [
@@ -11554,11 +12102,7 @@
             }
         }
     },
-    "neighbours": {
-        "*": {}
-    },
     "nlinalg": {
-        "*": {},
         "AllocDiag": {
             "__eq__": {
                 "args": [
@@ -12149,7 +12693,6 @@
         }
     },
     "nnet": {
-        "*": {},
         "GpuCrossentropySoftmax1HotWithBiasDx": {
             "__eq__": {
                 "args": [
@@ -12335,9 +12878,6 @@
             }
         }
     },
-    "null_type": {
-        "*": {}
-    },
     "nvcc_compiler": {
         "*": {
             "add_standard_rpath": {
@@ -12385,7 +12925,6 @@
         }
     },
     "op": {
-        "*": {},
         "CLinkerObject": {
             "c_code_cache_version": {
                 "args": []
@@ -12770,7 +13309,6 @@
         }
     },
     "ops": {
-        "*": {},
         "Hint": {
             "__init__": {
                 "args": [
@@ -12907,7 +13445,6 @@
         }
     },
     "opt": {
-        "*": {},
         "InputToGpuOptimizer": {
             "GpuConvOp_from_ConvOp": {
                 "args": [
@@ -13331,7 +13868,6 @@
         }
     },
     "optdb": {
-        "*": {},
         "DB": {
             "__getitem__": {
                 "args": [
@@ -13747,8 +14283,6 @@
         }
     },
     "pkl_utils": {
-        "*": {},
-        "CompatUnpickler": {},
         "StripPickler": {
             "load_reduce": {
                 "args": []
@@ -14264,7 +14798,6 @@
         }
     },
     "profilemode": {
-        "*": {},
         "Profile_Maker": {
             "create": {
                 "args": [
@@ -15075,11 +15608,7 @@
             }
         }
     },
-    "raise_op": {
-        "*": {}
-    },
     "raw_random": {
-        "*": {},
         "RandomFunction": {
             "R_op": {
                 "args": [
@@ -15567,7 +16096,6 @@
         }
     },
     "rng_curand": {
-        "*": {},
         "CURAND_Base": {
             "__eq__": {
                 "args": [
@@ -16219,7 +16747,43 @@
         }
     },
     "scan_op": {
-        "*": {}
+        "Scan": {
+            "__init__": {
+                "args": [
+                    {
+                        "name": ""
+                    },
+                    {
+                        "name": "inputs"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "name": "outputs"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "name": "info"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "typeConstructor"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "name": ""
+                    }
+                ]
+            }
+        }
     },
     "scan_opt": {
         "*": {
@@ -16912,7 +17476,6 @@
         }
     },
     "shared_randomstreams": {
-        "*": {},
         "RandomStateSharedVariable": {
             "randomstate_constructor": {
                 "args": [
@@ -16942,14 +17505,50 @@
             }
         }
     },
-    "sharedvalue": {
-        "*": {}
-    },
     "sharedvar": {
-        "*": {}
+        "*": {
+            "load_shared_variable": {
+                "args": [
+                    {
+                        "name": "val"
+                    }
+                ]
+            }
+        },
+        "TensorSharedVariable": {
+            "tensor_constructor": {
+                "args": [
+                    {
+                        "name": "value"
+                    },
+                    {
+                        "default": "None",
+                        "name": "name"
+                    },
+                    {
+                        "default": "False",
+                        "name": "strict"
+                    },
+                    {
+                        "default": "None",
+                        "name": "allow_downcast"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "False",
+                        "name": "borrow"
+                    },
+                    {
+                        "default": "None",
+                        "name": "broadcastable"
+                    }
+                ]
+            }
+        }
     },
     "sigm": {
-        "*": {},
         "ScalarSigmoid": {
             "c_code": {
                 "args": [
@@ -17106,7 +17705,6 @@
         }
     },
     "six": {
-        "*": {},
         "MovedAttribute": {
             "__init__": {
                 "args": [
@@ -17232,7 +17830,6 @@
         }
     },
     "slinalg": {
-        "*": {},
         "Cholesky": {
             "__init__": {
                 "args": [
@@ -17586,11 +18183,7 @@
             }
         }
     },
-    "softsign": {
-        "*": {}
-    },
     "solve": {
-        "*": {},
         "Solve": {
             "__eq__": {
                 "args": [
@@ -17628,7 +18221,6 @@
         }
     },
     "sort": {
-        "*": {},
         "SortOp": {
             "R_op": {
                 "args": [
@@ -17747,7 +18339,6 @@
         }
     },
     "sp2": {
-        "*": {},
         "Binomial": {
             "__eq__": {
                 "args": [
@@ -17934,7 +18525,6 @@
         }
     },
     "subtensor": {
-        "*": {},
         "GpuAdvancedIncSubtensor1": {
             "getInplElemwiseAdditionKernel": {
                 "args": [
@@ -18837,9 +19427,6 @@
             }
         }
     },
-    "test_sp": {
-        "*": {}
-    },
     "test_theano_object": {
         "*": {
             "deco": {
@@ -18957,7 +19544,6 @@
                 ]
             }
         },
-        "handles your request.": {},
         "symbolic_fn": {
             "__get__": {
                 "args": [
@@ -19004,12 +19590,9 @@
                     }
                 ]
             }
-        },
-        "symbolic_fn_callable": {}
+        }
     },
     "toolbox": {
-        "*": {},
-        "AlreadyThere": {},
         "Bookkeeper": {
             "on_attach": {
                 "args": [
@@ -19438,7 +20021,6 @@
                 ]
             }
         },
-        "ReplacementDidntRemovedError": {},
         "Validator": {
             "consistent_": {
                 "args": [
@@ -19477,11 +20059,240 @@
             }
         }
     },
-    "truedot": {
-        "*": {}
-    },
     "type": {
-        "*": {}
+        "GpuArrayConstant": {
+            "__str__": {
+                "args": []
+            },
+            "signature": {
+                "args": []
+            }
+        },
+        "GpuArrayType": {
+            "__eq__": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "__hash__": {
+                "args": []
+            },
+            "__init__": {
+                "args": [
+                    {
+                        "name": "dtype"
+                    },
+                    {
+                        "name": "broadcastable"
+                    },
+                    {
+                        "default": "None",
+                        "name": "name"
+                    }
+                ]
+            },
+            "__str__": {
+                "args": []
+            },
+            "c_cleanup": {
+                "args": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "sub"
+                    }
+                ]
+            },
+            "c_code_cache_version": {
+                "args": []
+            },
+            "c_declare": {
+                "args": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "sub"
+                    },
+                    {
+                        "default": "True",
+                        "name": "check_input"
+                    }
+                ]
+            },
+            "c_extract": {
+                "args": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "sub"
+                    },
+                    {
+                        "default": "True",
+                        "name": "check_input"
+                    }
+                ]
+            },
+            "c_header_dirs": {
+                "args": []
+            },
+            "c_headers": {
+                "args": []
+            },
+            "c_init": {
+                "args": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "sub"
+                    }
+                ]
+            },
+            "c_init_code": {
+                "args": []
+            },
+            "c_libraries": {
+                "args": []
+            },
+            "c_sync": {
+                "args": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "sub"
+                    }
+                ]
+            },
+            "clone": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "dtype"
+                    },
+                    {
+                        "default": "None",
+                        "name": "broadcastable"
+                    }
+                ]
+            },
+            "convert_variable": {
+                "args": [
+                    {
+                        "name": "var"
+                    }
+                ]
+            },
+            "dtype_specs": {
+                "args": []
+            },
+            "filter": {
+                "args": [
+                    {
+                        "name": "data"
+                    },
+                    {
+                        "default": "False",
+                        "name": "strict"
+                    },
+                    {
+                        "default": "None",
+                        "name": "allow_downcast"
+                    }
+                ]
+            },
+            "filter_variable": {
+                "args": [
+                    {
+                        "name": "other"
+                    }
+                ]
+            },
+            "get_shape_info": {
+                "args": [
+                    {
+                        "name": "obj"
+                    }
+                ]
+            },
+            "get_size": {
+                "args": [
+                    {
+                        "name": "shape_info"
+                    }
+                ]
+            },
+            "make_variable": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "name"
+                    }
+                ]
+            },
+            "value_zeros": {
+                "args": [
+                    {
+                        "name": "shape"
+                    }
+                ]
+            },
+            "values_eq": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    }
+                ]
+            },
+            "values_eq_approx": {
+                "args": [
+                    {
+                        "name": "a"
+                    },
+                    {
+                        "name": "b"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "False",
+                        "name": "allow_remove_inf"
+                    },
+                    {
+                        "default": "False",
+                        "name": "allow_remove_nan"
+                    },
+                    {
+                        "name": ""
+                    },
+                    {
+                        "default": "None",
+                        "name": "rtol"
+                    },
+                    {
+                        "default": "None",
+                        "name": "atol"
+                    }
+                ]
+            }
+        },
+        "_operators": {
+            "_as_GpuArrayVariable": {
+                "args": []
+            },
+            "_as_TensorVariable": {
+                "args": []
+            }
+        }
     },
     "type_other": {
         "*": {
@@ -19610,7 +20421,6 @@
         }
     },
     "unify": {
-        "*": {},
         "BoundVariable": {
             "__init__": {
                 "args": [
@@ -19623,7 +20433,6 @@
                 ]
             }
         },
-        "FreeVariable": {},
         "NotVariable": {
             "__init__": {
                 "args": [
@@ -19730,9 +20539,6 @@
             }
         }
     },
-    "updates": {
-        "*": {}
-    },
     "utils": {
         "*": {
             "hash_from_sparse": {
@@ -19745,7 +20551,6 @@
         }
     },
     "var": {
-        "*": {},
         "CudaNdarrayConstant": {
             "__str__": {
                 "args": []
@@ -19754,8 +20559,6 @@
                 "args": []
             }
         },
-        "CudaNdarrayConstantSignature": {},
-        "CudaNdarrayVariable": {},
         "_operators": {
             "_as_CudaNdarrayVariable": {
                 "args": []
@@ -19764,9 +20567,6 @@
                 "args": []
             }
         }
-    },
-    "version": {
-        "*": {}
     },
     "vm": {
         "*": {
@@ -19938,7 +20738,6 @@
         }
     },
     "xlogx": {
-        "*": {},
         "XlogX": {
             "c_code": {
                 "args": [

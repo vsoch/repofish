@@ -58,11 +58,7 @@
             }
         }
     },
-    "README": {
-        "*": {}
-    },
     "analysis": {
-        "*": {},
         "CoherenceAnalyzer": {
             "_csv2ts": {
                 "args": []
@@ -86,11 +82,7 @@
                     }
                 ]
             }
-        },
-        "CoherenceAnalyzerInputSpec": {},
-        "CoherenceAnalyzerOutputSpec": {},
-        "GetTimeSeriesInputSpec": {},
-        "GetTimeSeriesOutputSpec": {}
+        }
     },
     "antsRegistrationBuildTemplate": {
         "*": {
@@ -186,23 +178,6 @@
                 ]
             }
         }
-    },
-    "arithmetic": {
-        "*": {},
-        "AddScalarVolumes": {},
-        "AddScalarVolumesInputSpec": {},
-        "AddScalarVolumesOutputSpec": {},
-        "CastScalarVolumeInputSpec": {},
-        "CastScalarVolumeOutputSpec": {},
-        "MaskScalarVolume": {},
-        "MaskScalarVolumeInputSpec": {},
-        "MaskScalarVolumeOutputSpec": {},
-        "MultiplyScalarVolumes": {},
-        "MultiplyScalarVolumesInputSpec": {},
-        "MultiplyScalarVolumesOutputSpec": {},
-        "SubtractScalarVolumes": {},
-        "SubtractScalarVolumesInputSpec": {},
-        "SubtractScalarVolumesOutputSpec": {}
     },
     "artifacts": {
         "*": {
@@ -766,98 +741,7 @@
             }
         }
     },
-    "brains": {
-        "*": {},
-        "BRAINSAlignMSP": {},
-        "BRAINSAlignMSPInputSpec": {},
-        "BRAINSAlignMSPOutputSpec": {},
-        "BRAINSClipInferior": {},
-        "BRAINSClipInferiorInputSpec": {},
-        "BRAINSClipInferiorOutputSpec": {},
-        "BRAINSConstellationModeler": {},
-        "BRAINSConstellationModelerInputSpec": {},
-        "BRAINSConstellationModelerOutputSpec": {},
-        "BRAINSEyeDetector": {},
-        "BRAINSEyeDetectorInputSpec": {},
-        "BRAINSEyeDetectorOutputSpec": {},
-        "BRAINSInitializedControlPoints": {},
-        "BRAINSInitializedControlPointsInputSpec": {},
-        "BRAINSInitializedControlPointsOutputSpec": {},
-        "BRAINSLandmarkInitializer": {},
-        "BRAINSLandmarkInitializerInputSpec": {},
-        "BRAINSLandmarkInitializerOutputSpec": {},
-        "BRAINSLinearModelerEPCA": {},
-        "BRAINSLinearModelerEPCAInputSpec": {},
-        "BRAINSLinearModelerEPCAOutputSpec": {},
-        "BRAINSLmkTransform": {},
-        "BRAINSLmkTransformInputSpec": {},
-        "BRAINSLmkTransformOutputSpec": {},
-        "BRAINSMush": {},
-        "BRAINSMushInputSpec": {},
-        "BRAINSMushOutputSpec": {},
-        "BRAINSSnapShotWriter": {},
-        "BRAINSSnapShotWriterInputSpec": {},
-        "BRAINSSnapShotWriterOutputSpec": {},
-        "BRAINSTransformConvert": {},
-        "BRAINSTransformConvertInputSpec": {},
-        "BRAINSTransformConvertOutputSpec": {},
-        "BRAINSTrimForegroundInDirection": {},
-        "BRAINSTrimForegroundInDirectionInputSpec": {},
-        "BRAINSTrimForegroundInDirectionOutputSpec": {},
-        "CleanUpOverlapLabels": {},
-        "CleanUpOverlapLabelsInputSpec": {},
-        "CleanUpOverlapLabelsOutputSpec": {},
-        "FindCenterOfBrainInputSpec": {},
-        "FindCenterOfBrainOutputSpec": {},
-        "GenerateLabelMapFromProbabilityMap": {},
-        "GenerateLabelMapFromProbabilityMapInputSpec": {},
-        "GenerateLabelMapFromProbabilityMapOutputSpec": {},
-        "ImageRegionPlotter": {},
-        "ImageRegionPlotterInputSpec": {},
-        "ImageRegionPlotterOutputSpec": {},
-        "JointHistogram": {},
-        "JointHistogramInputSpec": {},
-        "JointHistogramOutputSpec": {},
-        "ShuffleVectorsModule": {},
-        "ShuffleVectorsModuleInputSpec": {},
-        "ShuffleVectorsModuleOutputSpec": {},
-        "fcsv_to_hdf5": {},
-        "fcsv_to_hdf5InputSpec": {},
-        "fcsv_to_hdf5OutputSpec": {},
-        "insertMidACPCpoint": {},
-        "insertMidACPCpointInputSpec": {},
-        "insertMidACPCpointOutputSpec": {},
-        "landmarksConstellationAligner": {},
-        "landmarksConstellationAlignerInputSpec": {},
-        "landmarksConstellationAlignerOutputSpec": {},
-        "landmarksConstellationWeights": {},
-        "landmarksConstellationWeightsInputSpec": {},
-        "landmarksConstellationWeightsOutputSpec": {}
-    },
-    "brainsfit": {
-        "*": {},
-        "BRAINSFitInputSpec": {},
-        "BRAINSFitOutputSpec": {}
-    },
-    "brainsresample": {
-        "*": {},
-        "BRAINSResampleInputSpec": {},
-        "BRAINSResampleOutputSpec": {}
-    },
-    "brainsresize": {
-        "*": {},
-        "BRAINSResizeInputSpec": {},
-        "BRAINSResizeOutputSpec": {}
-    },
-    "c3": {
-        "*": {},
-        "C3dAffineToolInputSpec": {},
-        "C3dAffineToolOutputSpec": {}
-    },
     "calib": {
-        "*": {},
-        "SFLUTGenInputSpec": {},
-        "SFLUTGenOutputSpec": {},
         "SFPICOCalibData": {
             "_gen_outfilename": {
                 "args": []
@@ -865,27 +749,7 @@
             "_list_outputs": {
                 "args": []
             }
-        },
-        "SFPICOCalibDataInputSpec": {},
-        "SFPICOCalibDataOutputSpec": {}
-    },
-    "changequantification": {
-        "*": {},
-        "IntensityDifferenceMetricInputSpec": {},
-        "IntensityDifferenceMetricOutputSpec": {}
-    },
-    "checkerboardfilter": {
-        "*": {},
-        "CheckerBoardFilterInputSpec": {},
-        "CheckerBoardFilterOutputSpec": {}
-    },
-    "classify": {
-        "*": {},
-        "BRAINSPosteriorToContinuousClassInputSpec": {},
-        "BRAINSPosteriorToContinuousClassOutputSpec": {}
-    },
-    "cloghandler": {
-        "*": {}
+        }
     },
     "cmtk": {
         "*": {
@@ -1011,10 +875,6 @@
                 ]
             }
         },
-        "CreateMatrixInputSpec": {},
-        "CreateMatrixOutputSpec": {},
-        "CreateNodesInputSpec": {},
-        "CreateNodesOutputSpec": {},
         "ROIGen": {
             "_gen_outfilename": {
                 "args": [
@@ -1046,17 +906,7 @@
                     }
                 ]
             }
-        },
-        "ROIGenInputSpec": {},
-        "ROIGenOutputSpec": {}
-    },
-    "commandlineonly": {
-        "*": {},
-        "fiberstatsInputSpec": {},
-        "fiberstatsOutputSpec": {}
-    },
-    "condor": {
-        "*": {}
+        }
     },
     "config": {
         "*": {
@@ -1068,11 +918,6 @@
                 ]
             }
         }
-    },
-    "connectivity": {
-        "*": {},
-        "ConmatInputSpec": {},
-        "ConmatOutputSpec": {}
     },
     "connectivity_mapping": {
         "*": {
@@ -1087,7 +932,6 @@
         }
     },
     "convert": {
-        "*": {},
         "AnalyzeHeader": {
             "_gen_outfilename": {
                 "args": []
@@ -1096,8 +940,6 @@
                 "args": []
             }
         },
-        "AnalyzeHeaderInputSpec": {},
-        "AnalyzeHeaderOutputSpec": {},
         "DT2NIfTI": {
             "_gen_filename": {
                 "args": [
@@ -1116,8 +958,6 @@
                 "args": []
             }
         },
-        "DT2NIfTIInputSpec": {},
-        "DT2NIfTIOutputSpec": {},
         "FSL2Scheme": {
             "_gen_outfilename": {
                 "args": []
@@ -1126,8 +966,6 @@
                 "args": []
             }
         },
-        "FSL2SchemeInputSpec": {},
-        "FSL2SchemeOutputSpec": {},
         "Image2Voxel": {
             "_gen_outfilename": {
                 "args": []
@@ -1136,8 +974,6 @@
                 "args": []
             }
         },
-        "Image2VoxelInputSpec": {},
-        "Image2VoxelOutputSpec": {},
         "NIfTIDT2Camino": {
             "_gen_filename": {
                 "args": [
@@ -1150,8 +986,6 @@
                 "args": []
             }
         },
-        "NIfTIDT2CaminoInputSpec": {},
-        "NIfTIDT2CaminoOutputSpec": {},
         "ProcStreamlines": {
             "_format_arg": {
                 "args": [
@@ -1187,10 +1021,6 @@
                 ]
             }
         },
-        "ProcStreamlinesInputSpec": {},
-        "ProcStreamlinesOutputSpec": {},
-        "ShredderInputSpec": {},
-        "ShredderOutputSpec": {},
         "TractShredder": {
             "_gen_outfilename": {
                 "args": []
@@ -1199,8 +1029,6 @@
                 "args": []
             }
         },
-        "TractShredderInputSpec": {},
-        "TractShredderOutputSpec": {},
         "VtkStreamlines": {
             "_gen_outfilename": {
                 "args": []
@@ -1208,25 +1036,7 @@
             "_list_outputs": {
                 "args": []
             }
-        },
-        "VtkStreamlinesInputSpec": {},
-        "VtkStreamlinesOutputSpec": {}
-    },
-    "converters": {
-        "*": {},
-        "DWICompareInputSpec": {},
-        "DWICompareOutputSpec": {},
-        "DWISimpleCompare": {},
-        "DWISimpleCompareInputSpec": {},
-        "DWISimpleCompareOutputSpec": {}
-    },
-    "dagman": {
-        "*": {}
-    },
-    "dcm2nii": {
-        "*": {},
-        "Dcm2niiInputSpec": {},
-        "Dcm2niiOutputSpec": {}
+        }
     },
     "dcmstack": {
         "*": {
@@ -1250,8 +1060,6 @@
                 ]
             }
         },
-        "CopyMetaInputSpec": {},
-        "CopyMetaOutputSpec": {},
         "DcmStack": {
             "_get_filelist": {
                 "args": [
@@ -1271,8 +1079,6 @@
                 ]
             }
         },
-        "DcmStackInputSpec": {},
-        "DcmStackOutputSpec": {},
         "GroupAndStack": {
             "_list_outputs": {
                 "args": []
@@ -1285,7 +1091,6 @@
                 ]
             }
         },
-        "GroupAndStackOutputSpec": {},
         "LookupMeta": {
             "_list_outputs": {
                 "args": []
@@ -1304,7 +1109,6 @@
                 ]
             }
         },
-        "LookupMetaInputSpec": {},
         "MergeNifti": {
             "_list_outputs": {
                 "args": []
@@ -1317,7 +1121,6 @@
                 ]
             }
         },
-        "MergeNiftiInputSpec": {},
         "MergeNiftiOutputSpec": {
             "key_func": {
                 "args": [
@@ -1350,13 +1153,7 @@
                     }
                 ]
             }
-        },
-        "NiftiGeneratorBaseInputSpec": {},
-        "SplitNiftiInputSpec": {},
-        "SplitNiftiOutputSpec": {}
-    },
-    "debug": {
-        "*": {}
+        }
     },
     "denoise": {
         "*": {
@@ -1407,67 +1204,6 @@
                 ]
             }
         }
-    },
-    "denoising": {
-        "*": {},
-        "UnbiasedNonLocalMeansInputSpec": {},
-        "UnbiasedNonLocalMeansOutputSpec": {}
-    },
-    "developer": {
-        "*": {},
-        "JistBrainMgdmSegmentation": {},
-        "JistBrainMgdmSegmentationInputSpec": {},
-        "JistBrainMgdmSegmentationOutputSpec": {},
-        "JistBrainMp2rageDuraEstimation": {},
-        "JistBrainMp2rageDuraEstimationInputSpec": {},
-        "JistBrainMp2rageDuraEstimationOutputSpec": {},
-        "JistBrainMp2rageSkullStripping": {},
-        "JistBrainMp2rageSkullStrippingInputSpec": {},
-        "JistBrainMp2rageSkullStrippingOutputSpec": {},
-        "JistBrainPartialVolumeFilter": {},
-        "JistBrainPartialVolumeFilterInputSpec": {},
-        "JistBrainPartialVolumeFilterOutputSpec": {},
-        "JistCortexSurfaceMeshInflation": {},
-        "JistCortexSurfaceMeshInflationInputSpec": {},
-        "JistCortexSurfaceMeshInflationOutputSpec": {},
-        "JistIntensityMp2rageMasking": {},
-        "JistIntensityMp2rageMaskingInputSpec": {},
-        "JistIntensityMp2rageMaskingOutputSpec": {},
-        "JistLaminarProfileCalculator": {},
-        "JistLaminarProfileCalculatorInputSpec": {},
-        "JistLaminarProfileCalculatorOutputSpec": {},
-        "JistLaminarProfileGeometry": {},
-        "JistLaminarProfileGeometryInputSpec": {},
-        "JistLaminarProfileGeometryOutputSpec": {},
-        "JistLaminarProfileSampling": {},
-        "JistLaminarProfileSamplingInputSpec": {},
-        "JistLaminarProfileSamplingOutputSpec": {},
-        "JistLaminarROIAveraging": {},
-        "JistLaminarROIAveragingInputSpec": {},
-        "JistLaminarROIAveragingOutputSpec": {},
-        "JistLaminarVolumetricLayering": {},
-        "JistLaminarVolumetricLayeringInputSpec": {},
-        "JistLaminarVolumetricLayeringOutputSpec": {},
-        "MedicAlgorithmImageCalculator": {},
-        "MedicAlgorithmImageCalculatorInputSpec": {},
-        "MedicAlgorithmImageCalculatorOutputSpec": {},
-        "MedicAlgorithmLesionToads": {},
-        "MedicAlgorithmLesionToadsInputSpec": {},
-        "MedicAlgorithmLesionToadsOutputSpec": {},
-        "MedicAlgorithmMipavReorient": {},
-        "MedicAlgorithmMipavReorientInputSpec": {},
-        "MedicAlgorithmMipavReorientOutputSpec": {},
-        "MedicAlgorithmN3": {},
-        "MedicAlgorithmN3InputSpec": {},
-        "MedicAlgorithmN3OutputSpec": {},
-        "MedicAlgorithmSPECTRE2010": {},
-        "MedicAlgorithmSPECTRE2010InputSpec": {},
-        "MedicAlgorithmSPECTRE2010OutputSpec": {},
-        "MedicAlgorithmThresholdToBinaryMaskInputSpec": {},
-        "MedicAlgorithmThresholdToBinaryMaskOutputSpec": {},
-        "RandomVol": {},
-        "RandomVolInputSpec": {},
-        "RandomVolOutputSpec": {}
     },
     "diffusion": {
         "*": {
@@ -1700,10 +1436,6 @@
                 ]
             }
         }
-    },
-    "dynamic_slicer": {
-        "*": {},
-        "SlicerCommandLineInputSpec": {}
     },
     "engine": {
         "*": {
@@ -2627,93 +2359,6 @@
             }
         }
     },
-    "extractskeleton": {
-        "*": {},
-        "ExtractSkeletonInputSpec": {},
-        "ExtractSkeletonOutputSpec": {}
-    },
-    "featurecreator": {
-        "*": {},
-        "GenerateCsfClippedFromClassifiedImageInputSpec": {},
-        "GenerateCsfClippedFromClassifiedImageOutputSpec": {}
-    },
-    "featuredetection": {
-        "*": {},
-        "CannyEdgeInputSpec": {},
-        "CannyEdgeOutputSpec": {},
-        "CannySegmentationLevelSetImageFilter": {},
-        "CannySegmentationLevelSetImageFilterInputSpec": {},
-        "CannySegmentationLevelSetImageFilterOutputSpec": {},
-        "DilateImage": {},
-        "DilateImageInputSpec": {},
-        "DilateImageOutputSpec": {},
-        "DilateMask": {},
-        "DilateMaskInputSpec": {},
-        "DilateMaskOutputSpec": {},
-        "DistanceMaps": {},
-        "DistanceMapsInputSpec": {},
-        "DistanceMapsOutputSpec": {},
-        "DumpBinaryTrainingVectors": {},
-        "DumpBinaryTrainingVectorsInputSpec": {},
-        "DumpBinaryTrainingVectorsOutputSpec": {},
-        "ErodeImage": {},
-        "ErodeImageInputSpec": {},
-        "ErodeImageOutputSpec": {},
-        "FlippedDifference": {},
-        "FlippedDifferenceInputSpec": {},
-        "FlippedDifferenceOutputSpec": {},
-        "GenerateBrainClippedImage": {},
-        "GenerateBrainClippedImageInputSpec": {},
-        "GenerateBrainClippedImageOutputSpec": {},
-        "GenerateSummedGradientImage": {},
-        "GenerateSummedGradientImageInputSpec": {},
-        "GenerateSummedGradientImageOutputSpec": {},
-        "GenerateTestImage": {},
-        "GenerateTestImageInputSpec": {},
-        "GenerateTestImageOutputSpec": {},
-        "GradientAnisotropicDiffusionImageFilter": {},
-        "GradientAnisotropicDiffusionImageFilterInputSpec": {},
-        "GradientAnisotropicDiffusionImageFilterOutputSpec": {},
-        "HammerAttributeCreator": {},
-        "HammerAttributeCreatorInputSpec": {},
-        "HammerAttributeCreatorOutputSpec": {},
-        "NeighborhoodMean": {},
-        "NeighborhoodMeanInputSpec": {},
-        "NeighborhoodMeanOutputSpec": {},
-        "NeighborhoodMedian": {},
-        "NeighborhoodMedianInputSpec": {},
-        "NeighborhoodMedianOutputSpec": {},
-        "STAPLEAnalysis": {},
-        "STAPLEAnalysisInputSpec": {},
-        "STAPLEAnalysisOutputSpec": {},
-        "TextureFromNoiseImageFilter": {},
-        "TextureFromNoiseImageFilterInputSpec": {},
-        "TextureFromNoiseImageFilterOutputSpec": {},
-        "TextureMeasureFilter": {},
-        "TextureMeasureFilterInputSpec": {},
-        "TextureMeasureFilterOutputSpec": {}
-    },
-    "fiberprocess": {
-        "*": {},
-        "fiberprocessInputSpec": {},
-        "fiberprocessOutputSpec": {}
-    },
-    "fibertrack": {
-        "*": {},
-        "fibertrackInputSpec": {},
-        "fibertrackOutputSpec": {}
-    },
-    "filemanip": {
-        "*": {}
-    },
-    "filtering": {
-        "*": {},
-        "OtsuThresholdImageFilter": {},
-        "OtsuThresholdImageFilterInputSpec": {},
-        "OtsuThresholdImageFilterOutputSpec": {},
-        "ResampleScalarVolumeInputSpec": {},
-        "ResampleScalarVolumeOutputSpec": {}
-    },
     "generate_classes": {
         "*": {
             "add_class_to_package": {
@@ -2870,95 +2515,6 @@
             }
         }
     },
-    "gtract": {
-        "*": {},
-        "compareTractInclusion": {},
-        "compareTractInclusionInputSpec": {},
-        "compareTractInclusionOutputSpec": {},
-        "extractNrrdVectorIndex": {},
-        "extractNrrdVectorIndexInputSpec": {},
-        "extractNrrdVectorIndexOutputSpec": {},
-        "gtractAnisotropyMap": {},
-        "gtractAnisotropyMapInputSpec": {},
-        "gtractAnisotropyMapOutputSpec": {},
-        "gtractAverageBvalues": {},
-        "gtractAverageBvaluesInputSpec": {},
-        "gtractAverageBvaluesOutputSpec": {},
-        "gtractClipAnisotropy": {},
-        "gtractClipAnisotropyInputSpec": {},
-        "gtractClipAnisotropyOutputSpec": {},
-        "gtractCoRegAnatomy": {},
-        "gtractCoRegAnatomyInputSpec": {},
-        "gtractCoRegAnatomyOutputSpec": {},
-        "gtractConcatDwi": {},
-        "gtractConcatDwiInputSpec": {},
-        "gtractConcatDwiOutputSpec": {},
-        "gtractCopyImageOrientation": {},
-        "gtractCopyImageOrientationInputSpec": {},
-        "gtractCopyImageOrientationOutputSpec": {},
-        "gtractCoregBvalues": {},
-        "gtractCoregBvaluesInputSpec": {},
-        "gtractCoregBvaluesOutputSpec": {},
-        "gtractCostFastMarching": {},
-        "gtractCostFastMarchingInputSpec": {},
-        "gtractCostFastMarchingOutputSpec": {},
-        "gtractCreateGuideFiber": {},
-        "gtractCreateGuideFiberInputSpec": {},
-        "gtractCreateGuideFiberOutputSpec": {},
-        "gtractFastMarchingTracking": {},
-        "gtractFastMarchingTrackingInputSpec": {},
-        "gtractFastMarchingTrackingOutputSpec": {},
-        "gtractFiberTracking": {},
-        "gtractFiberTrackingInputSpec": {},
-        "gtractFiberTrackingOutputSpec": {},
-        "gtractImageConformity": {},
-        "gtractImageConformityInputSpec": {},
-        "gtractImageConformityOutputSpec": {},
-        "gtractInvertBSplineTransform": {},
-        "gtractInvertBSplineTransformInputSpec": {},
-        "gtractInvertBSplineTransformOutputSpec": {},
-        "gtractInvertDisplacementField": {},
-        "gtractInvertDisplacementFieldInputSpec": {},
-        "gtractInvertDisplacementFieldOutputSpec": {},
-        "gtractInvertRigidTransform": {},
-        "gtractInvertRigidTransformInputSpec": {},
-        "gtractInvertRigidTransformOutputSpec": {},
-        "gtractResampleAnisotropy": {},
-        "gtractResampleAnisotropyInputSpec": {},
-        "gtractResampleAnisotropyOutputSpec": {},
-        "gtractResampleB0": {},
-        "gtractResampleB0InputSpec": {},
-        "gtractResampleB0OutputSpec": {},
-        "gtractResampleCodeImage": {},
-        "gtractResampleCodeImageInputSpec": {},
-        "gtractResampleCodeImageOutputSpec": {},
-        "gtractResampleDWIInPlace": {},
-        "gtractResampleDWIInPlaceInputSpec": {},
-        "gtractResampleDWIInPlaceOutputSpec": {},
-        "gtractResampleFibers": {},
-        "gtractResampleFibersInputSpec": {},
-        "gtractResampleFibersOutputSpec": {},
-        "gtractTensorInputSpec": {},
-        "gtractTensorOutputSpec": {},
-        "gtractTransformToDisplacementField": {},
-        "gtractTransformToDisplacementFieldInputSpec": {},
-        "gtractTransformToDisplacementFieldOutputSpec": {}
-    },
-    "histogrammatching": {
-        "*": {},
-        "HistogramMatchingInputSpec": {},
-        "HistogramMatchingOutputSpec": {}
-    },
-    "icc": {
-        "*": {},
-        "ICCInputSpec": {},
-        "ICCOutputSpec": {}
-    },
-    "imagelabelcombine": {
-        "*": {},
-        "ImageLabelCombineInputSpec": {},
-        "ImageLabelCombineOutputSpec": {}
-    },
     "info": {
         "*": {
             "get_nipype_gitversion": {
@@ -3020,7 +2576,6 @@
                 ]
             }
         },
-        "DataFinderInputSpec": {},
         "DataGrabber": {
             "__init__": {
                 "args": [
@@ -3048,7 +2603,6 @@
                 "args": []
             }
         },
-        "DataGrabberInputSpec": {},
         "DataSink": {
             "__init__": {
                 "args": [
@@ -3095,9 +2649,6 @@
                 ]
             }
         },
-        "DataSinkOutputSpec": {},
-        "FSSourceInputSpec": {},
-        "FSSourceOutputSpec": {},
         "FreeSurferSource": {
             "_get_files": {
                 "args": [
@@ -3147,7 +2698,6 @@
                 "args": []
             }
         },
-        "JSONFileGrabberInputSpec": {},
         "JSONFileSinkInputSpec": {
             "__setattr__": {
                 "args": [
@@ -3160,7 +2710,6 @@
                 ]
             }
         },
-        "JSONFileSinkOutputSpec": {},
         "MySQLSink": {
             "__init__": {
                 "args": [
@@ -3176,7 +2725,6 @@
                 "args": []
             }
         },
-        "MySQLSinkInputSpec": {},
         "SQLiteSink": {
             "__init__": {
                 "args": [
@@ -3192,7 +2740,6 @@
                 "args": []
             }
         },
-        "SQLiteSinkInputSpec": {},
         "SSHDataGrabber": {
             "__init__": {
                 "args": [
@@ -3216,7 +2763,6 @@
                 "args": []
             }
         },
-        "SSHDataGrabberInputSpec": {},
         "SelectFiles": {
             "__init__": {
                 "args": [
@@ -3239,7 +2785,6 @@
                 "args": []
             }
         },
-        "SelectFilesInputSpec": {},
         "XNATSink": {
             "_list_outputs": {
                 "args": []
@@ -3327,8 +2872,7 @@
             "_list_outputs": {
                 "args": []
             }
-        },
-        "XNATSourceInputSpec": {}
+        }
     },
     "ipython": {
         "*": {
@@ -3347,39 +2891,14 @@
             }
         }
     },
-    "ipythonx": {
-        "*": {}
-    },
     "legacy": {
-        "*": {},
-        "GenWarpFields": {},
         "antsIntroduction": {
             "_list_outputs": {
                 "args": []
             }
-        },
-        "antsIntroductionInputSpec": {},
-        "antsIntroductionOutputSpec": {},
-        "buildtemplateparallelInputSpec": {},
-        "buildtemplateparallelOutputSpec": {}
-    },
-    "linear": {
-        "*": {}
-    },
-    "logger": {
-        "*": {}
-    },
-    "lsf": {
-        "*": {}
+        }
     },
     "maths": {
-        "*": {},
-        "ApplyMask": {},
-        "ApplyMaskInput": {},
-        "BinaryMaths": {},
-        "BinaryMathsInput": {},
-        "ChangeDataType": {},
-        "ChangeDataTypeInput": {},
         "DilateImage": {
             "_format_arg": {
                 "args": [
@@ -3395,7 +2914,6 @@
                 ]
             }
         },
-        "DilateInput": {},
         "ErodeImage": {
             "_format_arg": {
                 "args": [
@@ -3411,7 +2929,6 @@
                 ]
             }
         },
-        "ErodeInput": {},
         "IsotropicSmooth": {
             "_format_arg": {
                 "args": [
@@ -3427,8 +2944,6 @@
                 ]
             }
         },
-        "IsotropicSmoothInput": {},
-        "KernelInput": {},
         "MathsCommand": {
             "_gen_filename": {
                 "args": [
@@ -3441,12 +2956,6 @@
                 "args": []
             }
         },
-        "MathsInput": {},
-        "MathsOutput": {},
-        "MaxImage": {},
-        "MaxImageInput": {},
-        "MeanImage": {},
-        "MeanImageInput": {},
         "MultiImageMaths": {
             "_format_arg": {
                 "args": [
@@ -3462,10 +2971,6 @@
                 ]
             }
         },
-        "MultiImageMathsInput": {},
-        "SpatialFilter": {},
-        "SpatialFilterInput": {},
-        "TemporalFilterInput": {},
         "Threshold": {
             "_format_arg": {
                 "args": [
@@ -3481,13 +2986,11 @@
                 ]
             }
         },
-        "ThresholdInputSpec": {},
         "UnaryMaths": {
             "_list_outputs": {
                 "args": []
             }
-        },
-        "UnaryMathsInput": {}
+        }
     },
     "matlab": {
         "*": {
@@ -3498,8 +3001,7 @@
                     }
                 ]
             }
-        },
-        "MatlabInputSpec": {}
+        }
     },
     "matlabtools": {
         "*": {
@@ -3520,13 +3022,7 @@
             }
         }
     },
-    "maxcurvature": {
-        "*": {},
-        "maxcurvatureInputSpec": {},
-        "maxcurvatureOutputSpec": {}
-    },
     "memory": {
-        "*": {},
         "PipeFunc": {
             "__call__": {
                 "args": [
@@ -3599,7 +3095,6 @@
         }
     },
     "mesh": {
-        "*": {},
         "ComputeMeshWarp": {
             "_list_outputs": {
                 "args": []
@@ -3625,8 +3120,6 @@
                 ]
             }
         },
-        "ComputeMeshWarpInputSpec": {},
-        "ComputeMeshWarpOutputSpec": {},
         "MeshWarpMaths": {
             "_list_outputs": {
                 "args": []
@@ -3639,8 +3132,6 @@
                 ]
             }
         },
-        "MeshWarpMathsInputSpec": {},
-        "MeshWarpMathsOutputSpec": {},
         "WarpPoints": {
             "_gen_fname": {
                 "args": [
@@ -3667,17 +3158,9 @@
                     }
                 ]
             }
-        },
-        "WarpPointsInputSpec": {},
-        "WarpPointsOutputSpec": {}
-    },
-    "meshfix": {
-        "*": {},
-        "MeshFixInputSpec": {},
-        "MeshFixOutputSpec": {}
+        }
     },
     "metrics": {
-        "*": {},
         "Distance": {
             "_eucl_cog": {
                 "args": [
@@ -3751,8 +3234,6 @@
                 ]
             }
         },
-        "DistanceInputSpec": {},
-        "DistanceOutputSpec": {},
         "ErrorMap": {
             "_list_outputs": {
                 "args": []
@@ -3765,8 +3246,6 @@
                 ]
             }
         },
-        "ErrorMapInputSpec": {},
-        "ErrorMapOutputSpec": {},
         "FuzzyOverlap": {
             "_list_outputs": {
                 "args": []
@@ -3779,8 +3258,6 @@
                 ]
             }
         },
-        "FuzzyOverlapInputSpec": {},
-        "FuzzyOverlapOutputSpec": {},
         "Overlap": {
             "_bool_vec_dissimilarity": {
                 "args": [
@@ -3805,11 +3282,7 @@
                     }
                 ]
             }
-        },
-        "OverlapInputSpec": {},
-        "OverlapOutputSpec": {},
-        "SimilarityInputSpec": {},
-        "SimilarityOutputSpec": {}
+        }
     },
     "misc": {
         "*": {
@@ -3944,7 +3417,6 @@
         }
     },
     "model": {
-        "*": {},
         "Cluster": {
             "_format_arg": {
                 "args": [
@@ -3963,8 +3435,6 @@
                 "args": []
             }
         },
-        "ClusterInputSpec": {},
-        "ClusterOutputSpec": {},
         "ContrastMgr": {
             "_format_arg": {
                 "args": [
@@ -4000,14 +3470,11 @@
                 ]
             }
         },
-        "ContrastMgrInputSpec": {},
-        "ContrastMgrOutputSpec": {},
         "FEAT": {
             "_list_outputs": {
                 "args": []
             }
         },
-        "FEATInputSpec": {},
         "FEATModel": {
             "_format_arg": {
                 "args": [
@@ -4033,9 +3500,6 @@
                 "args": []
             }
         },
-        "FEATModelInputSpec": {},
-        "FEATModelOutpuSpec": {},
-        "FEATOutputSpec": {},
         "FEATRegister": {
             "_list_outputs": {
                 "args": []
@@ -4048,8 +3512,6 @@
                 ]
             }
         },
-        "FEATRegisterInputSpec": {},
-        "FEATRegisterOutputSpec": {},
         "FILMGLS": {
             "_get_numcons": {
                 "args": []
@@ -4065,11 +3527,6 @@
                 "args": []
             }
         },
-        "FILMGLSInputSpec": {},
-        "FILMGLSInputSpec505": {},
-        "FILMGLSInputSpec507": {},
-        "FILMGLSOutputSpec": {},
-        "FILMGLSOutputSpec507": {},
         "FLAMEO": {
             "_list_outputs": {
                 "args": []
@@ -4082,10 +3539,6 @@
                 ]
             }
         },
-        "FLAMEOInputSpec": {},
-        "FLAMEOOutputSpec": {},
-        "GLMInputSpec": {},
-        "GLMOutputSpec": {},
         "L2Model": {
             "_list_outputs": {
                 "args": []
@@ -4098,8 +3551,6 @@
                 ]
             }
         },
-        "L2ModelInputSpec": {},
-        "L2ModelOutputSpec": {},
         "Level1Design": {
             "_create_ev_file": {
                 "args": [
@@ -4170,8 +3621,6 @@
                 ]
             }
         },
-        "Level1DesignInputSpec": {},
-        "Level1DesignOutputSpec": {},
         "MELODIC": {
             "_gen_filename": {
                 "args": [
@@ -4184,8 +3633,6 @@
                 "args": []
             }
         },
-        "MELODICInputSpec": {},
-        "MELODICOutputSpec": {},
         "MultipleRegressDesign": {
             "_list_outputs": {
                 "args": []
@@ -4198,22 +3645,16 @@
                 ]
             }
         },
-        "MultipleRegressDesignInputSpec": {},
-        "MultipleRegressDesignOutputSpec": {},
         "Randomise": {
             "_list_outputs": {
                 "args": []
             }
         },
-        "RandomiseInputSpec": {},
-        "RandomiseOutputSpec": {},
         "SMM": {
             "_list_outputs": {
                 "args": []
             }
         },
-        "SMMInputSpec": {},
-        "SMMOutputSpec": {},
         "SmoothEstimate": {
             "aggregate_outputs": {
                 "args": [
@@ -4227,9 +3668,7 @@
                     }
                 ]
             }
-        },
-        "SmoothEstimateInputSpec": {},
-        "SmoothEstimateOutputSpec": {}
+        }
     },
     "modelgen": {
         "*": {
@@ -4340,8 +3779,6 @@
                 ]
             }
         },
-        "SpecifyModelInputSpec": {},
-        "SpecifyModelOutputSpec": {},
         "SpecifySPMModel": {
             "_concatenate_info": {
                 "args": [
@@ -4358,18 +3795,7 @@
                     }
                 ]
             }
-        },
-        "SpecifySPMModelInputSpec": {},
-        "SpecifySparseModelInputSpec": {},
-        "SpecifySparseModelOutputSpec": {}
-    },
-    "morphology": {
-        "*": {},
-        "GrayscaleFillHoleImageFilterInputSpec": {},
-        "GrayscaleFillHoleImageFilterOutputSpec": {},
-        "GrayscaleGrindPeakImageFilter": {},
-        "GrayscaleGrindPeakImageFilterInputSpec": {},
-        "GrayscaleGrindPeakImageFilterOutputSpec": {}
+        }
     },
     "multiproc": {
         "*": {
@@ -4384,7 +3810,6 @@
                 ]
             }
         },
-        "NonDaemonPool": {},
         "NonDaemonProcess": {
             "_get_daemon": {
                 "args": []
@@ -4398,11 +3823,6 @@
             }
         }
     },
-    "n4itkbiasfieldcorrection": {
-        "*": {},
-        "N4ITKBiasFieldCorrectionInputSpec": {},
-        "N4ITKBiasFieldCorrectionOutputSpec": {}
-    },
     "nbs": {
         "*": {
             "ntwks_to_matrices": {
@@ -4415,9 +3835,7 @@
                     }
                 ]
             }
-        },
-        "NetworkBasedStatisticInputSpec": {},
-        "NetworkBasedStatisticOutputSpec": {}
+        }
     },
     "nipype2boutiques": {
         "*": {
@@ -4638,7 +4056,6 @@
         }
     },
     "odf": {
-        "*": {},
         "LinRecon": {
             "_gen_outfilename": {
                 "args": []
@@ -4647,8 +4064,6 @@
                 "args": []
             }
         },
-        "LinReconInputSpec": {},
-        "LinReconOutputSpec": {},
         "MESD": {
             "_gen_outfilename": {
                 "args": []
@@ -4657,8 +4072,6 @@
                 "args": []
             }
         },
-        "MESDInputSpec": {},
-        "MESDOutputSpec": {},
         "QBallMX": {
             "_gen_outfilename": {
                 "args": []
@@ -4666,14 +4079,7 @@
             "_list_outputs": {
                 "args": []
             }
-        },
-        "QBallMXInputSpec": {},
-        "QBallMXOutputSpec": {},
-        "SFPeaksInputSpec": {},
-        "SFPeaksOutputSpec": {}
-    },
-    "onetime": {
-        "*": {}
+        }
     },
     "parcellation": {
         "*": {
@@ -4766,20 +4172,7 @@
                     }
                 ]
             }
-        },
-        "ParcellateInputSpec": {},
-        "ParcellateOutputSpec": {}
-    },
-    "pbs": {
-        "*": {}
-    },
-    "pbsgraph": {
-        "*": {}
-    },
-    "petstandarduptakevaluecomputation": {
-        "*": {},
-        "PETStandardUptakeValueComputationInputSpec": {},
-        "PETStandardUptakeValueComputationOutputSpec": {}
+        }
     },
     "pkg_info": {
         "*": {
@@ -4799,20 +4192,12 @@
             }
         }
     },
-    "portalocker": {
-        "*": {}
-    },
     "postproc": {
-        "*": {},
         "SplineFilter": {
             "_list_outputs": {
                 "args": []
             }
-        },
-        "SplineFilterInputSpec": {},
-        "SplineFilterOutputSpec": {},
-        "TrackMergeInputSpec": {},
-        "TrackMergeOutputSpec": {}
+        }
     },
     "preprocess": {
         "*": {
@@ -5529,7 +4914,6 @@
                 "args": []
             }
         },
-        "ProvException": {},
         "ProvExceptionCannotUnifyAttribute": {
             "__init__": {
                 "args": [
@@ -6175,11 +5559,7 @@
                     }
                 ]
             }
-        },
-        "ArtifactDetectInputSpec": {},
-        "ArtifactDetectOutputSpec": {},
-        "StimCorrInputSpec": {},
-        "StimCorrOutputSpec": {}
+        }
     },
     "recon": {
         "*": {
@@ -6204,23 +5584,16 @@
         }
     },
     "registration": {
-        "*": {},
         "AnalyzeWarp": {
             "_list_outputs": {
                 "args": []
             }
         },
-        "AnalyzeWarpInputSpec": {},
-        "AnalyzeWarpOutputSpec": {},
         "ApplyWarp": {
             "_list_outputs": {
                 "args": []
             }
         },
-        "ApplyWarpInputSpec": {},
-        "ApplyWarpOutputSpec": {},
-        "PointsWarpInputSpec": {},
-        "PointsWarpOutputSpec": {},
         "Registration": {
             "_cast": {
                 "args": [
@@ -6232,17 +5605,9 @@
             "_list_outputs": {
                 "args": []
             }
-        },
-        "RegistrationInputSpec": {},
-        "RegistrationOutputSpec": {}
-    },
-    "resamplescalarvectordwivolume": {
-        "*": {},
-        "ResampleScalarVectorDWIVolumeInputSpec": {},
-        "ResampleScalarVectorDWIVolumeOutputSpec": {}
+        }
     },
     "resampling": {
-        "*": {},
         "ApplyTransforms": {
             "_format_arg": {
                 "args": [
@@ -6274,10 +5639,6 @@
                 "args": []
             }
         },
-        "ApplyTransformsInputSpec": {},
-        "ApplyTransformsOutputSpec": {},
-        "ApplyTransformsToPointsInputSpec": {},
-        "ApplyTransformsToPointsOutputSpec": {},
         "WarpImageMultiTransform": {
             "_format_arg": {
                 "args": [
@@ -6303,8 +5664,6 @@
                 "args": []
             }
         },
-        "WarpImageMultiTransformInputSpec": {},
-        "WarpImageMultiTransformOutputSpec": {},
         "WarpTimeSeriesImageMultiTransform": {
             "_format_arg": {
                 "args": [
@@ -6329,9 +5688,7 @@
                     }
                 ]
             }
-        },
-        "WarpTimeSeriesImageMultiTransformInputSpec": {},
-        "WarpTimeSeriesImageMultiTransformOutputSpec": {}
+        }
     },
     "resting": {
         "*": {
@@ -6377,15 +5734,116 @@
         }
     },
     "segmentation": {
-        "*": {},
-        "BRAINSTalairach": {},
-        "BRAINSTalairachInputSpec": {},
-        "BRAINSTalairachMaskInputSpec": {},
-        "BRAINSTalairachMaskOutputSpec": {},
-        "BRAINSTalairachOutputSpec": {},
-        "SimilarityIndex": {},
-        "SimilarityIndexInputSpec": {},
-        "SimilarityIndexOutputSpec": {}
+        "Atropos": {
+            "_format_arg": {
+                "args": [
+                    {
+                        "name": "opt"
+                    },
+                    {
+                        "name": "spec"
+                    },
+                    {
+                        "name": "val"
+                    }
+                ]
+            },
+            "_gen_filename": {
+                "args": [
+                    {
+                        "name": "name"
+                    }
+                ]
+            },
+            "_list_outputs": {
+                "args": []
+            },
+            "_run_interface": {
+                "args": [
+                    {
+                        "name": "runtime"
+                    },
+                    {
+                        "default": "[0]",
+                        "name": "correct_return_codes"
+                    }
+                ]
+            }
+        },
+        "LaplacianThickness": {
+            "_gen_filename": {
+                "args": [
+                    {
+                        "name": "name"
+                    }
+                ]
+            },
+            "_list_outputs": {
+                "args": []
+            }
+        },
+        "N4BiasFieldCorrection": {
+            "_format_arg": {
+                "args": [
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "trait_spec"
+                    },
+                    {
+                        "name": "value"
+                    }
+                ]
+            },
+            "_gen_filename": {
+                "args": [
+                    {
+                        "name": "name"
+                    }
+                ]
+            },
+            "_list_outputs": {
+                "args": []
+            },
+            "_parse_inputs": {
+                "args": [
+                    {
+                        "default": "None",
+                        "name": "skip"
+                    }
+                ]
+            }
+        },
+        "antsCorticalThickness": {
+            "_format_arg": {
+                "args": [
+                    {
+                        "name": "opt"
+                    },
+                    {
+                        "name": "spec"
+                    },
+                    {
+                        "name": "val"
+                    }
+                ]
+            },
+            "_list_outputs": {
+                "args": []
+            },
+            "_run_interface": {
+                "args": [
+                    {
+                        "name": "runtime"
+                    },
+                    {
+                        "default": "[0]",
+                        "name": "correct_return_codes"
+                    }
+                ]
+            }
+        }
     },
     "setup": {
         "*": {
@@ -6559,18 +6017,7 @@
             }
         }
     },
-    "simpleregiongrowingsegmentation": {
-        "*": {},
-        "SimpleRegionGrowingSegmentationInputSpec": {},
-        "SimpleRegionGrowingSegmentationOutputSpec": {}
-    },
-    "simulate": {
-        "*": {},
-        "SimulateMultiTensorInputSpec": {},
-        "SimulateMultiTensorOutputSpec": {}
-    },
     "six": {
-        "*": {},
         "Iterator": {
             "b": {
                 "args": [
@@ -6792,11 +6239,6 @@
                 ]
             }
         },
-        "Module_six_moves_urllib_error": {},
-        "Module_six_moves_urllib_parse": {},
-        "Module_six_moves_urllib_request": {},
-        "Module_six_moves_urllib_response": {},
-        "Module_six_moves_urllib_robotparser": {},
         "MovedAttribute": {
             "__init__": {
                 "args": [
@@ -6902,7 +6344,6 @@
                 ]
             }
         },
-        "_MovedItems": {},
         "_SixMetaPathImporter": {
             "__get_module": {
                 "args": [
@@ -6969,9 +6410,6 @@
             }
         }
     },
-    "slurm": {
-        "*": {}
-    },
     "slurmgraph": {
         "*": {
             "node_completed_status": {
@@ -6982,20 +6420,6 @@
                 ]
             }
         }
-    },
-    "somaflow": {
-        "*": {}
-    },
-    "specialized": {
-        "*": {},
-        "BRAINSDemonWarp": {},
-        "BRAINSDemonWarpInputSpec": {},
-        "BRAINSDemonWarpOutputSpec": {},
-        "BRAINSTransformFromFiducialsInputSpec": {},
-        "BRAINSTransformFromFiducialsOutputSpec": {},
-        "VBRAINSDemonWarp": {},
-        "VBRAINSDemonWarpInputSpec": {},
-        "VBRAINSDemonWarpOutputSpec": {}
     },
     "spm_docs": {
         "*": {
@@ -7015,32 +6439,7 @@
             }
         }
     },
-    "spminfo": {
-        "*": {}
-    },
-    "surface": {
-        "*": {},
-        "GrayscaleModelMaker": {},
-        "GrayscaleModelMakerInputSpec": {},
-        "GrayscaleModelMakerOutputSpec": {},
-        "LabelMapSmoothing": {},
-        "LabelMapSmoothingInputSpec": {},
-        "LabelMapSmoothingOutputSpec": {},
-        "MergeModels": {},
-        "MergeModelsInputSpec": {},
-        "MergeModelsOutputSpec": {},
-        "ModelMakerInputSpec": {},
-        "ModelMakerOutputSpec": {},
-        "ModelToLabelMap": {},
-        "ModelToLabelMapInputSpec": {},
-        "ModelToLabelMapOutputSpec": {},
-        "ProbeVolumeWithModel": {},
-        "ProbeVolumeWithModelInputSpec": {},
-        "ProbeVolumeWithModelOutputSpec": {}
-    },
     "svm": {
-        "*": {},
-        "SVMTestInputSpec": {},
         "SVMTrain": {
             "_format_arg": {
                 "args": [
@@ -7055,9 +6454,7 @@
                     }
                 ]
             }
-        },
-        "SVMTrainInputSpec": {},
-        "SVMTrainOutputSpec": {}
+        }
     },
     "tbss": {
         "*": {
@@ -7134,7 +6531,6 @@
         }
     },
     "tensors": {
-        "*": {},
         "ConstrainedSphericalDeconvolution": {
             "_gen_filename": {
                 "args": [
@@ -7150,8 +6546,6 @@
                 "args": []
             }
         },
-        "ConstrainedSphericalDeconvolutionInputSpec": {},
-        "ConstrainedSphericalDeconvolutionOutputSpec": {},
         "DWI2SphericalHarmonicsImage": {
             "_gen_filename": {
                 "args": [
@@ -7167,10 +6561,6 @@
                 "args": []
             }
         },
-        "DWI2SphericalHarmonicsImageInputSpec": {},
-        "DWI2SphericalHarmonicsImageOutputSpec": {},
-        "Directions2AmplitudeInputSpec": {},
-        "Directions2AmplitudeOutputSpec": {},
         "EstimateResponseForSH": {
             "_gen_filename": {
                 "args": [
@@ -7205,8 +6595,6 @@
                 ]
             }
         },
-        "EstimateResponseForSHInputSpec": {},
-        "EstimateResponseForSHOutputSpec": {},
         "FSL2MRTrix": {
             "_gen_filename": {
                 "args": [
@@ -7228,23 +6616,9 @@
                     }
                 ]
             }
-        },
-        "FSL2MRTrixInputSpec": {},
-        "FSL2MRTrixOutputSpec": {},
-        "FindShPeaks": {},
-        "FindShPeaksInputSpec": {},
-        "FindShPeaksOutputSpec": {},
-        "GenerateDirections": {},
-        "GenerateDirectionsInputSpec": {},
-        "GenerateDirectionsOutputSpec": {}
-    },
-    "thresholdscalarvolume": {
-        "*": {},
-        "ThresholdScalarVolumeInputSpec": {},
-        "ThresholdScalarVolumeOutputSpec": {}
+        }
     },
     "tmpdirs": {
-        "*": {},
         "TemporaryDirectory": {
             "__enter__": {
                 "args": []
@@ -7284,7 +6658,6 @@
         }
     },
     "tracking": {
-        "*": {},
         "DiffusionTensorStreamlineTrack": {
             "__init__": {
                 "args": [
@@ -7298,10 +6671,6 @@
                 ]
             }
         },
-        "DiffusionTensorStreamlineTrackInputSpec": {},
-        "FilterTracks": {},
-        "FilterTracksInputSpec": {},
-        "FilterTracksOutputSpec": {},
         "ProbabilisticSphericallyDeconvolutedStreamlineTrack": {
             "__init__": {
                 "args": [
@@ -7315,10 +6684,6 @@
                 ]
             }
         },
-        "ProbabilisticSphericallyDeconvolutedStreamlineTrackInputSpec": {},
-        "StreamlineTrack": {},
-        "StreamlineTrackInputSpec": {},
-        "StreamlineTrackOutputSpec": {},
         "Tracks2Prob": {
             "_gen_filename": {
                 "args": [
@@ -7333,17 +6698,9 @@
             "_list_outputs": {
                 "args": []
             }
-        },
-        "Tracks2ProbInputSpec": {},
-        "Tracks2ProbOutputSpec": {}
-    },
-    "tracks": {
-        "*": {},
-        "TrackDensityMapInputSpec": {},
-        "TrackDensityMapOutputSpec": {}
+        }
     },
     "traits_extension": {
-        "*": {},
         "BaseDirectory ": {
             "": {
                 "args": [
@@ -7416,18 +6773,7 @@
             }
         }
     },
-    "ukftractography": {
-        "*": {},
-        "UKFTractographyInputSpec": {},
-        "UKFTractographyOutputSpec": {}
-    },
-    "utilities": {
-        "*": {},
-        "HistogramMatchingFilterInputSpec": {},
-        "HistogramMatchingFilterOutputSpec": {}
-    },
     "utility": {
-        "*": {},
         "AssertEqual": {
             "_run_interface": {
                 "args": [
@@ -7437,8 +6783,6 @@
                 ]
             }
         },
-        "AssertEqualInputSpec": {},
-        "CSVReaderInputSpec": {},
         "Function": {
             "__init__": {
                 "args": [
@@ -7498,7 +6842,6 @@
                 ]
             }
         },
-        "FunctionInputSpec": {},
         "IdentityInterface": {
             "__init__": {
                 "args": [
@@ -7542,8 +6885,6 @@
                 "args": []
             }
         },
-        "MergeInputSpec": {},
-        "MergeOutputSpec": {},
         "Rename": {
             "__init__": {
                 "args": [
@@ -7570,15 +6911,11 @@
                 ]
             }
         },
-        "RenameInputSpec": {},
-        "RenameOutputSpec": {},
         "Select": {
             "_list_outputs": {
                 "args": []
             }
         },
-        "SelectInputSpec": {},
-        "SelectOutputSpec": {},
         "Split": {
             "_add_output_traits": {
                 "args": [
@@ -7590,8 +6927,7 @@
             "_list_outputs": {
                 "args": []
             }
-        },
-        "SplitInputSpec": {}
+        }
     },
     "utils": {
         "*": {
@@ -7649,16 +6985,7 @@
             }
         }
     },
-    "vista": {
-        "*": {},
-        "Vnifti2Image": {},
-        "Vnifti2ImageInputSpec": {},
-        "Vnifti2ImageOutputSpec": {},
-        "VtoMatInputSpec": {},
-        "VtoMatOutputSpec": {}
-    },
     "visualization": {
-        "*": {},
         "ConvertScalarImageToRGB": {
             "_format_arg": {
                 "args": [
@@ -7676,15 +7003,6 @@
             "_list_outputs": {
                 "args": []
             }
-        },
-        "ConvertScalarImageToRGBInputSpec": {},
-        "ConvertScalarImageToRGBOutputSpec": {},
-        "CreateTiledMosaicInputSpec": {},
-        "CreateTiledMosaicOutputSpec": {}
-    },
-    "votingbinaryholefillingimagefilter": {
-        "*": {},
-        "VotingBinaryHoleFillingImageFilterInputSpec": {},
-        "VotingBinaryHoleFillingImageFilterOutputSpec": {}
+        }
     }
 }
