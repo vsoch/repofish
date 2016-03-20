@@ -1,8 +1,6 @@
-from repofish.database import get_available_modules, load_module
-from repofish.github import search_code
 import pickle
-import time
 import pandas
+import os
 
 # This doesn't matter, function will clone repos locally if doesn't work
 access_token = "vanessavanessavanessa"
@@ -19,13 +17,13 @@ repos_file = "%s/repos_github_pandas_df.pkl" %(repos_folder)
 repos = pickle.load(open(repos_file,"rb"))
 
 seen = []
-for repo in repos:
-    if repo not in seen:
-        seen.append(repo)
-        repo_name = repo.split("/")[-1]
-        user_name = repo.split("/")[-2]
-        pubmed_paper = 
-        repo_url = 
+for row in repos.iterrows():
+    pubmed_paper = row[1].journals
+    repo_url = row[1].urls
+    if repo_url not in seen:
+        seen.append(repo_url)
+        repo_name = repo_url.split("/")[-1]
+        user_name = repo_url.split("/")[-2]
         output_file = "%s/%s_%s_functions.pkl" %(output_folder,user_name,repo_name)
         if not os.path.exists(output_file):
             job_id = "%s_%s" %(user_name,repo_name)

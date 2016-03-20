@@ -11,6 +11,7 @@ import time
 import numpy
 import json
 import re
+import os
 
 def get_match_df():
     column_names = ['function_name'
@@ -72,7 +73,6 @@ def search_code(repo,function_names,limit=10):
                     match = search_code_local(destination,function_name,repo_name,user_name)
 
             matches = matches.append(match)
-        time.sleep(0.5)
 
     # If the folder exists, delete it
     if destination != None:

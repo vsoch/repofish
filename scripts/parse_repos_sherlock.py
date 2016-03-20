@@ -17,7 +17,7 @@ module_list = []
 matches = pandas.DataFrame()
 for module in modules:
     functions = load_module(module,get_names=True)
-    new_matches = search_code(repo_url,function_names)
+    new_matches = search_code(repo_url,functions)
     matches = matches.append(new_matches)
     module_list = module_list + new_matches.shape[0]*[module]
 
