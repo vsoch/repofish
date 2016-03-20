@@ -106,32 +106,36 @@ def search_code_local(repo,search_term,repo_name,user_name,extension=".py"):
 
     count = 0
     matches = get_match_df()
-    pyfiles = find_files(repo.working_dir,extension=[extension])
-    for py_file in pyfiles:
 
-        # Read the file, save some meta data for later
-        filey = open(py_file,"rb")
-        lines = filey.read().splitlines()
-        filey.close()
-        filename = os.path.basename(py_file)
+    try:
+        pyfiles = find_files(repo.working_dir,extension=[extension])
+        for py_file in pyfiles:
 
-        if len(lines) > 0:
-            for l in range(len(lines)):
-                line = lines[l]
+            # Read the file, save some meta data for later
+            filey = open(py_file,"rb")
+            lines = filey.read().splitlines()
+            filey.close()
+            filename = os.path.basename(py_file)
 
-                # If we find the search term, take line and following
-                if re.search(str(search_term),line):
-                    if l != len(lines):
-                        fragment = lines[l:l+1]
-                    else:
-                        fragment = line
+            if len(lines) > 0:
+                for l in range(len(lines)):
+                    line = lines[l]
 
-                    # Add to the matches data frame
-                    match_list = [search_term,filename,user_name,repo_name,None,None,None,fragment]
-                    matches.loc["%s/%s_%s" %(user_name,repo_name,count)] =  match_list
-                    count+=1
+                    # If we find the search term, take line and following
+                    if re.search(str(search_term),line):
+                        if l != len(lines):
+                            fragment = lines[l:l+1]
+                        else:
+                            fragment = line
+
+                        # Add to the matches data frame
+                        match_list = [search_term,filename,user_name,repo_name,None,None,None,fragment]
+                        matches.loc["%s/%s_%s" %(user_name,repo_name,count)] =  match_list
+                        count+=1
     
-    print "Found %s results for %s in %s" %(count,search_term,repo_name)
+        print "Found %s results for %s in %s" %(count,search_term,repo_name)
+    except:
+        print "Problem with term %s" %(search_term)
     return matches
 
 
