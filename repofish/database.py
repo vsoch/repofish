@@ -22,7 +22,7 @@ def load_module(module_name,get_names=False,get_hidden=False):
             result = get_function_names(result,get_hidden)
         return result
     else:
-        print "Module %s is not available. Generate using get_functions(module_folder)"
+        print "Module %s is not available. Generate using get_functions(module_folder)" %(module_name)
 
 def get_function_names(module_json,get_hidden=False,get_classes=True):
     function_names = []
