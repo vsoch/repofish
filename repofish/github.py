@@ -87,11 +87,9 @@ def search_code(repo,function_names,limit=10):
 
             matches = matches.append(match)
 
-    # If the folder exists, delete it
+    # Clean up
     if destination != None:
-        if isinstance(destination,Repo):
-            if os.path.exists(destination.working_dir):
-                shutil.rmtree(destination.working_dir)
+        clean_up(destination)
     return matches
 
 def get_rate_limit(access_token):
@@ -165,6 +163,9 @@ def search_imports(repo,extension=".py"):
         matches = matches.append(single_matches)
     matches["repo_name"] = matches.shape[0]*[repo_name]
     matches["user_name"] = matches.shape[0]*[user_name]
+
+    # Clean up
+    clean_up(repo)
     return matches
 
 
@@ -198,6 +199,10 @@ def parse_imports(statements):
     return modules     
 
     
+def clean_up(repo):
+    if isinstance(repo,Repo):
+        if os.path.exists(repo.working_dir):
+            shutil.rmtree(repo.working_dir)
 
 def search_code_local(repo,search_term,repo_name,user_name,extension=".py"):
     '''search code in a local github repo
