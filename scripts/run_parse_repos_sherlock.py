@@ -21,6 +21,7 @@ for row in repos.iterrows():
     pubmed_paper = row[1].journals
     repo_url = row[1].urls
     if repo_url not in seen:
+        print "Parsing %s" %(repo_url)
         seen.append(repo_url)
         repo_name = repo_url.split("/")[-1]
         user_name = repo_url.split("/")[-2]
@@ -35,6 +36,6 @@ for row in repos.iterrows():
             filey.writelines("#SBATCH --error=.out/%s.err\n" %(job_id))
             filey.writelines("#SBATCH --time=2-00:00\n")
             filey.writelines("#SBATCH --mem=64000\n")
-            filey.writelines("python parse_repos_sherlock.py %s %s %s %s %s" %(access_token, repo_url, output_file, pubmed_paper))
+            filey.writelines("python parse_repos_sherlock.py %s %s %s %s" %(access_token, repo_url, output_file, pubmed_paper))
             filey.close()
             os.system("sbatch -p russpold --qos russpold " + ".job/repo_%s.job" %(job_id))
