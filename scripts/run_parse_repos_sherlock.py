@@ -2,6 +2,9 @@ import pickle
 import pandas
 import os
 
+# This doesn't matter, function will clone repos locally if doesn't work
+access_token = "vanessavanessavanessa"
+
 # Read in list of Github repos
 base = "/scratch/PI/russpold/data/PUBMED"
 repos_folder = "%s/repos" %(base)
@@ -33,6 +36,6 @@ for row in repos.iterrows():
             filey.writelines("#SBATCH --error=.out/%s.err\n" %(job_id))
             filey.writelines("#SBATCH --time=2-00:00\n")
             filey.writelines("#SBATCH --mem=64000\n")
-            filey.writelines("python parse_imports_sherlock.py %s %s %s" %(repo_url, output_file, pubmed_paper))
+            filey.writelines("python parse_repos_sherlock.py %s %s %s %s" %(access_token, repo_url, output_file, pubmed_paper))
             filey.close()
             os.system("sbatch -p russpold --qos russpold " + ".job/repo_%s.job" %(job_id))
