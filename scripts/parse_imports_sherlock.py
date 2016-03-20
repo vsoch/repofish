@@ -8,7 +8,7 @@ output_file = sys.argv[2]
 pubmed_paper = sys.argv[3]
 
 try:
-    matches = search_imports(repo,extension=".py")
+    matches = search_imports(repo_url,extension=".py")
     matches["doi"] = matches.shape[0]*[pubmed_paper]
     if matches.shape[0] != 0:
         matches.to_csv(output_file,sep="\t")
