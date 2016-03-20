@@ -1,5 +1,40 @@
+from glob import glob
+import __init__
+import json
 import os
 import re
+
+function_files = glob("%s/lib/*.json" %installdir)
+
+def get_installdir():
+    return os.path.dirname(os.path.abspath(__init__.__file__))
+
+def get_available_modules():
+    installdir = get_installdir()
+    function_files = glob("%s/lib/*.json" %installdir)
+    return [os.path.basename(x).replace(".json","") for x in function_files]
+
+def load_module(module_name,get_names=False,get_hidden=False):
+    '''load module loads the json for a function. If get_names is True, will return list of function names'''
+    installdir = get_installdir()
+    module_file = "%s/lib/%s.json" %(installdir,module_name)
+    if os.path.exists(module_file):
+        result = json.load(open(module_file,"rb"))
+        if get_names == True:
+            result = get_function_names(result,get_hidden)
+        return result
+    else:
+        print "Module %s is not available. Generate using get_functions(module_folder)"
+
+def get_function_names(module_json,get_hidden=False):
+    function_names = []
+    for filename in module_json.keys():
+        classnames = [c for c in module_json[filename].keys()]
+        for classname in classnames:
+            function_names = function_names + [c for c in module_json[filename][classname].keys()]
+    if get_hidden == False:
+        function_names = [x for x in function_names if x and not re.search("^_",x)]
+    return function_names
 
 # Need function to parse a python module for available functions and options
 def get_functions(module_folder):
