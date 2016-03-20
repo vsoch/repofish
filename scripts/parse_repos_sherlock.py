@@ -14,13 +14,17 @@ pubmed_paper = sys.argv[4]
 modules = get_available_modules()
 module_list = []
 
-matches = pandas.DataFrame()
-for module in modules:
-    functions = load_module(module,get_names=True)
-    new_matches = search_code(repo_url,functions)
-    matches = matches.append(new_matches)
-    module_list = module_list + new_matches.shape[0]*[module]
+try:
+    matches = pandas.DataFrame()
+    for module in modules:
+        functions = load_module(module,get_names=True)
+        new_matches = search_code(repo_url,functions)
+        matches = matches.append(new_matches)
+        module_list = module_list + new_matches.shape[0]*[module]
 
-matches["module"] = module_list
-matches["doi"] = matches.shape[0]*[pubmed_paper]
-matches.to_csv(output_file,sep="\t")
+    matches["module"] = module_list
+    matches["doi"] = matches.shape[0]*[pubmed_paper]
+    if matches.shape[0] != 0:
+        matches.to_csv(output_file,sep="\t")
+except:
+    print "Repo not found."
