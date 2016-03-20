@@ -25,6 +25,17 @@ def get_match_df():
     return pandas.DataFrame(columns=column_names)
 
 
+def check_repo(repo):
+    '''check_repo checks if a repo object is of type Repo from git, if not, attempts to make one
+    :param repo: path to a local repo, a git.Repo object, or a url
+    '''
+    if not isinstance(repo,Repo):
+        if os.path.exists("%s/.git" %(repo)):
+            repo = Repo(repo)
+        else:   
+            repo = download_repo(repo)
+    return repo
+
 def download_repo(repo_url,destination=None):
     '''download_repo
     Download a github repo to a destination. If destination is None, temp directory is used
@@ -84,11 +95,109 @@ def search_code(repo,function_names,limit=10):
     return matches
 
 def get_rate_limit(access_token):
+    '''get_rate_limit uses the github api against some access_token to return a data structure for the rate limit
+    :param access_token: the github access token
+    '''
     url = "https://api.github.com/rate_limit?access_token=%s" %(access_token)
     headers = {'Accept': 'application/vnd.github.v3.text-match+json'}
     headers["Authorization"] = "token %s" %(access_token)
     return requests.get(url, headers=headers).json()
 
+
+def search_imports(repo,extension=".py"):
+    '''search_imports searches for statements like "import * from *" or import * and returns a data structure with libraries used by an application
+    :param repo: either a local repo, or github repo URL
+    :param extension: the extension (language) of the files to search
+    '''
+    # Will be passed to local function, if needed
+    if repo[-1] == "/":
+        repo = repo[:-1]
+    repo_name = repo.split("/")[-1]
+    user_name = repo.split("/")[-2]
+
+    repo = check_repo(repo)
+    count = 0
+    matches = pandas.DataFrame()
+
+    pyfiles = find_files(repo.working_dir,extension=[extension])
+    for py_file in pyfiles:
+
+        # We will save a dataframe for just the script, and then append to matches
+        single_matches = pandas.DataFrame()
+
+        # Read the file, save some meta data for later
+        filey = open(py_file,"rb")
+        lines = filey.read().splitlines()
+        filey.close()
+        filename = os.path.basename(py_file)
+
+        if len(lines) > 0:
+            while len(lines) > 0:
+                line = lines.pop(0).strip(" ")
+                if re.search("import ",line):
+                    # If the line ends in "/" then it's a continuation of the last line
+                    while line[-1] == "/":
+                        current_line = line[:-1] # remove the "/"
+                        line = lines.pop(0)
+                        line = "%s %s" %(current_line,line)
+                    statements = line.split(" ")
+                    # Remove empty statements, and if a comment is found, clip it
+                    statements = [statements[x] for x in range(len(statements)) if statements[x] != ""]
+                    comment_idx = [x for x in range(len(statements)) if re.search("#",statements[x])]
+                    if len(comment_idx)>0:
+                        statements = statements[:comment_idx[0]]
+                    found_from = False
+                    while len(statements) > 0: 
+                        statement = statements.pop(0)
+                        if statement == "from":
+                            module = statements.pop(0)
+                            found_from = True
+                        elif statement == "import":
+                            if found_from == True:
+                                funcs = parse_imports(statements)
+                                funcs["module_name"] = funcs.shape[0]*[module]   
+                            else:
+                                funcs = parse_imports(statements)
+                                funcs["module_name"] = funcs["function_name"]
+                            single_matches = single_matches.append(funcs)
+        single_matches["filename"] = single_matches.shape[0]*[filename]
+        single_matches.index = ["%s_%s_%s" %(repo_name,filename,x) for x in range(single_matches.shape[0])]
+        matches = matches.append(single_matches)
+    matches["repo_name"] = matches.shape[0]*[repo_name]
+    matches["user_name"] = matches.shape[0]*[user_name]
+    return matches
+
+
+def parse_imports(statements):
+    modules = pandas.DataFrame(columns=["function_name","import_as"])
+    statements = [s.strip(",").strip(" ") for s in statements]
+    finished = False
+    index = 0
+    count = 0
+    while finished == False:
+        module = statements[index]
+        if index!= len(statements):
+            # We are at the end of the list
+            if index == len(statements)-1:
+                import_as = module
+                finished = True
+            elif statements[index+1] == "as": 
+                import_as = statements[index+2]
+                if (index+3) > len(statements)-1:
+                    finished = True
+                else:
+                    index = index+3
+            else:
+                import_as = module
+                index = index + 1
+
+            modules.loc[count] = [module,import_as]
+            count +=1
+        else:
+            finished = True
+    return modules     
+
+    
 
 def search_code_local(repo,search_term,repo_name,user_name,extension=".py"):
     '''search code in a local github repo
@@ -98,12 +207,7 @@ def search_code_local(repo,search_term,repo_name,user_name,extension=".py"):
     :param user_name: name of user that owns repo
     :param extension: the extension (language) of the files to search
     '''
-    if not isinstance(repo,Repo):
-        if os.path.exists("%s/.git" %(repo)):
-            repo = Repo(repo)
-        else:   
-            repo = download_repo(repo)
-
+    repo = check_repo(repo)
     count = 0
     matches = get_match_df()
 

@@ -1,10 +1,8 @@
 from repofish.database import get_available_modules, load_module
 from repofish.github import search_code
 import pickle
-import sys
-import time
 import pandas
-
+import sys
 
 access_token = sys.argv[1]
 repo_url = sys.argv[2]
