@@ -4,8 +4,6 @@ import json
 import os
 import re
 
-function_files = glob("%s/lib/*.json" %installdir)
-
 def get_installdir():
     return os.path.dirname(os.path.abspath(__init__.__file__))
 
