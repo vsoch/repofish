@@ -14,7 +14,7 @@ import re
 import os
 
 def get_match_df():
-    column_names = ['function_name'
+    column_names = ['function_name',
                     'file_name',
                     'user_name',
                     'repo_name',
@@ -88,7 +88,7 @@ def get_rate_limit(access_token):
     return requests.get(url, headers=headers).json()
 
 
-def search_code_local(repo,search_term,repo_name,user_name,extension="py"):
+def search_code_local(repo,search_term,repo_name,user_name,extension=".py"):
     '''search code in a local github repo
     :param repo: either a local repo, or github repo URL
     :param search_term: the text to search for in the code

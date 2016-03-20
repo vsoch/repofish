@@ -24,7 +24,7 @@ def load_module(module_name,get_names=False,get_hidden=False):
     else:
         print "Module %s is not available. Generate using get_functions(module_folder)"
 
-def get_function_names(module_json,get_hidden=False):
+def get_function_names(module_json,get_hidden=False,get_classes=True):
     function_names = []
     for filename in module_json.keys():
         classnames = [c for c in module_json[filename].keys()]
@@ -32,6 +32,8 @@ def get_function_names(module_json,get_hidden=False):
             function_names = function_names + [c for c in module_json[filename][classname].keys()]
     if get_hidden == False:
         function_names = [x for x in function_names if x and not re.search("^_",x)]
+    if get_classes == True:
+        function_names = function_names + classnames
     return function_names
 
 # Need function to parse a python module for available functions and options
