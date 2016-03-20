@@ -202,7 +202,8 @@ def parse_imports(statements):
 def clean_up(repo):
     if isinstance(repo,Repo):
         if os.path.exists(repo.working_dir):
-            shutil.rmtree(repo.working_dir)
+            if re.search("^/tmp",repo.working_dir):
+                shutil.rmtree(repo.working_dir)
 
 def search_code_local(repo,search_term,repo_name,user_name,extension=".py"):
     '''search code in a local github repo
