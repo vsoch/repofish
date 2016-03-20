@@ -49,6 +49,8 @@ def search_code(repo,function_names,limit=10):
     api_working = True
 
     # Will be passed to local function, if needed
+    if repo[-1] == "/":
+        repo = repo[:-1]
     repo_name = repo.split("/")[-1]
     user_name = repo.split("/")[-2]
 
