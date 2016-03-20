@@ -22,7 +22,7 @@ for row in repos.iterrows():
         seen.append(repo_url)
         repo_name = repo_url.split("/")[-1]
         user_name = repo_url.split("/")[-2]
-        output_file = "%s/%s_%s_functions.pkl" %(output_folder,user_name,repo_name)
+        output_file = "%s/%s_%s_functions.tsv" %(output_folder,user_name,repo_name)
         if not os.path.exists(output_file):
             job_id = "%s_%s" %(user_name,repo_name)
             filey = ".job/repo_%s.job" %(job_id)
