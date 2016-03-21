@@ -16,13 +16,17 @@ pickle.dump(ftp,open(ftp_pickle,"wb"))
 ids_pickle = "%s/pmc_ids.pkl" %(base)
 pc_ids = list(ftp["PMCID"])
 pickle.dump(pc_ids,open(ids_pickle,"wb"))
+#pc_ids = pickle.load(open(ids_pickle,"rb"))
 
 # Submit scripts to download in batches of 450
-batch_size = 450
+batch_size = 500
 iters = len(pc_ids)/batch_size
 
 # We will download them here
-download_folder = "%s/articles" %(base)
+download_folder = "%s/article" %(base)
+
+if not os.path.exists(download_folder):
+    os.mkdir(download_folder)
 
 # Prepare and submit a job for each
 for i in range(iters):
@@ -42,6 +46,6 @@ for i in range(iters):
     filey.writelines("#SBATCH --error=.out/%s.err\n" %(jobname))
     filey.writelines("#SBATCH --time=2-00:00\n")
     filey.writelines("#SBATCH --mem=12000\n")
-    filey.writelines("python /home/vsochat/SCRIPT/python/repofish/analysis/methods/download_pubmed_muhaha.py %s %s %s %s\n" % (start,end,download_subfolder,ftp_pickle,ids_pickle))
+    filey.writelines("python /home/vsochat/SCRIPT/python/repofish/analysis/download/download_pubmed_muhaha.py %s %s %s %s %s\n" % (start,end,download_subfolder,ftp_pickle,ids_pickle))
     filey.close()
     os.system("sbatch -p russpold --qos russpold .job/%s.job" % (jobname))
