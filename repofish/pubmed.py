@@ -78,9 +78,17 @@ def download_pubmed(pmids,ftp,download_folder):
         download_place = "%s/" %(download_folder)
         basename = os.path.basename(row[1]["URL"])
         if not os.path.isfile("%s/%s" %(download_folder,basename)):
-            print "Downloading %s" % (url)       
-            os.system("wget \"%s\" -P %s" % (url,download_place))
+            download_single(url,download_place)
             time.sleep(0.5)
+
+def download_single(resource,download_folder):
+    """download_single single downloads some resource with wget to folder
+    :param resource: resource to download
+    :param download_folder: the folder to download to
+    """
+    print "Downloading %s" %(resource)       
+    os.system("wget \"%s\" -P %s" %(resource,download_place))
+
 
 def check_download(pmid,ftp,download_folder):
     """check_download checks if file downloaded, returns True or False
