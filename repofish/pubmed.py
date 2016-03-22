@@ -87,7 +87,7 @@ def download_single(resource,download_folder):
     :param download_folder: the folder to download to
     """
     print "Downloading %s" %(resource)       
-    os.system("wget \"%s\" -P %s" %(resource,download_place))
+    os.system("wget \"%s\" -P %s" %(resource,download_folder))
 
 
 def check_download(pmid,ftp,download_folder):
