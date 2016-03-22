@@ -100,3 +100,35 @@ def check_download(pmid,ftp,download_folder):
     article = os.path.basename(article["URL"].tolist()[0])
     article = "%s/%s" %(download_folder,article)
     return os.path.exists(article)
+
+
+def extract_xml_compressed(xmlgz,extension=".nxml"):
+    '''extract_xml_compressed reads XML from compressed file
+    :param xmlgz: compressed paper with xml file inside 
+    '''
+    tar = tarfile.open(xmlgz, 'r:gz')
+    for tar_info in tar:
+        if os.path.splitext(tar_info.name)[1] == extension:
+            print "Extracting text from %s" %(tar_info.name)
+            file_object = tar.extractfile(tar_info)
+            return file_object.read().replace('\n', '')
+
+'''Extract text from xml or nxml file directory'''
+def read_xml(xml):
+    '''read_xml reads an xml file and returns raw data
+    :param xml: the xml file
+    '''
+    with open (xml, "r") as myfile:
+        return myfile.read().replace('\n', '')
+
+
+def get_xml(paper,extension=".nxml"):
+    '''get_xml is a wrapper for read_xml and extract_xml_compressed
+    :param paper: a pubmed (nxml) paper, either as is, or compressed.
+    '''
+    if re.search("[.tar.gz]",paper):
+        raw = extract_xml_compressed(paper,extension=extension)
+    else:
+        raw = read_xml(paper)
+    return raw
+
