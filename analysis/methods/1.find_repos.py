@@ -48,7 +48,8 @@ for z in range(len(zips)):
                 res["subjects"] = [subjects["subject"]]
             res["funding"] = []
             if "funding-group" in article_meta:
-                res["funding"] = [article_meta['funding-group']['award-group']['funding-source']]
+                if ["award-group"] in article_meta:
+                    res["funding"] = [article_meta['funding-group']['award-group']['funding-source']]
             res["keywords"] = xml["article"]["front"]['article-meta']["kwd-group"]['kwd']
             if "counts" in article_meta:
                 res["equation_count"] = article_meta['counts']['equation-count']["@count"]
@@ -60,6 +61,7 @@ for z in range(len(zips)):
             links = [l[:-1] if l[-1]=="/" else l for l in links]
             res["github"] = [l for l in links if re.search("github",l)]
             res["links"] = links
-            json.dumps(res,open(output_file,"wb"))
-
+            filey = open(output_file,'wb')
+            filey.write(json.dumps(res, sort_keys=True,indent=4, separators=(',', ': ')))
+            filey.close()
 
