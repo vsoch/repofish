@@ -39,7 +39,10 @@ for z in range(len(zips)):
         if isinstance(res["title"],dict):
             res["title"] = res["title"]["#text"]
         res["journal"] = journal_meta["journal-id"][0]["#text"]
-        res["pmid"] = [x["#text"] for x in xml["article"]["front"]['article-meta']['article-id'] if x["@pub-id-type"]=="pmid"][0]
+        try:
+            res["pmid"] = [x["#text"] for x in xml["article"]["front"]['article-meta']['article-id'] if x["@pub-id-type"]=="pmid"][0]
+        except:
+            res["pmid"] = os.path.basename(zip_file).split(".")[0]
         output_file = "%s/%s.json" %(output_dir,res["pmid"])
         if not os.path.exists(output_file):
             authors = []
