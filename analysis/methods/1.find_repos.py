@@ -33,16 +33,27 @@ for z in range(len(zips)):
         article_meta = xml["article"]["front"]['article-meta']
         journal_meta = xml["article"]["front"]["journal-meta"]
         # Save information to result object, will be saved as json
+
         res = dict()
-        # Basic meta, title, journal, pmid
+
+        # TITLE
         res["title"] = article_meta['title-group']['article-title']
         if isinstance(res["title"],dict):
             res["title"] = res["title"]["#text"]
-        res["journal"] = journal_meta["journal-id"][0]["#text"]
+
+        # JOURNAL
+        try:
+            res["journal"] = journal_meta["journal-id"][0]["#text"]
+        except:
+            res["journal"] = journal_meta["journal-id"]            
+
+        # PMID
         try:
             res["pmid"] = [x["#text"] for x in xml["article"]["front"]['article-meta']['article-id'] if x["@pub-id-type"]=="pmid"][0]
         except:
             res["pmid"] = os.path.basename(zip_file).split(".")[0]
+
+        # OUTPUT FILE
         output_file = "%s/%s.json" %(output_dir,res["pmid"])
         if not os.path.exists(output_file):
             authors = []
