@@ -37,26 +37,27 @@ for z in range(len(zips)):
         res["journal"] = journal_meta["journal-id"][0]["#text"]
         res["pmid"] = [x["#text"] for x in xml["article"]["front"]['article-meta']['article-id'] if x["@pub-id-type"]=="pmid"][0]
         output_file = "%s/%s.json" %(output_dir,res["pmid"])
-        res["authors"] = ["%s %s" %(x["name"]['given-names'],x["name"]["surname"]) for x in article_meta['contrib-group']['contrib'] if x["@contrib-type"]=="author"]
-        # Article subject tags
-        subjects = xml["article"]["front"]['article-meta']['article-categories']['subj-group']
-        if isinstance(subjects,list):
-            res["subjects"] = [x['subject'] for x in subjects]
-        else:
-            res["subjects"] = [subjects["subject"]]
-        res["funding"] = []
-        if "funding-group" in article_meta:
-            res["funding"] = [article_meta['funding-group']['award-group']['funding-source']]
-        res["keywords"] = xml["article"]["front"]['article-meta']["kwd-group"]['kwd']
-        res["equation_count"] = article_meta['counts']['equation-count']["@count"]
-        # Find all links
-        links = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
-        # Remove any remaining < from the urls
-        links = [l.split("<")[0].strip() for l in links]
-        # Get rid of trailing slashes
-        links = [l[:-1] if l[-1]=="/" else l for l in links]
-        res["github"] = [l for l in links if re.search("github",l)]
-        res["links"] = links
-        #json.dumps(res,open(output_file,"wb"))
+        if not os.path.exists(output_file):
+            res["authors"] = ["%s %s" %(x["name"]['given-names'],x["name"]["surname"]) for x in article_meta['contrib-group']['contrib'] if x["@contrib-type"]=="author"]
+            # Article subject tags
+            subjects = xml["article"]["front"]['article-meta']['article-categories']['subj-group']
+            if isinstance(subjects,list):
+                res["subjects"] = [x['subject'] for x in subjects]
+            else:
+                res["subjects"] = [subjects["subject"]]
+            res["funding"] = []
+            if "funding-group" in article_meta:
+                res["funding"] = [article_meta['funding-group']['award-group']['funding-source']]
+            res["keywords"] = xml["article"]["front"]['article-meta']["kwd-group"]['kwd']
+            res["equation_count"] = article_meta['counts']['equation-count']["@count"]
+            # Find all links
+            links = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
+            # Remove any remaining < from the urls
+            links = [l.split("<")[0].strip() for l in links]
+            # Get rid of trailing slashes
+            links = [l[:-1] if l[-1]=="/" else l for l in links]
+            res["github"] = [l for l in links if re.search("github",l)]
+            res["links"] = links
+            json.dumps(res,open(output_file,"wb"))
 
 

@@ -1,11 +1,8 @@
-import pickle
-import pandas
-import os
-
 from glob import glob
 import pandas
 import numpy
 import pickle
+import os
 
 home = os.environ["HOME"]
 base = "%s/pubmed" %os.environ["WORK"]
