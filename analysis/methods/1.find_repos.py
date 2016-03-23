@@ -27,7 +27,7 @@ for xml_file in xmls:
         valid = False
     # Does the text have github repos somewhere?
     if re.search("github",text) and valid == True:
-        #try:
+        try:
             article_meta = xml["article"]["front"]['article-meta']
             journal_meta = xml["article"]["front"]["journal-meta"]
             # Save information to result object, will be saved as json
@@ -85,5 +85,7 @@ for xml_file in xmls:
                 filey = open(output_file,'wb')
                 filey.write(json.dumps(res, sort_keys=True,indent=4, separators=(',', ': ')))
                 filey.close()
-        #except:
-        #    print "ERROR PARSING %s" %(xml_file)
+        except:
+            print "ERROR PARSING %s" %(xml_file)
+    else:
+        print "ARTICLE %S DOES NOT HAVE GITHUB LINKS" %(xml_file)
