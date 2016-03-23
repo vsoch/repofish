@@ -109,7 +109,6 @@ def extract_xml_compressed(xmlgz,extension=".nxml"):
     tar = tarfile.open(xmlgz, 'r:gz')
     for tar_info in tar:
         if os.path.splitext(tar_info.name)[1] == extension:
-            print "Extracting text from %s" %(tar_info.name)
             file_object = tar.extractfile(tar_info)
             return file_object.read().replace('\n', '')
 
