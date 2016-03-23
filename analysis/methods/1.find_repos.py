@@ -2,12 +2,13 @@ from xml.parsers.expat import ExpatError
 from repofish.pubmed import get_xml
 from glob import glob
 import xmltodict
-import os
-import re
-import json
 import pandas
 import pickle
+import numpy
+import json
 import sys
+import os
+import re
 
 # Here is the path to the folder with xml files
 start = sys.argv[1]
@@ -52,13 +53,14 @@ for z in range(len(zips)):
             if "kwd-group" in article_meta:
                 res["keywords"] = article_meta["kwd-group"]['kwd']
             if "counts" in article_meta:
-                res["equation_count"] = article_meta['counts']['equation-count']["@count"]
+                if "equation-count" in article_meta['counts']:
+                    res["equation_count"] = article_meta['counts']['equation-count']["@count"]
             # Find all links
             links = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
             # Remove any remaining < from the urls
             links = [l.split("<")[0].strip() for l in links]
             # Get rid of trailing slashes
-            links = [l[:-1] if l[-1]=="/" else l for l in links]
+            links = numpy.unique([l[:-1] if l[-1]=="/" else l for l in links]).tolist()
             res["github"] = [l for l in links if re.search("github",l)]
             res["links"] = links
             filey = open(output_file,'wb')
