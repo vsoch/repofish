@@ -17,8 +17,7 @@ output_dir = sys.argv[2]
 # Read in our terms
 xmls = glob("%s/*.nxml" %article_folder)
 
-for z in range(len(xmls)):
-    xml_file = xmls[z]
+for xml_file in xmls:
     text = get_xml(xml_file)
     valid = True
     try:

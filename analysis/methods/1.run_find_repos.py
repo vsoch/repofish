@@ -1,4 +1,3 @@
-from repofish.pubmed import get_xml
 from glob import glob
 import pickle
 import os
