@@ -57,7 +57,8 @@ for z in range(len(zips)):
                 res["subjects"] = [subjects["subject"]]
             res["keywords"] = []
             if "kwd-group" in article_meta:
-                res["keywords"] = article_meta["kwd-group"]['kwd']
+                if "kwd" in article_meta["kwd-group"]:
+                    res["keywords"] = article_meta["kwd-group"]['kwd']
             if "counts" in article_meta:
                 if "equation-count" in article_meta['counts']:
                     res["equation_count"] = article_meta['counts']['equation-count']["@count"]
