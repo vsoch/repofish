@@ -125,7 +125,7 @@ def get_xml(paper,extension=".nxml"):
     '''get_xml is a wrapper for read_xml and extract_xml_compressed
     :param paper: a pubmed (nxml) paper, either as is, or compressed.
     '''
-    if re.search("[.tar.gz]",paper):
+    if re.search(".tar.gz",paper):
         raw = extract_xml_compressed(paper,extension=extension)
     else:
         raw = read_xml(paper)
