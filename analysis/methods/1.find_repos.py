@@ -43,10 +43,12 @@ for z in range(len(zips)):
         output_file = "%s/%s.json" %(output_dir,res["pmid"])
         if not os.path.exists(output_file):
             authors = []
-            for x in article_meta['contrib-group']['contrib']:
-                if isinstance(x,dict):
-                    if x["@contrib-type"]=="author":
-                        authors.append("%s %s" %(x["name"]['given-names'],x["name"]["surname"]))
+            if isinstance (article_meta['contrib-group'],dict):
+                if "contrib" in article_meta['contrib-group']:
+                    for x in article_meta['contrib-group']['contrib']:
+                        if isinstance(x,dict):
+                            if x["@contrib-type"]=="author":
+                                authors.append("%s %s" %(x["name"]['given-names'],x["name"]["surname"]))
             # Article subject tags
             subjects = xml["article"]["front"]['article-meta']['article-categories']['subj-group']
             if isinstance(subjects,list):
