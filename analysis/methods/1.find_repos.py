@@ -48,7 +48,9 @@ for z in range(len(zips)):
                 res["subjects"] = [x['subject'] for x in subjects]
             else:
                 res["subjects"] = [subjects["subject"]]
-            res["keywords"] = xml["article"]["front"]['article-meta']["kwd-group"]['kwd']
+            res["keywords"] = []
+            if "kwd-group" in article_meta:
+                res["keywords"] = article_meta["kwd-group"]['kwd']
             if "counts" in article_meta:
                 res["equation_count"] = article_meta['counts']['equation-count']["@count"]
             # Find all links
