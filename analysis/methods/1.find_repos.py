@@ -34,7 +34,7 @@ for z in range(len(zips)):
         # Save information to result object, will be saved as json
         res = dict()
         # Basic meta, title, journal, pmid
-        res["title"] = article_meta['title-group']['article-title']["#text"]
+        res["title"] = article_meta['title-group']['article-title'][0]["#text"]        
         res["journal"] = journal_meta["journal-id"][0]["#text"]
         res["pmid"] = [x["#text"] for x in xml["article"]["front"]['article-meta']['article-id'] if x["@pub-id-type"]=="pmid"][0]
         output_file = "%s/%s.json" %(output_dir,res["pmid"])
