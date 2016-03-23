@@ -33,6 +33,6 @@ for i in range(iters):
         end = start + batch_size
     else:
         end = len(targzs)
-    filey.writelines("python %s/find_repos.py %s %s %s %s\n" % (scripts,start,end,targz_list,outfolder))
+    filey.writelines("python %s/1.find_repos.py %s %s %s %s\n" % (scripts,start,end,targz_list,outfolder))
 
 filey.close()

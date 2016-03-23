@@ -49,7 +49,8 @@ for z in range(len(zips)):
             if "funding-group" in article_meta:
                 res["funding"] = [article_meta['funding-group']['award-group']['funding-source']]
             res["keywords"] = xml["article"]["front"]['article-meta']["kwd-group"]['kwd']
-            res["equation_count"] = article_meta['counts']['equation-count']["@count"]
+            if "counts" in article_meta:
+                res["equation_count"] = article_meta['counts']['equation-count']["@count"]
             # Find all links
             links = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
             # Remove any remaining < from the urls
