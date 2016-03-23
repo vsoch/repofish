@@ -88,4 +88,4 @@ for xml_file in xmls:
         except:
             print "ERROR PARSING %s" %(xml_file)
     else:
-        print "ARTICLE %S DOES NOT HAVE GITHUB LINKS" %(xml_file)
+        print "ARTICLE %s DOES NOT HAVE GITHUB LINKS" %(xml_file)
