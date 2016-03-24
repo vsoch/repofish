@@ -5,7 +5,7 @@ import pickle
 import os
 
 home = os.environ["HOME"]
-base = "%s/pubmed" %os.environ["WORK"]
+base = "%s/data/pubmed" %os.environ["LAB"]
 outfolder = "%s/methods" %(base)
 repo_folder = "%s/repos" %(base)
 scripts = "%s/SCRIPT/python/repofish/analysis/methods" %(home)

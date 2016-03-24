@@ -1,4 +1,5 @@
 from glob import glob
+import numpy
 import pickle
 import os
 
@@ -15,11 +16,20 @@ if not os.path.exists(outfolder):
 
 folders = [x for x in glob("%s/*" %articles_folder) if os.path.isdir(x)]
 
-# Write to launch file
-script_file = "%s/findgithub.job" %scripts
-filey = open(script_file,'w')
+batch_size = 1000.0
+iters = int(numpy.ceil(len(folders)/batch_size))
 
-for folder in folders:
-    filey.writelines("python %s/1.find_repos.py %s %s\n" % (scripts,folder,outfolder))
-
-filey.close()
+# Prepare and submit a job for each
+for i in range(iters):
+    start = i*int(batch_size)
+    if i != iters:
+        end = start + int(batch_size)
+    else:
+        end = len(folders)
+    subset = folders[start:end] 
+    # Write to launch file
+    script_file = "%s/findgithub_%s.job" %(scripts,i)
+    filey = open(script_file,'w')
+    for folder in subset:   
+        filey.writelines("python %s/1.find_repos.py %s %s\n" % (scripts,folder,outfolder))
+    filey.close()
