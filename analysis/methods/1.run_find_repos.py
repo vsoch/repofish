@@ -31,5 +31,5 @@ for i in range(iters):
     script_file = "%s/findgithub_%s.job" %(scripts,i)
     filey = open(script_file,'w')
     for folder in subset:   
-        filey.writelines("python %s/1.find_repos.py %s %s\n" % (scripts,folder,outfolder))
+        filey.writelines('python %s/1.find_repos.py "%s" %s\n' % (scripts,folder,outfolder))
     filey.close()
