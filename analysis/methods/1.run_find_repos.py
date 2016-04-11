@@ -27,9 +27,14 @@ for i in range(iters):
     else:
         end = len(folders)
     subset = folders[start:end] 
-    # Write to launch file
     script_file = "%s/findgithub_%s.job" %(scripts,i)
     filey = open(script_file,'w')
+    filey.writelines("#!/bin/bash\n")
+    filey.writelines("#SBATCH --job-name=%s\n" %i)
+    filey.writelines("#SBATCH --output=.out/%s.out\n" %i)
+    filey.writelines("#SBATCH --error=.out/%s.err\n" %i)
+    filey.writelines("#SBATCH --time=2:00:00\n")
     for folder in subset:   
         filey.writelines('python %s/1.find_repos.py "%s" %s\n' % (scripts,folder,outfolder))
     filey.close()
+    os.system("sbatch -A Analysis_Lonestar -n 4 -p normal findgithub_%s.job" %i)
