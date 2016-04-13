@@ -23,7 +23,7 @@ for xml_file in xmls:
     try:
         xml = xmltodict.parse(text)
     except ExpatError:
-        print "Invalid format xml for %s" %(zip_file)
+        print "Invalid format xml for %s" %(xml_file)
         valid = False
     # Does the text have github repos somewhere?
     if re.search("github",text) and valid == True:

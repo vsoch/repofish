@@ -37,4 +37,4 @@ for i in range(iters):
     for folder in subset:   
         filey.writelines('python %s/1.find_repos.py "%s" %s\n' % (scripts,folder,outfolder))
     filey.close()
-    os.system("sbatch -A Analysis_Lonestar -n 4 -p normal findgithub_%s.job" %i)
+    os.system("sbatch -A Analysis_Lonestar -p normal findgithub_%s.job" %i)
