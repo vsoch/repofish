@@ -124,7 +124,7 @@ while len(github_io) > 0:
 
 # Manual curation
 len(rest)
-# 139
+# 134
 urls["github_io"].append(('26110025', u'https://github.com/qsardb'))
 urls["raw_files"].append(('22934238', u'http://imagejs.org/imagejs.js'))
 
@@ -272,25 +272,35 @@ rest = [('25849488', u'https://github.com/najoshi/sickle'),
 urls["repos"] = urls["repos"] + rest
 pickle.dump(urls,open("%s/inputs_categorized.pkl" %outfolder,"wb"))
 
-# Finally, can we associate the github_io_master sites with a repo?
-
-
-jobfile = "%s/parsereopos.job" %(scripts)
+jobfile = "%s/parse_repos.job" %(scripts)
 filey = open(jobfile,'w')
 
-
 seen = []
-for f in files:
-    result = json.load(open(f,'r'))
-    pubmed_paper = result["pmid"]
-    for repo_url in result["github"]:        
-        if repo_url not in seen:
-            print "Parsing %s" %(repo_url)
-            seen.append(repo_url)
-            repo_name = repo_url.split("/")[-1]
-            user_name = repo_url.split("/")[-2]
-            output_file = "%s/%s_%s_functions.tsv" %(outfolder,user_name,repo_name)
-            if not os.path.exists(output_file):
-                filey.writelines("python parse_imports.py %s %s %s" %(repo_url, output_file, pubmed_paper))
+for repo in urls["repos"]:
+    repo_url = repo[1]
+    pubmed_paper = repo[0]
+    if repo_url not in seen:
+        print "Parsing %s" %(repo_url)
+        seen.append(repo_url)
+        repo_name = repo_url.split("/")[-1]
+        user_name = repo_url.split("/")[-2]
+        output_file = "%s/%s_%s_functions.tsv" %(outfolder,user_name,repo_name)
+        if not os.path.exists(output_file):
+            filey.writelines("python %s/parse_imports.py %s %s %s" %(scripts, repo_url, output_file, pubmed_paper))
            
 filey.close()
+
+len(seen)
+# 4408
+
+for label,url_list in urls.iteritems():
+    print "count %s for %s" %(label,len(url_list))
+
+# count repos for 5570
+# count github_io for 183
+# count nbviewer for 19
+# count raw_files for 16
+# count false_hits for 12
+# count gists for 58
+# count github_help for 8
+# count github_users for 206
