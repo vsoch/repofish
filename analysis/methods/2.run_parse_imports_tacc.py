@@ -27,13 +27,19 @@ for f in files:
     result = json.load(open(f,'r'))
     pubmed_paper = str(result["pmid"])
     urls = urls + result["github"]
-    pmids = pmids + [pubmed_paper] * len(urls)
+    pmids = pmids + [pubmed_paper] * len(result["github"])
+
+# How many?
+len(numpy.unique(pmids))
+# 4240
+len(urls)
+# 6135
 
 # Save to inputs file
 inputs = dict()
 inputs["urls"] = urls
 inputs["pmids"] = pmids
-pickle.dump(inputs,"%s/inputs.pkl" %outfolder)
+pickle.dump(inputs,open("%s/inputs.pkl" %outfolder,"wb"))
 
 seen = []
 for f in files:
