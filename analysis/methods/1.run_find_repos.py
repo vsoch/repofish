@@ -6,7 +6,7 @@ import os
 # Run iterations of "count" to count the number of terms in each folder of zipped up pubmed articles
 
 home = os.environ["HOME"]
-scripts = "%s/SCRIPT/python/repofish/analysis/methods" %(home)
+scripts = "%s/SCRIPT/repofish/analysis/methods" %(home)
 base = "%s/data/pubmed" %os.environ["LAB"]
 outfolder = "%s/repos" %(base)
 articles_folder = "%s/articles" %(base)
@@ -37,4 +37,4 @@ for i in range(iters):
     for folder in subset:   
         filey.writelines('python %s/1.find_repos.py "%s" %s\n' % (scripts,folder,outfolder))
     filey.close()
-    os.system("sbatch -A Analysis_Lonestar -p normal findgithub_%s.job" %i)
+    os.system("sbatch -A Analysis_Lonestar -p normal -n 24 findgithub_%s.job" %i)

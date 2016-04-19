@@ -1,4 +1,5 @@
 from glob import glob
+import json
 import pandas
 import numpy
 import pickle
@@ -18,9 +19,25 @@ files = glob("%s/*.json" %repo_folder)
 jobfile = "%s/parsereopos.job" %(scripts)
 filey = open(jobfile,'w')
 
+# Take a look at repo urls to help parsing
+urls = []
+pmids = []
+for f in files:
+    print "Adding %s to list" %(f)
+    result = json.load(open(f,'r'))
+    pubmed_paper = str(result["pmid"])
+    urls = urls + result["github"]
+    pmids = pmids + [pubmed_paper] * len(urls)
+
+# Save to inputs file
+inputs = dict()
+inputs["urls"] = urls
+inputs["pmids"] = pmids
+pickle.dump(inputs,"%s/inputs.pkl" %outfolder)
+
 seen = []
 for f in files:
-    result = json.loads(open(f,'r'))
+    result = json.load(open(f,'r'))
     pubmed_paper = result["pmid"]
     for repo_url in result["github"]:        
         if repo_url not in seen:
