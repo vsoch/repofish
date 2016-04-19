@@ -284,9 +284,9 @@ for repo in urls["repos"]:
         seen.append(repo_url)
         repo_name = repo_url.split("/")[-1]
         user_name = repo_url.split("/")[-2]
-        output_file = "%s/%s_%s_functions.tsv" %(outfolder,user_name,repo_name)
+        output_file = "%s/%s_%s_%s_functions.tsv" %(outfolder,user_name,repo_name,pubmed_paper)
         if not os.path.exists(output_file):
-            filey.writelines("python %s/parse_imports.py %s %s %s" %(scripts, repo_url, output_file, pubmed_paper))
+            filey.writelines("python %s/parse_imports.py %s %s %s\n" %(scripts, repo_url, output_file, pubmed_paper))
            
 filey.close()
 
