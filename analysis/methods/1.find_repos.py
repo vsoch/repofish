@@ -113,5 +113,3 @@ def find_tag(text,regexp,single=True):
         if single == True:
             match =  [x for x in match[0].split(">") if len(x)>0][-1].split("</")[0]        
     return match
-
-
