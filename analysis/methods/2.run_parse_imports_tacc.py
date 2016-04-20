@@ -271,6 +271,8 @@ rest = [('25849488', u'https://github.com/najoshi/sickle'),
  
 urls["repos"] = urls["repos"] + rest
 pickle.dump(urls,open("%s/inputs_categorized.pkl" %outfolder,"wb"))
+#urls = pickle.load(open("%s/inputs_categorized.pkl" %outfolder,"rb"))
+
 
 jobfile = "%s/parse_repos.job" %(scripts)
 filey = open(jobfile,'w')
@@ -280,14 +282,17 @@ for repo in urls["repos"]:
     repo_url = repo[1]
     pubmed_paper = repo[0]
     if repo_url not in seen:
-        print "Parsing %s" %(repo_url)
         seen.append(repo_url)
         repo_name = repo_url.split("/")[-1]
+        repo_name = repo_name.strip(").").strip("(")
+        print repo_name
         user_name = repo_url.split("/")[-2]
         output_file = "%s/%s_%s_%s_functions.tsv" %(outfolder,user_name,repo_name,pubmed_paper)
         if not os.path.exists(output_file):
             filey.writelines("python %s/parse_imports.py %s %s %s\n" %(scripts, repo_url, output_file, pubmed_paper))
-           
+   
+
+        
 filey.close()
 
 len(seen)
