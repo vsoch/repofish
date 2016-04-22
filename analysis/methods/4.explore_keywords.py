@@ -49,7 +49,7 @@ def parse_keywords(kw):
             return kw["named-content"]["named-content"][0]["#text"]
         elif "styled-content" in kw:
             return kw["styled-content"]["#text"]
-    return kw 
+    return kw.lower().strip()
 
 # Some keywords are in italic
 keywords_updated = []
@@ -73,7 +73,18 @@ for f in files:
             else:
                 df.loc[kw_parsed,"count"] = 1
 
+# One badly parsed
+badly_parsed = "computational biology ; protein structure prediction ; model quality assessment programs ; boltzmann distribution ; annsen's thermodynamic hypothesis ; statistical potentials ; protein backbone ; decoy sets ;"
+df = df.drop([badly_parsed])
+badly_parsed = [x.strip(" ") for x in badly_parsed.split(";") if x]
+for bp in badly_parse:
+    if bp in df.index:
+        df.loc[bp,"count"] = df.loc[bp,"count"] + 1
+    else:
+        df.loc[bp,"count"] = 1
+
 # Sort by counts
+df = df.sort(columns=["count"],ascending=False)
 df.to_csv("%s/keywords_counts.tsv" %base,sep="\t",encoding="utf-8")
 df.to_json("%s/keywords_counts.json" %base)
 
