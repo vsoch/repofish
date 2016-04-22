@@ -24,8 +24,8 @@ drop = []
 for row in packages.iterrows():
     package_name = row[1].package
     output_file = "%s/%s.json" %(meta_folder,package_name)
-    time.sleep(1)
     if not os.path.exists(output_file):
+        time.sleep(1)
         print "parsing %s of %s" %(row[0],packages.shape[0])
         response = requests.get(url %package_name)
         if response.status_code == 200:
