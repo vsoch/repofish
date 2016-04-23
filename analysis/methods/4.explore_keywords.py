@@ -1,3 +1,4 @@
+from repofish.utils import save_json
 from glob import glob
 import pickle
 import pandas
@@ -77,7 +78,7 @@ for f in files:
 badly_parsed = "computational biology ; protein structure prediction ; model quality assessment programs ; boltzmann distribution ; annsen's thermodynamic hypothesis ; statistical potentials ; protein backbone ; decoy sets ;"
 df = df.drop([badly_parsed])
 badly_parsed = [x.strip(" ") for x in badly_parsed.split(";") if x]
-for bp in badly_parse:
+for bp in badly_parsed:
     if bp in df.index:
         df.loc[bp,"count"] = df.loc[bp,"count"] + 1
     else:
@@ -87,7 +88,6 @@ for bp in badly_parse:
 df = df.sort(columns=["count"],ascending=False)
 df.to_csv("%s/keywords_counts.tsv" %base,sep="\t",encoding="utf-8")
 df.to_json("%s/keywords_counts.json" %base)
-
 
 # JOURNALS
 journals = []
@@ -109,3 +109,33 @@ for f in files:
 
 df.to_csv("%s/journals_count.tsv" %base,sep="\t")
 df.to_json("%s/journals_count.json" %base)
+
+
+# We need a lookup, for pmids based on journal or keyword
+journal_lookup = dict()
+keyword_lookup = dict()
+
+for f in files:
+    print "Parsing %s" %(f)
+    result = json.load(open(f,'r'))
+    pmid = str(result["pmid"])
+    if "journal" in result:
+        journal = result["journal"]
+        if journal not in journal_lookup:
+            journal_lookup[journal] = [pmid]
+        else:
+            journal_lookup[journal].append(pmid)
+    if "keywords" in result:
+        if not isinstance(result["keywords"],list):
+            keys = [result["keywords"]]
+        else:
+            keys = result["keywords"]
+        for k in keys:
+            kw = parse_keywords(k)
+            if kw not in keyword_lookup:
+                keyword_lookup[kw] = [pmid]
+            else:
+                keyword_lookup[kw].append(pmid)
+
+save_json(journal_lookup,"%s/journal_lookup.json"%base)
+save_json(keyword_lookup,"%s/keyword_lookup.json"%base)
