@@ -117,29 +117,35 @@ save_json(res,"web/pypi.json")
 # REPOFISH FLASK ####################################################################
 nodes = dict()
 
+def do_encode(param):
+    if param != None:
+        return param.encode("utf-8")
+    else:
+        return ""
+
 # Data preparation for repofish flask application
 def make_node(package_name,meta,node_count):
-    return {"name":package_name,
+    return {"name":do_encode(package_name),
             "id":node_count,
-            "description":meta["description"],
-            "downloads":meta["downloads"],
-            "keywords":meta["keywords"],
-            "license":meta["license"],
-            "maintainer":meta["maintainer_email"],
-            "author":meta["author_email"],
-            "package_url":meta["package_url"], 
-            "release_url":meta["release_url"],
-            "docs":meta["docs_url"],
-            "url":meta["home_page"],
-            "summary":meta["summary"],
-            "version":meta["version"]}
+            "description":do_encode(meta["description"]),
+            "downloads":[do_encode(x) for x in meta["downloads"]],
+            "keywords":do_encode(meta["keywords"]),
+            "license":do_encode(meta["license"]),
+            "maintainer":do_encode(meta["maintainer_email"]),
+            "author":do_encode(meta["author_email"]),
+            "package_url":do_encode(meta["package_url"]), 
+            "release_url":do_encode(meta["release_url"]),
+            "docs":do_encode(meta["docs_url"]),
+            "url":do_encode(meta["home_page"]),
+            "summary":do_encode(meta["summary"]),
+            "version":do_encode(meta["version"])}
 
 count=0
 for row in packages.iterrows():
     package_name = row[1].package
     meta_file = "%s/%s.json" %(meta_folder,package_name)
     if os.path.exists(meta_file):
-        meta = json.load(open(meta_file,"r"))
+        meta = json.load(open(meta_file,"r"),encoding="utf-8")
         if package_name not in nodes:
             node = make_node(package_name,meta["info"],count)
             nodes[package_name] = node
