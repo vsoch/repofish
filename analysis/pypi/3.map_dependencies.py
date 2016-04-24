@@ -151,7 +151,7 @@ for row in packages.iterrows():
             nodes[package_name] = node
             count+=1
 
-pickle.dump(nodes,open("web/packages.nodes.pkl","wb"))
+pickle.dump(nodes,open("web/packages.nodes.pkl","w"))
 
 # We also need a links lookup, links to keep based on package
 links = dict()
@@ -173,9 +173,8 @@ for row in packages.iterrows():
                 if dep in nodes:
                     dep_id = nodes[dep]["id"]
                     link_id = "%s_%s" %(dep_id,package_id)
-                    if link_id not in seen_links:
-                        link = make_link(dep_id,package_id)
-                        link_list.append(link)
+                    link = make_link(dep_id,package_id)
+                    link_list.append(link)
             links[package_name] = link_list
 
-pickle.dump(links,open("web/packages.links.pkl","wb"))
+pickle.dump(links,open("web/packages.links.pkl","w"))
