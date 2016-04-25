@@ -281,7 +281,7 @@ def add_count(df,ridx,cidx="count",addition=1):
     :param cidx: the y (columns) index to add to
     :param addition: the number to add to the count
     '''
-    if ridx in countdf.index:
+    if ridx in df.index:
         df.loc[ridx,cidx] += addition
     else: 
         df.loc[ridx,cidx] = addition
