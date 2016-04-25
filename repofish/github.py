@@ -25,6 +25,17 @@ def get_match_df():
     return pandas.DataFrame(columns=column_names)
 
 
+def names_from_url(repo_url):
+    '''names_from_url will return the username and repo name, given a repo url
+    :param repo_url: the full url of the github repo
+    '''
+    if repo_url[-1] == "/":
+        repo_url = repo_url[:-1]
+    repo_name = repo_url.split("/")[-1]
+    user_name = repo_url.split("/")[-2]
+    return user_name,repo_name
+
+
 def check_repo(repo):
     '''check_repo checks if a repo object is of type Repo from git, if not, attempts to make one
     :param repo: path to a local repo, a git.Repo object, or a url
@@ -58,12 +69,7 @@ def search_code(repo,function_names,limit=10):
     matches = get_match_df()
     iters = int(numpy.ceil(len(function_names)/float(limit)))
     api_working = True
-
-    # Will be passed to local function, if needed
-    if repo[-1] == "/":
-        repo = repo[:-1]
-    repo_name = repo.split("/")[-1]
-    user_name = repo.split("/")[-2]
+    user_name,repo_name = names_from_url(repo)
 
     for i in range(iters):
         start = i*limit
@@ -107,12 +113,7 @@ def search_imports(repo,extension=".py"):
     :param repo: either a local repo, or github repo URL
     :param extension: the extension (language) of the files to search
     '''
-    # Will be passed to local function, if needed
-    if repo[-1] == "/":
-        repo = repo[:-1]
-    repo_name = repo.split("/")[-1]
-    user_name = repo.split("/")[-2]
-
+    user_name,repo_name = names_from_url(repo)
     repo = check_repo(repo)
     count = 0
     matches = pandas.DataFrame()
@@ -272,3 +273,50 @@ def search_code_single(repo,search_term,language="python",access_token=None):
                 count+=1
     print "Found %s results for %s in %s" %(count,search_term,repo_name)
     return matches
+
+def add_count(df,ridx,cidx="count",addition=1):
+    '''add_count is a helper function to add count to a data frame for a particular index (extension or special file)
+    :param df: the data frame to add the count to
+    :param ridx: the x (row) index to add to
+    :param cidx: the y (columns) index to add to
+    :param addition: the number to add to the count
+    '''
+    if ridx in countdf.index:
+        df.loc[ridx,cidx] += addition
+    else: 
+        df.loc[ridx,cidx] = addition
+    return df
+
+def count_extensions(repos,special_files=None):
+    '''count_extensions counts the number of extensions in one or more repos, along with special files (license, readme, etc)
+    :param repos: a list of one or more repos to count
+    :param special_files: a list of special files to count as well. Do not specify extension to allow any
+    '''
+    if isinstance(repos,str):
+        repos = [repos]
+
+    special_file_re = "|".join(special_files)
+    
+    # We will index special files based on filename only
+    countdf = pandas.DataFrame(columns=["count"])
+
+    for repo in repos:
+        user_name,repo_name = names_from_url(repo)
+        repo = check_repo(repo)
+        files = find_files(repo.working_dir,any_extension=True)
+        for filepath in files:
+            _,filename = os.path.split(filepath) 
+
+            # First look for special files
+            if re.search(special_file_re,filename):
+                special_index = os.path.splitext(filename)[0]
+                countdf = add_count(countdf,special_index)
+
+            # Now count extension
+            ext = ''.join(os.path.splitext(filename)[1:])
+            if ext == '':
+                ext = 'NOEXTENSION'
+            countdf = add_count(countdf,ext)
+
+    return countdf
+

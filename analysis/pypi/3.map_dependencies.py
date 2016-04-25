@@ -125,10 +125,13 @@ def do_encode(param):
 
 # Data preparation for repofish flask application
 def make_node(package_name,meta,node_count):
+    dl = dict()
+    for dl_key,dl_val in meta["downloads"].iteritems():
+        dl[do_encode(dl_key)] = dl_val
     return {"name":do_encode(package_name),
             "id":node_count,
-            "description":do_encode(meta["description"]),
-            "downloads":[do_encode(x) for x in meta["downloads"]],
+            #"description":do_encode(meta["description"]),
+            "downloads":dl,
             "keywords":do_encode(meta["keywords"]),
             "license":do_encode(meta["license"]),
             "maintainer":do_encode(meta["maintainer_email"]),
