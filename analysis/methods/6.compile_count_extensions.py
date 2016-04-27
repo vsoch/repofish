@@ -25,6 +25,7 @@ for f in files:
     colnames = numpy.unique([colnames + result.index.tolist()]).tolist()
 
 # Filter out people's jobfiles (error and output)
+# Actually, we don't need to filter, we can eliminate files with counts less than some threshold.
 colnames = [x for x in colnames if not re.search("[.]o[0-9]+",x)]
 colnames = [x for x in colnames if not re.search("[.]e[0-9]+",x)]
 
