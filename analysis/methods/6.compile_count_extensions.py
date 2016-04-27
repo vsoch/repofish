@@ -37,6 +37,9 @@ len(colnames)
 # Save a data frame of counts
 counts = pandas.DataFrame(columns=colnames)
 
+#counts = pandas.read_csv("%s/extension_counts.tsv" %base,sep="\t",index_col=0)
+#repos = pickle.load(open("%s/extension_repos.pkl" %base,"rb"))
+
 # A function to find output / error files, return updated result object
 def find_job_files(result):
     error_files = [x for x in result.index if re.search("[.]e[0-9]+",x)]
@@ -60,14 +63,18 @@ for f in range(len(files)):
     user_name = entry[1]
     repo_name = "".join(entry[2:])
     uid = "%s_%s" %(user_name,repo_name)
-    result = pandas.read_csv(filey,index_col=0,sep="\t")
-    # Find output and error files
-    result = find_job_files(result)
-    counts.loc[uid,result.index] = result["count"]
+    if uid not in counts.index:
+        result = pandas.read_csv(filey,index_col=0,sep="\t")
+        # Find output and error files
+        result = find_job_files(result)
+        counts.loc[uid,result.index] = result["count"]
     if uid in repos:
-        repos[uid].append(pmid)
+        if pmid not in repos[uid]:
+            repos[uid].append(pmid)
     else:
         repos[uid] = [pmid]
 
+counts = counts.fillna(0)
+
 counts.to_csv("%s/extension_counts.tsv" %base,sep="\t")
-pickle.dump(repos,open("%s/extension_repos.pkl","wb"))
+pickle.dump(repos,open("%s/extension_repos.pkl" %base,"wb"))
