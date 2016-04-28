@@ -72,6 +72,9 @@ for method in methods["methods"]:
 
 del results["Safety in numbers"]
 save_json(results,"wikipedia_methods.json")
+len(results)
+#2786
+
 
 ## STEP 2: BUILD MODELS ############################################################################
 

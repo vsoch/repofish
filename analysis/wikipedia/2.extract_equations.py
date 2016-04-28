@@ -9,17 +9,18 @@ import time
 import re
 
 methods = pandas.read_csv("wikipedia_methods.tsv",sep="\t",index_col=0)
+skip = ['1.96']
 
 results = dict()
 
 for method in methods["methods"]:
-    if method not in results:
+    if method not in results and method not in skip:
         print "Extracting equations from %s" %(method)
         result = get_page(method)
         html = result.html()
         soup = BeautifulSoup(html)
 
-        equations = dict()
+        equations = []
 
         # Equations are represented as images
         images = soup.findAll('img')
