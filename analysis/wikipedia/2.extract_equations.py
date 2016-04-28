@@ -36,5 +36,7 @@ for method in methods["methods"]:
 
         if len(equations) > 0:
             results[method] = equations
+        else:
+            skip.append(method)
 
 save_json(results,"wikipedia_equations.json")

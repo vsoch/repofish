@@ -1,7 +1,6 @@
-
-from exceptions import KeyError
+from repofish.utils import save_json, save_txt, convert_unicode
 from repofish.wikipedia import get_page
-from repofish.utils import save_json, save_txt
+from exceptions import KeyError
 import pandas
 import time
 
@@ -87,7 +86,8 @@ from wordfish.analysis import build_models, save_models, export_models_tsv, \
 # First save sentences to one massive file
 filey = open("method_sentences.txt","w")
 for method,result in results.iteritems():
-    filey.writelines(result["summary"])
+    summary = convert_unicode(result["summary"]).replace("\n"," ")
+    filey.write("%s\n" %summary)
 filey.close()
 
 base_dir = "/home/vanessa/Documents/Dropbox/Code/Python/repofish"
@@ -95,28 +95,31 @@ method_names = ["lda","word2vec"]
 models = dict()
 
 for method_name in method_names:
-    corpus = {"methods_%s" %model_name:["method_sentences.txt"]}
+    corpus = {"methods_%s" %method_name:["method_sentences.txt"]}
     model = build_models(corpus,model_type=method_name)
     models.update(model)
 
 # Save models and vectors
 export_models_tsv(models,base_dir)
-model_dir = "%s/analysis/models" %base_dir
-export_vectors(models,output_dir=model_dir)
-
+vectors_dir = "%s/analysis/models/vectors" %base_dir
+os.mkdir(vectors_dir)
+export_vectors(models,output_dir=vectors_dir)
 
 ## Now for each method, save a vector representation
-vectors = pandas.DataFrame()
+vectors = pandas.DataFrame(columns=range(300))
 model = models["methods_word2vec"]
 tempfile = "/tmp/repofish.txt"
+analyzer = DeepTextAnalyzer(model)
 
 for method,result in results.iteritems():
     print "Generating model for method %s" %(method)
-    analyzer = DeepTextAnalyzer(model)
-    save_txt(tempfile,result["summary"])
+    summary = convert_unicode(result["summary"]).replace("\n"," ")
+    save_txt(summary,tempfile)
     vectors.loc[method] = analyzer.text2mean_vector(tempfile)
 
-# Need to fillna?
-vectors.to_tsv("%s/method_vectors.tsv" %model_dir,sep="\t")
+
+vectors.to_csv("%s/method_vectors.tsv" %model_dir,sep="\t",encoding="utf-8")
 
 # Compare similarity, for kicks and giggles
+sim = vectors.T.corr()
+sim.to_csv("%s/method_vectors_similarity.tsv" %model_dir,sep="\t",encoding="utf-8")
