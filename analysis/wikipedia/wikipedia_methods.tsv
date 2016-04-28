@@ -1419,7 +1419,7 @@
 1417	M/G/1 queue
 1418	M/M/1 queue
 1419	M/M/c queue
-1420	MANCOVA
+1420	Multivariate analysis of covariance
 1421	MANOVA
 1422	MAP estimator
 1423	MCAR
@@ -1511,7 +1511,7 @@
 1509	Mean absolute percentage error
 1510	Mean absolute scaled error
 1511	Mean and predicted response
-1512	Mean deviation
+1512	Mean signed deviation
 1513	Mean integrated squared error
 1514	Mean of circular quantities
 1515	Mean percentage error
@@ -2538,7 +2538,7 @@
 2536	Sørensen similarity index
 2537	T-statistic
 2538	TPL Tables
-2539	T distribution (disambiguation)
+2539	Student's t-distribution
 2540	Tag cloud
 2541	Taguchi loss function
 2542	Taguchi methods

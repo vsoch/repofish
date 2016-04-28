@@ -29,6 +29,14 @@ methods[methods.methods=="Lambda distribution (disambiguation)"] = "Tukey's lamb
 methods[methods.methods=="Lambda distribution"] = "Tukey's lambda distribution"
 methods[methods.methods=="Linear least squares"] = "Linear least squares (mathematics)"
 methods[methods.methods=="Linear least squares (disambiguation)"] = "Linear least squares (mathematics)"
+methods[methods.methods=="MANCOVA"] = "Multivariate analysis of covariance"
+methods[methods.methods=="MANCOVA (disambiguation)"] = "Multivariate analysis of covariance"
+methods[methods.methods=="Mean deviation"] = "Mean signed deviation"
+methods[methods.methods=="Mean deviation (disambiguation)"] = "Mean signed deviation"
+methods[methods.methods=="Safety in numbers (disambiguation)"] = "Safety in numbers"
+methods[methods.methods=="Safety in numbers"] = "Safety in numbers"
+methods[methods.methods=="T distribution"] = "Student's t-distribution"
+methods[methods.methods=="T distribution (disambiguation)"] = "Student's t-distribution"
 
 methods.to_csv("wikipedia_methods.tsv",sep="\t",encoding="utf-8")
 
@@ -61,8 +69,8 @@ for method in methods["methods"]:
         entry["summary"] = result.summary
         entry["images"] = result.images
         results[method] = entry
-        time.sleep(0.5)
 
+del results["Safety in numbers"]
 save_json(results,"wikipedia_methods.json")
 
 ## STEP 2: BUILD MODELS ############################################################################
@@ -93,6 +101,7 @@ export_models_tsv(models,base_dir)
 model_dir = "%s/analysis/models" %base_dir
 export_vectors(models,output_dir=model_dir)
 
+
 ## Now for each method, save a vector representation
 vectors = pandas.DataFrame()
 model = models["methods_word2vec"]
@@ -106,3 +115,5 @@ for method,result in results.iteritems():
 
 # Need to fillna?
 vectors.to_tsv("%s/method_vectors.tsv" %model_dir,sep="\t")
+
+# Compare similarity, for kicks and giggles
