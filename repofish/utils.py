@@ -13,6 +13,11 @@ def save_json(json_obj,output_file):
     filey.close()
     return output_file
 
+def save_txt(text,filename):
+    filey = open(filename,"w")
+    filey.writelines(text)
+    filey.close()
+    return filename
 
 def convert_unicode(unicode_str,to="ascii",ignore=False,replace_with=" "):
     '''replace_unicode will return a string version of a unicode string, with unicode characters replaced
