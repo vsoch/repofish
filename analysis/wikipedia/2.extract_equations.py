@@ -27,7 +27,7 @@ for method in methods["methods"]:
             image_class = image.get("class")
             if image_class != None:
                 if re.search("tex|math",image_class):
-                    png = image.get("alt")
+                    png = image.get("src")
                     tex = image.get("alt")
                     entry = {"png":png,
                              "tex":tex}
