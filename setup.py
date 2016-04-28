@@ -23,5 +23,5 @@ setup(
     license="LICENSE",
     description="search github repos for python functions and generate standard data structures for them",
 
-    install_requires = ['numpy','pandas','gitpython']
+    install_requires = ['numpy','pandas','gitpython','wikipedia']
 )

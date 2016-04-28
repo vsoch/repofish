@@ -6,7 +6,7 @@ I would want a web interface where I can go, select some word or n-gram (likely 
 - We then want to match methods sections of papers (that cite Github repos) to these different models. By way of being a citation, we make the assumption that the Github repos cited are relevant to what is being talked about. In terms of scope, I think we want as much text as possible, and it would be dangerous to limit lines to those within some distance of the citation. I think we should just associate Github repos cited in a paper with all the text, and maximally parse down to methods if possible. We can do a fuzzy classification so that each "matching" is just a probability that the Github repo is related to some Wikipedia term model, as determined by matching text in the paper to text that describes the method.
 - Once we have Github repos matched to methods, then we can do two things. 1) We can try to use features of the repos to build models that can classify a repo method based on its features (and this means you can classify any new repo sans a paper), and 2) we can look into the subsets and derive metrics that try to rank which is best (based on reproducibility, documentation, etc).
 
-The end product is classifying Github repos into methods and/or domains, and then ranking. This would be hugely useful for people to find software to accomplish some task.
+The end product is classifying Github repos into methods and/or domains, and then ranking. This would be hugely useful for people to find software to accomplish some task. It would also allow for being able to take a paper, and overlay a "heatmap" for different method probabilities discussed in the text.
 
 
 ### Idea 2: Can we find similar repos/functions based on equations from papers?

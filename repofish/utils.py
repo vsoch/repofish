@@ -1,5 +1,6 @@
 from Bio import Entrez
 from cognitiveatlas.api import get_concept
+import unicodedata
 import pickle
 import json
 import time
@@ -12,6 +13,24 @@ def save_json(json_obj,output_file):
     filey.close()
     return output_file
 
+
+def convert_unicode(unicode_str,to="ascii",ignore=False,replace_with=" "):
+    '''replace_unicode will return a string version of a unicode string, with unicode characters replaced
+    :param unicode_str: unicode string
+    :param to: format to convert to (default is ascii)
+    :param ignore: ignore characters that can't be converted to "to" format (eg, replace with "") default False
+    :param replace_with: if ignore=False, string content to replace with (default is space)
+    :return result: the converted string
+    '''
+    if ignore == False:
+        ignore_option = 'replace'
+    else:
+        ignore_option = 'ignore'
+
+    result = unicodedata.normalize('NFKD',unicode_str).encode(to,ignore_option)
+    if ignore == False:
+        result = result.replace("?",replace_with)
+    return result
 
 def find_files(basepath,extension=[".py"],any_extension=False):
     '''find_files return directories (and sub) starting from a base
