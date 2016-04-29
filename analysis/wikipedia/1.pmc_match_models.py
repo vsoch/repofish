@@ -16,7 +16,6 @@ import sys
 import os
 import re
 
-# Here is the path to the folder with xml files
 xml_file = sys.argv[1]
 output_dir = sys.argv[2]
 words_vectors = sys.argv[3]
