@@ -130,7 +130,7 @@ sim.to_csv("%s/method_vectors_similarity.tsv" %model_dir,sep="\t",encoding="utf-
 df = pandas.DataFrame(columns=["source","target","value"])
 
 count=1
-thresh=0.8
+thresh=0.9
 seen = []
 for row in sim.iterrows():
     method1_name = row[0]
@@ -138,8 +138,20 @@ for row in sim.iterrows():
     for method2_name,v in similar_methods.iteritems():
         pair_id = "_".join(numpy.sort([method1_name,method2_name]))
         if method2_name != method1_name and pair_id not in seen:
+            seen.append(pair_id)
             df.loc[count] = [method1_name,method2_name,v] 
             count+=1
 
-# Save to file
+# Make a lookuo
+lookup = dict()
+unique_methods = numpy.unique(sources + targets).tolist()
+for u in range(len(unique_methods)):
+    lookup[unique_methods[u]] = u
+
+# Replace sources and targets with lookups
+sources = [lookup[x] for x in df["source"]]
+targets = [lookup[x] for x in df["target"]]
+
+df["source"] = sources
+df["target"] = targets
 df.to_csv("method_sims_graphistry.csv",index=False)
