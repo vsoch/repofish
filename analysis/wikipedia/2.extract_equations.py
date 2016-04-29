@@ -9,7 +9,7 @@ import time
 import re
 
 methods = pandas.read_csv("wikipedia_methods.tsv",sep="\t",index_col=0)
-skip = ['1.96']
+skip = ['1.96','PARAFAC']
 
 results = dict()
 

@@ -1,7 +1,9 @@
 from repofish.utils import save_json, save_txt, convert_unicode
 from repofish.wikipedia import get_page
 from exceptions import KeyError
+import matplotlib.pyplot as plt
 import pandas
+import numpy
 import time
 
 ## STEP 1: PARSE METHOD TEXT #######################################################################
@@ -123,3 +125,9 @@ vectors.to_csv("%s/method_vectors.tsv" %model_dir,sep="\t",encoding="utf-8")
 # Compare similarity, for kicks and giggles
 sim = vectors.T.corr()
 sim.to_csv("%s/method_vectors_similarity.tsv" %model_dir,sep="\t",encoding="utf-8")
+
+# TODO: PLOT
+plt.pcolor(sim)
+plt.yticks(numpy.arange(0.5, len(sim.index), 1), sim.index)
+plt.xticks(numpy.arange(0.5, len(sim.columns), 1), sim.columns)
+plt.show()
