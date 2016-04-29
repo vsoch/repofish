@@ -126,8 +126,20 @@ vectors.to_csv("%s/method_vectors.tsv" %model_dir,sep="\t",encoding="utf-8")
 sim = vectors.T.corr()
 sim.to_csv("%s/method_vectors_similarity.tsv" %model_dir,sep="\t",encoding="utf-8")
 
-# TODO: PLOT
-plt.pcolor(sim)
-plt.yticks(numpy.arange(0.5, len(sim.index), 1), sim.index)
-plt.xticks(numpy.arange(0.5, len(sim.columns), 1), sim.columns)
-plt.show()
+# GRAPHISTRY VISUALIZATION ###############################################
+df = pandas.DataFrame(columns=["source","target","value"])
+
+count=1
+thresh=0.8
+seen = []
+for row in sim.iterrows():
+    method1_name = row[0]
+    similar_methods = row[1][row[1].abs() >= thresh]
+    for method2_name,v in similar_methods.iteritems():
+        pair_id = "_".join(numpy.sort([method1_name,method2_name]))
+        if method2_name != method1_name and pair_id not in seen:
+            df.loc[count] = [method1_name,method2_name,v] 
+            count+=1
+
+# Save to file
+df.to_csv("method_sims_graphistry.csv",index=False)

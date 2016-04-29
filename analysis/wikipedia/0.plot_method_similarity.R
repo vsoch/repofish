@@ -5,6 +5,6 @@ sim[is.na(sim)] = 0
 sim[is.null(sim)] = 0
 
 # Just plot as is
-pdf("../models/method_vectors_similarity.pdf",width=12,height=12)
+pdf("../models/method_vectors_similarity.pdf",width=50,height=50)
 pheatmap(sim,title="Wikipedia Method Similarity")
 dev.off()
