@@ -103,6 +103,7 @@ for method_name in method_names:
 
 # Save models and vectors
 export_models_tsv(models,base_dir)
+save_models(models,base_dir)
 vectors_dir = "%s/analysis/models/vectors" %base_dir
 os.mkdir(vectors_dir)
 export_vectors(models,output_dir=vectors_dir)
@@ -142,16 +143,19 @@ for row in sim.iterrows():
             df.loc[count] = [method1_name,method2_name,v] 
             count+=1
 
-# Make a lookuo
+# Make a lookup
 lookup = dict()
-unique_methods = numpy.unique(sources + targets).tolist()
+unique_methods = numpy.unique(df["source"].tolist() + df["target"].tolist()).tolist()
 for u in range(len(unique_methods)):
-    lookup[unique_methods[u]] = u
+    lookup[unique_methods[u]] = unique_methods[u].decode('utf-8').encode('ascii',errors='replace').replace('?',' ')
+    
 
 # Replace sources and targets with lookups
 sources = [lookup[x] for x in df["source"]]
 targets = [lookup[x] for x in df["target"]]
+df2=pandas.DataFrame()
 
-df["source"] = sources
-df["target"] = targets
-df.to_csv("method_sims_graphistry.csv",index=False)
+df2["source"] = sources
+df2["target"] = targets
+df2["value"] = df["value"]
+df2.to_csv("method_sims_graphistry_pt9.csv",index=False,encoding='utf-8')

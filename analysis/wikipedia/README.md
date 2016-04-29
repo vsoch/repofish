@@ -1,3 +1,5 @@
+# Ideas
+
 ### Idea 1: Can we find similar repos/functions based on context from papers?
 
 I would want a web interface where I can go, select some word or n-gram (likely a method, keyword, or domain, e.g., linear regression or sequence alignment) and immediately be shown Github repos that serve that purpose. If we can map out research software based on these groupings, we can then look at subsets and start to ask questions that quantify and compare reproducible practices, patterns in scripting, etc. The steps to complete this are as follows:
@@ -23,3 +25,24 @@ A very salient observation about the repos that I parsed from Pubmed Central is 
 
 We would (hopefully) at the end be able to make a statement about the features of the software that distinguish it. We could then look for these features in newer repos to predict usage, etc, or even give people a metric to evaluate the potential usability of their software.
 
+
+# Analysis
+
+### Step 1: Develop vector representations of methods
+I first found [a list of statistical methods](https://en.wikipedia.org/wiki/List_of_statistics_articles) on wikipedia, and [used repofish](0.make_method_models.py) to extract [images, links, and text](wikipedia_methods.json) for these different methods, and build [vector representations](../models/method_vectors.tsv) of the methods. I did this by [compiling all summary text](method_sentences.txt) of the methods to build a [word2vec model](../models/methods_word2vec.word2vec), and mapping each individual method to the model to generate [vector representations](../models/method_vectors.tsv) for them. I could then calculate pairwise similarities for the vector representations, and threshold the matrix at similarity scores of 0.8 and 0.9 to make graphs that show the similarity of the methods as determined by the different summary (text) contexts.
+
+- [similarity graph of statistical methods, threshold = 0.9](https://labs.graphistry.com/graph/graph.html?type=vgraph&viztoken=acabb667a7d268b52caf34c67f1c86de6177f5d6&usertag=72805b68-pygraphistry-0.9.27&info=true&dataset=Users%2FRKRIEGOLNR_lwxhqwbjpfee2d9rudi&play=0)
+- [similarity graph of statistical methods, threshold = 0.8](https://labs.graphistry.com/graph/graph.html?type=vgraph&viztoken=2f7e6fb4440069813acdd10d8bc79ac4156fee00&usertag=72805b68-pygraphistry-0.9.27&info=true&dataset=Users%2FWVVV9SXTAS_h4dn3ln5n4dt49uow29&play=0)
+
+### Step 2: Assess method similarity based on equations
+I wrote [a script](2.extract_equations.py) to extract equations from these same methods pages, and will use [this data](wikipedia_methods.json) to derive equivalent comparisons between methods based on the equations (LaTEx). (in progress)
+
+
+### Step 3: Mapping pubmed papers into the method space
+I will derive a vector representation of text from papers in pubmed central to map them onto this method space, and I might also do the same if equations are present.
+
+
+### Step 4: Map associated code to methods
+Based on locations of citations in a subset of the papers, I can possibly infer that the code referenced is related to what is being discussed in the text. This will allow me to map repos to the equivalent method space via the text.
+
+And more TBA!
