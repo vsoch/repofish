@@ -99,4 +99,4 @@ if not os.path.exists(output_file):
             sim.loc["%s_%s" %(pmid,p),result.index] = result
 
     # Save to output folder based on the pmid
-    sim.to_csv(output_file,sep="\t")    
+    sim.to_csv(output_file,sep="\t")
