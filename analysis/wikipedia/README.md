@@ -35,11 +35,16 @@ I first found [a list of statistical methods](https://en.wikipedia.org/wiki/List
 - [similarity graph of statistical methods, threshold = 0.8](https://labs.graphistry.com/graph/graph.html?type=vgraph&viztoken=2f7e6fb4440069813acdd10d8bc79ac4156fee00&usertag=72805b68-pygraphistry-0.9.27&info=true&dataset=Users%2FWVVV9SXTAS_h4dn3ln5n4dt49uow29&play=0)
 
 ### Step 2: Assess method similarity based on equations
-I wrote [a script](2.extract_equations.py) to extract equations from these same methods pages, and will use [this data](wikipedia_methods.json) to derive equivalent comparisons between methods based on the equations (LaTEx). (in progress)
+I wrote [a script](2.extract_equations.py) to extract equations from these same methods pages, and  used [this data](wikipedia_methods.json) to derive equivalent comparisons between methods based on the equations (LaTEx).
 
+#### Attempt 1: Word2Vec
+For my first attempt, I simply broke the LaTeX equations into characters, and built a word2vec model to describe the vector (embeddings) of each character based on context of other characters. Then for each method, I mapped the equations from the method page into the space by taking an average of the characters in the equations, including each vector however many times the character was present so the mean is weighted by the frequency of each character. When I first attempted this, I kept the equations within a page separate, however this generated data of ~60K by 300, and this would not have been feasible to try and calculate pairwise similarity for the graph. I instead then took a mean vector across all equations vectors within a method, so again each method is represented by one vector. The [final graph](https://goo.gl/2XqlT6) reflects my concern - 1) that I too strongly dulled the signal by averaging, and 2) that there are so few characters that most equations are highly similar.
+
+### Attempt 2: Graph representation of an equation
+It's not good enough to represent an equation as a vector of characters. In fact, what I need to capture are the common terms (eg, "/sigma") along with relationships between things (eg, a symbol inside of parenthesis or a denominator needs to be understood by the algorithm.) Thus, for my next attempt, I am going to develop a graph representation of a single equation. From that I can extract symbols (the idea being that the base node is the entire equation, and moving down the tree breaks into components, and the leaves are the individual symbols) along with relationships (e.g., "\sigma" is part of denominator group). I can then use these features to calculate similarity between methods. (in progress)
 
 ### Step 3: Mapping pubmed papers into the method space
-I will derive a vector representation of text from papers in pubmed central to map them onto this method space, and I might also do the same if equations are present.
+I will derive a vector representation of text from papers in pubmed central to map them onto this method space, and I might also do the same if equations are present. Likely this will need some kind of hadoop (spark) approach with a database, so I'm learning that.
 
 
 ### Step 4: Map associated code to methods
