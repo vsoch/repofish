@@ -111,6 +111,7 @@ def text2mean_vector(characters,embeddings):
 for method,equations in results.iteritems():
     print "Generating equations models for method %s" %(method)
     count = 0
+    subset = pandas.DataFrame(columns=range(300))
     for equation in equations:
         try:
             tex = equation["tex"].decode('utf-8').encode('ascii',errors='replace').replace('\n',' ')
@@ -119,14 +120,20 @@ for method,equations in results.iteritems():
             # We take a mean vector from the word embeddings, weighted by character counts
             vector = text2mean_vector(characters,embeddings)
             if vector != None:
-                method_id = "%s_%s" %(method,count)
-                vectors.loc[method_id] = vector    
+                subset.loc[count] = vector    
                 count+=1
         except:
             print "skipping %s" %(equation["tex"])
 
+    # Take an average equation for the method
+    if subset.shape[0] == 1:
+        vectors.loc[method] = subset.loc[0]
+    elif subset.shape[0] > 1:
+        vectors.loc[method] = subset.mean()
 
-vectors.to_csv("%s/equations_vectors.tsv" %model_dir,sep="\t",encoding="utf-8")
+    
+
+vectors.to_csv("%s/equations_vectors_single.tsv" %model_dir,sep="\t",encoding="utf-8")
 
 # Compare similarity, for kicks and giggles
 sim = vectors.T.corr()
@@ -136,7 +143,7 @@ sim.to_csv("%s/equations_vectors_similarity.tsv" %model_dir,sep="\t",encoding="u
 df = pandas.DataFrame(columns=["source","target","value"])
 
 count=1
-thresh=0.9
+thresh=0.8
 seen = []
 for row in sim.iterrows():
     method1_name = row[0]
@@ -152,8 +159,8 @@ for row in sim.iterrows():
 lookup = dict()
 unique_methods = numpy.unique(df["source"].tolist() + df["target"].tolist()).tolist()
 for u in range(len(unique_methods)):
-    lookup[unique_methods[u]] = unique_methods[u].decode('utf-8').encode('ascii',errors='replace').replace('?',' ')
-    
+    lookup[unique_methods[u]] =  convert_unicode(unique_methods[u]).replace("\n"," ")
+
 
 # Replace sources and targets with lookups
 sources = [lookup[x] for x in df["source"]]
@@ -163,4 +170,4 @@ df2=pandas.DataFrame()
 df2["source"] = sources
 df2["target"] = targets
 df2["value"] = df["value"]
-df2.to_csv("method_sims_graphistry_pt9.csv",index=False,encoding='utf-8')
+df2.to_csv("equations_sims_graphistry_pt8.csv",index=False,encoding='utf-8')
