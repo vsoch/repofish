@@ -1,5 +1,6 @@
 from glob import glob
 import json
+import time
 import pandas
 import requests
 import numpy
@@ -39,3 +40,9 @@ for page_number in pages:
         filey.close()
         os.system("sbatch -p russpold --qos=russpold " + "%s/wikipedia/.job/%s.job" %(scripts,job_id))
 
+
+
+# Or just run with breaks!
+for page_number in pages:
+    time.sleep(1)
+    os.system("sbatch -p russpold --qos=russpold " + "%s/wikipedia/.job/%s.job" %(scripts,page_number))

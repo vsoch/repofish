@@ -56,8 +56,9 @@ meta_data = dict()
 if not os.path.exists(output_file):
 
     for p in range(len(papers)):
+        paper = papers[p]
         try:
-            paper = papers[p]
+            print "Parsing paper %s" %(p)
             link = paper.findChild()
             link = link.get('href')
             article_id = int(link.split("=")[-1])
@@ -85,6 +86,7 @@ if not os.path.exists(output_file):
                 # Save scores to df
                 sim.loc[article_id,result.index] = result
         except:
+            print "Error with %s" %(p)
             pass
 
     # Save to output folder based on the page number
