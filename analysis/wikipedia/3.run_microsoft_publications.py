@@ -35,7 +35,7 @@ for page_number in pages:
         filey.writelines("#SBATCH --time=30:00\n")
         filey.writelines("#SBATCH --mem=4000\n")
         filey.writelines("module load python/2.7.5\n")
-        filey.writelines("python %s/3.microsoft_publications.py %s %s %s\n" %(scripts,page_number,outfolder,words_vectors,methods_vectors))
+        filey.writelines("python %s/3.microsoft_publications.py %s %s %s %s\n" %(scripts,page_number,outfolder,words_vectors,methods_vectors))
         filey.close()
         os.system("sbatch -p russpold --qos=russpold " + "%s/.job/%s.job" %(scripts,job_id))
 

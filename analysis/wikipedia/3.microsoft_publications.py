@@ -54,8 +54,8 @@ meta_data = dict()
 
 if not os.path.exists(output_file):
 
-    for paper in papers:
-
+    for p in range(len(papers)):
+        paper = papers[p]
         link = paper.findChild()
         link = link.get('href')
         article_id = int(link.split("=")[-1])
