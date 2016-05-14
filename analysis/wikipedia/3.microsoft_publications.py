@@ -88,5 +88,6 @@ if not os.path.exists(output_file):
             pass
 
     # Save to output folder based on the page number
-    sim.to_csv(output_file,sep="\t")
-    save_json(meta_data,output_meta)
+    if sim.shape[0] > 0:
+        sim.to_csv(output_file,sep="\t")
+        save_json(meta_data,output_meta)
