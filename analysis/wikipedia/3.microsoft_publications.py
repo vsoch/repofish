@@ -56,33 +56,36 @@ meta_data = dict()
 if not os.path.exists(output_file):
 
     for p in range(len(papers)):
-        paper = papers[p]
-        link = paper.findChild()
-        link = link.get('href')
-        article_id = int(link.split("=")[-1])
-        full_url = "http://research.microsoft.com%s" %link
-        page = BeautifulSoup(requests.get(full_url).text)
-        # Parse page into abstract, title, authors, date
-        authors = page.find("div",{'id':'pubDeTop'}).find("p").text
-        title = page.find("div",{'class':'title'}).text
-        date = page.find("span",{"class":"byLine"}).text
-        abstract = " ".join([x.text for x in page.find("div",{"class":"fl"}).findAll("p")]).encode('utf-8')
-        # Save meta data for article
-        meta_data[article_id] = {"abstract":abstract,
-                            "authors":authors,
-                            "title":title,
-                            "date":date,
-                            "url":full_url}
-        vector = text2mean_vector(abstract,embeddings)
-        if vector != None:
-            # Compare vector to all methods
-            comparison = methods.copy()
-            comparison.loc["COMPARATOR"] = vector
-            comparison = comparison.T.corr()     
-            result = comparison.loc["COMPARATOR"]       
-            result = result.drop(["COMPARATOR"])
-            # Save scores to df
-            sim.loc[article_id,result.index] = result
+        try:
+            paper = papers[p]
+            link = paper.findChild()
+            link = link.get('href')
+            article_id = int(link.split("=")[-1])
+            full_url = "http://research.microsoft.com%s" %link
+            page = BeautifulSoup(requests.get(full_url).text)
+            # Parse page into abstract, title, authors, date
+            authors = page.find("div",{'id':'pubDeTop'}).find("p").text
+            title = page.find("div",{'class':'title'}).text
+            date = page.find("span",{"class":"byLine"}).text
+            abstract = " ".join([x.text for x in page.find("div",{"class":"fl"}).findAll("p")]).encode('utf-8')
+            # Save meta data for article
+            meta_data[article_id] = {"abstract":abstract,
+                                     "authors":authors,
+                                     "title":title,
+                                     "date":date,
+                                     "url":full_url}
+            vector = text2mean_vector(abstract,embeddings)
+            if vector != None:
+                # Compare vector to all methods
+                comparison = methods.copy()
+                comparison.loc["COMPARATOR"] = vector
+                comparison = comparison.T.corr()     
+                result = comparison.loc["COMPARATOR"]       
+                result = result.drop(["COMPARATOR"])
+                # Save scores to df
+                sim.loc[article_id,result.index] = result
+        except:
+            pass
 
     # Save to output folder based on the page number
     sim.to_csv(output_file,sep="\t")
