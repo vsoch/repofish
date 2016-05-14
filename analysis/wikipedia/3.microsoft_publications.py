@@ -2,6 +2,7 @@ from repofish.nlp import processText, unicode2str
 from repofish.utils import save_txt, save_json
 from BeautifulSoup import BeautifulSoup
 from glob import glob
+import requests
 import tempfile
 import pandas
 import pickle
