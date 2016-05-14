@@ -29,10 +29,10 @@ sim = pandas.DataFrame(columns=methods.index)
 
 def text2mean_vector(paragraph,vectors):
     '''text2mean_vector maps a new text (paragraph) onto vectors (a word2vec word embeddings model) by taking a mean of the vectors that are words in the text
-    :param text: a beautiful soup object (text content should be in paragraph.text)
+    :param text: the text to parse
     :param vectors: a pandas data frame of vectors, index should be words in model
     '''
-    words = processText(paragraph.text)
+    words = processText(paragraph)
     words = [unicode2str(w) for w in words]
     words = [w for w in words if w in vectors.index.tolist()]
     if len(words) != 0:
@@ -55,25 +55,23 @@ meta_data = dict()
 if not os.path.exists(output_file):
 
     for paper in papers:
+
         link = paper.findChild()
         link = link.get('href')
         article_id = int(link.split("=")[-1])
         full_url = "http://research.microsoft.com%s" %link
         page = BeautifulSoup(requests.get(full_url).text)
- 
         # Parse page into abstract, title, authors, date
         authors = page.find("div",{'id':'pubDeTop'}).find("p").text
         title = page.find("div",{'class':'title'}).text
         date = page.find("span",{"class":"byLine"}).text
-        abstract = " ".join([x.text for x in page.find("div",{"class":"fl"}).findAll("p")])
-
+        abstract = " ".join([x.text for x in page.find("div",{"class":"fl"}).findAll("p")]).encode('utf-8')
         # Save meta data for article
         meta_data[article_id] = {"abstract":abstract,
                             "authors":authors,
-                            "title",title,
+                            "title":title,
                             "date":date,
                             "url":full_url}
-
         vector = text2mean_vector(abstract,embeddings)
         if vector != None:
             # Compare vector to all methods
