@@ -1,4 +1,26 @@
-#!/usr/bin/env python
+'''
+
+Copyright (c) 2016-2018 Vanessa Sochat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+'''
 
 from Bio import Entrez
 import urllib2
@@ -6,7 +28,6 @@ import tarfile
 import pandas
 import urllib
 import string
-import numpy
 import time
 import json
 import re
@@ -41,7 +62,7 @@ def search_articles(email,term,retmax=100000):
         start = 100000
         # Tell the user this term is going to take longer
         if number_matches >= 100000:
-            print "Term %s has %s associated pmids" %(term,number_matches)
+            print("Term %s has %s associated pmids" %(term,number_matches))
         while start <= number_matches:
             record = search_pubmed(term,retstart=start)
             allrecords = allrecords + record["IdList"]
@@ -53,7 +74,7 @@ def search_articles(email,term,retmax=100000):
 
 
 def load_pmc():
-    print "Downloading latest version of pubmed central ftp lookup..."
+    print("Downloading latest version of pubmed central ftp lookup...")
     ftp = pandas.read_csv("ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/file_list.txt",skiprows=1,sep="\t",header=None)
     ftp.columns = ["URL","JOURNAL","PMCID","PMID"]
     return ftp
@@ -86,7 +107,7 @@ def download_single(resource,download_folder):
     :param resource: resource to download
     :param download_folder: the folder to download to
     """
-    print "Downloading %s" %(resource)       
+    print("Downloading %s" %(resource))    
     os.system("wget \"%s\" -P %s" %(resource,download_folder))
 
 

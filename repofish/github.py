@@ -1,4 +1,28 @@
-# Functions for parsing github repos
+'''
+
+Functions for parsing Github repositories
+
+Copyright (c) 2016-2018 Vanessa Sochat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+'''
 
 from git import Repo
 from repofish.utils import find_files
@@ -8,7 +32,7 @@ import urllib2
 import pandas
 import shutil
 import time
-import numpy
+import math
 import json
 import re
 import os
@@ -67,7 +91,7 @@ def search_code(repo,function_names,limit=10):
     # Destination will be used if API limit runs out, and we need to clone locally
     destination = None
     matches = get_match_df()
-    iters = int(numpy.ceil(len(function_names)/float(limit)))
+    iters = int(math.ceil(len(function_names)/float(limit)))
     api_working = True
     user_name,repo_name = names_from_url(repo)
 

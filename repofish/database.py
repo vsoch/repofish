@@ -1,3 +1,27 @@
+'''
+
+Copyright (c) 2016-2018 Vanessa Sochat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+'''
+
 from glob import glob
 import __init__
 import json
@@ -22,7 +46,7 @@ def load_module(module_name,get_names=False,get_hidden=False):
             result = get_function_names(result,get_hidden)
         return result
     else:
-        print "Module %s is not available. Generate using get_functions(module_folder)" %(module_name)
+        print("Module %s is not available. Generate using get_functions(module_folder)" %(module_name))
 
 def get_function_names(module_json,get_hidden=False,get_classes=True):
     function_names = []
@@ -97,7 +121,7 @@ def get_functions_lines(lines):
            if not re.search("^#",line):
                function_name,function_args = line.split("(",1)
                function_name = function_name.split(" ")[-1]
-               print "Adding function %s" %(function_name)
+               print("Adding function %s" %(function_name))
                # If no closing parens is present, we have to continue until we find one
                while not re.search("[)]:",function_args):
                    nextline = lines.pop(0)

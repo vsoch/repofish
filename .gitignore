@@ -1,3 +1,5 @@
+repofish.egg-info/
+pypi.sh
 *.pyc
 build
 dist

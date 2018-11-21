@@ -54,7 +54,7 @@ def get_section_text(text,sections):
         sections = [sections]
     for section in sections:
         if section not in headers:
-            print "Error: %s is not in sections of text! Skipping." %(section)
+            print("Error: %s is not in sections of text! Skipping." %(section))
         else:
             start = lines.index(section)+1
             section_index = headers.index(section)
