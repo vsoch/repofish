@@ -5,7 +5,7 @@ wikipedia:  part of the repofish python package
 
 from wikipedia.exceptions import PageError, DisambiguationError
 from repofish.utils import convert_unicode
-from wikipedia import search, page
+from wikipedia import search, page, WikipediaPage
 import unicodedata
 import re
 
@@ -22,11 +22,12 @@ def search_page(searchterm):
 
 def get_page(name):
     try:
-        result = page(name)
+        result = WikipediaPage(name)
     except PageError:
         result = search_page(name)
     except:
-        name = convert_unicode(name)
+        if not isinstance(name, str):
+            name = convert_unicode(name)
         result = page(name)
     return result
 
