@@ -1,4 +1,28 @@
-# Functions for parsing github repos
+'''
+
+Functions for parsing Github repositories
+
+Copyright (c) 2016-2018 Vanessa Sochat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+'''
 
 from git import Repo
 from repofish.utils import find_files
@@ -8,7 +32,7 @@ import urllib2
 import pandas
 import shutil
 import time
-import numpy
+import math
 import json
 import re
 import os
@@ -67,7 +91,7 @@ def search_code(repo,function_names,limit=10):
     # Destination will be used if API limit runs out, and we need to clone locally
     destination = None
     matches = get_match_df()
-    iters = int(numpy.ceil(len(function_names)/float(limit)))
+    iters = int(math.ceil(len(function_names)/float(limit)))
     api_working = True
     user_name,repo_name = names_from_url(repo)
 
@@ -85,7 +109,7 @@ def search_code(repo,function_names,limit=10):
                     match = search_code_single(repo,function_name,access_token)
                 except:
                     api_working = False
-                    print "API credentials not working, will parse local repo instead."
+                    print("API credentials not working, will parse local repo instead.")
                     destination = download_repo(repo)
                     match = search_code_local(destination,function_name,repo_name,user_name)
             else:
@@ -244,9 +268,9 @@ def search_code_local(repo,search_term,repo_name,user_name,extension=".py"):
                         matches.loc["%s/%s_%s" %(user_name,repo_name,count)] =  match_list
                         count+=1
     
-        print "Found %s results for %s in %s" %(count,search_term,repo_name)
+        print("Found %s results for %s in %s" %(count,search_term,repo_name))
     except:
-        print "Problem with term %s" %(search_term)
+        print("Problem with term %s" %(search_term))
     return matches
 
 
@@ -271,7 +295,7 @@ def search_code_single(repo,search_term,language="python",access_token=None):
                 match_list = [search_term,item["name"],user_name,repo_name,item["url"],item["html_url"],item["score"],match["fragment"]]
                 matches.loc["%s/%s_%s" %(user_name,repo_name,count)] =  match_list
                 count+=1
-    print "Found %s results for %s in %s" %(count,search_term,repo_name)
+    print("Found %s results for %s in %s" %(count,search_term,repo_name))
     return matches
 
 def add_count(df,ridx,cidx="count",addition=1):
@@ -319,4 +343,3 @@ def count_extensions(repos,special_files=None):
             countdf = add_count(countdf,ext)
 
     return countdf
-

@@ -1,27 +1,110 @@
 from setuptools import setup, find_packages
+import codecs
+import os
 
-setup(
-    # Application name:
-    name="repofish",
+################################################################################
+# HELPER FUNCTIONS #############################################################
+################################################################################
 
-    # Version number (initial):
-    version="0.0.9",
+def get_lookup():
+    '''get version by way of sregistry.version, returns a 
+    lookup dictionary with several global variables without
+    needing to import singularity
+    '''
+    lookup = dict()
+    version_file = os.path.join('repofish', 'version.py')
+    with open(version_file) as filey:
+        exec(filey.read(), lookup)
+    return lookup
 
-    # Application author details:
-    author="Vanessa Sochat",
-    author_email="vsochat@stanford.edu",
 
-    # Packages
-    packages=find_packages(),
+# Read in requirements
+def get_reqs(lookup=None, key='INSTALL_REQUIRES'):
+    '''get requirements, mean reading in requirements and versions from
+    the lookup obtained with get_lookup'''
 
-    # Data
-    package_data = {'repofish.lib':['*.json']},
+    if lookup == None:
+        lookup = get_lookup()
 
-    # Details
-    url="http://www.github.com/vsoch/repofish",
+    install_requires = []
+    for module in lookup[key]:
+        module_name = module[0]
+        module_meta = module[1]
+        if "exact_version" in module_meta:
+            dependency = "%s==%s" %(module_name,module_meta['exact_version'])
+        elif "min_version" in module_meta:
+            if module_meta['min_version'] == None:
+                dependency = module_name
+            else:
+                dependency = "%s>=%s" %(module_name,module_meta['min_version'])
+        install_requires.append(dependency)
+    return install_requires
 
-    license="LICENSE",
-    description="search github repos for python functions and generate standard data structures for them",
 
-    install_requires = ['numpy','pandas','gitpython','wikipedia','nltk','textblob']
-)
+
+# Make sure everything is relative to setup.py
+install_path = os.path.dirname(os.path.abspath(__file__)) 
+os.chdir(install_path)
+
+# Get version information from the lookup
+lookup = get_lookup()
+VERSION = lookup['__version__']
+NAME = lookup['NAME']
+AUTHOR = lookup['AUTHOR']
+AUTHOR_EMAIL = lookup['AUTHOR_EMAIL']
+PACKAGE_URL = lookup['PACKAGE_URL']
+KEYWORDS = lookup['KEYWORDS']
+DESCRIPTION = lookup['DESCRIPTION']
+LICENSE = lookup['LICENSE']
+with open('README.md') as filey:
+    LONG_DESCRIPTION = filey.read()
+
+################################################################################
+# MAIN #########################################################################
+################################################################################
+
+
+if __name__ == "__main__":
+
+    INSTALL_REQUIRES = get_reqs(lookup)
+
+    WIKIPEDIA = get_reqs(lookup,'INSTALL_WIKIPEDIA')
+    #ZENODO = get_reqs(lookup,'INSTALL_ZENODO')
+    PUBMED = get_reqs(lookup,'INSTALL_PUBMED')
+    GITHUB = get_reqs(lookup,'INSTALL_GITHUB')
+
+    setup(name=NAME,
+          version=VERSION,
+          author=AUTHOR,
+          author_email=AUTHOR_EMAIL,
+          maintainer=AUTHOR,
+          maintainer_email=AUTHOR_EMAIL,
+          packages=find_packages(), 
+          include_package_data=True,
+          zip_safe=False,
+          url=PACKAGE_URL,
+          license=LICENSE,
+          description=DESCRIPTION,
+          long_description=LONG_DESCRIPTION,
+          keywords=KEYWORDS,
+          install_requires = INSTALL_REQUIRES,
+          extras_require={
+              'wikipedia': [WIKIPEDIA],
+              #'zenodo': [ZENODO],
+              'pubmed': [PUBMED],
+              'github': [GITHUB],
+              'all': [INSTALL_REQUIRES]
+
+          },
+          classifiers=[
+              'Intended Audience :: Science/Research',
+              'Intended Audience :: Developers',
+              'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+              'Programming Language :: Python',
+              'Topic :: Software Development',
+              'Topic :: Scientific/Engineering',
+              'Operating System :: Unix',
+              'Programming Language :: Python :: 2.7',
+              'Programming Language :: Python :: 3',
+          ]),
+          #entry_points = {'console_scripts': [ 'sregistry=sregistry.client:main' ] })
