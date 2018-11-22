@@ -109,7 +109,7 @@ def search_code(repo,function_names,limit=10):
                     match = search_code_single(repo,function_name,access_token)
                 except:
                     api_working = False
-                    print "API credentials not working, will parse local repo instead."
+                    print("API credentials not working, will parse local repo instead.")
                     destination = download_repo(repo)
                     match = search_code_local(destination,function_name,repo_name,user_name)
             else:
@@ -268,9 +268,9 @@ def search_code_local(repo,search_term,repo_name,user_name,extension=".py"):
                         matches.loc["%s/%s_%s" %(user_name,repo_name,count)] =  match_list
                         count+=1
     
-        print "Found %s results for %s in %s" %(count,search_term,repo_name)
+        print("Found %s results for %s in %s" %(count,search_term,repo_name))
     except:
-        print "Problem with term %s" %(search_term)
+        print("Problem with term %s" %(search_term))
     return matches
 
 
@@ -295,7 +295,7 @@ def search_code_single(repo,search_term,language="python",access_token=None):
                 match_list = [search_term,item["name"],user_name,repo_name,item["url"],item["html_url"],item["score"],match["fragment"]]
                 matches.loc["%s/%s_%s" %(user_name,repo_name,count)] =  match_list
                 count+=1
-    print "Found %s results for %s in %s" %(count,search_term,repo_name)
+    print("Found %s results for %s in %s" %(count,search_term,repo_name))
     return matches
 
 def add_count(df,ridx,cidx="count",addition=1):
@@ -343,4 +343,3 @@ def count_extensions(repos,special_files=None):
             countdf = add_count(countdf,ext)
 
     return countdf
-
